@@ -2,7 +2,7 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on Programming, YouTubing 
+- 🔭 I’m currently working on Programming
 - 🌱 I’m currently learning JavaScript 
 - 👯 I’m looking to collaborate on  HTML / CSS
 - 🤔 I’m looking for help with Windows
