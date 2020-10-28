@@ -28,5 +28,6 @@ Short info about ArsenTech:
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" width="48" height="48" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/97418653-7fe18280-1922-11eb-801d-4259b6a3f2ea.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" width="48" height="48" align="left" />
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" width="48" height="48" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/97419924-1cf0eb00-1924-11eb-8249-41161b3a7f1b.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/d92924b1d925bb134e308bd29c9de6c302ed3beb/topics/terminal/terminal.png" width="48" height="48" align="left" />
