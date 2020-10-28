@@ -10,11 +10,13 @@ I am a Beginner Developer, Tech Youtuber.
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
+---
 
 ## ▶️ Latest YouTube Videos:
 <!-- YOUTUBE:START -->
 <!-- YOUTUBE:END -->
 
+---
 ### Connect Me with:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 * [Discord Server](https://discord.com/invite/WRzCnPF)
