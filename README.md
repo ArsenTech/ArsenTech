@@ -2,6 +2,10 @@
 
 I am a Beginner Developer, Tech Youtuber.
 
+<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
+<a href="https://discord.com/invite/WRzCnPF" target="_blank"><img src="https://img.shields.io/badge/Arsen's World Of Tech%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" />
+
 Short info about ArsenTech:
 - 🔭 I’m currently working on Programming
 - 🌱 I’m currently learning JavaScript 
@@ -11,10 +15,6 @@ Short info about ArsenTech:
 - 😄 Pronouns: He / Him
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
 ---
-<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
-<a href="https://discord.com/invite/WRzCnPF" target="_blank"><img src="https://img.shields.io/badge/Arsen's World Of Tech%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" />
-
 ### Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
