@@ -1,6 +1,6 @@
 ### Hi there, Welcome to ArsenTech's GitHub 👋
 
-Here are some ideas to get you started:
+Short info about ArsenTech:
 
 - 🔭 I’m currently working on Programming
 - 🌱 I’m currently learning JavaScript 
