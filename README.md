@@ -1,4 +1,4 @@
-## Hello There 👋🏻, I am Arsen - aka ArsenTech
+## Hello There 👋🏻, I am Arsen - a.k.a. ArsenTech
 
 #### A Beginner Developer, Tech Youtuber from Armenia🇦🇲
 
