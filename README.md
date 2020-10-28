@@ -1,8 +1,7 @@
 # Hi there, Welcome to ArsenTech's GitHub 👋
 
 I am a Beginner Developer, Tech Youtuber.
-
-## Short info about ArsenTech:
+Short info about ArsenTech:
 - 🔭 I’m currently working on Programming
 - 🌱 I’m currently learning JavaScript 
 - 👯 I’m looking to collaborate with other fans
