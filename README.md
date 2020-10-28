@@ -12,3 +12,4 @@ I am a Beginner Developer, Tech Youtuber.
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
 ### Contact Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
+* [Discord Server](https://discord.com/invite/WRzCnPF)
