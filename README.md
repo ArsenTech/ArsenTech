@@ -12,7 +12,7 @@ Short info about ArsenTech:
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
 ---
 
-## Latest YouTube Videos
+### Latest YouTube Videos
 <!-- YOUTUBE:START -->
 <!-- YOUTUBE:END -->
 
