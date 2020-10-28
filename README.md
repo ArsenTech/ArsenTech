@@ -25,4 +25,4 @@ I am a Beginner Developer, Tech Youtuber.
 <img src="https://user-images.githubusercontent.com/62609185/97419934-1febdb80-1924-11eb-9f56-6b068a29d5d1.png" width="50" align="left" />
 ---
 ## Stats
-[![ArsenTech's github stats](https://github-readme-stats.vercel.app/api?username=arsentech)](https://github.com/arsentech/github-readme-stats)
+![ArsenTech's github stats](https://github-readme-stats.vercel.app/api?username=arsentech)](https://github.com/arsentech/github-readme-stats)
