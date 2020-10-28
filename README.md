@@ -15,7 +15,7 @@ Short info about ArsenTech:
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
 
-### Connect Me with:
+### Follow Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 * [Discord Server](https://discord.com/invite/WRzCnPF)
 
