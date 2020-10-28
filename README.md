@@ -11,6 +11,7 @@ Short info about ArsenTech:
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
 ---
 ### Stats
+<img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 
 ### Connect Me with:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
