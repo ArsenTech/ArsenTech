@@ -15,4 +15,4 @@ jobs:
         with:
           comment_tag_name: "YOUTUBE"
           feed_list: "https://www.youtube.com/feeds/videos.xml?
-          channel_id= UCrtH0g6NE8tW5VIEgDySYtg"
+          channel_id=UCrtH0g6NE8tW5VIEgDySYtg"
