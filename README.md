@@ -23,7 +23,3 @@ I am a Beginner Developer, Tech Youtuber.
 <img src="https://user-images.githubusercontent.com/62609185/97419918-195d6400-1924-11eb-8816-7752915b0000.png" width="50" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/97419924-1cf0eb00-1924-11eb-8249-41161b3a7f1b.png" width="50" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/97419934-1febdb80-1924-11eb-9f56-6b068a29d5d1.png" width="50" align="left" />
-
-
----
-## Stats
