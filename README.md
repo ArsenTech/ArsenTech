@@ -9,6 +9,8 @@ Short info about ArsenTech:
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
+---
+### Stats
 
 ### Connect Me with:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
