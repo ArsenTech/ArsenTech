@@ -24,7 +24,7 @@ Short info about ArsenTech:
 
 ### Language And Tools:
 <img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" width="48" height="48" align="left" />
-<img src="https://user-images.githubusercontent.com/62609185/97418629-79530b00-1922-11eb-8a5f-7cd660b4fb84.png" width="48" height="48" align="left" />
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" width="48" height="48" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/97418653-7fe18280-1922-11eb-801d-4259b6a3f2ea.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" width="48" height="48" align="left" />
