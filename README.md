@@ -11,9 +11,6 @@ Short info about ArsenTech:
 - 😄 Pronouns: He / Him
 - ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
 ---
-### Latest YouTube Videos
-<!-- YOUTUBE:START -->
-<!-- YOUTUBE:END -->
 
 ### Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
