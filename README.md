@@ -1,4 +1,4 @@
-## Hi there, Welcome to ArsenTech's GitHub 👋
+## Hello There 👋🏻, I am Arsen - aka ArsenTech
 
 #### A Beginner Developer, Tech Youtuber from Armenia🇦🇲
 
