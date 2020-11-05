@@ -13,7 +13,7 @@ Short info about ArsenTech:
 - 💬 Ask me about Anything
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
-- ⚡ Fun fact: ArsenTech's Funny Name is "Arse in Tech"
+- ⚡ Fun fact: ArsenTech's Funny Name is "ArsonTech"
 ---
 ### Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
@@ -22,6 +22,7 @@ Short info about ArsenTech:
 ### Follow Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 * [Discord Server](https://discord.com/invite/WRzCnPF)
+* [Discord](dsc.bio/Arsen2005)
 
 ### Language And Tools:
 <img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" width="48" height="48" align="left" />
