@@ -1,6 +1,6 @@
 ## Hello There! I am Arsen - a.k.a. ArsenTech
 
-#### A Beginner Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲
+#### A Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
