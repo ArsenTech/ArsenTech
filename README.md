@@ -7,7 +7,7 @@
 <a href="https://discord.com/invite/WRzCnPF" target="_blank"><img src="https://img.shields.io/badge/Arsen's World Of Tech%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
 
 Short info about ArsenTech:
-- 🔭 I’m currently working on Programming
+- 🔭 I’m currently working on Programming, Video Editing
 - 🌱 I’m currently learning JavaScript 
 - 👯 I’m looking to collaborate with other fans
 - 💬 Ask me about Anything
