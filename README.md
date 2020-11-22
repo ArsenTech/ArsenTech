@@ -13,7 +13,6 @@ Short info about ArsenTech:
 - 💬 Ask me about Anything
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
-- ⚡ Fun fact: ArsenTech's Funny Name is "ArsonTech"
 ---
 ### Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
