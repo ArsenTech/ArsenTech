@@ -19,8 +19,6 @@ Short info about ArsenTech:
 
 ### Follow Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-* [Discord Server](https://discord.gg/KYZAtxkzdM)
-* [Discord](https://dsc.bio/Arsen2005)
 * [My Website](https://arsentech.github.io/)
 
 ### Language And Tools:
