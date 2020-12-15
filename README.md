@@ -6,7 +6,7 @@
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
 <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
 <a href="https://www.reddit.com/user/ArsenTech" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-<a href="https://codepen.io/ArsenHTML"target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-white?style=for-the-badge&logo=codepen&logoColor=black"></a>
+<a href="https://codepen.io/ArsenHTML" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-white?style=for-the-badge&logo=codepen&logoColor=black"></a>
 
 Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
@@ -23,6 +23,8 @@ Short info about ArsenTech:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 * [My Website](https://arsentech.github.io/)
 * [Scratch](https://scratch.mit.edu/users/ArsenTech/)
+* [Reddit](https://www.reddit.com/user/ArsenTech)
+* [Codepen](https://codepen.io/ArsenHTML)
 
 ### Language And Tools:
 <img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" width="48" height="48" align="left" />
