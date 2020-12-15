@@ -9,6 +9,7 @@
 <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
 <a href="https://www.reddit.com/user/ArsenTech" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
 <a href="https://codepen.io/ArsenHTML" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-white?style=for-the-badge&logo=codepen&logoColor=black"></a>
+<img src="https://img.shields.io/badge/-ArsenTech%238160-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 
 Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
