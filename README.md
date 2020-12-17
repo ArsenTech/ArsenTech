@@ -16,19 +16,19 @@ Short info about ArsenTech:
 - 💬 Ask me about Anything
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
----
-### Stats
+
+## Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
 
-### Follow Me:
+## Follow Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 * [My Website](https://arsentech.github.io/)
 * [Scratch](https://scratch.mit.edu/users/ArsenTech/)
 * [Reddit](https://www.reddit.com/user/ArsenTech)
 * [Codepen](https://codepen.io/ArsenJS)
 
-### Language And Tools:
+## Language And Tools:
 <img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" width="48" height="48" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" width="48" height="48" align="left" />
