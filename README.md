@@ -4,11 +4,7 @@
 #### A Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
-<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
-<a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
-<a href="https://www.reddit.com/user/ArsenTech" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-<a href="https://codepen.io/ArsenJS" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-white?style=for-the-badge&logo=codepen&logoColor=black"></a>
-<img src="https://img.shields.io/badge/-ArsenTech%238160-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+<a href="https://arsentech.github.io" target="_blank"><img src="https://img.shields.io/website?down_color=red&down_message=Down&label=ArsenTech&style=for-the-badge&up_color=green&up_message=Up&url=https%3A%2F%2Farsentech.github.io"  />
 
 Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
@@ -22,10 +18,11 @@ Short info about ArsenTech:
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
 
 ## Follow Me:
-* [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-* [Scratch](https://scratch.mit.edu/users/ArsenTech/)
-* [Reddit](https://www.reddit.com/user/ArsenTech)
-* [Codepen](https://codepen.io/ArsenJS)
+<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
+<a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
+<a href="https://www.reddit.com/user/ArsenTech" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
+<a href="https://codepen.io/ArsenJS" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-white?style=for-the-badge&logo=codepen&logoColor=black"></a>
+<img src="https://img.shields.io/badge/-ArsenTech%238160-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 
 ## Language And Tools:
 <img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" width="48" height="48" align="left" />
