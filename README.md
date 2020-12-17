@@ -1,6 +1,6 @@
 ![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header.png)
 
-## Hello There! I am Arsen - a.k.a. ArsenTech
+## Hello There! I am Arsen - a.k.a. [ArsenTech](https://arsentech.github.io/)
 #### A Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
@@ -23,7 +23,6 @@ Short info about ArsenTech:
 
 ## Follow Me:
 * [Youtube Channel](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-* [My Website](https://arsentech.github.io/)
 * [Scratch](https://scratch.mit.edu/users/ArsenTech/)
 * [Reddit](https://www.reddit.com/user/ArsenTech)
 * [Codepen](https://codepen.io/ArsenJS)
