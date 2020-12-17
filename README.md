@@ -1,7 +1,6 @@
+![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header.png)
+
 ## Hello There! I am Arsen - a.k.a. ArsenTech
-
-<img src="https://user-images.githubusercontent.com/62609185/101236877-ff1a6100-36ed-11eb-8b33-7a573f0eee1e.jpeg" width="128" height="128" />
-
 #### A Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
