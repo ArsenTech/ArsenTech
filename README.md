@@ -4,7 +4,6 @@
 #### Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
-<a href="https://arsentech.github.io" target="_blank"><img src="https://img.shields.io/website?down_color=red&down_message=Down&label=ArsenTech&style=for-the-badge&up_color=green&up_message=Up&url=https%3A%2F%2Farsentech.github.io"  />
 
 #### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
