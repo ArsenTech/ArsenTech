@@ -16,6 +16,8 @@
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 <!-- <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" /> -->
 
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io)](https://github.com/anuraghazra/arsentech.github.io)
+
 ## Follow Me:
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
 <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-orange?style=for-the-badge&logo=scratch&logoColor=white"></a>
