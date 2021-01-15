@@ -5,6 +5,7 @@
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
 <a href="https://www.reddit.com/r/ArsenTech" target="_blank"><img alt="Subreddit" src="https://img.shields.io/badge/ArsenTech%27s%20Universe-%23FF6314?style=for-the-badge&logo=reddit&logoColor=white"></a>
+<img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=ArsenTech%27s%20Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io">
 
 #### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
