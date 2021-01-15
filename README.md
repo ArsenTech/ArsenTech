@@ -4,7 +4,7 @@
 #### Beginner Developer, Tech Youtuber, Photographer from 🇦🇲 Armenia 🇦🇲
 
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
-<a href="https://www.reddit.com/r/ArsenTech" target="_blank"><img alt="Subreddit" src="https://img.shields.io/badge/ArsenTech's_Universe-orange%20?style=for-the-badge&logo=reddit&logoColor=white"></a>
+<a href="https://www.reddit.com/r/ArsenTech" target="_blank"><img alt="Subreddit" src="https://img.shields.io/badge/ArsenTech%27s%20Universe-%23FF6314?style=for-the-badge&logo=reddit&logoColor=white"></a>
 
 #### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
