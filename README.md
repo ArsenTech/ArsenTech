@@ -17,7 +17,6 @@
 ## Stats
 <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true" />
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
-<!-- <a href="https://github.com/ArsenTech/arsentech.github.io" target="_blank"><img alt="Repository" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io" /></a> -->
 
 ## Follow Me:
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
