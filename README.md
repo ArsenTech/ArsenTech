@@ -19,7 +19,7 @@
 <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact" />
 
 ## Projects:
-- [Smart Flex](https://github.com/Smart-Flex-Framework)
+- [Smart Flex (Framework)](https://github.com/Smart-Flex-Framework)
 
 ## Follow Me:
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
