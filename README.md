@@ -37,7 +37,6 @@
 <img src="https://user-images.githubusercontent.com/62609185/97419924-1cf0eb00-1924-11eb-8249-41161b3a7f1b.png" width="45" height="45" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/d92924b1d925bb134e308bd29c9de6c302ed3beb/topics/terminal/terminal.png" width="45" height="45" align="left" />
 <img src="https://www.pngkey.com/png/full/786-7861727_scratch-desktop-4-scratch-desktop-logo.png" width="48" height="45" align="left" />
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jekyll/jekyll.png" width="45" height="45" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" width="45" height="45" align="left" />
 <img src="https://user-images.githubusercontent.com/62609185/106593963-e356fe00-656a-11eb-8f00-0b08991bed8b.png" width="45" height="45" align="left" />
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png" width="45" height="45" align="left" />
