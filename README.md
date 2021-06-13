@@ -9,7 +9,7 @@
 
 #### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
-- 🌱 I’m currently learning JavaScript 
+- 🌱 I’m currently learning React.JS
 - 💬 Ask me about Anything
 - 📫 How to reach me: Follow Me
 - 😄 Pronouns: He / Him
