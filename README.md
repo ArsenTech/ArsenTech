@@ -11,7 +11,7 @@
 - 🔭 I’m currently working on Programming, Video Editing
 - 🌱 I’m currently learning React.JS
 - 💬 Ask me about Anything
-- 📫 How to reach me: Follow Me
+- 📫 How to reach me: [Follow Me](#follow me)
 - 😄 Pronouns: He / Him
 
 ## Stats:
