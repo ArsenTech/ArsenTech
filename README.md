@@ -1,6 +1,6 @@
 ![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header.png)
 
-<h2 align="center">Hello There! I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h2>
+<h1 align="center">Hello There! I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 
 <p align="left">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
