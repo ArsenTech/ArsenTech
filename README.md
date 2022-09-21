@@ -1,7 +1,6 @@
 ![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header.png)
 
-## Hello There! I am Arsen - a.k.a. [ArsenTech](https://arsentech.github.io/)
-#### Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲
+<h2 align="center">Hello There! I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h2>
 
 <p align="left">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
@@ -9,6 +8,8 @@
 <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=ArsenTech%27s%20Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
 <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCrtH0g6NE8tW5VIEgDySYtg?color=ff0000&style=for-the-badge">
 </p>
+
+<h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
 #### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
