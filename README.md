@@ -11,7 +11,7 @@
 
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
-#### Short info about ArsenTech:
+### Short info about ArsenTech:
 - 🔭 I’m currently working on Programming, Video Editing
 - 🌱 I’m currently learning React.JS
 - 💬 Ask me about Anything
