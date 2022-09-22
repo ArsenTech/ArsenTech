@@ -1,4 +1,4 @@
-![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header.png)
+![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/github-header-image.png)
 
 <h1 align="center">Hello There! I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 
