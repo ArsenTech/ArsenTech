@@ -1,6 +1,6 @@
 ![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/github-header-image.png)
 
-<h1 align="center">Hello There! I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
+<h1 align="center">Hello There 👋, I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 
 <p align="left">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
@@ -13,13 +13,13 @@
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
 ### Short info about ArsenTech:
-- 🔭 I’m currently working on Programming, Video Editing
-- 🌱 I’m currently learning React.JS
-- 💬 Ask me about Anything
-- 📫 How to reach me: [Follow Me](#follow-me)
-- 😄 Pronouns: He / Him
-- ⚡ Fact: My Hobbies are Photographing
-- 🥅 My Goals: Become a Professional Programmer
+- 🔭 I’m currently working on **Programming, Video Editing**
+- 🌱 I’m currently learning **React.JS, Javascript**
+- 💬 Ask me about **Anything**
+- 📫 How to reach me: **[Follow Me](#follow-me)**
+- 😄 Pronouns: **He / Him**
+- ⚡ Fact: My Hobbies are **Photographing**
+- 🥅 My Goals: Become a **Professional Programmer**
 
 ### Follow Me:
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
