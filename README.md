@@ -46,13 +46,13 @@
 
 ---
 
-<details>
-  <summary><h3>Recent Github Activity</h3></summary>
-  
+### Recent Github Activity
+
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-</details>
+---
+
 
 <details>
   <summary><h3>Github Stats</h3></summary>
