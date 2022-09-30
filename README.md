@@ -57,6 +57,12 @@
 
 ---
 
+### :package: Repositories
+
+<!--GITHUB_REPOS:{"rows": 4, "raw": true}-->
+
+---
+
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
   <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue" />
