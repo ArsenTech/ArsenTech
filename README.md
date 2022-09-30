@@ -52,6 +52,11 @@
 
 ---
 
+### :trophy: Achievements
+![trophy](https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5)
+
+---
+
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
   <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue" />
