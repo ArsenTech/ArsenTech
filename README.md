@@ -59,3 +59,5 @@
   <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
   <img alt="contribution-graph" src="https://activity-graph.herokuapp.com/graph?username=arsentech&custom_title=ArsenTech's%20Contribution%20Graph&hide_border=true&bg_color=ffffff&color=22b455&line=22b455&point=204829">
 </details>
+
+![snake gif](https://github.com/ArsenTech/ArsenTech/blob/output/github-contribution-grid-snake.svg)
