@@ -7,7 +7,6 @@
 <a href="https://www.reddit.com/r/ArsenTech" target="_blank"><img alt="Subreddit subscribers" src="https://img.shields.io/reddit/subreddit-subscribers/ArsenTech?style=for-the-badge" /></a>
 <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=ArsenTech%27s%20Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCrtH0g6NE8tW5VIEgDySYtg?color=ff0000&style=for-the-badge"></a>
-<img src="https://komarev.com/ghpvc/?username=arsentech&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="arsentech" />
 </p>
 
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
@@ -70,3 +69,8 @@
 </details>
 
 ![snake gif](https://github.com/ArsenTech/ArsenTech/blob/output/github-contribution-grid-snake.svg)
+---
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/ArsenTech/count.svg" alt="ArsenTech Visitor Count" />
+</p>
