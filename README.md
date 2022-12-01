@@ -2,7 +2,7 @@
 
 <h1 align="center">Hello There 👋, I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 
-<p align="left">
+<p align="center">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=black&label=Github%20Followers&logo=Github&logoColor=white&style=for-the-badge">
 <a href="https://www.reddit.com/r/ArsenTech" target="_blank"><img alt="Subreddit subscribers" src="https://img.shields.io/reddit/subreddit-subscribers/ArsenTech?style=for-the-badge" /></a>
 <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=ArsenTech%27s%20Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
@@ -57,6 +57,12 @@
 
 ### :trophy: Achievements
 ![trophy](https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5)
+
+---
+
+### 📘 Projects From ArsenTech
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io)](https://github.com/ArsenTech/arsentech.github.io)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads)](https://github.com/ArsenTech/downloads)
 
 ---
 
