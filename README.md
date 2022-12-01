@@ -18,7 +18,7 @@
 - 📫 How to reach me: **[Follow Me](#follow-me)**
 - 😄 Pronouns: **He / Him**
 - ⚡ Fact: My Hobbies are **Photographing**
-- 🥅 My Goals: Become a **Professional Programmer**
+- 🥅 My Goals: Become a **Professional Full Stack Programmer**
 
 ### Follow Me:
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a>
