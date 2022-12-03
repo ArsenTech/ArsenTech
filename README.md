@@ -71,7 +71,6 @@
   <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue" />
   <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue" />
   <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
-  <img alt="contribution-graph" src="https://activity-graph.herokuapp.com/graph?username=arsentech&custom_title=ArsenTech's%20Contribution%20Graph&hide_border=true&bg_color=ffffff&color=22b455&line=22b455&point=204829">
 </details>
 
 ![snake gif](https://github.com/ArsenTech/ArsenTech/blob/output/github-contribution-grid-snake.svg)
