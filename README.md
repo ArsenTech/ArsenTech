@@ -37,11 +37,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [MalwareBytes VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=GJ2vxYurGnY)
 - [Panda Dome Antivirus VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=RniTNvG-bjo)
 - [AVG Free VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=sfn7YYGfDOA)
 - [Malwarebytes Trial VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=vVZE-zm1x-k)
 - [Avast VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=WQQf3tJYCHY)
-- [AVG VS Memz | Antivirus Test](https://www.youtube.com/watch?v=JlczZZ_Re1Q)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
