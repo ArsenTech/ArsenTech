@@ -62,15 +62,15 @@
 ---
 
 ### 📘 Projects From ArsenTech
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io)](https://github.com/ArsenTech/arsentech.github.io)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads)](https://github.com/ArsenTech/downloads)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true)](https://github.com/ArsenTech/arsentech.github.io)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true)](https://github.com/ArsenTech/downloads)
 
 ---
 
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
-  <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue" />
-  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue" />
+  <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
+  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
   <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
 </details>
 
