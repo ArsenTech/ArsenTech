@@ -13,7 +13,7 @@
 
 ### Short info about ArsenTech:
 - 🔭 I’m currently working on **Programming, Video Editing**
-- 🌱 I’m currently learning **React.JS, Javascript**
+- 🌱 I’m currently learning **Angular**
 - 💬 Ask me about **Anything**
 - 📫 How to reach me: **[Follow Me](#follow-me)**
 - 😄 Pronouns: **He / Him**
