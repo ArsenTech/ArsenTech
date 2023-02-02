@@ -56,7 +56,7 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1](https://github.com/ZeRoMaNiA/ZeRoGuY/issues/1) in [ZeRoMaNiA/ZeRoGuY](https://github.com/ZeRoMaNiA/ZeRoGuY)
+1. 💪 Opened PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 <!--END_SECTION:activity-->
 
 ---
