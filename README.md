@@ -17,7 +17,7 @@
 - 💬 Ask me about **Anything**
 - 📫 How to reach me: **[Follow Me](#follow-me)**
 - 😄 Pronouns: **He / Him**
-- ⚡ Fact: My Hobbies are **Photographing**
+- ⚡ Fact: My Hobbies are **Photography and YouTube**
 - 🥅 My Goals: Become a **Professional Full Stack Programmer**
 - 💻 Do You Want Coding Tutorials? **Visit [Here](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)**
 
