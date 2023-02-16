@@ -56,8 +56,6 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
-2. 💪 Opened PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 <!--END_SECTION:activity-->
 
 ---
