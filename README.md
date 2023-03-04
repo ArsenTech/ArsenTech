@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Bitdefender VS 000.exe | Antivirus Test *INSANE RESULTS*](https://www.youtube.com/watch?v=9g4CR1TcRd4)
 - [Year 10K, Year 0 and Negative Year Bug on Windows Vista](https://www.youtube.com/watch?v=LVdeAHFuFkI)
 - [MalwareBytes VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=ReaLbY3GeMY)
 - [MalwareBytes VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=GJ2vxYurGnY)
 - [Panda Dome Antivirus VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=RniTNvG-bjo)
-- [AVG Free VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=sfn7YYGfDOA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
