@@ -55,6 +55,10 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+2. 🎉 Merged PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+3. 🗣 Commented on [#1](https://github.com/ArsenTech/downloads/issues/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+4. 🗣 Commented on [#6](https://github.com/ArsenTech/arsentech.github.io/issues/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 <!--END_SECTION:activity-->
 
 ---
