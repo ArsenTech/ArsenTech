@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Kaspersky VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=TR5cdpUkeMA)
 - [Avast VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=x47qLCRsfGo)
 - [Avast VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=rKXILvLOfHk)
 - [Kaspersky VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=zLrUW0POjsc)
 - [Kaspersky VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=YaQQeDvuJPE)
-- [Bitdefender VS 000.exe | Antivirus Test *INSANE RESULTS*](https://www.youtube.com/watch?v=9g4CR1TcRd4)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
