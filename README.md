@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Bitdefender VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=667COS5YJaM)
 - [Kaspersky VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=TR5cdpUkeMA)
 - [Avast VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=x47qLCRsfGo)
 - [Avast VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=rKXILvLOfHk)
 - [Kaspersky VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=zLrUW0POjsc)
-- [Kaspersky VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=YaQQeDvuJPE)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
