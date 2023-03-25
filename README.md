@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [SmadAV VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=tIMtV646Gj8)
 - [Windows 98 with a 2GB of RAM](https://www.youtube.com/watch?v=IZDJ6CP2x1w)
 - [ESET Nod32 VS NoEscape.exe | Antivirus Test *SURPRISING RESULTS*](https://www.youtube.com/watch?v=3dwFRWGajT4)
 - [⠺⠊⠝⠙⠕⠺⠎ 7](https://www.youtube.com/watch?v=u4qskBd66VA)
 - [Protegent VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=fV8d7XPiBWA)
-- [Screen Resolution Bug On Windows XP](https://www.youtube.com/watch?v=TH65m8gq5LU)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
