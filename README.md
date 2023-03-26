@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [WiseVector StopX VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=bMclIOWENbY)
 - [Windows Without Fonts](https://www.youtube.com/watch?v=4tjKQpIOkas)
 - [Kaspersky VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=aY718PR4NIo)
 - [SmadAV VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=tIMtV646Gj8)
 - [Windows 98 with a 2GB of RAM](https://www.youtube.com/watch?v=IZDJ6CP2x1w)
-- [ESET Nod32 VS NoEscape.exe | Antivirus Test *SURPRISING RESULTS*](https://www.youtube.com/watch?v=3dwFRWGajT4)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
