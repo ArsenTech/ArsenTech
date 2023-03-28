@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Protegent VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=zwaXCZTqMuA)
 - [Windows 7 Without Program Files](https://www.youtube.com/watch?v=sPR4YR4uTQg)
 - [WiseVector StopX VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=bMclIOWENbY)
 - [Windows Without Fonts](https://www.youtube.com/watch?v=4tjKQpIOkas)
 - [Kaspersky VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=aY718PR4NIo)
-- [SmadAV VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=tIMtV646Gj8)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
