@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [1K Subscribers Special](https://www.youtube.com/watch?v=5EBJ51u7axs)
 - [ESET NOD32 VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=tCEilEoUpAc)
 - [ESET NOD32 VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=_tf3q2jRPgo)
 - [Windows 7 Without Users](https://www.youtube.com/watch?v=wF20fs6H92Y)
 - [Protegent VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=wRTOEOSnJ48)
-- [Protegent VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=zwaXCZTqMuA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
