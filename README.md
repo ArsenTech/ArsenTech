@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [ESET NOD32 VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=_tf3q2jRPgo)
 - [Windows 7 Without Users](https://www.youtube.com/watch?v=wF20fs6H92Y)
 - [Protegent VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=wRTOEOSnJ48)
 - [Protegent VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=zwaXCZTqMuA)
 - [Windows 7 Without Program Files](https://www.youtube.com/watch?v=sPR4YR4uTQg)
-- [WiseVector StopX VS MrsMajor 3.0 | Antivirus Test](https://www.youtube.com/watch?v=bMclIOWENbY)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
