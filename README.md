@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [AVG VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=oHepVRTpmIE)
+- [AVG VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=NXKlgOizKDA)
 - [Windows 10 With Smallest Amount of RAM](https://www.youtube.com/watch?v=WBDfJqp4dAI)
 - [Comodo VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=FMvSM5IZvRU)
 - [Comodo VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=beRemB0ByMI)
-- [Windows 7 Without Windows](https://www.youtube.com/watch?v=VQYDIGGJOZM)
-- [How to Activate Windows For Free [WORKING 100%]](https://www.youtube.com/watch?v=EtZMQBlCXFI)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
