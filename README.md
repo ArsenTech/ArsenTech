@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avira VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=2cxPc_jFkPU)
 - [Starting Explorer.exe after Shutting Down](https://www.youtube.com/watch?v=AQQNwyDb5YU)
 - [AVG VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=oHepVRTpmIE)
 - [AVG VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=NXKlgOizKDA)
 - [Windows 10 With Smallest Amount of RAM](https://www.youtube.com/watch?v=WBDfJqp4dAI)
-- [Comodo VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=FMvSM5IZvRU)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
