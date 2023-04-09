@@ -41,11 +41,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Kaspersky VS Sulfoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Na5fR0mX-kI)
 - [Windows Defender VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=lzqt9I7c6O0)
 - [Avira VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=2cxPc_jFkPU)
 - [Starting Explorer.exe after Shutting Down](https://www.youtube.com/watch?v=AQQNwyDb5YU)
 - [AVG VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=oHepVRTpmIE)
-- [AVG VS Petya.exe | Antivirus Test](https://www.youtube.com/watch?v=NXKlgOizKDA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
