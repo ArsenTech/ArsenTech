@@ -26,6 +26,7 @@
 <a href="https://scratch.mit.edu/users/ArsenTech/" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange"></a>
 <a href="https://codepen.io/ArsenJS" target="_blank"><img src="https://img.shields.io/badge/-ArsenJS-222222?style=for-the-badge&logo=codepen&logoColor=white"></a>
 <a href="https://www.deviantart.com/arsen2005" target="_blank"><img src="https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46"></a>
+<a href="https://odysee.com/@ArsenTech" target="_blank"><img src="https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626"></a>
 
 ### My Other YouTube Channels:
 <a href="https://www.youtube.com/channel/UCvLf-YuBTmfSrB47_YARHsA" target="_blank"><img src="https://img.shields.io/badge/ArsenTech%20Shorts-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000"/></a>
@@ -86,6 +87,4 @@
 ![snake gif](https://github.com/ArsenTech/ArsenTech/blob/output/github-contribution-grid-snake.svg)
 ---
 
-<p align="center">
-  <img src="https://profile-counter.glitch.me/ArsenTech/count.svg" alt="ArsenTech Visitor Count" />
-</p>
+<p align="center"><img src="https://profile-counter.glitch.me/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
