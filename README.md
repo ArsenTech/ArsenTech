@@ -42,11 +42,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Testing and Rating Some Viewer Made Malware | Malware Test](https://www.youtube.com/watch?v=aJYgNclgqA4)
 - [F-Secure VS Annabelle.exe | Antivirus Test](https://www.youtube.com/watch?v=icr6LEP-CIQ)
 - [Tencent PC Manager VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=sqbsy6lIG0U)
 - [Kaspersky VS Sulfoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Na5fR0mX-kI)
 - [Windows Defender VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=lzqt9I7c6O0)
-- [Avira VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=2cxPc_jFkPU)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
