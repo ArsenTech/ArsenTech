@@ -84,7 +84,12 @@
   <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
 </details>
 
-![snake gif](https://github.com/ArsenTech/ArsenTech/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/ArsenTech/ArsenTech/output/github-contribution-grid-snake.svg" />
+</picture>
+
 ---
 
 <p align="center"><img src="https://profile-counter.glitch.me/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
