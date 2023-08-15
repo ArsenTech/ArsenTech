@@ -67,21 +67,49 @@
 ---
 
 ### :trophy: Achievements
-![trophy](https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5&theme=darkhub" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5" />
+  <img alt="github-snake" src="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5" />
+</picture>
 
 ---
 
 ### 📘 Projects From ArsenTech
-[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true)](https://github.com/ArsenTech/arsentech.github.io)
-[![ReadMe Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true)](https://github.com/ArsenTech/downloads)
+
+<p align="left">
+  <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true" />
+  <img alt="github-snake" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true" />
+</picture></a>
+<a href="https://github.com/ArsenTech/downloads"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
+  <img alt="github-snake" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
+</picture></a>
+</p>
 
 ---
 
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
-  <img alt="ArsenTech's Github Stats" src="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
-  <img alt="Top Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
-  <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue-dark&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
+    <img alt="ArsenTech's Github Stats" src="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+    <img alt="Top Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue-dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" />
+    <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
+  </picture>
 </details>
 
 <picture>
