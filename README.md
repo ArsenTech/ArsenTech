@@ -42,11 +42,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Testing and Rating Viewer Made Malware &lpar;pt. 2&rpar; | Malware Test](https://www.youtube.com/watch?v=uSxTTfLBGU8)
 - [000.exe VS NoEscape | The Malware Battle](https://www.youtube.com/watch?v=FY5F07gdBYI)
 - [WannaCry VS MEMZ | The Malware Battle](https://www.youtube.com/watch?v=g7K9CEQGnLk)
 - [Avast One VS Navashield | Antivirus Test](https://www.youtube.com/watch?v=RHalm47mHMM)
 - [Testing and Rating Some Viewer Made Malware | Malware Test](https://www.youtube.com/watch?v=aJYgNclgqA4)
-- [F-Secure VS Annabelle.exe | Antivirus Test](https://www.youtube.com/watch?v=icr6LEP-CIQ)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
