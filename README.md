@@ -42,11 +42,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [000.exe VS WannaCry | The Malware Battle](https://www.youtube.com/watch?v=JA_iZn3ie_k)
 - [NoEscape.exe VS MEMZ | The Malware Battle](https://www.youtube.com/watch?v=io9WVEm7YEI)
 - [Testing and Rating Viewer Made Malware &lpar;pt. 2&rpar; | Malware Test](https://www.youtube.com/watch?v=uSxTTfLBGU8)
 - [000.exe VS NoEscape | The Malware Battle](https://www.youtube.com/watch?v=FY5F07gdBYI)
 - [WannaCry VS MEMZ | The Malware Battle](https://www.youtube.com/watch?v=g7K9CEQGnLk)
-- [Avast One VS Navashield | Antivirus Test](https://www.youtube.com/watch?v=RHalm47mHMM)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
