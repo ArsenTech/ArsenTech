@@ -13,7 +13,6 @@
 
 ### Short info about ArsenTech:
 - 🔭 I’m currently working on **Programming, Video Editing**
-- 🌱 I’m currently learning **Angular**
 - 💬 Ask me about **Anything**
 - 📫 How to reach me: **[Follow Me](#follow-me)**
 - 😄 Pronouns: **He / Him**
@@ -35,7 +34,7 @@
 
 ### Language And Tools (Computer Skills):
 <p align="left"> <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/62609185/97418448-43ae2200-1922-11eb-8906-bb03fdf14932.png" alt="vscode" width="40" height="40"/></a><a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://github.com/ArsenTech" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="40" height="40"/></a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a><a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a></p>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a><a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="https://camo.githubusercontent.com/f21f1fa29dfe5e1d0772b0efe2f43eca2f6dc14f2fede8d9cbef4a3a8210c91d/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313636323133303535392f6e6578746a732f49636f6e5f6c696768745f6261636b67726f756e642e706e67" alt="next" width="40" height="40"/></a></p>
 
 ---
 
@@ -82,12 +81,17 @@
   <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true&theme=dark" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true" />
-  <img alt="github-snake" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true" />
+  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true" />
 </picture></a>
 <a href="https://github.com/ArsenTech/downloads"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true&theme=dark" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
-  <img alt="github-snake" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
+  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
+</picture></a>
+<a href="https://github.com/ArsenTech/source-codes"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true" />
+  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true" />
 </picture></a>
 </p>
 
