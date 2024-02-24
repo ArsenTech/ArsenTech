@@ -48,6 +48,7 @@
 [![Angular](https://img.shields.io/badge/Angular-222222?style=for-the-badge&logo=angular&logoColor=DD0031)](https://angular.io/)
 [![Next JS](https://img.shields.io/badge/next%20js-222222?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-222222?style=for-the-badge&logo=mongodb&logoColor=4EA94B)](https://www.mongodb.com/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
 ---
 
 ### :tv: Latest YouTube Videos
