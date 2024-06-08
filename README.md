@@ -54,7 +54,7 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [NoEscape.exe VS 000.exe VS MEMZ VS WannaCry | The Ultimate Malware Battle](https://www.youtube.com/watch?v=nh3YpmVVopk)
+- [NoEscape VS 000.exe VS MEMZ VS WannaCry | The Ultimate Malware Battle](https://www.youtube.com/watch?v=nh3YpmVVopk)
 - [Wannacry VS NoEscape.exe | The Malware Battle](https://www.youtube.com/watch?v=Kb2YNLF4CM4)
 - [Testing MBRFilter Against MEMZ Trojan Malware | Malware Test](https://www.youtube.com/watch?v=PICe9S5_Smc)
 - [Windows XP With Different Amounts of RAM | Windows Test](https://www.youtube.com/watch?v=tgl9MpHh6DM)
