@@ -54,11 +54,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Wannacry VS NoEscape.exe | The Malware Battle](https://www.youtube.com/watch?v=Kb2YNLF4CM4)
 - [Testing MBRFilter Against MEMZ Trojan Malware | Malware Test](https://www.youtube.com/watch?v=PICe9S5_Smc)
 - [Windows XP With Different Amounts of RAM | Windows Test](https://www.youtube.com/watch?v=tgl9MpHh6DM)
 - [Removing Every Single Font on Windows XP | Windows Test](https://www.youtube.com/watch?v=lIdVuiNsN_c)
 - [How To Remove Petya Ransomware | Malware Removal Tutorial](https://www.youtube.com/watch?v=Z42H6yv0IQE)
-- [Welcome to ArsenTech](https://www.youtube.com/watch?v=5i98LZNU1YE)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
