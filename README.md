@@ -54,11 +54,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [WiseVector StopX VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=Hhe2jyC1NHM)
 - [WiseVector StopX VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=N7cfGhj5u5w)
 - [WiseVector StopX VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=wa_OX4IbZUA)
 - [NoEscape VS 000.exe VS MEMZ VS WannaCry | The Ultimate Malware Battle](https://www.youtube.com/watch?v=nh3YpmVVopk)
 - [Wannacry VS NoEscape.exe | The Malware Battle](https://www.youtube.com/watch?v=Kb2YNLF4CM4)
-- [Testing MBRFilter Against MEMZ Trojan Malware | Malware Test](https://www.youtube.com/watch?v=PICe9S5_Smc)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
