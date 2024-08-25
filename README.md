@@ -54,11 +54,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Sophos Home Premium VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=G1rJ68TyoVA)
 - [Quick Heal Antivirus VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=wmheGrbeXCA)
 - [WiseVector StopX VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=Hhe2jyC1NHM)
 - [WiseVector StopX VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=N7cfGhj5u5w)
 - [WiseVector StopX VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=wa_OX4IbZUA)
-- [NoEscape VS 000.exe VS MEMZ VS WannaCry | The Ultimate Malware Battle](https://www.youtube.com/watch?v=nh3YpmVVopk)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
