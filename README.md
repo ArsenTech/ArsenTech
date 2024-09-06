@@ -33,7 +33,6 @@
 [![YouTube Coding Channel](https://img.shields.io/badge/Coding%20With%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)
 
 ### Language And Tools (Computer Skills):
-[![VSCode](https://img.shields.io/badge/VSCode-222222?style=for-the-badge&logo=visual%20studio%20code&logoColor=0078D4)](https://code.visualstudio.com/)
 [![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
 [![Firebase](https://img.shields.io/badge/firebase-222222?style=for-the-badge&logo=firebase&logoColor=ffca28)](https://firebase.google.com/)
 [![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://pages.github.com/)
