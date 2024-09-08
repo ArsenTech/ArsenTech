@@ -53,11 +53,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avast VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Ac3xqV7HGqg)
 - [Avast One VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=8hkFPMbZ_d8)
 - [WiseVector StopX VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=xGuD55C7aTo)
 - [WiseVector StopX VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=jQIprkNDp8E)
 - [Sophos Home Premium VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=G1rJ68TyoVA)
-- [Quick Heal VS NoEscape.exe | Antivirus Test *Surprising Results*](https://www.youtube.com/watch?v=wmheGrbeXCA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
