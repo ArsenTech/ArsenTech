@@ -53,11 +53,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Test-Stream &lpar;Deleting Soon&rpar;](https://www.youtube.com/watch?v=M4UlieTfINY)
+- [Destroying Windows 11 With Malwares and Other Stuff | ArsenTech Live](https://www.youtube.com/watch?v=pI0wr1ClWLQ)
 - [Avast VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Ac3xqV7HGqg)
 - [Avast One VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=8hkFPMbZ_d8)
 - [WiseVector StopX VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=xGuD55C7aTo)
-- [WiseVector StopX VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=jQIprkNDp8E)
-- [Sophos Home Premium VS MEMZ | Antivirus Test](https://www.youtube.com/watch?v=G1rJ68TyoVA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
