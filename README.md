@@ -35,7 +35,7 @@
 ### Language And Tools (Computer Skills):
 [![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
 [![Firebase](https://img.shields.io/badge/firebase-222222?style=for-the-badge&logo=firebase&logoColor=ffca28)](https://firebase.google.com/)
-[![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://pages.github.com/)
+[![Github Pages](https://img.shields.io/badge/github%20pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-222222?style=for-the-badge&logo=bootstrap&logoColor=8713F4)](https://getbootstrap.com/)
 [![HTML](https://img.shields.io/badge/HTML5-222222?style=for-the-badge&logo=html5&logoColor=E34F26)](https://www.w3.org/html/)
 [![CSS](https://img.shields.io/badge/CSS3-222222?style=for-the-badge&logo=css3&logoColor=1572B6)](https://www.w3schools.com/css/)
@@ -48,6 +48,8 @@
 [![Next JS](https://img.shields.io/badge/next%20js-222222?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-222222?style=for-the-badge&logo=mongodb&logoColor=4EA94B)](https://www.mongodb.com/)
 [![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
+[![C#](https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://www.w3schools.com/cs/)
+[![MySQL](https://img.shields.io/badge/mysql-222222.svg?style=for-the-badge&logo=mysql&logoColor=4479A1)](https://www.mysql.com/)
 ---
 
 ### :tv: Latest YouTube Videos
