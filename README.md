@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Windows Defender VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ZdHOZr44BuI)
 - [Avast VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=a3cLoFD9HCk)
 - [Avast VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=rvNaRgW3wmQ)
 - [Destroying Windows 11 With Malwares And Other Stuff | Live Stream](https://www.youtube.com/watch?v=_jpVfIov57U)
 - [Destroying Windows 11 With Malwares And Other Stuff | Live Stream](https://www.youtube.com/watch?v=YNKAfKU7Zy8)
-- [Avast VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Ac3xqV7HGqg)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
