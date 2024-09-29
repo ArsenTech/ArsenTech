@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avira VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=cBl3xXvLGA8)
 - [Windows Defender VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=em8kZWjQ6lY)
 - [Windows Defender VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=MXSDPDmyJAw)
 - [Windows Defender VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ZdHOZr44BuI)
 - [Avast VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=a3cLoFD9HCk)
-- [Avast VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=rvNaRgW3wmQ)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
