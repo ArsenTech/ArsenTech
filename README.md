@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Protegent VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=nZcU2Rb2SR0)
 - [Avira VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=32JbLKrmwrM)
 - [Avira VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ZIPrFr9NuPw)
 - [Avira VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=cBl3xXvLGA8)
 - [Windows Defender VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=em8kZWjQ6lY)
-- [Windows Defender VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=MXSDPDmyJAw)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
