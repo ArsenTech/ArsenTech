@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Protegent VS Navashield | Antivirus Test](https://www.youtube.com/watch?v=hkVE_wDBU-g)
 - [Testing And Rating Viewer Made Malware Live](https://www.youtube.com/watch?v=YNKAfKU7Zy8)
 - [Protegent VS VineMEMZ | Antivirus Test](https://www.youtube.com/watch?v=YUZvPDHhs9E)
 - [Protegent VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=nZcU2Rb2SR0)
 - [Avira VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=32JbLKrmwrM)
-- [Avira VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ZIPrFr9NuPw)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
