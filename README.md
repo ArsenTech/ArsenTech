@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [AVG VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ESaVZO3ImQY)
 - [AVG VS Ico.exe | Antivirus Test](https://www.youtube.com/watch?v=OMsdQqlD-lI)
 - [Protegent VS Navashield | Antivirus Test](https://www.youtube.com/watch?v=hkVE_wDBU-g)
 - [Testing And Rating Viewer Made Malware Live](https://www.youtube.com/watch?v=YNKAfKU7Zy8)
 - [Protegent VS VineMEMZ | Antivirus Test](https://www.youtube.com/watch?v=YUZvPDHhs9E)
-- [Protegent VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=nZcU2Rb2SR0)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
