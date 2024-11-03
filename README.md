@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Panda Dome VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=-fpIv1EuuAo)
 - [Panda Dome VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=BlrqTDOGw2o)
 - [Panda Dome VS MrsMajor | Antivirus Test](https://www.youtube.com/watch?v=O5zybzPzsw8)
 - [AVG VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=vYLzqF02TrI)
 - [AVG VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=D60FgqfRIVM)
-- [AVG VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=ESaVZO3ImQY)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
