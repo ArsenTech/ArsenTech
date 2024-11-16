@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Zillya Antivirus VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=1Ni9FZ5Nq4I)
 - [Zillya Antivirus VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=MgePde6Q9BU)
 - [Zillya Antivirus VS MEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=Ff7yrhwccR0)
 - [Panda Dome Antivirus VS VineMEMZ | Antivirus Test](https://www.youtube.com/watch?v=FSarFlZQ36E)
 - [Panda Dome Antivirus VS WannaCry | Antivirus Test](https://www.youtube.com/watch?v=c6M0IXVueF4)
-- [Panda Dome VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=-fpIv1EuuAo)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
