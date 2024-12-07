@@ -55,11 +55,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [SmadAV Free VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=2qFgcrf_pJU)
 - [SmadAV Free VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=2FujA-7QCoo)
 - [F-Secure Antivirus VS 000.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=PmLq7PQLe9E)
 - [F-Secure Antivirus VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=fhK_ReW5EV0)
 - [F-Secure VS MEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=aIHMlGdJyds)
-- [F-Secure VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=nGf1ny7ome0)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
