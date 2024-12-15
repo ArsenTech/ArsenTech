@@ -56,11 +56,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [Destroying Windows 11 With Malwares And Other Stuff | Live Stream](https://www.youtube.com/watch?v=_jpVfIov57U)
-- [Destroying Windows 11 With Malwares And Other Stuff | Live Stream](https://www.youtube.com/watch?v=YNKAfKU7Zy8)
-- [Avast VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=Ac3xqV7HGqg)
-- [Avast One VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=8hkFPMbZ_d8)
-- [WiseVector StopX VS VineMemz | Antivirus Test](https://www.youtube.com/watch?v=xGuD55C7aTo)
+- [Voice Reveal And Patreon Announcement](https://www.youtube.com/watch?v=F4cn5z4-pWM)
+- [SmadAV Free VS 000.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=NQOsbClNgBU)
+- [SmadAV Free VS VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=TqfQV8gJtQw)
+- [SmadAV Free VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=2qFgcrf_pJU)
+- [SmadAV Free VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=2FujA-7QCoo)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
@@ -70,7 +70,7 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#2](https://github.com/ArsenTech/downloads/pull/2) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+1. ❗ Opened issue [#253](https://github.com/lukePeavey/quotable/issues/253) in [lukePeavey/quotable](https://github.com/lukePeavey/quotable)
 2. 🗣 Commented on [#2](https://github.com/ArsenTech/downloads/issues/2) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 3. 🎉 Merged PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 4. 🎉 Merged PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
