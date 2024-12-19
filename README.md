@@ -51,6 +51,7 @@
 [![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
 [![C#](https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://www.w3schools.com/cs/)
 [![MySQL](https://img.shields.io/badge/mysql-222222.svg?style=for-the-badge&logo=mysql&logoColor=4479A1)](https://www.mysql.com/)
+[![PHP](https://img.shields.io/badge/php-222222.svg?style=for-the-badge&logo=php&logoColor=b0b3d6)](https://www.php.net/)
 ---
 
 ### :tv: Latest YouTube Videos
