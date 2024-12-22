@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [How to Restore Samsung Galaxy Tab 2 to Stock Android After Failed Lineage OS Upgrade](https://www.youtube.com/watch?v=I_yPxZxTTA8)
 - [How To Remove NoEscape.exe Malware | Malware Removal Tutorial](https://www.youtube.com/watch?v=Y1iH7j_AFQY)
 - [Voice Reveal And Patreon Announcement](https://www.youtube.com/watch?v=F4cn5z4-pWM)
 - [SmadAV Free VS 000.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=NQOsbClNgBU)
 - [SmadAV Free VS VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=TqfQV8gJtQw)
-- [SmadAV Free VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=2qFgcrf_pJU)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
