@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Negative Year Bug Experiment On Windows XP | Windows Test &lpar;New Year Special&rpar;](https://www.youtube.com/watch?v=aiK8Tq-H_DI)
 - [Year 10K, Year 0, and Negative Year Bugs On Windows 7 | Windows Test &lpar;Christmas Special&rpar;](https://www.youtube.com/watch?v=zskcw_RlVKw)
 - [How to Restore Samsung Galaxy Tab 2 to Stock Android After Failed Lineage OS Upgrade](https://www.youtube.com/watch?v=I_yPxZxTTA8)
 - [How To Remove NoEscape.exe Malware | Malware Removal Tutorial](https://www.youtube.com/watch?v=Y1iH7j_AFQY)
 - [Voice Reveal And Patreon Announcement](https://www.youtube.com/watch?v=F4cn5z4-pWM)
-- [SmadAV Free VS 000.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=NQOsbClNgBU)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
