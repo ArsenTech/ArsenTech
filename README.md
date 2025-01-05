@@ -57,7 +57,7 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [ESET Security VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=WNQJmej8fJA)
+- [ESET Security VS Monoxide.exe | Antivirus Test *INSANE RESULTS*](https://www.youtube.com/watch?v=WNQJmej8fJA)
 - [WannaCry VS Petya | The Ransomware Battle](https://www.youtube.com/watch?v=6OHapMfGG4I)
 - [Avast Antivirus VS Sulfoxide.exe | Antivirus Test *Insane Results*](https://www.youtube.com/watch?v=BTvvxFI7jes)
 - [MEMZ VS VineMEMZ | The Trojan Malware Battle *Insane Payloads*](https://www.youtube.com/watch?v=sD-Nt69y1tI)
