@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [WannaCry VS Petya | The Ransomware Battle](https://www.youtube.com/watch?v=6OHapMfGG4I)
 - [Avast Antivirus VS Sulfoxide.exe | Antivirus Test *Insane Results*](https://www.youtube.com/watch?v=BTvvxFI7jes)
 - [MEMZ VS VineMEMZ | The Trojan Malware Battle *Insane Payloads*](https://www.youtube.com/watch?v=sD-Nt69y1tI)
 - [Negative Year Bug Experiment On Windows XP | Windows Test &lpar;New Year Special&rpar;](https://www.youtube.com/watch?v=aiK8Tq-H_DI)
 - [Year 10K, Year 0, and Negative Year Bugs On Windows 7 | Windows Test &lpar;Christmas Special&rpar;](https://www.youtube.com/watch?v=zskcw_RlVKw)
-- [How to Restore Samsung Galaxy Tab 2 to Stock Android After Failed Lineage OS Upgrade](https://www.youtube.com/watch?v=I_yPxZxTTA8)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
