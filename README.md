@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [AVG Antivirus VS Salinewin.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=RqVP0RoyJHs)
 - [Sophos Home VS NoEscape.exe | Antivirus Test](https://www.youtube.com/watch?v=QqWBvy5ZcPU)
 - [Windows Defender VS Sulfoxide.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=4htB7BBHRLA)
 - [Windows Defender VS Navashield | Antivirus Test](https://www.youtube.com/watch?v=jI2GxraVlPU)
 - [AVG Antivirus VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=fwSQP01olbI)
-- [Monoxide.exe VS Sulfoxide.exe | The Malware Battle *Insane Payloads*](https://www.youtube.com/watch?v=VwVrlPUuOyg)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
