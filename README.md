@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avast Free Antivirus VS Bonzi Buddy | Antivirus Test](https://www.youtube.com/watch?v=tmjHOj8xreg)
 - [000.exe VS Immortal.bat | The Malware Battle](https://www.youtube.com/watch?v=fIPmW1O9IQg)
 - [MBRFilter VS Petya Ransomware | Malware Test](https://www.youtube.com/watch?v=9AXdY_s8eXI)
 - [WannaCry Ransomware VS Sulfoxide.exe | The Malware Battle](https://www.youtube.com/watch?v=VPJJRolXk1c)
 - [Malwarebytes VS Monoxide.exe | Antivirus Test](https://www.youtube.com/watch?v=pShmjbuuxRk)
-- [Salinewin.exe VS Sulfoxide.exe | The Malware Battle *Insane Payload*](https://www.youtube.com/watch?v=-enrlwoPSuc)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
