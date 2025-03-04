@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [What Happens If You Launch MEMZ 40 Times? | Insane Malware Test](https://www.youtube.com/watch?v=9mXpqKmEFpA)
 - [Malwarebytes VS Windows XP Horror Edition | Antivirus Test](https://www.youtube.com/watch?v=X5ofF5aaY2c)
 - [Shredding Windows XP | Windows Experiment](https://www.youtube.com/watch?v=Ju4DfeeQjEA)
 - [Avast Free Antivirus VS Bonzi Buddy | Antivirus Test](https://www.youtube.com/watch?v=tmjHOj8xreg)
 - [000.exe VS Immortal.bat | The Malware Battle](https://www.youtube.com/watch?v=fIPmW1O9IQg)
-- [MBRFilter VS Petya Ransomware | Malware Test](https://www.youtube.com/watch?v=9AXdY_s8eXI)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
