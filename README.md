@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Dr. Web Antivirus VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=WqkD63NOA40)
 - [Dr. Web Antivirus VS MEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=J5-v9rAgQcc)
 - [AVG Antivirus VS Navashield | Antivirus Test *Satisfying Results*](https://www.youtube.com/watch?v=KTHxfAi3Wq0)
 - [Navashield VS MEMZ Trojan Malware | The Malware Battle](https://www.youtube.com/watch?v=eixARObbjE4)
 - [Bitdefender VS NoEscape.exe Malware | Antivirus Test *Surprising Results*](https://www.youtube.com/watch?v=8ZtbJTVKAdI)
-- [What Happens If You Launch MEMZ 40 Times? | Insane Malware Test](https://www.youtube.com/watch?v=9mXpqKmEFpA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
