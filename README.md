@@ -71,7 +71,7 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#253](https://github.com/lukePeavey/quotable/issues/253) in [lukePeavey/quotable](https://github.com/lukePeavey/quotable)
+1. 🚀 Published release [Windows Files (Legacy Versions)](https://github.com/ArsenTech/downloads-files/releases/tag/windows) in [ArsenTech/downloads-files](https://github.com/ArsenTech/downloads-files)
 2. 🗣 Commented on [#2](https://github.com/ArsenTech/downloads/issues/2) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 3. 🎉 Merged PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 4. 🎉 Merged PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
