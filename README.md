@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [MEMZ Trojan VS 000.exe Malware | The Malware Battle](https://www.youtube.com/watch?v=MVSgCLSjNtU)
 - [Malwarebytes Free Trial VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=4aGfRwCYEy0)
 - [Dr. Web Antivirus VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=XCFE62sPMfo)
 - [Dr. Web Antivirus VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=WqkD63NOA40)
 - [Dr. Web Antivirus VS MEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=J5-v9rAgQcc)
-- [AVG Antivirus VS Navashield | Antivirus Test *Satisfying Results*](https://www.youtube.com/watch?v=KTHxfAi3Wq0)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
