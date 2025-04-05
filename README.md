@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [MBRFilter vs NoEscape: Testing the September 18 payload on Windows 10](https://www.youtube.com/watch?v=KsRbW3cQ3XQ)
 - [MEMZ Trojan VS 000.exe Malware | The Malware Battle](https://www.youtube.com/watch?v=MVSgCLSjNtU)
 - [Malwarebytes Free Trial VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=4aGfRwCYEy0)
 - [Dr. Web Antivirus VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=XCFE62sPMfo)
 - [Dr. Web Antivirus VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=WqkD63NOA40)
-- [Dr. Web Antivirus VS MEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=J5-v9rAgQcc)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
