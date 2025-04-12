@@ -57,11 +57,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [360 Total Antivirus VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=R00Yk0kSiqY)
 - [MBRFilter VS Tif.exe Malware | Malware Test](https://www.youtube.com/watch?v=B3dRx0fZ3Yc)
 - [AVG Antivirus VS Tin.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=FF7wjfOpBK0)
 - [MBRFilter vs NoEscape: Testing the September 18 payload on Windows 10](https://www.youtube.com/watch?v=KsRbW3cQ3XQ)
 - [MEMZ Trojan VS 000.exe Malware | The Malware Battle](https://www.youtube.com/watch?v=MVSgCLSjNtU)
-- [Malwarebytes Free Trial VS 000.exe | Antivirus Test](https://www.youtube.com/watch?v=4aGfRwCYEy0)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
