@@ -1,20 +1,19 @@
-![Header](https://github.com/ArsenTech/ArsenTech/blob/main/assets/header-img.png)
-
+<p align="center">
+<img src="assets/header-img.png" alt="Header">
+</p>
 <h1 align="center">Hello There 👋, I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
-
 <p align="center">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=blue&label=Followers&logo=Github&logoColor=white&style=for-the-badge">
 <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
 <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCrtH0g6NE8tW5VIEgDySYtg?color=ff0000&style=for-the-badge&logo=youtube"></a>
 <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenTech?color=yellow&logo=github&style=for-the-badge">
 </p>
-
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
 ### Short info about ArsenTech:
 - 🔭 I’m currently working on **Programming, Video Editing**
 - 💬 Ask me about **Anything**
-- 📫 How to reach me: **[Follow Me](#follow-me)**
+- 📫 How to reach me: **[Follow Me](#follow-me)** or **[Contact Me](https://arsentech.github.io/#contact)**
 - 😄 Pronouns: **He / Him**
 - ⚡ Fact: My Hobbies are **Photography and YouTube**
 - 🥅 My Goals: Become a **Professional Full Stack Programmer**
@@ -35,7 +34,6 @@
 
 ### Language And Tools (Computer Skills):
 [![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
-[![Firebase](https://img.shields.io/badge/firebase-222222?style=for-the-badge&logo=firebase&logoColor=ffca28)](https://firebase.google.com/)
 [![Github Pages](https://img.shields.io/badge/github%20pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-222222?style=for-the-badge&logo=bootstrap&logoColor=8713F4)](https://getbootstrap.com/)
 [![HTML](https://img.shields.io/badge/HTML5-222222?style=for-the-badge&logo=html5&logoColor=E34F26)](https://www.w3.org/html/)
@@ -91,7 +89,7 @@
 
 ---
 
-### 📘 Projects From ArsenTech
+### 📘 My Projects
 
 <p align="left">
   <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
@@ -104,10 +102,15 @@
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
   <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true" />
 </picture></a>
-<a href="https://github.com/ArsenTech/source-codes"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true" />
-  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=source-codes&count_private=true" />
+<a href="https://github.com/ArsenTech/blog"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true" />
+  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true" />
+</picture></a>
+<a href="https://github.com/ArsenTech/idea-checklist"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true" />
+  <img alt="github-repo" src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true" />
 </picture></a>
 </p>
 
