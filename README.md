@@ -89,7 +89,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5&theme=darkhub" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5" />
-  <img alt="github-snake" src="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5" />
+  <img alt="github-trophy" src="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5" />
 </picture>
 
 ---
