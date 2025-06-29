@@ -74,8 +74,8 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Windows 11 to Windows 7 Transformation Pack](https://github.com/ArsenTech/downloads-files/releases/tag/transformation-packs) in [ArsenTech/downloads-files](https://github.com/ArsenTech/downloads-files)
-2. 🚀 Published release [Windows Files (Legacy Versions)](https://github.com/ArsenTech/downloads-files/releases/tag/windows) in [ArsenTech/downloads-files](https://github.com/ArsenTech/downloads-files)
+1. 🗣 Commented on [#316](https://github.com/ryo-ma/github-profile-trophy/issues/316#issuecomment-3008556153) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
+2. 🚀 Published release [Windows 11 to Windows 7 Transformation Pack](https://github.com/ArsenTech/downloads-files/releases/tag/transformation-packs) in [ArsenTech/downloads-files](https://github.com/ArsenTech/downloads-files)
 3. 🎉 Merged PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 4. 🎉 Merged PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 5. 🗣 Commented on [#1](https://github.com/ArsenTech/downloads/issues/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
