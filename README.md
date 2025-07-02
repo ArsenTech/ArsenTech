@@ -32,7 +32,7 @@
 [![YouTube Backup Channel](https://img.shields.io/badge/More%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UChjvr_TFywsE23UPlwd-wFQ)
 [![YouTube Coding Channel](https://img.shields.io/badge/Coding%20With%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)
 
-### Language And Tools (Computer Skills):
+### Language And Tools (Main Computer Skills):
 [![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
 [![Github Pages](https://img.shields.io/badge/github%20pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![ShadCN UI](https://img.shields.io/badge/shadcn%2Fui-222222?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
@@ -49,7 +49,7 @@
 [![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
 [![Tauri](https://img.shields.io/badge/Tauri-222222?style=for-the-badge&logo=Tauri&logoColor=FFC131)](https://v2.tauri.app/)
 
-### Additional Skills:
+### Secondary Skills:
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-222222?style=for-the-badge&logo=bootstrap&logoColor=8713F4)](https://getbootstrap.com/)
 [![Angular](https://img.shields.io/badge/Angular-222222?style=for-the-badge&logo=angular&logoColor=DD0031)](https://angular.io/)
 [![C#](https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://www.w3schools.com/cs/)
