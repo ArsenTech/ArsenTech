@@ -10,7 +10,7 @@
 </p>
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
-### Short info about ArsenTech:
+### Short info about ArsenTech
 - 🔭 I’m currently working on **Programming, Video Editing**
 - 💬 Ask me about **Anything**
 - 📫 How to reach me: **[Follow Me](#follow-me)** or **[Contact Me](https://arsentech.github.io/#contact)**
@@ -19,7 +19,7 @@
 - 🥅 My Goals: Become a **Professional Full Stack Programmer**
 - 💻 Do You Want Coding Tutorials? **Visit [Here](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)**
 
-### Follow Me:
+### Follow Me
 [![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 [![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
 [![Codepen](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenTech)
@@ -27,12 +27,12 @@
 [![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
 [![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
 
-### My Other YouTube Channels:
+### My Other YouTube Channels
 [![YouTube Shorts Channel](https://img.shields.io/badge/ArsenTech%20Shorts-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCvLf-YuBTmfSrB47_YARHsA)
 [![YouTube Backup Channel](https://img.shields.io/badge/More%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UChjvr_TFywsE23UPlwd-wFQ)
 [![YouTube Coding Channel](https://img.shields.io/badge/Coding%20With%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)
 
-### Language And Tools:
+### Language And Tools
 #### Main Skills
 [![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
 [![Github Pages](https://img.shields.io/badge/github%20pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
@@ -50,7 +50,7 @@
 [![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
 [![Tauri](https://img.shields.io/badge/Tauri-222222?style=for-the-badge&logo=Tauri&logoColor=FFC131)](https://v2.tauri.app/)
 
-#### Secondary Skills:
+#### Secondary Skills
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-222222?style=for-the-badge&logo=bootstrap&logoColor=8713F4)](https://getbootstrap.com/)
 [![Angular](https://img.shields.io/badge/Angular-222222?style=for-the-badge&logo=angular&logoColor=DD0031)](https://angular.io/)
 [![C#](https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://www.w3schools.com/cs/)
