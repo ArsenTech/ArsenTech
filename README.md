@@ -22,7 +22,7 @@
 ### Follow Me:
 [![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
 [![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
-[![Codepen](https://img.shields.io/badge/-ArsenJS-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenJS)
+[![Codepen](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenTech)
 [![DeviantArt](https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46")](https://www.deviantart.com/arsen2005)
 [![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
 [![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
