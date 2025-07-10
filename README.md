@@ -149,4 +149,4 @@
 
 ---
 
-<p align="center"><img src="https://profile-counter.glitch.me/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
+<p align="center"><img src="https://profile-counter.deno.dev/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
