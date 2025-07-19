@@ -61,11 +61,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Tin.exe VS Tif.exe | The Malware Battle](https://www.youtube.com/watch?v=9Wp1SsEj41c)
 - [I Tried to Make Windows 11 Look Like Windows 7 | The Ultimate Manual Transformation](https://www.youtube.com/watch?v=0lF0tw-zbOY)
 - [2K Subs Special Live Stream | Playing Games and other stuff](https://www.youtube.com/watch?v=0HZPe2uHqqM)
 - [Avast Antivirus VS Ico.exe Malware | Insane Antivirus Test](https://www.youtube.com/watch?v=p3S8NN-tQnM)
 - [Tin.exe VS Salinewin.exe | The Insane GDI Malware Battle](https://www.youtube.com/watch?v=8Rvqb__TSs8)
-- [360 Total Antivirus VS WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=R00Yk0kSiqY)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
