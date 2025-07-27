@@ -61,11 +61,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avira Antivirus VS The VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=gdDC0qqMuzE)
 - [How to Make Your Windows 10 Terminal Look Amazing](https://www.youtube.com/watch?v=xqn9rUakaGw)
 - [How To Make Your Linux Terminal Look Cool](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
 - [Tin.exe VS Tif.exe | The Malware Battle](https://www.youtube.com/watch?v=9Wp1SsEj41c)
 - [I Tried to Make Windows 11 Look Like Windows 7 | The Ultimate Manual Transformation](https://www.youtube.com/watch?v=0lF0tw-zbOY)
-- [2K Subs Special Live Stream | Playing Games and other stuff](https://www.youtube.com/watch?v=0HZPe2uHqqM)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
