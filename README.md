@@ -75,10 +75,10 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#316](https://github.com/ryo-ma/github-profile-trophy/issues/316#issuecomment-3008556153) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
-2. 🚀 Published release [Windows 11 to Windows 7 Transformation Pack](https://github.com/ArsenTech/downloads-files/releases/tag/transformation-packs) in [ArsenTech/downloads-files](https://github.com/ArsenTech/downloads-files)
-3. 🎉 Merged PR [#1](https://github.com/ArsenTech/downloads/pull/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
-4. 🎉 Merged PR [#6](https://github.com/ArsenTech/arsentech.github.io/pull/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+1. 💪 Opened PR [#9867](https://github.com/SubtitleEdit/subtitleedit/pull/9867) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+2. ❌ Closed PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+3. 🗣 Commented on [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865#issuecomment-3164827367) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+4. 💪 Opened PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
 5. 🗣 Commented on [#1](https://github.com/ArsenTech/downloads/issues/1) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 6. 🗣 Commented on [#6](https://github.com/ArsenTech/arsentech.github.io/issues/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 <!--END_SECTION:activity-->
