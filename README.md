@@ -61,7 +61,7 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [I Tested INSANE Viewer Made Malware Submissions &lpar;pt. 3&rpar;](https://www.youtube.com/watch?v=yJNF0z02soA)
+- [I Tested INSANE Viewer-Made Malware Submissions](https://www.youtube.com/watch?v=yJNF0z02soA)
 - [Avira Antivirus VS The VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=gdDC0qqMuzE)
 - [How to Make Your Windows 10 Terminal Look Amazing](https://www.youtube.com/watch?v=xqn9rUakaGw)
 - [How To Make Your Linux Terminal Look Cool](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
