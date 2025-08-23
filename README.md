@@ -125,14 +125,14 @@
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue-dark&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
-    <img alt="ArsenTech's Github Stats" src="https://github-readme-stats-sigma-five.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue-dark&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
+    <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&hide_border=true&theme=vue&count_private=true" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
-    <img alt="Top Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue-dark" />
