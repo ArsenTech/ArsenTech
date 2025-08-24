@@ -139,6 +139,11 @@
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" />
     <img alt="Current Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=arsentech&theme=vue" alt="arsentech" />
   </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue-dark&combine_all_yearly_contributions=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
+    <img alt="ArsenTech's Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
+  </picture>
 </details>
 
 <picture>
