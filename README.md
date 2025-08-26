@@ -130,11 +130,6 @@
     <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&theme=vue&count_private=true" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
-  </picture>
-  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue-dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue" />
     <img alt="Current Streak" src="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue"/>
@@ -143,6 +138,11 @@
     <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue-dark&combine_all_yearly_contributions=true" />
     <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
     <img alt="ArsenTech's Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
+  </picture>
+    <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
   </picture>
 </details>
 
