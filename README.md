@@ -64,7 +64,7 @@
 - [I Tested INSANE Viewer-Made Malware Submissions](https://www.youtube.com/watch?v=yJNF0z02soA)
 - [Avira Antivirus VS The VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=gdDC0qqMuzE)
 - [How to Make Your Windows 10 Terminal Look Amazing](https://www.youtube.com/watch?v=xqn9rUakaGw)
-- [How To Make Your Linux Terminal Look Cool](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
+- [How To Make Your Linux Terminal Look Awesome!](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
 - [Tin.exe VS Tif.exe | The Insane GDI Malware Battle](https://www.youtube.com/watch?v=9Wp1SsEj41c)
 <!-- YOUTUBE:END -->
 
