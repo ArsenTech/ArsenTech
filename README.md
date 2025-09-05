@@ -88,9 +88,9 @@
 ### :trophy: Achievements
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://trophygh.kolioaris.xyz/?username=arsentech&margin-w=5&margin-h=5&theme=nord" />
-  <source media="(prefers-color-scheme: light)" srcset="https://trophygh.kolioaris.xyz/?username=arsentech&margin-w=5&margin-h=5&theme=flat" />
-  <img alt="Achievements-Trophy" src="https://trophygh.kolioaris.xyz/?username=arsentech&margin-w=5&margin-h=5&theme=flat" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5&theme=nord" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5&theme=flat" />
+  <img alt="Achievements-Trophy" src="https://github-profile-trophy.vercel.app/?username=arsentech&margin-w=5&margin-h=5&theme=flat" />
 </picture>
 
 ---
