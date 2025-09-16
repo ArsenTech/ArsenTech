@@ -130,9 +130,9 @@
     <img alt="ArsenTech's Github Stats" src="https://github-readme-stats.vercel.app/api?username=ArsenTech&show_icons=true&theme=vue&count_private=true" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue" />
-    <img alt="Current Streak" src="https://streak-stats.demolab.com/?user=ArsenTech&theme=vue"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenTech&theme=vue-dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenTech&theme=vue" />
+    <img alt="Current Streak" src="https://nirzak-streak-stats.vercel.app/?user=ArsenTech&theme=vue"/>
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue-dark&combine_all_yearly_contributions=true" />
