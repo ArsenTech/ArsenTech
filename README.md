@@ -75,8 +75,8 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#353](https://github.com/ryo-ma/github-profile-trophy/issues/353#issuecomment-3240142813) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
-2. 💪 Opened PR [#9867](https://github.com/SubtitleEdit/subtitleedit/pull/9867) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+1. 💪 Opened PR [#9952](https://github.com/SubtitleEdit/subtitleedit/pull/9952) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+2. 🗣 Commented on [#353](https://github.com/ryo-ma/github-profile-trophy/issues/353#issuecomment-3240142813) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
 3. ❌ Closed PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
 4. 🗣 Commented on [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865#issuecomment-3164827367) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
 5. 💪 Opened PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
