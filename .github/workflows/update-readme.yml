@@ -15,5 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          MAX_LINES: 7
+          MAX_LINES: 8
           COMMIT_MSG: "Updated Activity Section with the recent activity"

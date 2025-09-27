@@ -1,61 +1,59 @@
 <p align="center">
-<img src="assets/header-img.png" alt="Header">
+  <img src="assets/header-img.png" alt="Header">
 </p>
 <h1 align="center">Hello There 👋, I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 <p align="center">
-<img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=blue&label=Followers&logo=Github&logoColor=white&style=for-the-badge">
-<a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
-<a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCrtH0g6NE8tW5VIEgDySYtg?color=ff0000&style=for-the-badge&logo=youtube"></a>
-<img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenTech?color=yellow&logo=github&style=for-the-badge">
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=blue&label=Followers&logo=Github&logoColor=white&style=for-the-badge">
+  <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
+  <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCrtH0g6NE8tW5VIEgDySYtg?color=ff0000&style=for-the-badge&logo=youtube"></a>
+  <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenTech?color=yellow&logo=github&style=for-the-badge">
 </p>
 <h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
-### Short info about ArsenTech
-- 🔭 I’m currently working on **Programming, Video Editing**
-- 💬 Ask me about **Anything**
+### Short Information
+- 🔭 I’m currently working on **Programming & Video Editing**
+- 💬 Ask me about **Anything Tech-related**
 - 📫 How to reach me: **[Follow Me](#follow-me)** or **[Contact Me](https://arsentech.github.io/#contact)**
 - 😄 Pronouns: **He / Him**
-- ⚡ Fact: My Hobbies are **Photography and YouTube**
-- 🥅 My Goals: Become a **Professional Full Stack Programmer**
-- 💻 Do You Want Coding Tutorials? **Visit [Here](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)**
+- ⚡ Fun Fact: My Hobbies are **Travelling, and YouTube**
+- 💻 Do You Want to learn Coding? **Visit [Here][yt-coding-url]**
 
 ### Follow Me
-[![YouTube](https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg)
-[![Patreon](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/arsentech)
-[![Codepen](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/ArsenTech)
-[![DeviantArt](https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46")](https://www.deviantart.com/arsen2005)
-[![Odysee](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626)](https://odysee.com/@ArsenTech)
-[![Scratch](https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange)](https://scratch.mit.edu/users/ArsenTech/)
+[![YouTube][yt-arsentech-shield]][yt-arsentech-url]
+[![Patreon][patreon-shield]][patreon-url]
+[![Codepen][codepen-shield]][codepen-url]
+[![DeviantArt][deviantart-shield]][deviantart-url]
+[![Odysee][odysee-shield]][odysee-url]
+[![Scratch][scratch-shield]][scratch-url]
 
 ### My Other YouTube Channels
-[![YouTube Shorts Channel](https://img.shields.io/badge/ArsenTech%20Shorts-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCvLf-YuBTmfSrB47_YARHsA)
-[![YouTube Backup Channel](https://img.shields.io/badge/More%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UChjvr_TFywsE23UPlwd-wFQ)
-[![YouTube Coding Channel](https://img.shields.io/badge/Coding%20With%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000)](https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA)
+[![YouTube Shorts Channel][yt-shorts-shield]][yt-shorts-url]
+[![YouTube Misc Channel][yt-misc-shield]][yt-misc-url]
+[![YouTube Coding Channel][yt-coding-shield]][yt-coding-url]
 
 ### Language And Tools
 #### Main Skills
-[![Git](https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30)](https://git-scm.com/)
-[![Github Pages](https://img.shields.io/badge/github%20pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
-[![ShadCN UI](https://img.shields.io/badge/shadcn%2Fui-222222?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
-[![HTML](https://img.shields.io/badge/HTML5-222222?style=for-the-badge&logo=html5&logoColor=E34F26)](https://www.w3.org/html/)
-[![CSS](https://img.shields.io/badge/CSS3-222222?style=for-the-badge&logo=css3&logoColor=1572B6)](https://www.w3schools.com/css/)
-[![Javascript](https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Node JS](https://img.shields.io/badge/Node%20js-222222?style=for-the-badge&logo=nodedotjs&logoColor=339933)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-222222?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Sass](https://img.shields.io/badge/Sass-222222?style=for-the-badge&logo=sass&logoColor=CC6699)](https://sass-lang.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-222222?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)](https://tailwindcss.com/)
-[![Typescript](https://img.shields.io/badge/TypeScript-222222?style=for-the-badge&logo=typescript&logoColor=007ACC)](https://www.typescriptlang.org/)
-[![Next JS](https://img.shields.io/badge/next%20js-222222?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-222222?style=for-the-badge&logo=mongodb&logoColor=4EA94B)](https://www.mongodb.com/)
-[![Socket.io](https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101)](https://socket.io/)
-[![Tauri](https://img.shields.io/badge/Tauri-222222?style=for-the-badge&logo=Tauri&logoColor=FFC131)](https://v2.tauri.app/)
+[![Git][git-shield]][git-url]
+[![ShadCN UI][shadcn-shield]][shadcn-url]
+[![HTML][html-shield]][html-url]
+[![CSS][css-shield]][css-url]
+[![Javascript][js-shield]][js-url]
+[![Node JS][nodejs-shield]][nodejs-url]
+[![React][react-shield]][react-url]
+[![Tailwind CSS][tailwind-shield]][tailwind-url]
+[![Typescript][ts-shield]][ts-url]
+[![Next JS][nextjs-shield]][nextjs-url]
+[![MongoDB][mongodb-shield]][mongodb-url]
+[![Socket.io][socket-io-shield]][socket-io-url]
+[![Tauri][tauri-shield]][tauri-url]
+[![PostgreSQL][postgresql-shield]][postgresql-url]
 
 #### Secondary Skills
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-222222?style=for-the-badge&logo=bootstrap&logoColor=8713F4)](https://getbootstrap.com/)
-[![Angular](https://img.shields.io/badge/Angular-222222?style=for-the-badge&logo=angular&logoColor=DD0031)](https://angular.io/)
-[![C#](https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://www.w3schools.com/cs/)
-[![MySQL](https://img.shields.io/badge/mysql-222222.svg?style=for-the-badge&logo=mysql&logoColor=4479A1)](https://www.mysql.com/)
-[![PHP](https://img.shields.io/badge/php-222222.svg?style=for-the-badge&logo=php&logoColor=b0b3d6)](https://www.php.net/)
+[![Sass][sass-shield]][sass-url]
+[![Angular][angular-shield]][angular-url]
+[![C#][csharp-shield]][csharp-url]
+[![MySQL][mysql-shield]][mysql-url]
+[![PHP][php-shield]][php-url]
 ---
 
 ### :tv: Latest YouTube Videos
@@ -68,7 +66,7 @@
 - [How To Make Your Linux Terminal Look Cool &amp; Techy](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
 <!-- YOUTUBE:END -->
 
-➡️ [More Videos](https://www.youtube.com/c/ArsenTech)
+➡️ [More Videos][yt-arsentech-url]
 
 ---
 
@@ -155,3 +153,67 @@
 ---
 
 <p align="center"><img src="https://profile-counter.deno.dev/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
+
+<!-- YouTube Channel Links -->
+[yt-arsentech-shield]: https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-arsentech-url]: https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[yt-shorts-shield]: https://img.shields.io/badge/ArsenTech%20Shorts-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-shorts-url]: https://www.youtube.com/channel/UCvLf-YuBTmfSrB47_YARHsA
+[yt-misc-shield]: https://img.shields.io/badge/More%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-misc-url]: https://www.youtube.com/channel/UChjvr_TFywsE23UPlwd-wFQ
+[yt-coding-shield]: https://img.shields.io/badge/Coding%20With%20ArsenTech-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
+[yt-coding-url]: https://www.youtube.com/channel/UCl52C6cFR1McvN1fAdsxdkA
+
+<!-- Platform Links -->
+[patreon-shield]:https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=patreon&logoColor=white
+[patreon-url]:https://www.patreon.com/ArsenTech
+[codepen-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=codepen&logoColor=white
+[codepen-url]: https://codepen.io/ArsenTech
+[deviantart-shield]: https://img.shields.io/badge/-Arsen2005-222222?style=for-the-badge&logo=deviantart&logoColor=05cc46
+[deviantart-url]: https://www.deviantart.com/arsen2005
+[odysee-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=odysee&logoColor=FA9626
+[odysee-url]: https://odysee.com/@ArsenTech
+[scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
+[scratch-url]: https://scratch.mit.edu/users/ArsenTech/
+
+<!-- Main Skills Link -->
+[git-shield]: https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30
+[git-url]: https://git-scm.com/
+[shadcn-shield]: https://img.shields.io/badge/shadcn%2Fui-222222?style=for-the-badge&logo=shadcnui&logoColor=white
+[shadcn-url]: https://ui.shadcn.com/
+[html-shield]: https://img.shields.io/badge/HTML5-222222?style=for-the-badge&logo=html5&logoColor=E34F26
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css-shield]: https://img.shields.io/badge/CSS3-222222?style=for-the-badge&logo=css3&logoColor=1572B6
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[js-shield]: https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+[js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[nodejs-shield]: https://img.shields.io/badge/Node%20js-222222?style=for-the-badge&logo=nodedotjs&logoColor=339933
+[nodejs-url]: https://nodejs.org/
+[react-shield]: https://img.shields.io/badge/React-222222?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://react.dev/
+[tailwind-shield]: https://img.shields.io/badge/Tailwind_CSS-222222?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC
+[tailwind-url]: https://tailwindcss.com/
+[ts-shield]: https://img.shields.io/badge/TypeScript-222222?style=for-the-badge&logo=typescript&logoColor=007ACC
+[ts-url]: https://www.typescriptlang.org/
+[nextjs-shield]: https://img.shields.io/badge/next%20js-222222?style=for-the-badge&logo=nextdotjs&logoColor=white
+[nextjs-url]: https://nextjs.org/
+[mongodb-shield]: https://img.shields.io/badge/MongoDB-222222?style=for-the-badge&logo=mongodb&logoColor=4EA94B
+[mongodb-url]: https://www.mongodb.com/
+[socket-io-shield]: https://img.shields.io/badge/Socket.io-222222?style=for-the-badge&logo=socket.io&badgeColor=010101
+[socket-io-url]: https://socket.io/
+[tauri-shield]: https://img.shields.io/badge/Tauri-222222?style=for-the-badge&logo=Tauri&logoColor=FFC131
+[tauri-url]: https://v2.tauri.app/
+[postgresql-shield]: https://img.shields.io/badge/PostgreSQL-222222?style=for-the-badge&logo=postgresql&logoColor=316192
+[postgresql-url]: https://www.postgresql.org/
+
+<!-- Secondary skills link -->
+[sass-shield]: https://img.shields.io/badge/Sass-222222?style=for-the-badge&logo=sass&logoColor=CC6699
+[sass-url]: https://sass-lang.com/
+[angular-shield]: https://img.shields.io/badge/Angular-222222?style=for-the-badge&logo=angular&logoColor=DD0031
+[angular-url]: https://angular.io/
+[csharp-shield]: https://img.shields.io/badge/c%23-%23222222.svg?style=for-the-badge&logo=csharp&logoColor=white
+[csharp-url]: https://www.w3schools.com/cs/
+[mysql-shield]: https://img.shields.io/badge/mysql-222222.svg?style=for-the-badge&logo=mysql&logoColor=4479A1
+[mysql-url]: https://www.mysql.com/
+[php-shield]: https://img.shields.io/badge/php-222222.svg?style=for-the-badge&logo=php&logoColor=b0b3d6
+[php-url]: https://www.php.net/
