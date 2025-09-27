@@ -73,9 +73,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#9952](https://github.com/SubtitleEdit/subtitleedit/pull/9952) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
-2. 🗣 Commented on [#353](https://github.com/ryo-ma/github-profile-trophy/issues/353#issuecomment-3240142813) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
-3. ❌ Closed PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+1. 🗣 Commented on [#39](https://github.com/ankurparihar/readme-pagespeed-insights/issues/39#issuecomment-3341502845) in [ankurparihar/readme-pagespeed-insights](https://github.com/ankurparihar/readme-pagespeed-insights)
+2. 💪 Opened PR [#9952](https://github.com/SubtitleEdit/subtitleedit/pull/9952) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
+3. 🗣 Commented on [#353](https://github.com/ryo-ma/github-profile-trophy/issues/353#issuecomment-3240142813) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
 4. 🗣 Commented on [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865#issuecomment-3164827367) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
 5. 💪 Opened PR [#9865](https://github.com/SubtitleEdit/subtitleedit/pull/9865) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
 6. 🗣 Commented on [#6](https://github.com/ArsenTech/arsentech.github.io/issues/6) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
