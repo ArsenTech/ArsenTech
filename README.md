@@ -73,9 +73,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#39](https://github.com/ankurparihar/readme-pagespeed-insights/issues/39#issuecomment-3341502845) in [ankurparihar/readme-pagespeed-insights](https://github.com/ankurparihar/readme-pagespeed-insights)
-2. 💪 Opened PR [#9952](https://github.com/SubtitleEdit/subtitleedit/pull/9952) in [SubtitleEdit/subtitleedit](https://github.com/SubtitleEdit/subtitleedit)
-3. 🗣 Commented on [#353](https://github.com/ryo-ma/github-profile-trophy/issues/353#issuecomment-3240142813) in [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
+1. 🎉 Merged PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+2. 💪 Opened PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+3. 🗣 Commented on [#39](https://github.com/ankurparihar/readme-pagespeed-insights/issues/39#issuecomment-3341502845) in [ankurparihar/readme-pagespeed-insights](https://github.com/ankurparihar/readme-pagespeed-insights)
 <!--END_SECTION:activity-->
 
 ---
