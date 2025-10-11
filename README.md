@@ -59,11 +59,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avast &amp; AVG Antiviruses VS Navashield | Ultimate Antivirus Test](https://www.youtube.com/watch?v=CjhPF6Syt-o)
 - [Trichloromethane.exe VS Salinewin.exe | The Insane GDI Malware Battle](https://www.youtube.com/watch?v=H5BJJTLhEz0)
 - [I Tested INSANE Viewer-Made Malware Submissions](https://www.youtube.com/watch?v=yJNF0z02soA)
 - [Avira Antivirus VS The VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=gdDC0qqMuzE)
 - [How To Make Your Windows 10 Terminal Look Cool &amp; Techy](https://www.youtube.com/watch?v=xqn9rUakaGw)
-- [How To Make Your Linux Terminal Look Cool &amp; Techy](https://www.youtube.com/watch?v=Sf1zejQUC7Y)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos][yt-arsentech-url]
