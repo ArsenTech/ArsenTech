@@ -59,7 +59,7 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [Avast &amp; AVG Antiviruses VS Navashield | Ultimate Antivirus Test](https://www.youtube.com/watch?v=CjhPF6Syt-o)
+- [Avast &amp; AVG VS The Navashield Rogue AV | Ultimate Antivirus Test](https://www.youtube.com/watch?v=CjhPF6Syt-o)
 - [Trichloromethane.exe VS Salinewin.exe | The Insane GDI Malware Battle](https://www.youtube.com/watch?v=H5BJJTLhEz0)
 - [I Tested INSANE Viewer-Made Malware Submissions](https://www.youtube.com/watch?v=yJNF0z02soA)
 - [Avira Antivirus VS The VineMEMZ Trojan | Antivirus Test](https://www.youtube.com/watch?v=gdDC0qqMuzE)
