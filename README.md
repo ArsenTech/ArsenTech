@@ -73,9 +73,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-2. 💪 Opened PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-3. 🗣 Commented on [#39](https://github.com/ankurparihar/readme-pagespeed-insights/issues/39#issuecomment-3341502845) in [ankurparihar/readme-pagespeed-insights](https://github.com/ankurparihar/readme-pagespeed-insights)
+1. 🚀 Published release [Windows Updates](https://github.com/ArsenTech/downloads/releases/tag/updates) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+2. 🎉 Merged PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+3. 💪 Opened PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 <!--END_SECTION:activity-->
 
 ---
