@@ -73,9 +73,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Windows Updates](https://github.com/ArsenTech/downloads/releases/tag/updates) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
-2. 🎉 Merged PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-3. 💪 Opened PR [#7](https://github.com/ArsenTech/arsentech.github.io/pull/7) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
+1. 🚀 Published release [Windows 11 to Windows 7 Transformation Pack](https://github.com/ArsenTech/downloads/releases/tag/transformation-packs) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+2. 🚀 Published release [Windows Updates](https://github.com/ArsenTech/downloads/releases/tag/updates) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+3. 🚀 Published release [Windows Files (Legacy Versions)](https://github.com/ArsenTech/downloads/releases/tag/windows) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 <!--END_SECTION:activity-->
 
 ---
