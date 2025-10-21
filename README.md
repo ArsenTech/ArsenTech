@@ -117,6 +117,20 @@
 
 ---
 
+### 💬 My Gists
+
+<p align="left">
+  <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue-dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
+    <img alt="Contributing Template" src="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
+  </picture></a>
+</p>
+
+➡️ [More Gists][gists-url]
+
+---
+
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
   <picture>
@@ -172,6 +186,7 @@
 [odysee-url]: https://odysee.com/@ArsenTech
 [scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
 [scratch-url]: https://scratch.mit.edu/users/ArsenTech/
+[gists-url]: https://gist.github.com/ArsenTech
 
 <!-- Main Skills Link -->
 [git-shield]: https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30
