@@ -125,6 +125,11 @@
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
     <img alt="Contributing Template" src="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
   </picture></a>
+<a href="https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue-dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue" />
+    <img alt="20 JavaScript One Liners" src="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue" />
+  </picture></a>
 </p>
 
 ➡️ [More Gists][gists-url]
