@@ -120,7 +120,7 @@
 ### 💬 My Gists
 
 <p align="left">
-  <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
+  <a href="https://gist.github.com/ArsenTech/cf46150a1ed7041b63a80ab301340209"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue-dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
     <img alt="Contributing Template" src="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
