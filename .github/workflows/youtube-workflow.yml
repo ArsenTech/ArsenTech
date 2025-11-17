@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme-with-youtube:
+  build:
     name: Update this repo's README with latest videos from YouTube
     runs-on: ubuntu-latest
     permissions:
