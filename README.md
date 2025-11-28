@@ -70,6 +70,15 @@
 
 ---
 
+### :book: Latest Blog Posts
+
+<!-- BLOG-POSTS:START -->
+<!-- BLOG-POSTS:END -->
+
+➡️ [More Posts][blog-url]
+
+---
+
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
@@ -169,6 +178,8 @@
 ---
 
 <p align="center"><img src="https://profile-counter.deno.dev/ArsenTech/count.svg" alt="ArsenTech Visitor Count" /></p>
+
+[blog-url]: https://arsentech-blog.vercel.app/
 
 <!-- YouTube Channel Links -->
 [yt-arsentech-shield]: https://img.shields.io/badge/ArsenTech%20-222222.svg?&style=for-the-badge&logo=YouTube&logoColor=%23FF0000
