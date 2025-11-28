@@ -1,4 +1,4 @@
-name: Latest YouTube Videos from ArsenTech
+name: Latest Blog Posts from ArsenTech
 on:
   schedule:
     # Runs every hour
