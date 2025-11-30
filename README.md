@@ -87,7 +87,7 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#5](undefined) in [ArsenTech/blog](https://github.com/ArsenTech/blog)
+1. 💪 Opened PR [#8](undefined) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 2. 🚀 Published release [Windows Updates](https://github.com/ArsenTech/downloads/releases/tag/updates) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 3. 🚀 Published release [Windows Files (Legacy Versions)](https://github.com/ArsenTech/downloads/releases/tag/windows) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
 <!--END_SECTION:activity-->
