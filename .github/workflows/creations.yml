@@ -25,7 +25,7 @@ jobs:
           OUTPUT_FILE="generated.md"
           echo "" > "$OUTPUT_FILE"
 
-          echo "### Repositories" >> "$OUTPUT_FILE"
+          echo "#### Repositories" >> "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
           EXCLUDE_PATTERN=$(echo "$EXCLUDE_REPOS" | sed 's/,/|/g')
@@ -40,7 +40,7 @@ jobs:
             done
 
           echo "" >> "$OUTPUT_FILE"
-          echo "### Gists" >> "$OUTPUT_FILE"
+          echo "#### Gists" >> "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
           curl -s "https://api.github.com/users/$GH_USER/gists?per_page=200" |
