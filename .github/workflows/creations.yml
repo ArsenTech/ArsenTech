@@ -45,16 +45,18 @@ jobs:
           # Insert new block
           sed -i "/$START/r generated.md" "$TARGET_FILE"
 
-      - name: Commit changes
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
+          git config --global --list
+
           if git diff --quiet; then
-            echo "No changes."
+            echo "No changes to commit."
             exit 0
           fi
 
-          git add README.md
-          git commit -m "Update project list"
+          git add "$TARGET_FILE"
+          git commit -m "Updated project list"
           git push
