@@ -16,6 +16,7 @@ jobs:
         run: |
           echo "GH_USER=ArsenTech" >> $GITHUB_ENV
           echo "TARGET_FILE=README.md" >> $GITHUB_ENV
+          echo "EXCLUDE=ArsenTech|source-codes" >> $GITHUB_ENV
 
       - name: Generate list file
         run: |
@@ -24,14 +25,16 @@ jobs:
           echo "#### Repositories" > "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
-          curl -s "https://api.github.com/users/$GH_USER/repos?per_page=200" |
-            jq -r '.[] | select(.archived == false) | "- [\(.name)](\(.html_url))"' >> "$OUTPUT_FILE"
+          curl -s "https://api.github.com/users/$GH_USER/repos?per_page=100" |
+            jq -r '.[] | select(.archived == false) | "\(.name) \(.html_url)"' |
+            grep -v -E "$EXCLUDE" |
+            sed 's|^\([^ ]*\) \(.*\)$|- [\1](\2)|' >> "$OUTPUT_FILE"
 
           echo "" >> "$OUTPUT_FILE"
           echo "#### Gists" >> "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
-          curl -s "https://api.github.com/users/$GH_USER/gists?per_page=200" |
+          curl -s "https://api.github.com/users/$GH_USER/gists?per_page=100" |
             jq -r '.[] | "- [\(.description // "Untitled gist")](\(.html_url))"' >> "$OUTPUT_FILE"
 
       - name: Replace content safely
@@ -39,18 +42,13 @@ jobs:
           START="<!-- CREATIONS:START -->"
           END="<!-- CREATIONS:END -->"
 
-          # Delete old block
           sed -i "/$START/,/$END/{//!d;}" "$TARGET_FILE"
-
-          # Insert new block
           sed -i "/$START/r generated.md" "$TARGET_FILE"
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-          git config --global --list
 
           if git diff --quiet; then
             echo "No changes to commit."
