@@ -27,18 +27,9 @@ jobs:
     - name: Generate the contributions stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/contribs.svg
+        image-file: images/stats.svg
         colors: dark-dimmed
-        hide-keys: general, languages, repositories
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-    - name: Generate the repo stats
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: images/repos.svg
-        colors: dark-dimmed
-        hide-keys: general, contributions, languages
+        hide-keys: general, languages
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -54,17 +45,8 @@ jobs:
     - name: Generate the contributions stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/contribs-light.svg
+        image-file: images/stats-light.svg
         colors: light
-        hide-keys: general, languages, repositories
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-    - name: Generate the repo stats
-      uses: cicirello/user-statistician@v1
-      with:
-        image-file: images/repos-light.svg
-        colors: light
-        hide-keys: general, contributions, languages
+        hide-keys: general, languages
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
