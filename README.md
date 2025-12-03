@@ -104,47 +104,10 @@
 
 ---
 
-### 📘 My Projects
+### 📘 My Creations
 
-<p align="left">
-  <a href="https://github.com/ArsenTech/arsentech.github.io"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true&theme=vue" />
-    <img alt="ArsenTech's Website" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=arsentech.github.io&count_private=true&theme=vue" />
-  </picture></a>
-  <a href="https://github.com/ArsenTech/downloads"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true&theme=vue" />
-    <img alt="Downloads Page" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=downloads&count_private=true&theme=vue" />
-  </picture></a>
-  <a href="https://github.com/ArsenTech/blog"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true&theme=vue" />
-    <img alt="Blog Page" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=blog&count_private=true&theme=vue" />
-  </picture></a>
-  <a href="https://github.com/ArsenTech/idea-checklist"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true&theme=vue" />
-    <img alt="Idea Checklist" src="https://github-readme-stats.vercel.app/api/pin/?username=ArsenTech&repo=idea-checklist&count_private=true&theme=vue" />
-  </picture></a>
-</p>
-
----
-
-### 💬 My Gists
-
-<p align="left">
-  <a href="https://gist.github.com/ArsenTech/cf46150a1ed7041b63a80ab301340209"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
-    <img alt="Contributing Template" src="https://github-readme-stats.vercel.app/api/gist?id=cf46150a1ed7041b63a80ab301340209&theme=vue" />
-  </picture></a>
-<a href="https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue" />
-    <img alt="20 JavaScript One Liners" src="https://github-readme-stats.vercel.app/api/gist?id=f9d2b599cb758c889938a8c943860a57&theme=vue" />
-  </picture></a>
-</p>
+<!-- CREATIONS:START -->
+<!-- CREATIONS:END -->
 
 ➡️ [More Gists][gists-url]
 
