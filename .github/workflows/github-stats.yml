@@ -19,7 +19,7 @@ jobs:
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/languages.svg
-        colors: dark
+        colors: dark-dimmed
         hide-keys: general, contributions, repositories
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -28,7 +28,7 @@ jobs:
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/contribs.svg
-        colors: dark
+        colors: dark-dimmed
         hide-keys: general, languages, repositories
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -37,7 +37,34 @@ jobs:
       uses: cicirello/user-statistician@v1
       with:
         image-file: images/repos.svg
-        colors: dark
+        colors: dark-dimmed
+        hide-keys: general, contributions, languages
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Generate the languages distribution
+      uses: cicirello/user-statistician@v1
+      with:
+        image-file: images/languages-light.svg
+        colors: light
+        hide-keys: general, contributions, repositories
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Generate the contributions stats
+      uses: cicirello/user-statistician@v1
+      with:
+        image-file: images/contribs-light.svg
+        colors: light
+        hide-keys: general, languages, repositories
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Generate the repo stats
+      uses: cicirello/user-statistician@v1
+      with:
+        image-file: images/repos-light.svg
+        colors: light
         hide-keys: general, contributions, languages
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
