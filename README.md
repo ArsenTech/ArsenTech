@@ -168,9 +168,9 @@
     <img alt="ArsenTech's Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
   </picture>
     <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue-dark&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArsenTech&layout=compact&theme=vue&count_private=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="images/languages.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="images/languages-light.svg" />
+    <img alt="Top Languages" src="images/languages-light.svg" />
   </picture>
 </details>
 
