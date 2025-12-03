@@ -47,4 +47,14 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git add README.md
+          git commit -m "Update project list"
+          git push
