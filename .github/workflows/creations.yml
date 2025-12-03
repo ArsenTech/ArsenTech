@@ -1,0 +1,80 @@
+name: Generate Project List
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  build-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set variables
+        run: |
+          echo "GH_USER=ArsenTech" >> $GITHUB_ENV
+          # echo "EXCLUDE_REPOS=repo1,repo2,repo3" >> $GITHUB_ENV
+          echo "TARGET_FILE=README.md" >> $GITHUB_ENV
+
+      - name: Generate list content
+        id: generate
+        run: |
+          OUTPUT_FILE="generated.md"
+          echo "" > "$OUTPUT_FILE"
+
+          echo "### Repositories" >> "$OUTPUT_FILE"
+          echo "" >> "$OUTPUT_FILE"
+
+          EXCLUDE_PATTERN=$(echo "$EXCLUDE_REPOS" | sed 's/,/|/g')
+
+          curl -s "https://api.github.com/users/$GH_USER/repos?per_page=200" |
+            jq -r '.[] | select(.archived == false) | "\(.name) \(.html_url)"' |
+            while read -r NAME URL; do
+              if [[ -n "$EXCLUDE_PATTERN" && "$NAME" =~ $EXCLUDE_PATTERN ]]; then
+                continue
+              fi
+              echo "- [${NAME}](${URL})" >> "$OUTPUT_FILE"
+            done
+
+          echo "" >> "$OUTPUT_FILE"
+          echo "### Gists" >> "$OUTPUT_FILE"
+          echo "" >> "$OUTPUT_FILE"
+
+          curl -s "https://api.github.com/users/$GH_USER/gists?per_page=200" |
+            jq -r '.[] | "\(.description) \(.html_url)"' |
+            while read -r DESC URL; do
+              [[ "$DESC" == "null" || -z "$DESC" ]] && DESC="Untitled gist"
+              echo "- [${DESC}](${URL})" >> "$OUTPUT_FILE"
+            done
+
+          echo "::set-output name=content::$(sed ':a;N;$!ba;s/\n/\\n/g' "$OUTPUT_FILE")"
+
+      - name: Replace content between tags
+        run: |
+          START="<!-- CREATIONS:START -->"
+          END="<!-- CREATIONS:END -->"
+
+          CONTENT="${{ steps.generate.outputs.content }}"
+
+          # Escape slashes for sed
+          ESCAPED_CONTENT=$(printf '%s\n' "$CONTENT" | sed 's/[\/&]/\\&/g')
+
+          sed -i "/$START/,/$END/{ /$START/{p; n; }; /$END/{p; n; }; d }" "$TARGET_FILE"
+          sed -i "/$START/a $ESCAPED_CONTENT" "$TARGET_FILE"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git add "$TARGET_FILE"
+          git commit -m "Updated project list"
+          git push
