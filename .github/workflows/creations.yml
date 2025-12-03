@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "GH_USER=ArsenTech" >> $GITHUB_ENV
           echo "TARGET_FILE=README.md" >> $GITHUB_ENV
-          echo "EXCLUDE=ArsenTech|source-codes" >> $GITHUB_ENV
+          echo "EXCLUDE_REPOS=ArsenTech,source-codes" >> $GITHUB_ENV
 
       - name: Generate list file
         run: |
@@ -25,10 +25,16 @@ jobs:
           echo "#### Repositories" > "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
+          # Convert exclusions to JSON array
+          EXCLUDES=$(echo "$EXCLUDE_REPOS" | tr ',' '\n')
+
           curl -s "https://api.github.com/users/$GH_USER/repos?per_page=100" |
-            jq -r '.[] | select(.archived == false) | "\(.name) \(.html_url)"' |
-            grep -v -E "$EXCLUDE" |
-            sed 's|^\([^ ]*\) \(.*\)$|- [\1](\2)|' >> "$OUTPUT_FILE"
+            jq -r --argjson excludes "$(printf '%s\n' $EXCLUDES | jq -R . | jq -s .)" '
+              .[] 
+              | select(.archived == false) 
+              | select(.name as $n | ($excludes | index($n)) | not)
+              | "- [\(.name)](\(.html_url))"
+            ' >> "$OUTPUT_FILE"
 
           echo "" >> "$OUTPUT_FILE"
           echo "#### Gists" >> "$OUTPUT_FILE"
