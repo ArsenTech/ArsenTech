@@ -109,12 +109,6 @@
 <!-- CREATIONS:START -->
 #### Repositories
 
-- [ArsenTech](https://github.com/ArsenTech/ArsenTech)
-- [arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-- [blog](https://github.com/ArsenTech/blog)
-- [downloads](https://github.com/ArsenTech/downloads)
-- [idea-checklist](https://github.com/ArsenTech/idea-checklist)
-- [source-codes](https://github.com/ArsenTech/source-codes)
 
 #### Gists
 
