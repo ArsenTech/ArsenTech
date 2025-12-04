@@ -109,10 +109,10 @@
 <!-- CREATIONS:START -->
 #### Repositories
 
-- [arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-- [blog](https://github.com/ArsenTech/blog)
-- [downloads](https://github.com/ArsenTech/downloads)
-- [idea-checklist](https://github.com/ArsenTech/idea-checklist)
+- 🔹 [arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io) — ⭐ 2 — ArsenTech's Official Website
+- 🔹 [blog](https://github.com/ArsenTech/blog) — ⭐ 1 — Blog Page Of ArsenTech's Website - cybersecurity, tech tutorials, unique coding projects, and other tech-related posts all in one place.
+- 🔹 [downloads](https://github.com/ArsenTech/downloads) — ⭐ 3 — Downloads Page of ArsenTech's Website
+- 🔹 [idea-checklist](https://github.com/ArsenTech/idea-checklist) — ⭐ 1 — Idea Checklist for Tech YouTube streamers built using Tauri and React
 
 #### Gists
 
