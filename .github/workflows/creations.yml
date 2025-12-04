@@ -35,8 +35,7 @@ jobs:
               | select(.archived == false)     # remove archived
               | select(.fork == false)         # remove forks
               | select(.name as $n | ($excludes | index($n)) | not)   # remove excluded names
-              | "- [\(.name)](\(.html_url)) — ⭐ \(.stargazers_count)  
-\(.description // "No description")"
+              | "- [\(.name)](\(.html_url)) — ⭐ \(.stargazers_count)\n\(.description // \"No description\")"
             ' >> "$OUTPUT_FILE"
 
           echo "" >> "$OUTPUT_FILE"
