@@ -45,7 +45,7 @@ jobs:
                 fi
               done
 
-              printf -- "- 🔹 [%s](%s) — ⭐ %s — %s\n" "$NAME" "$URL" "$STARS" "$DESC" >> "$OUTPUT_FILE"
+              printf -- "- [%s](%s) - ⭐ %s - %s\n" "$NAME" "$URL" "$STARS" "$DESC" >> "$OUTPUT_FILE"
 
             done
 
