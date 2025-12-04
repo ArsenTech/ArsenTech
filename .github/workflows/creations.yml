@@ -30,10 +30,12 @@ jobs:
 
           curl -s "https://api.github.com/users/$GH_USER/repos?per_page=100" |
             jq -r --argjson excludes "$(printf '%s\n' $EXCLUDES | jq -R . | jq -s .)" '
-              .[] 
-              | select(.archived == false) 
-              | select(.name as $n | ($excludes | index($n)) | not)
-              | "- [\(.name)](\(.html_url))"
+              .[]
+              | select(.archived == false)     # remove archived
+              | select(.fork == false)         # remove forks
+              | select(.name as $n | ($excludes | index($n)) | not)   # remove excluded names
+              | "- [\(.name)](\(.html_url)) — ⭐ \(.stargazers_count)  
+\(.description // "No description")"
             ' >> "$OUTPUT_FILE"
 
           echo "" >> "$OUTPUT_FILE"
