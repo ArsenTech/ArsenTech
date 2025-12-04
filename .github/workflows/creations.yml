@@ -26,17 +26,12 @@ jobs:
           echo "#### Repositories" > "$OUTPUT_FILE"
           echo "" >> "$OUTPUT_FILE"
 
-          # Convert exclusions to JSON array
+          # Convert exclusions to JSON array (["repo1","repo2",...])
           EXCLUDES=$(echo "$EXCLUDE_REPOS" | tr ',' '\n')
+          EXCLUDES_JSON=$(printf '%s\n' $EXCLUDES | jq -R . | jq -s .)
 
           curl -s "https://api.github.com/users/$GH_USER/repos?per_page=100" |
-            jq -r --argjson excludes "$(printf '%s\n' $EXCLUDES | jq -R . | jq -s .)" '
-              .[]
-              | select(.archived == false)
-              | select(.fork == false)
-              | select(.name as $n | ($excludes | index($n)) | not)
-              | "- [\(.name)](\(.html_url)) — ⭐ \(.stargazers_count)\n\(.description // \"No description\")"
-            ' >> "$OUTPUT_FILE"
+            jq -r --argjson excludes "$EXCLUDES_JSON" '.[] | select(.archived == false and .fork == false) | select(.name as $n | ($excludes | index($n)) | not) | "- [\(.name)](\(.html_url)) - Stars: \(.stargazers_count) - \(.description // \"No description\")"' >> "$OUTPUT_FILE"
 
           echo "" >> "$OUTPUT_FILE"
           echo "#### Gists" >> "$OUTPUT_FILE"
