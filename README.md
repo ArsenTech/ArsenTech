@@ -87,9 +87,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#8](undefined) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
-2. 🚀 Published release [Windows Updates](https://github.com/ArsenTech/downloads/releases/tag/updates) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
-3. 🚀 Published release [Windows Files (Legacy Versions)](https://github.com/ArsenTech/downloads/releases/tag/windows) in [ArsenTech/downloads](https://github.com/ArsenTech/downloads)
+1. 🗣 Commented on [#4671](https://github.com/anuraghazra/github-readme-stats/issues/4671#issuecomment-3607980420) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+2. 🗣 Commented on [#4658](https://github.com/anuraghazra/github-readme-stats/issues/4658#issuecomment-3607972229) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+3. ❌ Merged PR [#8](undefined) in [ArsenTech/arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io)
 <!--END_SECTION:activity-->
 
 ---
