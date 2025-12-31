@@ -2,7 +2,7 @@ name: Generate Project List
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,67 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set variables
-        run: |
-          echo "GH_USER=ArsenTech" >> $GITHUB_ENV
-          echo "TARGET_FILE=README.md" >> $GITHUB_ENV
-          echo "EXCLUDE_REPOS=ArsenTech,source-codes" >> $GITHUB_ENV
-
-      - name: Generate list file
-        run: |
-          OUTPUT_FILE="generated.md"
-
-          echo "#### Repositories" > "$OUTPUT_FILE"
-          echo "" >> "$OUTPUT_FILE"
-
-          # Convert exclusions to array
-          EXCLUDES=$(echo "$EXCLUDE_REPOS" | tr ',' '\n')
-
-          curl -s "https://api.github.com/users/$GH_USER/repos?per_page=100" |
-            jq -r '
-              .[] 
-              | select(.archived == false)
-              | select(.fork == false)
-              | [.name, .html_url, (.stargazers_count|tostring), (.description // "No description")]
-              | @tsv
-            ' | while IFS=$'\t' read -r NAME URL STARS DESC; do
-
-              # Skip excluded repos
-              for ex in $EXCLUDES; do
-                if [ "$NAME" = "$ex" ]; then
-                  continue 2
-                fi
-              done
-
-              printf -- "- [%s](%s) - ⭐ %s - %s\n" "$NAME" "$URL" "$STARS" "$DESC" >> "$OUTPUT_FILE"
-
-            done
-
-          echo "" >> "$OUTPUT_FILE"
-          echo "#### Gists" >> "$OUTPUT_FILE"
-          echo "" >> "$OUTPUT_FILE"
-
-          curl -s "https://api.github.com/users/$GH_USER/gists?per_page=100" |
-            jq -r '.[] | "- [\(.description // "Untitled gist")](\(.html_url))"' >> "$OUTPUT_FILE"
-
-      - name: Replace content safely
-        run: |
-          START="<!-- CREATIONS:START -->"
-          END="<!-- CREATIONS:END -->"
-
-          sed -i "/$START/,/$END/{//!d;}" "$TARGET_FILE"
-          sed -i "/$START/r generated.md" "$TARGET_FILE"
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          if git diff --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-
-          git add "$TARGET_FILE"
-          git commit -m "Updated project list"
-          git push
+      - name: Generate Portfolio stats
+        uses: ArsenTech/creations-stats-workflow@v1
+        with:
+          github-username: ArsenTech
+          exclusions: ArsenTech | source-codes
+          commit-message: "[AUTOMATED-CHANGE]: Updated Portfolio stats"
