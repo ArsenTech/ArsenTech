@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate Portfolio stats
-        uses: ArsenTech/creations-stats-workflow@v1
+        uses: ArsenTech/creations-stats-workflow@v1.0.1
         with:
           github-username: ArsenTech
           exclusions: ArsenTech,source-codes
