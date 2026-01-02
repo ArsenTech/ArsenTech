@@ -109,13 +109,11 @@
 <!-- CREATIONS-START -->
 
 #### Repositories
-- [ArsenTech](https://github.com/ArsenTech/ArsenTech) - ⭐ 6 - With This Repo, You'll learn more About ArsenTech
 - [arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io) - ⭐ 2 - ArsenTech's Official Personal Website
 - [blog](https://github.com/ArsenTech/blog) - ⭐ 1 - Cybersecurity, tech tutorials, unique coding projects, and other tech-related posts all in one place: "ArsenTech Blog".
 - [creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow) - ⭐ 1 - A Github Action that generates user's portfolio stats (Repositories and Gists). Perfect for profile readme customization!
 - [downloads](https://github.com/ArsenTech/downloads) - ⭐ 3 - Downloads Page of ArsenTech's Website
 - [idea-checklist](https://github.com/ArsenTech/idea-checklist) - ⭐ 1 - A checklist app for Tech YouTube Streamers and other people built using React, Tauri, and ShadCN UI
-- [source-codes](https://github.com/ArsenTech/source-codes) - ⭐ 5 - Source Codes For Tutorials On Coding With ArsenTech (ArsenTech's Coding Channel) And Other Javascript Project Ideas
 
 #### Gists
 - [20 JavaScript One-Liner Functions You Need to Know](https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57)
