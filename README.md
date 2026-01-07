@@ -114,6 +114,10 @@
 - [idea-checklist](https://github.com/ArsenTech/idea-checklist) - ⭐ 1 - A checklist app for Tech YouTube Streamers and other people built using React, Tauri, and ShadCN UI
 <!-- REPOS-END -->
 
+➡️ [More Creations][repos-url]
+
+---
+
 ### 💬 Gists
 <!-- GISTS-START -->
 - [20 JavaScript One-Liner Functions You Need to Know](https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57)
@@ -183,6 +187,7 @@
 [scratch-shield]: https://img.shields.io/badge/-ArsenTech-222222?style=for-the-badge&logo=scratch&logoColor=orange
 [scratch-url]: https://scratch.mit.edu/users/ArsenTech/
 [gists-url]: https://gist.github.com/ArsenTech
+[repos-url]: https://github.com/ArsenTech?tab=repositories
 
 <!-- Main Skills Link -->
 [git-shield]: https://img.shields.io/badge/GIT-222222?style=for-the-badge&logo=git&logoColor=E44C30
