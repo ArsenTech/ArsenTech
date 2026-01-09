@@ -104,7 +104,7 @@
 
 ---
 
-### 📘 My Creations
+### 📘 My Projects
 
 <!-- REPOS-START -->
 - [arsentech.github.io](https://github.com/ArsenTech/arsentech.github.io) - ⭐ 2 - ArsenTech's Official Personal Website
@@ -114,7 +114,7 @@
 - [idea-checklist](https://github.com/ArsenTech/idea-checklist) - ⭐ 1 - A checklist app for Tech YouTube Streamers and other people built using React, Tauri, and ShadCN UI
 <!-- REPOS-END -->
 
-➡️ [More Creations][repos-url]
+➡️ [More Projects][repos-url]
 
 ---
 
