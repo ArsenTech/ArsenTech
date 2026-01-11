@@ -87,9 +87,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [Creations Stats v1.0.1](https://github.com/ArsenTech/creations-stats-workflow/releases/tag/v1.0.1) in [ArsenTech/creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow)
-2. 🚀 Published release [Creations Stats v1.0.0](https://github.com/ArsenTech/creations-stats-workflow/releases/tag/v1) in [ArsenTech/creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow)
-3. 🗣 Commented on [#4671](https://github.com/anuraghazra/github-readme-stats/issues/4671#issuecomment-3693938315) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+1. 🚀 Published release [Creations Stats v1.0.2](https://github.com/ArsenTech/creations-stats-workflow/releases/tag/v1.0.2) in [ArsenTech/creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow)
+2. 🚀 Published release [Creations Stats v1.0.1](https://github.com/ArsenTech/creations-stats-workflow/releases/tag/v1.0.1) in [ArsenTech/creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow)
+3. 🚀 Published release [Creations Stats v1.0.1](https://github.com/ArsenTech/creations-stats-workflow/releases/tag/v1.0.1) in [ArsenTech/creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow)
 <!--END_SECTION:activity-->
 
 ---
