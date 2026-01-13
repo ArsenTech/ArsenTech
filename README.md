@@ -59,7 +59,7 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [Different Year Bugs on Windows NT 4.0! | Christmas Special](https://www.youtube.com/watch?v=cRDT692sOzI)
+- [Different Year Bugs on Windows NT 4! | Christmas Special](https://www.youtube.com/watch?v=cRDT692sOzI)
 - [Dr. Web Antivirus VS The NoEscape.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=AsmuclNETVM)
 - [Make Your Linux Mint Terminal Look Modern! &lpar;Fish + Oh My Posh + Bash&rpar;](https://www.youtube.com/watch?v=joCLQhCqP4E)
 - [Quick Heal Total Security VS The MEMZ Trojan | Insane Antivirus Test](https://www.youtube.com/watch?v=noCzuelaGOY)
