@@ -20,7 +20,7 @@ jobs:
     - name: Generate the languages distribution
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/languages.svg
+        image-file: languages.svg
         colors: dark-dimmed
         hide-keys: general, contributions, repositories
       env:
@@ -29,7 +29,7 @@ jobs:
     - name: Generate the contributions stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/stats.svg
+        image-file: stats.svg
         colors: dark-dimmed
         hide-keys: general, languages
       env:
@@ -38,7 +38,7 @@ jobs:
     - name: Generate the languages distribution
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/languages-light.svg
+        image-file: languages-light.svg
         colors: light
         hide-keys: general, contributions, repositories
       env:
@@ -47,7 +47,7 @@ jobs:
     - name: Generate the contributions stats
       uses: cicirello/user-statistician@v1
       with:
-        image-file: images/stats-light.svg
+        image-file: stats-light.svg
         colors: light
         hide-keys: general, languages
       env:
