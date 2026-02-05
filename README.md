@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header-img.png" alt="Header">
+  <img src=".github/header-img.png" alt="Header">
 </p>
 <h1 align="center">Hello There 👋, I am Arsen - a.k.a. <a href="https://arsentech.github.io/">ArsenTech</a></h1>
 <p align="center">
@@ -132,9 +132,9 @@
 <details>
   <summary><h3>:zap: Github Stats</h3></summary>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="images/stats.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="images/stats-light.svg" />
-    <img alt="ArsenTech's Github Stats" src="images/stats-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/stats.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/stats-light.svg" />
+    <img alt="ArsenTech's Github Stats" src="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/stats-light.svg" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=ArsenTech&theme=vue-dark" />
@@ -147,9 +147,9 @@
     <img alt="ArsenTech's Github Contributor Stats" src="https://github-contributor-stats.vercel.app/api?username=ArsenTech&limit=5&theme=vue&combine_all_yearly_contributions=true" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="images/languages.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="images/languages-light.svg" />
-    <img alt="Top Languages" src="images/languages-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/languages.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/languages-light.svg" />
+    <img alt="Top Languages" src="https://raw.githubusercontent.com/ArsenTech/ArsenTech/refs/heads/stats-output/languages-light.svg" />
   </picture>
 </details>
 
