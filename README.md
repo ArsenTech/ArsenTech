@@ -121,6 +121,7 @@
 
 ### 💬 Gists
 <!-- GISTS-START -->
+- [Useful NodeJS Script to check missing JSON i18n keys](https://gist.github.com/ArsenTech/d472f13824734c5bdd5f7ad8a8f15754)
 - [20 JavaScript One-Liner Functions You Need to Know](https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57)
 - [CONTRIBUTING.md Template – by ArsenTech](https://gist.github.com/ArsenTech/cf46150a1ed7041b63a80ab301340209)
 <!-- GISTS-END -->
