@@ -87,9 +87,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🔒 Closed issue [#9](https://github.com/ArsenTech/clamav-gui/issues/9) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
-2. 🗣 Commented on [#9](https://github.com/ArsenTech/clamav-gui/issues/9#issuecomment-4156856338) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
-3. 🔓 Reopened issue [#9](https://github.com/ArsenTech/clamav-gui/issues/9) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
+1. 🚀 Published release [ClamAV GUI v1.0.4](https://github.com/ArsenTech/clamav-gui/releases/tag/v1.0.4) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
+2. 🔒 Closed issue [#9](https://github.com/ArsenTech/clamav-gui/issues/9) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
+3. 🗣 Commented on [#9](https://github.com/ArsenTech/clamav-gui/issues/9#issuecomment-4156856338) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
 <!--END_SECTION:activity-->
 
 ---
