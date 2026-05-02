@@ -59,11 +59,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Avast Antivirus VS Tif.exe | Advanced Antivirus Test &lpar;GDI Payload&rpar;](https://www.youtube.com/watch?v=WkjFE0UxFDc)
 - [I Just Shred The Windows 10 VM! | Advanced Windows Test](https://www.youtube.com/watch?v=eNgERWBEE2A)
 - [Make Your Arch Linux Terminal Look Modern! &lpar;Fish + Oh My Posh&rpar;](https://www.youtube.com/watch?v=wcpgygwiTFA)
 - [Different Year Bugs on Windows NT 4! | Christmas Special](https://www.youtube.com/watch?v=cRDT692sOzI)
 - [Dr. Web Antivirus VS The NoEscape.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=AsmuclNETVM)
-- [Make Your Linux Mint Terminal Look Modern! &lpar;Fish + Oh My Posh + Bash&rpar;](https://www.youtube.com/watch?v=joCLQhCqP4E)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos][yt-arsentech-url]
