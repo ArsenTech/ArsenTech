@@ -60,11 +60,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Make Your Windows 11 Terminal Look Modern &amp; Beautiful!](https://www.youtube.com/watch?v=qD_PQrHi3iQ)
 - [G-Data Total Security VS NoEscape.exe Malware | Antivirus Test](https://www.youtube.com/watch?v=0bebl37ucSc)
 - [What if You Delete Every UWP Apps on Windows 10? | Windows Test](https://www.youtube.com/watch?v=rZACrmBi6PU)
 - [Avast Antivirus VS Tif.exe | Advanced Antivirus Test &lpar;GDI Payload&rpar;](https://www.youtube.com/watch?v=WkjFE0UxFDc)
 - [I Just Shred The Windows 10 VM! | Advanced Windows Test](https://www.youtube.com/watch?v=eNgERWBEE2A)
-- [Make Your Arch Linux Terminal Look Modern! &lpar;Fish + Oh My Posh&rpar;](https://www.youtube.com/watch?v=wcpgygwiTFA)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos][yt-arsentech-url]
