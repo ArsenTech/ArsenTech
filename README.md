@@ -74,11 +74,11 @@
 ### :book: Latest Blog Posts
 
 <!-- BLOG-POSTS:START -->
+- [Make Your Windows 11 Terminal Look Modern &amp; Beautiful!](https://arsentech-blog.vercel.app/posts/win11-terminal-customization)
 - [20 JavaScript One-Liner Functions Every Developer Should Know](https://arsentech-blog.vercel.app/posts/20-javascript-one-liners)
 - [How to Remove The 000.exe Virus](https://arsentech-blog.vercel.app/posts/remove-000-exe)
 - [How to Remove The MEMZ Trojan](https://arsentech-blog.vercel.app/posts/remove-memz)
 - [How to Remove The Petya Ransomware](https://arsentech-blog.vercel.app/posts/remove-petya-ransomware)
-- [How to Make Shutdown, Restart &amp; Lock Shortcuts on Any Windows PC](https://arsentech-blog.vercel.app/posts/power-shortcuts)
 <!-- BLOG-POSTS:END -->
 
 ➡️ [More Posts][blog-url]
