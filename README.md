@@ -88,9 +88,9 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [I18N Translator v0.3.1](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.3.1) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
-2. 🚀 Published release [I18N Translator v0.3.0](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.3.0) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
-3. 🚀 Published release [I18N Translator v0.2.7](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.2.7) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
+1. 🚀 Published release [I18N Translator v1.0.0](https://github.com/ArsenTech/i18n-translator/releases/tag/v1.0.0) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
+2. 🚀 Published release [I18N Translator v0.3.1](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.3.1) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
+3. 🚀 Published release [I18N Translator v0.3.0](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.3.0) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
 <!--END_SECTION:activity-->
 
 ---
