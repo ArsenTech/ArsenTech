@@ -113,7 +113,7 @@
 - [clamav-gui](https://github.com/ArsenTech/clamav-gui) - ⭐ 17 - 🛡️ A GUI for ClamAV Antivirus that makes the Antivirus itself look professional and work exactly like ClamAV
 - [creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow) - ⭐ 1 - 📘 A Github Action that generates user's portfolio stats (Repositories and Gists). Perfect for profile readme customization!
 - [downloads](https://github.com/ArsenTech/downloads) - ⭐ 3 - 📁 Downloads Page of ArsenTech's Website
-- [i18n-translator](https://github.com/ArsenTech/i18n-translator) - ⭐ 1 - 🌍 A Universal Translator that helps you localize and translate some apps into your native language
+- [i18n-translator](https://github.com/ArsenTech/i18n-translator) - ⭐ 0 - 🌍 A Universal Translator that helps you localize and translate some apps into your native language
 - [idea-checklist](https://github.com/ArsenTech/idea-checklist) - ⭐ 1 - ⚡ A checklist app for Tech YouTube Streamers and other people built using React, Tauri, and ShadCN UI
 <!-- REPOS-END -->
 
