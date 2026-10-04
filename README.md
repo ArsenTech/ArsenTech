@@ -88,7 +88,7 @@
 ### :zap: Recent Github Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#20](https://github.com/ArsenTech/clamav-gui/issues/20#issuecomment-5139342591) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
+1. 🗣 Commented on [#25](https://github.com/ArsenTech/clamav-gui/issues/25#issuecomment-5929512748) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
 2. 🗣 Commented on [#11](https://github.com/ArsenTech/clamav-gui/issues/11#issuecomment-5139300598) in [ArsenTech/clamav-gui](https://github.com/ArsenTech/clamav-gui)
 3. 🚀 Published release [I18N Translator v0.3.0](https://github.com/ArsenTech/i18n-translator/releases/tag/v0.3.0) in [ArsenTech/i18n-translator](https://github.com/ArsenTech/i18n-translator)
 <!--END_SECTION:activity-->
