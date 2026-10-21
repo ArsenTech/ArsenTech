@@ -9,7 +9,7 @@
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenTech?color=yellow&logo=github&style=for-the-badge">
   <a href="https://github.com/sponsors/ArsenTech"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86&style=for-the-badge" alt="Sponsor ArsenTech"/></a>
 </p>
-<h3 align="center">Programmer, Developer, Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
+<h3 align="center">App + Web Developer and Tech Youtuber from 🇦🇲 Armenia 🇦🇲</h3>
 
 ### Short Information
 - 🔭 I’m currently working on **Programming & Video Editing**
