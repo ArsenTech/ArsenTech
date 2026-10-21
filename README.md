@@ -6,7 +6,7 @@
   <img alt="GitHub followers" src="https://img.shields.io/github/followers/ArsenTech?color=blue&label=Followers&logo=Github&logoColor=white&style=for-the-badge">
   <a href="https://arsentech.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=dc3545&down_message=Offline&label=Website&style=for-the-badge&up_color=22b455&up_message=Online&url=https%3A%2F%2Farsentech.github.io"></a>
   <a href="https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg" target="_blank"><img alt="YouTube Channel Subscribers" src="
-    https://img.shields.io/badge/YouTube%20-FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=%23Fafafa"></a>
+    https://img.shields.io/badge/YouTube%20-FF0000.svg?&style=for-the-badge&logo=YouTube"></a>
   <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/ArsenTech?color=yellow&logo=github&style=for-the-badge">
   <a href="https://github.com/sponsors/ArsenTech"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86&style=for-the-badge" alt="Sponsor ArsenTech"/></a>
 </p>
