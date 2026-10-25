@@ -48,6 +48,7 @@
 [![Socket.io][socket-io-shield]][socket-io-url]
 [![Tauri][tauri-shield]][tauri-url]
 [![PostgreSQL][postgresql-shield]][postgresql-url]
+[![GitHub Actions][gh-actions-shield]][gh-actions-url]
 
 #### Secondary Skills
 [![Sass][sass-shield]][sass-url]
@@ -222,6 +223,8 @@
 [tauri-url]: https://v2.tauri.app/
 [postgresql-shield]: https://img.shields.io/badge/PostgreSQL-222222?style=for-the-badge&logo=postgresql&logoColor=316192
 [postgresql-url]: https://www.postgresql.org/
+[gh-actions-shield]: https://img.shields.io/badge/github%20actions-222222.svg?style=for-the-badge&logo=githubactions&logoColor=%232671E5
+[gh-actions-url]: https://github.com/features/actions
 
 <!-- Secondary skills link -->
 [sass-shield]: https://img.shields.io/badge/Sass-222222?style=for-the-badge&logo=sass&logoColor=CC6699
