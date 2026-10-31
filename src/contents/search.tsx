@@ -7,24 +7,24 @@ import { useRouter } from "next/navigation"
 import * as z from "zod"
 import { Controller, useForm } from "react-hook-form"
 import dynamic from "next/dynamic"
-import AppSection from "../site-section"
+import AppSection from "@/components/site-section"
 import { SearchIcon } from "lucide-react"
-import SiteSection from "../layout/section"
+import SiteSection from "@/components/layout/section"
 import { PaginationWithLinks } from "@/components/pagination-with-links"
-import NoSearchResults from "../shrug"
+import NoSearchResults from "@/components/shrug"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
-import { BlogPostsProps } from "../blog-posts"
-import PostsLoader from "../loaders/posts"
+import { BlogPostsProps } from "@/components/blog-posts"
+import PostsLoader from "@/components/loaders/posts"
 import { getRangeAsText } from "@/lib/helpers/seo"
 import usePaginatedData from "@/hooks/use-pagination"
-import { Field, FieldGroup } from "../ui/field"
+import { Field, FieldGroup } from "@/components/ui/field"
  
 export const searchSchema = z.object({
      query: z.string().trim()
 })
 
 function BlogPosts(props: BlogPostsProps) {
-     const Inner = dynamic(() => import("../blog-posts"), {
+     const Inner = dynamic(() => import("@/components/blog-posts"), {
           ssr: false,
           loading: () => <PostsLoader count={props.posts.slice(
                (props.currentPage - 1) * props.pageSize,

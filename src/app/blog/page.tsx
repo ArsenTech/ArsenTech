@@ -1,5 +1,5 @@
 import PageLayout from "@/components/layout";
-import LandingPage from "@/components/pages/landing/blog";
+import BlogContent from "@/contents/blog";
 import { KEYWORDS, POSTS_PER_PAGE } from "@/lib/constants";
 import { getAllPosts, getCategories } from "@/lib/helpers";
 import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo";
@@ -41,8 +41,8 @@ export const generateMetadata = async({searchParams}: HomepageProps): Promise<Me
       description: "Your go-to hub for tech tutorials, antivirus comparisons, and in-depth guides for programmers, tech enthusiasts, and more tech related curious minds.",
     },
     pagination: {
-        previous: currentPage > 1 ? absoluteURL(`/blog?page=${currentPage - 1}`) : undefined,
-        next: currentPage < totalPages ? absoluteURL(`/blog?page=${currentPage + 1}`) : undefined
+      previous: currentPage > 1 ? absoluteURL(`/blog?page=${currentPage - 1}`) : undefined,
+      next: currentPage < totalPages ? absoluteURL(`/blog?page=${currentPage + 1}`) : undefined
     },
     alternates: metaAlternatives(currentPage === 1 ? "/blog" : `/blog?page=${currentPage}`)
   }
@@ -55,7 +55,7 @@ export default async function BlogPage({searchParams}: HomepageProps) {
   const categories = await getCategories(posts);
   return (
     <PageLayout>
-      <LandingPage
+      <BlogContent
         pageSize={postsPerPage}
         posts={posts}
         currentPage={currentPage}

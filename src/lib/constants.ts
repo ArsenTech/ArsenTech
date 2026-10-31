@@ -5,17 +5,18 @@ export const LINKS = [
      {name: "Home", url: "/#home"},
      {name: "About", url: "/#about"},
      {name: "Contact", url: "/#contact"},
+     {name: "Downloads", url: "/downloads"},
      {name: "Blog", url: "/blog"}
 ]
 
 export const SOCIAL_MEDIA_LINKS = [
-     {Icon: SiYoutube, url: "https://www.youtube.com/c/ArsenTech/"},
-     {Icon: SiPatreon, url: "https://www.patreon.com/ArsenTech"},
-     {Icon: FaCodepen, url: "https://codepen.io/ArsenJS/"},
-     {Icon: SiGithub, url: "https://github.com/ArsenTech/"},
-     {Icon: SiDeviantart, url: "https://www.deviantart.com/arsen2005"},
-     {Icon: SiScratch, url: "https://scratch.mit.edu/users/ArsenTech/"},
-     {Icon: SiOdysee, url: "https://odysee.com/@ArsenTech"},
+     {Icon: SiYoutube, url: "https://www.youtube.com/c/ArsenTech/", title: "Subscribe on YouTube"},
+     {Icon: SiPatreon, url: "https://www.patreon.com/ArsenTech", title: "Join my Patreon"},
+     {Icon: FaCodepen, url: "https://codepen.io/ArsenJS/", title: "Follow on Codepen"},
+     {Icon: SiGithub, url: "https://github.com/ArsenTech/", title: "Follow on GitHub"},
+     {Icon: SiDeviantart, url: "https://www.deviantart.com/arsen2005", title: "Follow on DeviantArt"},
+     {Icon: SiScratch, url: "https://scratch.mit.edu/users/ArsenTech/", title: "Follow on Scratch"},
+     {Icon: SiOdysee, url: "https://odysee.com/@ArsenTech", title: "Follow on Odysee"},
 ]
 
 export const POSTS_PER_PAGE = 8

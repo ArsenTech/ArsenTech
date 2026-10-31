@@ -10,7 +10,7 @@ import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "
 import { SearchIcon } from "lucide-react"
 import * as z from "zod"
 import { Controller, UseFormReturn } from "react-hook-form"
-import { searchSchema } from "./pages/search"
+import { searchSchema } from "../contents/search"
 import { Field, FieldGroup } from "./ui/field"
 interface NoSearchResultsProps{
      tag: string

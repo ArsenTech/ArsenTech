@@ -5,10 +5,10 @@ import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, Table
 import { buttonVariants } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { MDXComponents } from "mdx/types";
-import CodeSnippetBlock from "./components/code-block";
-import { Blockquote } from "./components/blockquote-box";
-import { Kbd, KbdGroup } from "./components/ui/kbd";
-import CMDBlock from "./components/cmd-block";
+import CodeSnippetBlock from "@/components/code-block";
+import { Blockquote } from "@/components/blockquote-box";
+import { Kbd, KbdGroup } from "@/components/ui/kbd";
+import CMDBlock from "@/components/cmd-block";
 import {
   Children,
   isValidElement,

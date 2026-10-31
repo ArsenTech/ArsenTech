@@ -3,25 +3,25 @@ import { IBlogPostBase } from "@/lib/types"
 import { getBackgroundImage } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Rss } from "lucide-react";
+import { Compass, Rss } from "lucide-react";
 import { useMemo, useState } from "react"
 import { MAX_FEATURED_POSTS } from "@/lib/constants"
 import dynamic from "next/dynamic"
-import LandingH1 from "../../h1-animated-text";
-import AppSection from "../../site-section"
-import SiteSection from "../../layout/section";
-import { BlogPostsProps } from "../../blog-posts";
-import PostsLoader from "../../loaders/posts";
+import LandingH1 from "@/components/h1-animated-text";
+import AppSection from "@/components/site-section"
+import SiteSection from "@/components/layout/section";
+import { BlogPostsProps } from "@/components/blog-posts";
+import PostsLoader from "@/components/loaders/posts";
 import { SearchIcon } from "lucide-react"
-import { BlogWidget, BlogWidgetCard } from "../../blog/widget"
+import { BlogWidget, BlogWidgetCard } from "@/components/blog/widget"
 import { PaginationWithLinks } from "@/components/pagination-with-links"
-import CollapsibleFilters from "../../blog/widget/filters"
-import NoSearchResults from "../../shrug"
+import CollapsibleFilters from "@/components/blog/widget/filters"
+import NoSearchResults from "@/components/shrug"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
 import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
 
-interface LandingPageProps{
+interface BlogContentProps{
      posts: IBlogPostBase[],
      totalPages: number,
      currentPage: number,
@@ -31,7 +31,7 @@ interface LandingPageProps{
 }
 
 function BlogPosts(props: BlogPostsProps) {
-     const Inner = dynamic(() => import("../../blog-posts"), {
+     const Inner = dynamic(() => import("@/components/blog-posts"), {
           ssr: false,
           loading: () => <PostsLoader count={props.posts.slice(
                (props.currentPage - 1) * props.pageSize,
@@ -41,7 +41,7 @@ function BlogPosts(props: BlogPostsProps) {
      return <Inner {...props} />
 }
 
-export default function LandingPage({posts, totalPages, currentPage, categories, pageSize, query}: LandingPageProps){
+export default function BlogContent({posts, totalPages, currentPage, categories, pageSize, query}: BlogContentProps){
      const [search, setSearch] = useState(query)
      const [selected, setSelected] = useState<string[]>([])
      const filteredPosts = useMemo(()=>{
@@ -64,11 +64,11 @@ export default function LandingPage({posts, totalPages, currentPage, categories,
      return (
           <main>
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-screen min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
-                    <LandingH1/>
+                    <LandingH1 prefix="Blog Page For" texts={["Tech Fans", "Programmers", "Cybersecurity Fans", "People Finding for the Solutions"]}/>
                     <p className="text-lg sm:text-xl">Learn about cybersecurity, tech tutorials, unique coding projects, and other tech-related posts all in one place.</p>
                     <div className="flex items-center gap-2">
                          <Button size="lg" variant="alternate" asChild>
-                              <Link href="#blog">Explore blog</Link>
+                              <Link href="#blog"><Compass/> Explore blog</Link>
                          </Button>
                          <Button size="icon-lg" variant="secondary" asChild>
                               <Link href="/rss.xml"><Rss/></Link>

@@ -1,5 +1,5 @@
 import PageLayout from "@/components/layout"
-import Search from "@/components/pages/search"
+import Search from "@/contents/search"
 import { KEYWORDS, POSTS_IN_SEARCH } from "@/lib/constants"
 import { getAllTags, getPostsByTag } from "@/lib/helpers"
 import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo"

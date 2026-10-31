@@ -1,5 +1,5 @@
 import PageLayout from "@/components/layout";
-import BlogPost from "@/components/pages/blog-post";
+import BlogPost from "@/contents/blog/post";
 import { KEYWORDS } from "@/lib/constants";
 import { getAllSlugs, getPostBySlug, getRelatedPosts } from "@/lib/helpers";
 import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo";

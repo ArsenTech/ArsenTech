@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ---
 
 ## 3.0.0 - Unreleased
+### Added
+- Icons inside Hero buttons
 ### Moved
 - The Entire Blog Workflow
 ### Improved
