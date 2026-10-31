@@ -7,13 +7,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## 3.0.0 - Unreleased
 ### Added
-- Icons inside Hero buttons
+- Icons inside hero section buttons
 ### Moved
-- The Entire Blog Workflow
+- Migrated the entire blog workflow to the new website
 ### Improved
-- The entire blog content
-### Removed
-- `manifest.json` for `manifest.webmanifest`
+- Refreshed the blog content and presentation
+- Improved code blocks with syntax highlighting and additional functionality
+- Refreshed the Hero section across all pages
+### Changed
+- Renamed `manifest.json` to `manifest.webmanifest`
 
 ---
 
