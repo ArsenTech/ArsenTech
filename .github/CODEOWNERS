@@ -1,1 +1,26 @@
-assets/**      @ArsenTech
+# Configs
+tsconfig.json            @ArsenTech
+*.config.*               @ArsenTech
+components.json          @ArsenTech
+
+# Package Managing
+package.json             @ArsenTech
+package-lock.json        @ArsenTech
+
+# Common Repo Files
+README.md                @ArsenTech
+LICENSE.md               @ArsenTech
+docs/CONTRIBUTING.md     @ArsenTech
+docs/CODE_OF_CONDUCT.md  @ArsenTech
+docs/README.md           @ArsenTech
+CHANGELOG.md             @ArsenTech
+.gitignore               @ArsenTech
+
+# Everything in scripts folder
+/scripts/**              @ArsenTech
+
+# All GitHub workflow files
+.github/**               @ArsenTech
+
+# Every Single Blog Post
+src/posts/*.mdx          @ArsenTech
