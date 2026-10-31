@@ -1,0 +1,192 @@
+---
+title: "How to Remove The 000.exe Virus"
+description: "This guide will help you remove the 000.exe virus without any antivirus software or any help on your infected Windows PC."
+date: "2025-11-26"
+tags: ["000.exe", "malware", "remove 000.exe", "delete 000.exe", "computer virus", "000.exe removal", "000.exe malware", "how to remove 000.exe", "troubleshooting", "windows"]
+published: true
+featured: true
+categories: ["Malware Removal", "Windows", "Cybersecurity", "Troubleshooting"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Got infected by **000.exe** and can't figure out how to remove it?
+This guide will help you get rid of that malware on any Windows computer — **without antivirus software or outside help**.
+
+000.exe is not as destructive as deep ransomware or MBR malware.
+It mainly:
+- Spams **runaway message boxes**
+- Creates junk files
+- Edits small registry values
+- Changes your wallpaper
+- Drops startup entries
+
+Your **data and bootloader are safe**, only cosmetic and annoying changes are made.
+
+> [!WARNING]
+> Do not download malware or execute unknown scripts on a real machine.
+> All demonstrations on ArsenTech are performed inside isolated virtual machines.
+> Readers should follow the tutorial carefully and fully understand the steps before removing malware.
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/OAXdCbtfWm4)
+
+## Step 1 - Stopping the Message Boxes
+000.exe spams message boxes every millisecond, making your PC unusable.
+
+### 1. Stop CMD-based popups
+Open Command Prompt as Administrator and type:
+```cmd
+taskkill /f /im cmd.exe
+```
+This stops the chained message box commands.
+
+### 2. Stop the main spammer executable
+Open Command Prompt as Administrator again:
+```cmd
+taskkill /f /im runaway.exe
+```
+This immediately kills the process responsible for generating thousands of popups.
+
+> [!NOTE]
+> `runaway.exe` is an executable dropped by 000.exe to repeatedly launch spam message boxes.
+
+Once finished, your desktop should be clean and usable.
+
+## Step 2 - Delete Files Planted by 000.exe
+000.exe creates `.txt` and `.rtf` files on the desktop named `UR NEXT`
+
+To delete all of them at once, press:
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>A</Kbd>
+</KbdGroup>
+to select all files on your desktop. Then permanently delete them:
+<KbdGroup>
+     <Kbd>Shift</Kbd>
+     <span>+</span>
+     <Kbd>Del</Kbd>
+</KbdGroup>
+
+Empty your Recycle Bin afterward. This removes all visible leftovers from the malware.
+
+## Step 3 - Restore Your Theme & Desktop Background
+000.exe replaces your wallpaper with a corrupted image.
+
+To restore your desktop appearance:
+- Open **Settings**
+- Go to **Personalization → Themes**
+- Select your original theme
+- Reapply your preferred wallpaper
+
+Your system should now visually appear normal again.
+
+## Step 4 - Registry changes
+> [!CAUTION]
+> Only modify the registry keys shown below. Editing unrelated values may corrupt Windows and cause boot failure.
+
+Open the run dialog:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+And type `regedit`. If prompted, click **Yes**.
+
+### Registry Change 1 - Enable Task Manager
+Navigate to:
+```
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System
+```
+
+Right-click and **delete** `DisableTaskMgr`
+
+Task Manager will work again after restarting your PC.
+
+### Registry Change 2 - Change the Icon of the Text files
+000.exe points .txt icons to a malicious file. Reset it to the Windows default by navigating to:
+```
+HKEY_CLASSES_ROOT/txtfile/DefaultIcon
+```
+And changing the **(Default)** entry:
+| Before                                            | After                                   |
+| ------------------------------------------------- | --------------------------------------- |
+| `C:\Users\<username>\AppData\Local\temp\icon.ico` | `C:\Windows\system32\imageres.dll,-102` |
+
+This restores the normal text document icon.
+Changes take effect after a restart.
+
+## Step 5 - Remove Startup Entries
+Open File Explorer and go to:
+```
+%programdata%/Microsoft/Windows/Start Menu/Programs/Startup
+```
+Delete `rniw.exe`
+
+> [!NOTE]
+> `rniw.exe` rniw.exe is a startup program created by 000.exe to re-enable its message boxes.
+
+## Step 5 - Clear Temporary Files
+Open the Run dialog:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+
+Type `%temp%`.
+
+Select all files and delete everything inside the Temp folder.
+This removes leftover icons, scripts, and junk files dropped by 000.exe.
+
+## Step 7 - Restore Your Username
+000.exe may rename your Windows account to **UR NEXT**.
+
+To restore it:
+1. Press the following keys:
+   <KbdGroup>
+        <Kbd>⊞</Kbd>
+        <span>+</span>
+        <Kbd>R</Kbd>
+   </KbdGroup>
+2. Type `control`
+3. Navigate to: `User Accounts → User Accounts`
+4. Click **Change your account name**
+
+Choose your preferred name and restart your PC.
+
+## Conclusion
+And that’s it!
+The 000.exe virus has been completely removed from your system.
+
+This malware mainly changes:
+- Registry values
+- Wallpaper & theme
+- Text icons
+- Startup programs
+- User account name
+- Temporary files
+- Message box spammers
+
+So restoring everything **manually** is essential.
+
+**To prevent future infections:**
+- Delete suspicious `.exe` files immediately
+- Never run unknown programs
+- Use a stronger antivirus
+- Keep real-time protection enabled
+- Only test malware inside virtual machines
+- Avoid downloading from untrusted websites
+- Practice safe browsing habits
+
+Thanks for reading! For more malware removal guides and educational malware tests, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

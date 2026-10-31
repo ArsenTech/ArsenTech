@@ -1,0 +1,222 @@
+---
+title: "20 JavaScript One-Liner Functions Every Developer Should Know"
+description: "There are 20 JavaScript one-liners Every Developer Should Know. You can use these one-liner functions in your JavaScript project."
+date: "2025-12-24"
+tags: ["javascript", "coding" , "programming", "one liner", "one liners", "beginners", "vanilla javascript", "one-liner", "one-liner function", "js code", "utility-functions",]
+published: true
+featured: false
+categories: ["Javascript", "Coding", "Basics", "Utilities"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+
+**JavaScript one-liners** are small utility functions that solve common problems with minimal code. They're not about being clever — they're about readability, reuse, and understanding **core JavaScript concepts**. This guide will show you **20 useful one-liner functions** you need to know and use on **any JavaScript project**.
+All examples use **modern JavaScript (ES6+)** and work in both browser and Node.js environments.
+
+If you prefer watching instead of reading, the same examples are explained step by step in the video below: [Watch the video on YouTube](https://youtu.be/c-HgptUzl8o)
+
+## Number-Based One-Liners
+### Get a Random Number Between Two Values
+```js
+const getRandomNumber = (min, max) => Math.floor(Math.random()*(max-min))+min;
+
+console.log(getRandomNumber(1,10))
+```
+This function returns a random integer between `min` (inclusive) and `max` (exclusive).
+It's useful for things like IDs, simple games, or random selections.
+> [!TIP]
+> The `(max - min)` part ensures the number stays within the expected range.
+
+### Calculate the Factorial of a Number
+```js
+const factorial = number => number <= 1 ? 1 : number * factorial(number - 1);
+
+console.log(factorial(7))
+```
+This is a recursive one-liner that calculates the factorial of a number.
+Factorials are commonly used in mathematics, algorithms, and probability calculations.
+
+### Check If a Number Is Positive
+```js
+const isPositive = num => num > 0;
+
+console.log(isPositive(5))
+console.log(isPositive(-5))
+```
+Returns `true` if the number is greater than zero, otherwise `false`.
+
+### Check If a Number Is Even
+```js
+const isEven = num => num % 2 === 0;
+
+console.log(isEven(1));
+console.log(isEven(2));
+```
+A quick utility often used in validations and conditions.
+
+### Check If a Number Is Odd
+```js
+const isOdd = num => num % 2 !== 0;
+
+console.log(isOdd(2));
+console.log(isOdd(3))
+```
+Returns `true` for odd numbers and `false` otherwise.
+
+### Calculate the Area of a Circle
+```js
+const getCircleArea = rad => Math.PI*rad**2;
+
+console.log(getCircleArea(8))
+```
+Uses the mathematical formula **π × r²**.
+
+### Convert Celsius to Fahrenheit
+```js
+const toFahrenheit = celsius => (celsius*9/5)+32;
+console.log(toFahrenheit(30))
+```
+Useful for unit conversions in everyday applications.
+
+## Array-Based One-Liners
+### Generate a Random Item From an Array
+```js
+const getRandomValue = arr => arr[Math.floor(Math.random()*arr.length)];
+
+console.log(getRandomValue(["a","b","c","d","e","f","g","h"]))
+```
+This function selects a random element from an array.
+It works with any array type: strings, numbers, objects, or mixed values.
+
+### Shuffle an Array
+```js
+const shuffle = arr => arr.sort(()=>0.5-Math.random());
+
+console.log(shuffle([0,1,2,3,4,5,6,7,8,9]))
+```
+This is a simple way to shuffle an array in place.
+> [!NOTE]
+> This method is fine for small or casual use cases.
+For statistically perfect shuffling, a [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) is recommended.
+
+### Get Even Numbers From an Array
+```js
+const getEvenNumbers = arr => arr.filter(num=>num%2===0);
+
+console.log(getEvenNumbers([0,1,2,3,4,5,6,7,8,9]))
+```
+Filters out all even numbers from an array using `Array.filter().`
+
+### Get Odd Numbers From an Array
+```js
+const getOddNumbers = arr => arr.filter(num=>num%2!==0);
+
+console.log(getOddNumbers([0,1,2,3,4,5,6,7,8,9]))
+```
+The opposite of even filtering — useful for number processing tasks.
+
+### Find the Average of an Array
+```js
+const getAverage = arr => (arr.reduce((acc,num)=>acc+num,0))/arr.length;
+
+console.log(getAverage([0,1,2,3,4,5,6,7,8,9]))
+```
+Adds all values and divides by the array length to get the average.
+
+### Sum All Numbers in an Array
+```js
+const sum = arr => arr.reduce((acc,num)=>acc+num,0);
+
+console.log(sum([0,1,2,3,4,5,6,7,8,9]))
+```
+A compact way to calculate totals.
+
+### Remove Duplicates From an Array
+```js
+const getUniqueItems = arr => [...new Set(arr)];
+
+console.log(getUniqueItems([0,1,1,2,3,4,4,5,6,7,8,8,8,9,9,9,9,1,2,3,3,3,3,3]))
+```
+Uses `Set` to keep only unique values.
+
+### Check If an Array Is Empty
+```js
+const isEmpty = arr => arr.length === 0;
+
+console.log(isEmpty([]))
+console.log(isEmpty([1,2,3]))
+```
+A simple and reliable way to check if an array contains no elements.
+
+## String-Based One-Liners
+### Count the Vowels in a String
+```js
+const countVowels = str => (str.match(/[aeiou]/gi) || []).length;
+
+console.log(countVowels("ArsenTech"))
+```
+Uses a regular expression to count vowels, ignoring case.
+
+### Reverse a String
+```js
+const reverseString = str => str.split("").reverse().join("");
+
+console.log(reverseString("Hello World"))
+```
+Splits the string into characters, reverses them, and joins them back.
+
+### Convert a String to an Array of Words
+```js
+const toWordsArray = str => str.split(" ");
+
+console.log(toWordsArray("Lorem Ipsum Dolor Sit amet"))
+```
+Splits a sentence into words using spaces as separators.
+
+### Capitalize a String
+```js
+const capitalize = str => str[0].toUpperCase() + str.slice(1);
+
+console.log(capitalize("arsenTech"))
+```
+Capitalizes the first character of a string.
+
+### Check If a String Is a Palindrome
+```js
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+console.log(isPalindrome("kayak"))
+console.log(isPalindrome("coding"))
+```
+A palindrome reads the same forwards and backwards. This example is case-sensitive and space-sensitive.
+
+## Things to Keep in Mind
+- **One-liners aren't always better**
+     If a function becomes harder to read, clarity should win over brevity.
+- **Some methods mutate data**
+     Functions like `Array.sort()` modify the original array. Clone when needed.
+- **Simple ≠ perfect**
+     Some shortcuts (like array shuffling) are fine for everyday use but not for cryptographic or statistical accuracy.
+- **Understand before copying**
+     These examples are most useful when you understand why they work, not just that they work.
+
+## Conclusion
+JavaScript one-liners are small tools that solve common problems efficiently and clearly. When used thoughtfully, they can reduce boilerplate and make your code easier to read and maintain.
+
+You don't need to memorize all of them — just recognize patterns and reuse what fits your project.
+
+- Full Walkthrough for visual explanations: https://youtu.be/c-HgptUzl8o
+- Github Gist: https://gist.github.com/ArsenTech/f9d2b599cb758c889938a8c943860a57
+
+Found this guide helpful? Consider sharing it with a friend or leaving a comment — your feedback helps others, too!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

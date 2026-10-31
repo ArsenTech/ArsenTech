@@ -1,0 +1,212 @@
+---
+title: "How to Remove The Petya Ransomware"
+description: "This guide will help you remove the Petya ransomware and decrypt files without any antivirus software or any help on your infected Windows PC"
+date: "2025-11-26"
+tags: ["ransomware", "petya", "remove ransomware", "delete ransomware", "ransomware removal", "remove petya", "delete petya", "petya removal", "computer virus", "how to remove petya", "how to remove ransomware", "malware", "troubleshooting", "windows"]
+published: true
+featured: true
+categories: ["Malware Removal", "Windows", "Cybersecurity", "Troubleshooting", "Bootable USB"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Has your computer been encrypted and locked by **Petya ransomware**?
+Don't worry — this guide will help you **decrypt your system, repair your MBR, and restore your PC** without antivirus tools or external help.
+
+Petya is an **MBR-based ransomware**, meaning:
+- It **encrypts your disk sectors**
+- It **overwrites your Master Boot Record**
+- It replaces your Windows bootloader with a ransom screen
+- It prevents Windows from booting at all
+
+This guide will help you **decrypt Petya safely** and restore your PC back to normal.
+
+> [!WARNING]
+> Do NOT run malware on a real computer.
+> All demonstrations on ArsenTech are performed inside safe, isolated virtual machines.
+> Follow the steps carefully — bootloader repair and decryption are sensitive.
+> NEVER trust instructions written by a ransomware!
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/Z42H6yv0IQE)
+
+## Step 1 - Preparing to decrypt the PC
+
+Download the PetyaDecryptor made by security researcher [@hasherezade](https://github.com/hasherezade/petya_key/):
+https://github.com/ArsenTech/downloads/blob/static-files/PetyaDecryptor.zip
+
+![Petya Screen](/images/petya-img.jpg)
+
+1. On a clean PC, open the `id_raw.txt` file included in the ZIP.
+2. On the infected PC, copy the green-outlined Petya ID from the ransom screen.
+3. Type the ID exactly, with:
+     - No spaces
+     - No hyphens (`-`)
+     - **Only the raw characters**
+
+> [!IMPORTANT]
+> Do NOT copy the decryption ID from screenshots or online posts.
+> Petya generates a unique ID per device — using the wrong ID will NOT decrypt your computer.
+
+## Step 2 - Generating the Key
+1. Save the edited `id_raw.txt` file.
+2. Drag `id_raw.txt` onto `petya_key.exe`.
+3. Select your **Petya variant**:
+- `r` → Original Petya (Red Screen)
+- `g` → Mischa / Green Petya
+- `d` → GoldenEye
+4. The decryptor will display the correct decryption key for your infected PC.
+     > If the decryptor fails, double-check your ID formatting.
+     > Even one incorrect character will produce a wrong key.
+
+## Step 3 - Decrypting Petya
+On the infected PC:
+1. Type the generated key on the ransomware screen
+2. Press <kbd>Enter</kbd>
+
+If everything is correct, you will see:
+```
+Decrypting sector X of Y (XX%)
+```
+Once decryption reaches 100%, Petya will show:
+```
+Please reboot your computer!
+```
+Restart your computer.
+
+If Windows boots, congratulations! You removed Petya from the PC.
+If not, continue to Step 4.
+
+## Step 4 - If the MBR fix failed
+TSometimes the disk decrypts successfully but the bootloader remains broken.
+This section handles those “hard cases.”
+
+### 4.1 — Basic Fix (Startup Repair)
+
+You need:
+- A clean PC
+- A USB flash drive
+- A Windows ISO
+- Rufus / Ventoy
+
+Steps
+1. Create a Windows installation USB
+2. Boot the infected PC from the USB
+3. Click Next → Repair your computer
+
+Navigate to:
+```
+Troubleshoot → Advanced Options → Startup Repair
+```
+
+> [!NOTE]
+> Startup Repair may take several minutes. This is normal, so be patient :-)
+
+If the PC boots afterward → done. Otherwise, continue.
+
+### 4.2 — Run Bootrec Commands
+Boot again from the USB:
+```
+Next → Repair your computer → Troubleshoot → Advanced Options → Command Prompt
+```
+Run:
+```cmd
+bootrec /fixmbr
+bootrec /fixboot
+bootrec /rebuildbcd
+```
+
+If all commands succeed → restart. If Access Denied or no OS found, continue.
+
+### 4.3 — Check that Partitions Still Exist
+```
+diskpart
+list vol
+```
+
+If your Windows volume:
+- Is NTFS
+- Has the correct size
+
+Continue to the next step. If it appears RAW, missing, or incorrect → skip to Step 4.6.
+
+### 4.4 — Try Rebuilding BCD Without bootrec
+Try bypassing bootrec entirely:
+```cmd
+bcdboot C:\Windows /f ALL
+```
+If the PC boots → fixed! Otherwise, continue.
+
+### 4.5 — Recreate the MBR Manually (Legacy BIOS Only)
+> [!CAUTION]
+> Only for Legacy BIOS systems.
+> Do NOT perform these steps on UEFI computers.
+```cmd
+diskpart
+list disk
+select disk 0
+list partition
+select partition X   :: likely the 100 - 500MB System Partition
+active
+exit
+```
+
+Then repair:
+```cmd
+bootsect /nt60 sys /mbr
+```
+
+Restart. If it's still broken → continue.
+
+### 4.6 — Use TestDisk to Recover the Partition Table
+Download TestDisk (on a clean PC):
+https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.2-WIP.win.zip
+
+Open TestDisk from the Windows Recovery USB. Path:
+```
+TestDisk → No Log → Select Disk → EFI GPT → Analyze → Quick Search → Write
+```
+- Select the partition containing your Windows folders
+- Press **Write**
+- Confirm with **Y**
+
+If this succeeds → reboot. If not → final stage.
+
+### Final Stage — When Nothing Works
+Petya may cause bootloader/system partition damage that cannot be reversed unless decrypted correctly.
+
+Reinstallation is required if:
+- The Windows partition is RAW
+- The BCD cannot be rebuilt
+- The MBR/EFI are corrupted beyond repair
+- The Windows partition is missing
+- TestDisk cannot rebuild the NTFS boot sector
+
+At this point:
+- [X] Recover your files (TestDisk, Linux live USB, or Windows PE)
+- [X] Back everything up
+- [X] Reinstall Windows
+
+## Conclusion
+And that's it! You've successfully removed the Petya ransomware, decrypted your system, and restored the bootloader.
+Petya is extremely destructive — it encrypts data at the sector level and corrupts the MBR, so fixing the PC manually is essential.
+
+To prevent future infections:
+- Delete suspicious .exe files immediately
+- Never run unknown programs
+- Use a stronger antivirus
+- Keep real-time protection enabled
+- Always use a virtual machine for malware testing
+- Avoid downloading from untrusted sources
+- Back up your important files regularly!
+
+Thanks for reading! If you want more malware removal guides and educational malware tests, check out my YouTube channel.
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

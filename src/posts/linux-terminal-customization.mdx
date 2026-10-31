@@ -1,0 +1,325 @@
+---
+title: "How to Make Your Linux Terminal Look Cool & Modern"
+description: "This guide shows how to customize your Linux Terminal to look modern, beautiful, and cool. It's ideal for Linux users and those new to the Linux operating system."
+date: "2025-11-24"
+editDate: "2026-05-28"
+tags: ["oh my posh", "oh-my-posh", "bash", "nerd fonts", "linux", "linux shell", "fish shell", "bash shell", "fish linux", "nerd-fonts", "nerd fonts linux", "oh my posh linux","arch", "ubuntu", "debian", "linux mint", "neofetch", "fastfetch"]
+published: true
+featured: true
+categories: ["Tutorial","Terminal","Linux"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Do you want to make your Linux terminal look modern, cool, professional, and beautiful?
+This guide will show how to customize your Linux terminal using:
+- [**Fish shell**](https://fishshell.com/)
+- [**oh-my-posh**](https://ohmyposh.dev/)
+- [**Nerd Fonts**](https://www.nerdfonts.com/)
+- [**fastfetch**](https://github.com/fastfetch-cli/fastfetch)
+
+It's perfect for both beginners and advanced Linux users! 🐧
+
+If you prefer watching instead of reading, watch the full video guide on YouTube:
+- [Linux Terminal Tutorial](https://youtu.be/Sf1zejQUC7Y)
+- [Linux Mint Terminal Tutorial](https://youtu.be/joCLQhCqP4E) If you use Linux Mint or Ubuntu
+- [Arch Linux Terminal Tutorial](https://youtu.be/wcpgygwiTFA) If you use Arch Linux
+- [YT Short about Bash Customization](https://youtube.com/shorts/RALHQ3POj1A?feature=share) If you prefer Bash over a Fish Terminal
+
+## Step 1 - Installing the Fish Shell
+Open the preferred terminal, then run:
+<CMDBlock
+     shell="bash"
+     data={{
+          "Debian (apt-get)": "sudo apt-get install fish",
+          Debian: "sudo apt install fish",
+          Arch: "sudo pacman -S fish",
+          Fedora: "sudo dnf install fish"
+     }}
+/>
+Enter your password and press `Y` when prompted.
+
+After that, type `fish` to verify the shell works.
+
+## Step 2 - Installing Oh-my-posh
+Oh-my-posh lets you customize your shell with beautiful prompt themes.
+
+### Method 1
+1. Go to the Official GitHub repo of oh-my-posh: https://github.com/JanDeDobbeleer/oh-my-posh
+2. Open the Releases section and download the correct executable:
+     - `posh-linux-amd64` - for x64 systems
+     - `posh-linux-arm` - for ARM
+     - `posh-linux-arm64` - for ARM64
+
+3. Download **themes.zip** as well.
+
+> [!NOTE]
+> If you're unsure about your CPU architecture, run `uname -m`, and then download the correct executable
+
+#### Extracting themes
+Once **themes.zip** has finished downloading, create the folder:
+```bash
+mkdir -p ~/.poshthemes # or mkdir -p /home/<username>/.poshthemes
+```
+Then run the following command:
+```bash
+unzip ~/Downloads/themes.zip -d ~/.poshthemes
+```
+This extracts all `.omp.json` theme files.
+
+> [!TIP]
+Using the unzip command saves time compared to extracting through the file manager.
+
+#### Installing the binary
+After that, rename the executable to `oh-my-posh` and choose where to place it.
+
+- Install to `~/.local/bin` (Recommended)
+     ```bash
+     cp ~/Downloads/oh-my-posh ~/.local/bin
+     chmod +x ~/.local/bin/oh-my-posh
+     ```
+- Install to `/usr/bin` (system-wide)
+     ```bash
+     sudo cp ~/Downloads/oh-my-posh /usr/bin
+     sudo chmod +x /usr/bin/oh-my-posh
+     ```
+Make sure to type `oh-my-posh` and hit <kbd>Enter</kbd> to verify the installation.
+
+### Method 2
+To install oh-my-posh quickly, run the following command[^1]:
+
+[^1]: https://ohmypo.sh/docs/installation/linux
+
+```bash
+curl -s https://ohmyposh.dev/install.sh | bash -s
+```
+And themes will be installed in the `~/.cache/oh-my-posh/themes` folder.
+
+> [!NOTE]
+> It will install to `~/bin`, `~/.local/bin`, or the existing oh-my-posh executable folder depending on which one exists.
+> If your terminal can't find the `oh-my-posh` command after installation, make sure `~/bin` or `~/.local/bin` is in your **PATH**.
+
+#### Fixing the `Command Not Found` error
+When you type `oh-my-posh` but it says `Command Not Found`, do one of these methods:
+- Method 1: Give them an executable permission:
+     ```bash
+     sudo chmod +x ~/.local/bin/oh-my-posh
+     # Alternative:
+     sudo chmod 777 ~/.local/bin/oh-my-posh
+     ```
+- Method 2: Add them into the `$PATH` environment variable
+     1. Open Nano Text Editor:
+          ```bash
+          sudo nano ~/.bashrc
+          ```
+     2. Add `export PATH="$PATH:/home/<username>/local/bin"` into the end of the file
+     3. Save by using <KbdGroup><Kbd>Ctrl</Kbd><span>+</span><Kbd>S</Kbd></KbdGroup>, exit by using <KbdGroup><Kbd>Ctrl</Kbd><span>+</span><Kbd>X</Kbd></KbdGroup>
+     4. Refresh the terminal:
+          ```bash
+          source ~/.bashrc
+          ```
+- Method 3 (Recommended): Add them into `fish_user_paths`
+     ```fish
+     fish_add_path ~/.local/bin/
+     ```
+
+## Step 3 - Changing the Terminal Font
+Go to the official Nerd Fonts download page:
+https://www.nerdfonts.com/font-downloads
+
+Choose a font such as Fira Code Nerd Font, and download the chosen font.
+
+Extract these fonts into the folder and update the font references by running the following command:
+``` bash
+unzip ~/Downloads/<font-name>.zip -d ~/.local/share/fonts
+sudo fc-cache -f -v
+```
+
+### Changing font settings
+- **KDE Plasma** → System Settings → Appearance → Fonts → *Fixed Width*
+- **Linux Mint** → System Settings → Fonts → *Monospace*
+- **GNOME** → GNOME Tweaks → Fonts → *Monospace Text*
+
+Choose your installed nerd font.
+
+## Step 4 - Profile Configuration
+Open the `~/.config/fish/config.fish` file with the text editor, and add this above the if statement:
+```fish
+oh-my-posh init fish -c ~/.poshthemes/<theme>.omp.json | source
+```
+If you installed via the [second method](#method-2):
+```fish
+oh-my-posh init fish -c ~/.cache/oh-my-posh/themes/<theme>.omp.json | source
+```
+> `<theme>` - Any [oh-my-posh theme](https://ohmyposh.dev/docs/themes) (example: atomic)
+
+### KDE Plasma
+1. Open Terminal settings → Manage Profiles
+2. Create a new profile
+3. Set the command to `/bin/fish` (or `/usr/bin/fish`)
+4. Check Default Profile → Apply → OK
+
+### Linux Mint and GNOME Terminal
+1. Right-click on Terminal → Preferences
+2. Create a profile
+3. Go to the Command section
+4. Enable the "Run a custom command instead of my shell" option
+5. Enter `fish` as a custom command.
+6. Open the dropdown menu and select "Set as default".
+7. Close the Preferences Window
+
+### Arch Terminal
+Use the following command to change the Arch Console shell:
+``` bash
+chsh -s /usr/bin/fish
+# Alternative:
+chsh -s $(which fish)
+```
+> [!NOTE]
+> The `sudo chsh -s /usr/bin/fish` or `sudo chsh -s $(which fish)` on the user terminal changes the root shell
+
+## Step 5 - Changing the color scheme
+Color schemes improve your terminal appearance.
+
+### KDE Plasma
+1. Terminal → Manage Profiles
+2. Select your profile → Edit
+3. Appearance → Choose a color scheme
+4. Or click "Get New", search e.g., Dracula, install the color scheme, and choose it
+Apply → OK
+
+### Linux Mint and GNOME Terminal
+Right-click on the terminal → Preferences → Colors → Select a scheme
+
+> [!IMPORTANT]
+> Make sure to edit the correct profile.
+> **Recommended**: the GNOME color scheme.
+
+Once finished, click on the Close button
+
+## Adding fastfetch
+Run the following command to install fastfetch:
+<CMDBlock
+     shell="bash"
+     data={{
+          "Debian (apt-get)": "sudo apt-get install fastfetch",
+          Debian: "sudo apt install fastfetch",
+          Arch: "sudo pacman -S fastfetch",
+          Fedora: "sudo dnf install fastfetch"
+     }}
+/>
+
+Then open the preferred file explorer, open the `~/.config/fish/config.fish` file with the text editor, and add `fastfetch` above the oh-my-posh command.
+
+> [!NOTE]
+> Update (2026-01-30): Make sure to use [**fastfetch**](https://github.com/fastfetch-cli/fastfetch) instead of `neofetch` since Neofetch is no longer maintained and it becomes deprecated.
+
+## Root Terminal Customization
+While the user terminal customization is complete, we're customizing the root terminal now. Run the following command to enter the root terminal:
+```bash
+sudo su
+# Requires entering the password if prompted
+```
+Extract `themes.zip` again into the newly created folder:
+```bash
+unzip /home/<username>/Downloads/themes.zip -d ~/.poshthemes
+```
+Edit the `config.fish` with nano:
+```bash
+nano ~/.config/fish/config.fish
+```
+Add the oh-my-posh command above the if statement:
+```fish
+oh-my-posh init fish -c ~/.poshthemes/<theme>.omp.json | source
+```
+If you installed via the [second method](#method-2):
+```fish
+oh-my-posh init fish -c /home/<username>/.cache/oh-my-posh/themes/<theme>.omp.json | source
+```
+After that, save the file by pressing
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>S</Kbd>
+</KbdGroup>
+And close Nano by pressing
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>X</Kbd>
+</KbdGroup>
+Change root shell:
+```bash
+chsh -s /bin/fish
+# Alternative:
+chsh -s $(which fish)
+```
+And restart the root terminal:
+```bash
+exit
+sudo su
+```
+The root terminal is successfully customized!
+
+> [!IMPORTANT]
+> If it brings `Unknown command: oh-my-posh` on the root fish terminal also, use this command:
+> ```fish
+> fish_add_path /home/<username>/.local/bin
+> ```
+
+## Bash Shell Customization
+If you're still using the Bash terminal and you don't want to change the shell to fish, this section will help you apply Oh My Posh to the Bash shell.
+
+Open the terminal, and run the following command:
+```bash
+sudo nano ~/.bashrc
+```
+This opens the `.bashrc` file with nano. Then scroll all the way down and add the following bash command:
+```bash
+fastfetch # If you want to add fastfetch
+eval "$(oh-my-posh init bash -c ~/.poshthemes/<theme>.omp.json)"
+```
+If you installed via the [second method](#method-2):
+```bash
+fastfetch # If you want to add fastfetch
+eval "$(oh-my-posh init bash -c ~/.cache/oh-my-posh/themes/<theme>.omp.json)"
+```
+Save the file by pressing
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>S</Kbd>
+</KbdGroup>
+And close Nano by pressing
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>X</Kbd>
+</KbdGroup>
+Use the following command to apply the changes:
+```bash
+source ~/.bashrc
+```
+> [!NOTE]
+> Use
+> `eval "$(oh-my-posh init bash -c /home/<username>/.cache/oh-my-posh/themes/<theme>.omp.json)"`
+> If you used the [second method](#method-2) and you want to change the bash shell of the root terminal (`.bashrc` inside the root terminal)
+
+## Conclusion
+And that's it! Your Linux terminal is now fully modern, clean, and stylish.
+From installing fish to using oh-my-posh and Nerd Fonts, you now have a powerful terminal setup that looks way better than the default design.
+
+Whether you're a developer, a student, or someone exploring Linux for the first time, having a clean and beautiful terminal can make your daily tasks more enjoyable.
+You can always experiment with different color schemes, fonts, and themes until you find the perfect style for your system.
+
+Thanks for reading the guide! If you want more tutorials like this, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

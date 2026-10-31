@@ -1,0 +1,139 @@
+---
+title: "How to Create a Bootable USB (and Restore It to Normal) on Any PC"
+description: "This guide shows how to create a bootable USB for Windows or Linux, and how to restore a USB to full capacity afterward. It requires no command-line experience."
+date: "2025-09-19"
+editDate: "2026-05-28"
+tags: ["usb", "rufus", "bootable", "windows", "linux", "linux usb", "rufus usb", "windows pe", "windows usb", "bootable usb", "bootable linux", "bootable windows"]
+published: true
+featured: false
+categories: ["Tutorial", "Bootable USB", "Windows", "Linux"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+
+Creating a bootable USB is one of the easiest ways to install or repair an operating system (Like Windows or Linux).  
+In this guide, you'll learn how to create a bootable USB using **Rufus** and other tools,  
+And how to restore it to normal afterwards, so you can use it as regular storage.
+
+If you prefer watching instead of reading, here's the full video guide:
+- [Watch the video on YouTube](https://youtu.be/n_I6Eavmxuo)
+- [Watch the YT Short about making bootable USB](https://youtube.com/shorts/hteU98FN3Gc?feature=share)
+
+### Requirements
+- A USB flash drive (recommend 8GB or larger)
+- Rufus (or another tool)
+- ISO file for Windows/Linux
+- A PC running Windows
+
+## Step 1 - Download Rufus
+Go to the [Rufus' official page](https://rufus.ie/en/), scroll down to the downloads page, and download the latest version of Rufus.
+
+### Portable VS Installer
+
+#### Installation Requirements
+|Feature|Rufus|Rufus Portable|
+|-|-|-|
+|Installation Type|.exe file, no formal installation required|No installation, runs directly from USB|
+
+#### Configuration and Usage
+
+|Feature|Rufus|Rufus Portable|
+|-|-|-|
+|Configuration Storage|Stores user preferences in the registry|Stores settings locally in the same folder|
+|User Privileges|May require admin rights for some features|Typically requires only standard user privileges|
+
+#### Ideal Use Cases
+|Use Case|Rufus|Rufus Portable|
+|-|-|-|
+|Primary Device Usage|Best for dedicated workstations|Ideal for IT professionals or users on the go|
+|Clean Operation|Leaves minimal traces on the system|Leaves no traces, ensuring a clean experience|
+
+## Step 2 – USB and ISO setup
+Now insert the correct USB drive into your PC (recommended minimum size: 8GB), so Rufus will detect it automatically, and choose the correct device for Bootable USB.
+
+> [!WARNING]
+> If you choose a USB to make it bootable, Rufus will format these drives. **Formatting may cause data loss**, so make sure you back up everything in the USB to the safe folder in either the `C:` drive or `D:` drive
+
+Now add the Windows or Linux ISO file under the Boot selection option, then configure the following settings:
+- Partition Scheme (**MBR** or **GPT**)
+- Target System (**BIOS** or **UEFI**),
+- Bootable USB's volume label (e.g., `MX Linux Installer` or `WinPE Recovery`),
+- File System (**FAT32** or **NTFS**)
+
+## Step 3 - Create the Bootable USB
+Click the `START` button and wait for a few minutes (depending on ISO size and USB file transfer speed).
+
+Once the Progress bar says **"READY"**, eject the USB from the PC. Now you've successfully created a Bootable USB!
+
+## Restoring the USB to Normal
+After using your USB as a bootable drive, you may notice that its storage capacity appears smaller than before. For example, an 8 GB USB might suddenly show only 2 GB.
+
+This happens because bootable tools (like Rufus, Ventoy, or manual ISO writers) often **repartition** the USB to fit system files or add special boot sectors.
+
+The good news is it isn't damaged — You just need to **remove the bootable partitions and reformat the drive** to use its full storage again.
+
+Below are three simple methods you can use to restore your USB to normal size (reusable USB drive):
+### Method 1: Using Diskpart (Command Prompt)
+Open the run command by pressing the following keys:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+And type `cmd`.
+
+Type `diskpart` and hit Enter <Kbd>⏎</Kbd>, and then click on `Yes` if the UAC prompt appears.
+
+Now run the following commands in DiskPart:
+```cmd
+list disk
+select disk 1 :: Replace "1" with the number of your USB drive
+clean
+create partition primary
+format fs=fat32 label=USB quick
+exit
+```
+> [!IMPORTANT]
+> Make sure you **select the correct disk** before running clean, as it will permanently erase all data on that drive.
+
+### Method 2: Using File Explorer (Quick Format)
+Right-click the USB drive and select **Format**. Then do the following:
+- Choose the File System (NTFS or FAT32, but FAT32 is recommended)
+- Type the label (e.g.: `USB Drive`)
+- Check the "Quick Format Option"
+
+Click `Start` to format the bootable USB.
+
+### Method 3: Using Rufus
+Insert the bootable USB, set the **Boot selection** to `Non bootable`, then configure:
+- Choose the File System (NTFS or FAT32, but FAT32 is recommended)
+- Type the label (e.g.: `USB Drive`)
+
+Then click the `START` button.
+
+Once the Progress bar says **"READY"**, eject the USB from the PC. Now you've successfully converted the Bootable USB back to normal!
+
+> [!TIP]
+> Always safely eject your USB drive after formatting to prevent file system errors.
+
+## Alternatives to Rufus
+Each of these tools has its pros and cons:
+- **Balena Etcher** — simple and cross-platform.
+- **Ventoy** — supports multiple ISOs on a single USB.
+- **dd (Linux command)** — fast but requires care to avoid overwriting drives.
+
+## Conclusion
+Creating a bootable USB is one of the simplest ways to install or repair your operating system — and restoring it afterwards ensures your USB stays usable for years. Always double-check your disk before formatting!
+
+Found this guide helpful? Consider sharing it with a friend or leaving a comment — your feedback helps others, too!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

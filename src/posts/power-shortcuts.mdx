@@ -1,0 +1,88 @@
+---
+title: "How to Make Shutdown, Restart & Lock Shortcuts on Any Windows PC"
+description: "This guide shows how to make shortcuts to access the power options (Shutdown, Restart, Lock, Sleep, Logout) quickly."
+date: "2025-11-25"
+editDate: "2026-05-30"
+tags: ["shutdown", "restart", "lock", "windows", "sleep", "shortcuts", "windows shortcuts", "power shortcuts", "shortcut", "shutdown shortcut", "restart shortcut", "logout"]
+published: true
+featured: false
+categories: ["Tutorial", "Tips and Tricks", "Windows"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Power options on Windows such as:
+- Shutdown
+- Restart
+- Hibernate
+- Lock
+- Logout
+- Sleep
+
+are essential for turning off your PC, restarting it when something goes wrong, or putting it in sleep mode.
+This guide will help you create quick-access shortcuts for these actions — all without opening the Start Menu.
+
+If you prefer watching instead of reading, here's the full video guide:
+- [Watch the video on YouTube](https://youtu.be/vCDfiFOG6jg)
+- [Watch the YT Short about the guide](https://youtube.com/shorts/SfZ-q0PUa84?si=0BxKCugSjFLHgfmH)
+
+## Step 1 - Creating shortcuts
+Start by right-clicking on the desktop and selecting `New → Shortcut`. Enter the command in the location field, click Next, then name the shortcut.
+Finish the wizard by clicking Finish.
+
+You will create one shortcut for each power action.
+
+### Shortcut Locations
+|Name|Location (Command)|
+|-|-|
+|Shutdown|`Shutdown.exe /s /t 00`|
+|Restart|`Shutdown.exe /r /t 00`|
+|Lock|`Rundll32.exe User32.dll,LockWorkStation`|
+|Sleep|`rundll32.exe powrprof.dll,SetSuspendState 0,1,0`|
+|Logout|`Shutdown.exe /l`|
+
+> [!NOTE]
+> The Sleep shortcut works on most devices, but on some modern Windows 10/11 systems this command may hibernate instead of sleeping. If that happens, disable hibernation via `powercfg -h off`
+
+Repeat the process for all shortcuts listed above.
+
+## Step 2 - Icons
+Download the icon pack:
+https://github.com/ArsenTech/downloads/blob/static-files/Power-Icons.zip
+
+Then:
+1. Extract the **ZIP file**
+2. Right-click a shortcut → **Properties**
+3. Click **Change Icon…**
+4. If Windows prompts an alert, click **OK**
+5. Click **Browse**
+6. Paste the path to the extracted folder
+7. Select the matching icon
+8. Click **OK** → **Apply** → **OK**
+
+Repeat this for all shortcuts.
+
+### Shortcut Icons
+|Name|Flat Design|Frutiger Aero|
+|-|-|-|
+|Shutdown|![shutdown flat](/images/power-shortcuts/Flat/shutdown.jpg)|![shutdown aero](/images/power-shortcuts/Aero/shutdown.jpg)|
+|Restart|![restart flat](/images/power-shortcuts/Flat/restart.jpg)|![restart aero](/images/power-shortcuts/Aero/restart.jpg)|
+|Lock|![lock flat](/images/power-shortcuts/Flat/lock.jpg)|![lock aero](/images/power-shortcuts/Aero/lock.jpg)|
+|Sleep|![sleep flat](/images/power-shortcuts/Flat/sleep.jpg)|![sleep aero](/images/power-shortcuts/Aero/sleep.jpg)|
+|Logout|![logout flat](/images/power-shortcuts/Flat/logout.jpg)|![logout aero](/images/power-shortcuts/Aero/logout.jpg)|
+
+## Conclusion
+And that's it! You now have instant access to Shutdown, Restart, Sleep, Lock, and Logout options directly from your desktop.
+This simple trick makes your workflow faster and avoids unnecessary clicking through the Start Menu.
+
+Thanks for reading the guide! For more Windows tips, tricks, and tutorials, check out my YouTube channel.
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

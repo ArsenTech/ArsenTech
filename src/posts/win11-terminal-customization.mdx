@@ -1,0 +1,291 @@
+---
+title: "Make Your Windows 11 Terminal Look Modern & Beautiful!"
+description: "This guide shows how to customize your Windows 11 Terminal to look modern, stylish, and beautiful. It's ideal for Windows 11 users and those new to Windows!"
+date: "2026-06-03"
+tags: ["oh my posh", "oh-my-posh", "cmd", "nerd fonts", "windows", "powershell", "windows powershell", "windows 11", "cmd windows", "nerd-fonts", "nerd fonts windows", "oh my posh windows", "windows terminal", "terminal", "windows 11 terminal"]
+published: true
+featured: true
+categories: ["Tutorial","Terminal","Windows"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Do you want to make your Windows 11 Terminal look modern, professional, and stylish?
+
+In this guide, you'll learn how to transform the default Windows Terminal into a beautiful and productive development environment using Oh My Posh, Nerd Fonts, custom color schemes, transparency effects, and Fastfetch.
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/qD_PQrHi3iQ)
+
+### Requirements
+- [**oh-my-posh**](https://ohmyposh.dev/)
+- [**Nerd Fonts**](https://www.nerdfonts.com/)
+- [**Windows Terminal**](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US)
+- [**WinGet CLI**](https://github.com/microsoft/winget-cli)
+- [**Windows Terminal Themes**](https://windowsterminalthemes.dev/)
+- [**Clink**](https://chrisant996.github.io/clink/)
+
+## Step 1 - Installing Windows Terminal
+Before customizing your terminal,
+1. Go to Microsoft Store
+2. Search for "Windows Terminal"
+3. Select the official Microsoft application
+4. Click Install
+
+> [!TIP]
+> Alternatively, you can go to this link:
+>    https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US
+> And install the Terminal from there
+
+Make sure the WinGet CLI is also installed.
+
+## Step 2 - Installing Oh My Posh
+Open the Windows Terminal and type:
+```cmd
+winget install JanDeDobbeleer.OhMyPosh --source winget
+```
+
+> [!TIP]
+> Alternatively:
+> 1. Go to the Official GitHub repo of Oh My Posh:
+>    https://github.com/JanDeDobbeleer/oh-my-posh
+> 2. Open the Releases section
+> 3. Download the installer: `install-x64.msi`
+> 4. Run the Oh My Posh installer (`install-x64.msi`) to install Oh My Posh
+
+Once it's installed, switch to the PowerShell and type:
+```powershell
+oh-my-posh init pwsh | Invoke-Expression
+```
+To test the command and verify if Oh My Posh is installed.
+
+![PowerShell with Oh My Posh enabled](/images/win11-terminal/powershell-oh-my-posh.webp)
+*PowerShell after enabling Oh My Posh.*
+
+> [!IMPORTANT]
+> If you use
+> ```powershell
+> oh-my-posh init pwsh --eval | Invoke-Expression
+> ```
+> It might work as a fallback option, but the `--eval` option makes the initialization slower.
+
+> [!NOTE]
+> Make sure to open PowerShell as Administrator and type:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+> ```
+> To run local scripts if the Oh My Posh initialization command returns error
+
+> [!TIP]
+> Use:
+> ```cmd
+> winget upgrade JanDeDobbeleer.OhMyPosh --source winget
+> ```
+> To upgrade Oh My Posh
+
+Once Oh My Posh works, up next is configuring Oh My Posh inside the PowerShell.
+
+## Step 3 - Configuring Oh My Posh in PowerShell
+1. Create a new profile:
+     ```powershell
+     New-Item -Path $PROFILE -Type File -Force
+     ```
+2. Open the Profile with notepad:
+     ```powershell
+     notepad $PROFILE
+     ```
+3. Add the following command inside the profile:
+     ```powershell
+     oh-my-posh init pwsh | Invoke-Expression
+     ```
+4. Save the file, close Notepad, and refresh the profile by typing:
+     ```powershell
+     . $PROFILE
+     ```
+
+![PowerShell profile configured with Oh My Posh](/images/win11-terminal/profile-configured.webp)
+*Oh My Posh loaded automatically from the PowerShell profile.*
+
+Once it's initialized every time you start PowerShell, let's install Nerd fonts!
+
+## Step 4 - Installing Nerd Fonts
+1. Go to the official Nerd Fonts download page:
+     https://www.nerdfonts.com/font-downloads
+2. Choose a font such as **Fira Code Nerd Font** or **Geist Mono Nerd Font**, then download it.
+3. Once you've downloaded the Nerd Font, extract the downloaded Nerd Font archive.
+4. Select all fonts inside the extracted folder.
+5. Copy them and paste into `C:\Windows\Fonts`.
+6. Open Terminal, Go to the Dropdown menu → Settings → Defaults → Appearance
+7. Change the Font Face option to the preferred installed Nerd font (Recommended: Mono version)
+8. Save these new settings
+
+The icons will be visible once you use the nerd font as the Terminal font.
+
+## Step 5 - Changing the color scheme
+Unlike the [Windows 10 Terminal Tutorial](https://arsentech-blog.vercel.app/posts/win10-terminal-customization) guide, changing the color scheme here is easier.
+1. Open Terminal, Go to the Dropdown menu → Settings → Defaults → Appearance
+2. Change the Color scheme to the preferred color scheme
+
+If the preferred color scheme is not here
+1. Go to the website for Windows Terminal Color Schemes:
+     https://windowsterminalthemes.dev/
+2. Find the preferred color scheme.
+3. Once you found it, Click on Get Theme.
+4. Go to Terminal → Settings → Color Schemes
+5. Click on "Open JSON File"
+6. Paste the Color scheme inside the `"schemes"` property of the JSON file.
+7. Save the JSON file and close the editor
+8. Go to Terminal → Settings → Defaults → Appearance
+9. Choose the recently added color scheme, and save it
+
+![Monokai Pro color scheme example](/images/win11-terminal/monokai-pro.webp)
+*Example Monokai Pro (Filter Octagon) color scheme.*
+
+## Step 6 - Changing the Prompt design
+1. Go to Oh My Posh themes page:
+     https://ohmyposh.dev/docs/themes
+2. Find the preferred theme
+3. Once you found it, open the PowerShell profile:
+     ```powershell
+     notepad $PROFILE
+     ```
+4. Add the `-c` configuration inside the initialization command:
+     ```diff
+     - oh-my-posh init pwsh | Invoke-Expression
+     + oh-my-posh init pwsh -c "$env:POSH_THEMES_PATH/<theme>.omp.json" | Invoke-Expression
+     ```
+5. Save the file, close Notepad, and refresh the profile:
+     ```powershell
+     . $PROFILE
+     ```
+> `<theme>` - Any [Oh My Posh theme](https://ohmyposh.dev/docs/themes) (example: atomic)
+
+If `POSH_THEMES_PATH` didn't exist:
+1. Go to the Official GitHub repo of Oh My Posh:
+   https://github.com/JanDeDobbeleer/oh-my-posh
+2. Open the Releases section
+3. Download themes
+4. Extract into `C:\Users\<username>\themes` or your preferred path (e.g. `D:\User\themes`). Basically, unzipping as a folder with files
+5. Once it's extracted, search for "env" and click on "Edit the system environment variables"
+6. Click on "Environment Variables" and create a new environment variable
+   - Name: `POSH_THEMES_PATH`
+   - Path: Preferred theme path (e.g. `D:\User\themes` or `C:\Users\<username>\themes`)
+7. Click OK, OK, and OK, Restart the terminal, and your preferred theme will appear.
+
+## Step 7 - Configuring Oh My Posh in Command Prompt
+![Default Command Prompt](/images/win11-terminal/cmd-default.webp)
+*Default Command Prompt before customization.*
+
+Command Prompt does not support Oh My Posh natively. To enable custom prompts in CMD, we'll use Clink, which adds modern shell enhancements and Oh My Posh support.
+
+1. Open the Command prompt and type:
+     ```cmd
+     winget install clink
+     ```
+2. Restart the Command Prompt and use these commands:
+     ```cmd
+     clink config prompt use oh-my-posh
+     clink set ohmyposh.theme %POSH_THEMES_PATH%\<theme>.omp.json
+     ```
+> [!TIP]
+> Alternatively:
+> 1. Go to the official site of Clink:
+>    https://chrisant996.github.io/clink/
+> 2. Download the **Installer (EXE)**.
+> 3. Run the Clink installer and complete the setup wizard.
+
+The same configuration as on PowerShell will apply in the CMD also.
+
+## Step 8 - Designing the Terminal
+Open the Terminal, then Settings
+- For Transparent title bar: Appearance -> Turn on `Use acrylic material in the tab row`
+- For a Transparent background:
+  - Defaults -> Appearance -> Set `Background Transparency` to somewhere in between 40% and 90% (Recommended: 90%)
+  - Turn on `Enable Acrylic Material` for a glassmorphic background design
+
+Once it's changed, save the changes. The terminal will be glassmorphic once you made the titlebar and background transparent
+
+![Final customized terminal](/images/win11-terminal/final-result.webp)
+*Final result with Oh My Posh, Nerd Fonts, Clink, custom colors, and transparency enabled.*
+
+## Optionally - Neofetch-style Information box
+Install fastfetch on Windows 11:
+```cmd
+winget install fastfetch
+```
+
+> [!TIP]
+> Alternatively:
+> 1. Go to the Official GitHub repo of fastfetch:
+>    https://github.com/fastfetch-cli/fastfetch
+> 2. Open the Releases section
+> 3. Download the `amd64.zip` file (or `aarch64.zip` if you use ARM64) and install It
+
+Once it's installed, run:
+```cmd
+fastfetch
+```
+And it will show the information box similar to Neofetch.
+
+### Adding into the profile
+1. Open the PowerShell profile by typing:
+     ```powershell
+     notepad $PROFILE
+     ```
+2. Add the fastfetch command like this:
+     ```diff
+     + fastfetch
+     oh-my-posh init pwsh -c "$env:POSH_THEMES_PATH/<theme>.omp.json" | Invoke-Expression
+     ```
+3. Or use the alternative method:
+     ```diff
+     - oh-my-posh init pwsh -c "$env:POSH_THEMES_PATH/<theme>.omp.json" | Invoke-Expression
+     + fastfetch
+     + if($?) {
+     +     oh-my-posh init pwsh -c "$env:POSH_THEMES_PATH/<theme>.omp.json" | Invoke-Expression
+     +}
+     ```
+4. Save the file, close Notepad, and restart PowerShell.
+
+You'll see the information every time you start PowerShell.
+
+## Conclusion
+Congratulations! Your Windows 11 Terminal now has:
+
+- A modern prompt powered by Oh My Posh
+- Beautiful icons from Nerd Fonts
+- Custom color schemes
+- Glassmorphic transparency effects
+- Optional Fastfetch system information
+
+Feel free to experiment with different themes, fonts, and layouts until you find a setup that matches your workflow.
+
+Happy customizing!
+
+## FAQ
+
+### Does this work on Windows 10?
+Yes, although some appearance options may differ. Check out [Windows 10 Terminal Tutorial](https://arsentech-blog.vercel.app/posts/win10-terminal-customization) guide for a minimal approach.
+
+### Is Oh My Posh free?
+Yes.
+
+### Do I need Windows Terminal?
+It is highly recommended for the best experience.
+
+### Can I use CMD instead of PowerShell?
+Yes, using Clink.
+
+### Does this work with Windows PowerShell 5.1 and PowerShell 7?
+Yes. However, PowerShell 7 is recommended because it receives new features and improvements.
+
+Thanks for reading! If you want more tutorials like this, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

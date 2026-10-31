@@ -1,0 +1,517 @@
+---
+title: "How to Remove NoEscape.exe"
+description: "This guide will help you remove the trojan malware \"NoEscape.exe\" without any antivirus software or any help on your infected Windows PC."
+date: "2025-11-25"
+editDate: "2025-11-26"
+tags: ["noescape", "malware", "noescape.exe", "remove noescape", "delete noescape", "noescape removal", "noescape malware", "remove noescape.exe", "delete noescape.exe", "noescape.exe removal", "computer virus", "how to remove noescape.exe", "troubleshooting", "windows"]
+published: true
+featured: true
+categories: ["Malware Removal", "Windows", "Cybersecurity", "Troubleshooting", "Bootable USB"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Did your PC get infected by NoEscape.exe, and you can't figure out how to remove it? This guide will help you remove that malware without any antivirus software or any help!
+
+> [!WARNING]
+> Do not download malware or execute unknown scripts on a real machine.
+> All demonstrations on ArsenTech are performed inside isolated virtual machines.
+> Readers should follow the tutorial carefully and fully understand the steps before removing malware.
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/Y1iH7j_AFQY)
+
+## Step 1 - Recovery Using Windows PE
+
+Before removing NoEscape.exe, you must boot into a **safe offline environment**, such as **Windows PE (Windows Preinstallation Environment)**. This ensures that the malware cannot run while you are repairing the system.
+
+### What You Need
+- A clean computer
+- A USB flash drive
+- A Windows PE ISO (from trusted sources)
+- A bootable USB tool (Rufus, Ventoy, etc.)
+
+### Steps
+1. Create a Windows PE bootable USB (see the Bootable USB blog post if you need help).
+2. Insert the USB into the infected PC.
+3. Boot the PC and enter the Boot Menu (usually F2, F8, F11, F12, or Esc depending on manufacturer).
+4. Select the USB and boot into Windows PE.
+
+Once inside Windows PE, open Command Prompt and type `regedit`. This will allow you to manually repair the damaged registry entries injected by NoEscape.exe.
+
+> [!IMPORTANT]
+> Windows PE is required because NoEscape.exe modifies registry entries while Windows is running.
+> Editing them while the system is offline prevents the malware from interfering or reapplying its changes.
+
+## Step 2 - Registry Repair (Critical Step)
+> [!CAUTION]
+> Only modify the registry keys shown below. Editing unrelated values may corrupt Windows and cause boot failure.
+
+Inside the Registry Editor:
+1. Select HKEY_LOCAL_MACHINE
+2. Click File → Load Hive
+
+You will now load the registry hives from the infected Windows installation:
+
+### Hives To Load
+
+| Hive Name (You Choose) | Physical File Path                    | Represents                     |
+| ---------------------- | ------------------------------------- | ------------------------------ |
+| **InfectedPCSoftware** | `C:\Windows\System32\config\SOFTWARE` | `HKLM\SOFTWARE` of infected PC |
+| **InfectedPCSystem**   | `C:\Windows\System32\config\SYSTEM`   | `HKLM\SYSTEM` of infected PC   |
+| **InfectedPCUser**     | `C:\Users\<username>\NTUSER.DAT`      | `HKCU` of infected PC's user   |
+
+This loads the infected system's registry into Windows PE.
+
+### Registry Change 1 - Fix EXE File Hijack
+Navigate to:
+```
+InfectedPCSoftware/Classes/exefile/shell/open/command
+```
+Change the **(Default)** entry:
+| Before                           | After     |
+| -------------------------------- | --------- |
+| `C:\Windows\winnt32.exe "%1" %*` | `"%1" %*` |
+
+Repeat the same fix here:
+```
+InfectedPCSoftware/Classes/exefile/shell/runas/command
+```
+> [!NOTE]
+> `C:\Windows\winnt32.exe` is a malicious executable planted by NoEscape.exe to hijack every `.exe` you open.
+
+### Registry Change 2 - Repair Winlogon Hijack
+Navigate to:
+```
+InfectedPCSoftware/Microsoft/Windows NT/CurrentVersion/Winlogon
+```
+Update or Delete Values:
+| Name               | Before                                                    | After                              |
+| ------------------ | --------------------------------------------------------- | ---------------------------------- |
+| `Userinit`         | `C:\Windows\system32\userinit.exe,C:\Windows\winnt32.exe` | `C:\Windows\system32\userinit.exe` |
+| `DisableCAD`       | `1`                                                       | *(Delete)*                         |
+| `AutoRestartShell` | `1`                                                       | *(Delete)*                         |
+| `AutoAdminLogon`   | `1`                                                       | *(Delete)*                         |
+
+These entries are used by NoEscape.exe to retain control after login.
+
+### Registry Change 3 - Restore System Policies
+Navigate to:
+```
+InfectedPCSoftware/Microsoft/Windows/CurrentVersion/Policies/System
+```
+Perform the following actions:
+1. Set `EnableLUA` to `1`
+2. Delete `shutdownwithoutlogon`
+
+### Registry Change 4 - Restore Windows Logon UI
+Navigate to:
+```
+InfectedPCSoftware/Policies/Microsoft/Windows/System
+```
+And delete `DisableLogonBackgroundImage`
+
+### Registry Change 5 - Reset Keyboard Layout (Removes Key Remapping)
+Navigate to:
+```
+InfectedPCSystem/CurrentControlSet/Control/Keyboard Layout/
+```
+If **CurrentControlSet** doesn't exist, use this instead:
+```
+InfectedPCSystem/ControlSet001/Control/Keyboard Layout
+```
+And delete `Scancode Map`. This restores correct keyboard input.
+
+### Registry Change 6 - Fix User Profile Modifications
+Navigate to:
+```
+InfectedPCUser/Control Panel
+```
+Remove these modifications:
+| Name                       | Before | After      |
+| -------------------------- | ------ | ---------- |
+| `Mouse/SwapMouseButtons`   | `1`    | *(Delete)* |
+| `Desktop/AutoColorization` | `1`    | *(Delete)* |
+
+### Registry Change 7 - Re-enable Registry Editing (UAC Policies)
+Navigate to:
+```
+InfectedPCUser/Software/Microsoft/Windows/CurrentVersion/Policies/System
+```
+And Delete `DisableRegistryTools`. This re-enables Regedit on the repaired system.
+
+### Registry Change 8 - Re-enable Command Prompt
+Navigate to:
+```
+InfectedPCUser/Software/Policies/Microsoft/Windows/System
+```
+And delete `DisableCMD`. This restores access to CMD on the infected user account.
+
+### Final Step - Unload Hives Properly
+
+Before shutting down Windows PE:
+1. Select each loaded hive (InfectedPCSoftware, InfectedPCSystem, InfectedPCUser)
+2. Go to `File → Unload Hive`
+3. Confirm
+
+This ensures the registry is saved correctly.
+
+Now restart the computer normally.
+If the registry was repaired correctly, Windows should boot without NoEscape.exe reactivating.
+
+## Step 3 - Deleting Files planted by NoEscape.exe
+
+After restarting the repaired system and logging into Windows, the next step is to remove the malicious files that NoEscape.exe created.
+
+### 1. Show Hidden & Protected System Files
+Open File Explorer and go to:
+```
+C:\Windows
+```
+By default, winnt32.exe is hidden. To reveal it:
+1. Open Folder Options → **View**
+2. Temporarily disable:
+     - **Hide protected operating system files (Recommended)**
+     - **Hide empty drives**
+3. Under Hidden files and folders, select:
+     - **Show hidden files, folders, and drives**
+
+Click **Apply**.
+
+### 2. Delete `winnt32.exe`
+Now that hidden system files are visible, locate and delete `winnt32.exe`
+
+This file is responsible for the EXE hijack.
+
+> [!CAUTION]
+> Make sure you **ONLY** delete the file located directly inside C:\Windows.
+> Do **NOT** delete any legitimate system files.
+
+### 3. Remove Malicious Desktop Files
+NoEscape.exe creates random files on the desktop to clutter the desktop with these files.
+
+To delete all of them at once, press:
+<KbdGroup>
+     <Kbd>Ctrl</Kbd>
+     <span>+</span>
+     <Kbd>A</Kbd>
+</KbdGroup>
+to select all desktop items. Then permanently delete them with:
+<KbdGroup>
+     <Kbd>Shift</Kbd>
+     <span>+</span>
+     <Kbd>Del</Kbd>
+</KbdGroup>
+
+Empty your Recycle Bin afterward.
+
+### 4. Restore File Explorer Settings
+When done, revert the folder settings:
+- Enable **“Hide protected operating system files”**
+- Enable **“Hide empty drives”**
+- Set “Hidden files and folders” to **Don't show hidden files, folders, or drives**
+
+This protects your system from accidental file deletion later.
+
+## Step 4 - Restore Your Theme & Desktop Background
+NoEscape.exe replaces your wallpaper and UI theme to make your system look corrupted or hacked.
+
+To restore your theme:
+1. Open **Settings**
+2. Go to **Personalization → Themes**
+3. Choose your preferred theme
+4. Reapply your desktop background
+
+Your system should now visually return to normal.
+
+## Step 5 - Deleting More files planted by NoEscape.exe
+
+### 1. Remove LocalAppData Image
+Open the Run dialog:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+
+Type `%localappdata%`. Find and delete `noescape.png`. This is the custom wallpaper the malware forces onto the system.
+
+2. Remove Modified User Account Pictures
+
+Navigate to:
+```
+%programdata%\Microsoft\User Account Pictures
+```
+Delete the modified profile icons created by NoEscape.exe.
+
+If you have your original user icon backed up, replace it here.
+
+## Step 6 - Removing Fake Users Created by NoEscape.exe
+NoEscape.exe creates extra fake users to weaken system security and confuse the victim.
+1. Open **Settings**
+2. Go to **Accounts → Other Users**
+3. Manually delete any suspicious accounts (DO NOT delete your real account).
+
+## Step 7 - Restore Your Account
+
+### Restore your account name
+Open the Run dialog:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+
+Type `control`. Go to:
+```
+User Accounts → User Accounts
+```
+Change your account name back to the preferred name.
+
+### Restore your profile picture
+Go to:
+```
+Settings → Accounts → Your info
+```
+Set a new profile picture or upload your old one.
+
+### Fix Your Account Password (Optional)
+If you want to reset your password to something simple or blank:
+
+Open Command Prompt as Administrator and run:
+```cmd
+net user <username> <password>
+```
+To set a blank password:
+```cmd
+net user <username> ""
+```
+Restart your PC afterward.
+
+Finally, re-add your normal desktop shortcuts if needed.
+
+## Step 8 - Repair Windows System Files (SFC & DISM)
+NoEscape.exe corrupts several Windows components, including:
+- System policies
+- Login settings
+- User profiles
+- Explorer visuals
+- Registry permissions
+- Windows shell stability
+
+To ensure your system is fully functional, run the built-in Windows repair tools.
+
+### 1. System File Checker (SFC)
+
+Open Command Prompt as Administrator and run:
+```cmd
+sfc /scannow
+```
+This will scan and repair:
+- Modified Windows files
+- Missing DLLs
+- Corrupted components
+- System shell inconsistencies
+
+> [!NOTE]
+> If SFC says that it found corrupt files and repaired them — this is normal after malware removal.
+
+### 2. Deployment Image Servicing and Management (DISM)
+
+If SFC shows errors it **cannot** fix, run DISM:
+```cmd
+DISM /Online /Cleanup-Image /RestoreHealth
+```
+DISM repairs deeper Windows components such as:
+- WinSxS store
+- System image corruption
+- Recovery files
+- Windows update components
+
+> [!IMPORTANT]
+> DISM requires an active internet connection unless you're using an offline image.
+
+### 3. Run SFC Again
+
+After DISM completes, run:
+```cmd
+sfc /scannow
+```
+This ensures all corrupt or modified files from NoEscape.exe are fully repaired.
+
+### Optional (Strongly Recommended): Windows Update Refresh
+
+Go to **Settings → Update & Security → Windows Update**, and run **Check for Updates**.
+
+Windows will reapply critical system files and drivers to guarantee system integrity.
+
+## Step 9 - Removing the Most Dangerous Variant: September 18
+The September 18 variant of NoEscape.exe is the most destructive version.
+It does not just modify registry keys — it corrupts the bootloader and breaks the partition structure, making Windows completely unbootable.
+
+Signs of the September 18 Variant
+- Opening any `.exe` file launches Notepad and types:
+→ **THERE'S NO ESCAPE...**
+- Typing either **Yes** or **No** triggers bootloader corruption
+- The system becomes **unbootable** on next restart
+- Windows recovery tools fail to detect the OS
+- Disk Manager may show the system partition but cannot boot
+
+> [!IMPORTANT]
+> This variant cannot be removed using registry fixes alone.
+> It rewrites the MBR / GPT bootloader and damages the NTFS boot sector, requiring disk repair.
+
+### Restoring the Bootloader (Windows PE + TestDisk)
+> [!WARNING]
+> Only proceed if you fully understand TestDisk. Incorrect actions may cause permanent data loss.
+> Always back up important files first.
+
+1. **Boot into Windows PE** - Use your Windows PE USB created earlier.
+2. **Back up your files** - Before repairing the bootloader, copy files to an external drive if possible.
+
+### 3. Download TestDisk on a Clean PC
+Download TestDisk Portable from a healthy PC:
+https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.2-WIP.win.zip
+
+Extract the ZIP and place the TestDisk folder onto a **separate USB**. Move the TestDisk folder to the Windows PE environment or run it directly from your secondary USB.
+
+### 4. Start TestDisk
+- Launch **testdisk_win.exe**
+- Select **No Log**
+- Select the drive containing your Windows installation
+- Choose:
+```
+EFI GPT → Analyze → Quick Search
+```
+
+### 5. Identify the Correct Partition
+TestDisk will show all partitions. Select the one that contains:
+- Your Windows files
+- Correct NTFS structure
+- **Smaller Total Capacity** (the malware often creates a fake oversized partition)
+
+Press `→` (Right Arrow Key), then press `P` to preview files.
+If your real files appear → this is the correct partition.
+
+### 6. Repair the Bootloader Using bootrec
+Open Command Prompt in Windows PE and run:
+```cmd
+bootrec /fixmbr
+bootrec /fixboot
+bootrec /rebuildbcd
+```
+> [!NOTE]
+> `/fixboot` might return Access Denied on some systems.
+> TestDisk will still repair the NTFS boot sector.
+
+### 7. Write the Correct Partition
+Back in TestDisk:
+- Press <kbd>Enter</kbd>
+- Select **Write**
+- Type <kbd>Y</kbd> to confirm
+
+This restores the proper partition table.
+
+### 8. Repair the NTFS Boot Sector (Critical Step)
+Navigate to:
+```
+Advanced → Select MS Data Partition → Boot
+```
+Then choose:
+- **Repair MFT**
+- Confirm **OK
+- Then choose **Rebuild BS** (Boot Sector)
+
+If successful, TestDisk will say:
+> Boot sector OK
+>
+> Backup boot sector OK
+
+### 9. Run bootrec Commands Again
+To ensure the repaired boot sector is recognized:
+```cmd
+bootrec /fixmbr
+bootrec /fixboot
+bootrec /rebuildbcd
+```
+
+### 10. Check Disk Manager
+Open Disk Management (diskmgmt.msc) and click Refresh.
+
+If the C: partition is visible and labeled correctly:
+- [X] The boot sector is restored
+- [X] The OS should boot normally on restart
+
+### If “Rebuild BS” Fails
+If TestDisk cannot rebuild the boot sector, you have two options:
+1. Restore from a full system backup, or
+2. Reinstall Windows completely
+
+This is the only guaranteed solution for:
+- Partition table corruption
+- NTFS boot sector corruption
+- Unrepairable MBR/GPT changes
+
+## NoEscape.exe Removal Checklist
+Windows PE Setup
+- [X] Boot from Windows PE
+- [X] Load SYSTEM, SOFTWARE, and NTUSER.DAT hives
+- [X] Open Regedit in offline mode
+
+Registry Fixes
+- [X] Remove exe hijack
+- [X] Fix Winlogon
+- [X] Restore Policies
+- [X] Delete Scancode Map
+- [X] Re-enable Registry Tools
+- [X] Re-enable CMD
+- [X] Fix user profile registry entries
+
+File Removal
+- [X] Delete C:\Windows\winnt32.exe
+- [X] Delete malicious Desktop files
+- [X] Delete %localappdata%\noescape.png
+- [X] Delete modified user icons
+- [X] Clean up ProgramData files
+
+Restore Windows Settings
+- [X] Restore theme & wallpaper
+- [X] Remove fake users
+- [X] Fix account name & picture
+- [X] Reset password (optional)
+
+System Repair
+- [X] Run sfc /scannow
+- [X] Run DISM /Online /Cleanup-Image /RestoreHealth
+- [X] Run SFC again
+- [X] Reboot
+
+Final Checks
+- [X] Verify no startup entries remain
+- [X] Ensure no fake users remain
+- [X] Verify EXE files launch normally
+- [X] Check Explorer, CMD, Task Manager
+- [X] Perform Windows Updates
+
+## Conclusion
+And that's it! NoEscape.exe has been completely removed from your system.
+This malware modifies registry entries, themes, user accounts, wallpapers, and core Windows settings, so restoring everything manually is critical.
+
+To prevent future infections:
+- Delete suspicious `.exe` files immediately
+- Never run unknown programs
+- Use a stronger antivirus
+- Keep real-time protection enabled
+- Always use a virtual machine for malware testing
+- Follow safe browsing habits & avoid unknown downloads
+
+Thanks for reading! If you want more malware removal guides and educational malware tests, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io
