@@ -4,7 +4,6 @@ import { formatDate } from "date-fns"
 import { ImageResponse } from "next/og"
 import { NextResponse } from "next/server"
 
-export const runtime = "edge"
 type ParamsType = {params: Promise<{slug: string}>}
 
 export async function GET(req: Request, {params}: ParamsType) {

@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { absoluteURL, getValueFromKey } from "@/lib/helpers/seo"
+import {  getValueFromKey } from "@/lib/helpers/seo"
 import { formatDate } from "date-fns"
 import { ImageResponse } from "next/og"
-
-export const runtime = "edge"
 
 export async function GET(req: Request) {
   try{
