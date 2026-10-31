@@ -1,0 +1,15 @@
+{
+     "short_name": "ArsenTech",
+     "name": "ArsenTech's Official Website",
+     "icons": [
+          {
+               "src": "/Images/app-icon.png",
+               "sizes": "192x192",
+               "type": "image/png",
+               "purpose": "maskable any"
+          }
+     ],
+     "theme_color": "#22b455",
+     "background_color": "#fff",
+     "description": "Official Website of a Tech YouTuber named ArsenTech"
+}
