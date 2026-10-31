@@ -17,5 +17,3 @@ export const getBackgroundImage = (suffix: "app" | "footer" = "app"): React.CSSP
     backgroundSize: "cover"
   }
 }
-
-export const getInitialLogo = (theme: string | undefined) => theme==="dark" ? "/arsentech-dark.svg" : "/arsentech-light.svg"

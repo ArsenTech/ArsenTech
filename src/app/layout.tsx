@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo";
+import { KEYWORDS } from "@/lib/constants";
+import { Toaster } from "@/components/ui/sonner";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -9,8 +12,9 @@ const sora = Sora({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(absoluteURL()),
   title: {
-    template: "%s | ArsenTech's Website",
+    template: "%s | ArsenTech",
     absolute: "ArsenTech's Website"
   },
   description: "Welcome to ArsenTech's Official Website — your go-to hub for tech tutorials, antivirus comparisons, and in-depth guides for programmers, tech enthusiasts, and more tech related curious minds.",
@@ -20,12 +24,38 @@ export const metadata: Metadata = {
       url: "https://arsentech.github.io/"
     }
   ],
-  keywords: ["arsentech", "arsentech youtube", "arsentech github", "malware", "malware testing", "windows", "windows experiments", "tech tutorials", "technology", "tech", "arsen tech", "coding", "programming", "coding with arsentech", "arsentech shorts", "remove memz", "remove 000.exe", "avast vs noescape", "antivirus", "linux", "virus testing", "antimalware", "ransomware", "trojan", "trojan malware", "techonologies", "html", "css", "js", "coding languages", "computer", "computer virus", "computer malware", "software", "more arsentech", "chrome", "tech tips", "tech youtuber", "programmer", "coder", "coding tips", "freeware", "software engineer", "software coding", "ms dos", "operating system", "coding tutorials", "pc", "blog", "arsentech blog", "tech blog", "coding blog"],
+  keywords: KEYWORDS,
   icons: {
-    icon: "/app-icon.png",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/app-icon.png", sizes: "192x192", type: "image/png"}
+    ],
     apple: "/app-icon.png"
   },
-  manifest: "/manifest.json"
+  alternates: metaAlternatives("/"),
+  openGraph: {
+    title: "ArsenTech's Official Website",
+    description: "Your go-to hub for tech tutorials, antivirus comparisons, and in-depth guides for programmers, tech enthusiasts, and more tech related curious minds.",
+    url: absoluteURL("/"),
+    siteName: "ArsenTech Blog",
+    locale: "en_US",
+    type: "website",
+    images: {
+      url: "/og.png",
+      width: 1200,
+      height: 630
+    }
+  },
+  twitter: {
+    images: [{
+      url: "/og.png",
+      width: 1200,
+      height: 630
+    }],
+    card: "summary_large_image",
+    title: "ArsenTech's Official Website",
+    description: "Your go-to hub for tech tutorials, antivirus comparisons, and in-depth guides for programmers, tech enthusiasts, and more tech related curious minds.",
+  },
 };
 
 export const viewport: Viewport = {
@@ -49,6 +79,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster position="bottom-right" richColors />
         </ThemeProvider>
       </body>
     </html>

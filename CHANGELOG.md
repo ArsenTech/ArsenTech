@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## 3.0.0 - Unreleased
+### Moved
+- The Entire Blog Workflow
+### Improved
+- The entire blog content
+### Removed
+- `manifest.json` for `manifest.webmanifest`
+
+---
+
 ## 2.0.3 - 2026-10-21
 ### Changed
 - Changed the site background to an Aero version
