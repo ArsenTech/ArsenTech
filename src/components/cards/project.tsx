@@ -12,8 +12,8 @@ interface ProjectCardProps{
 }
 export default function ProjectCard({data}: ProjectCardProps){
      return (
-          <Card>
-               <Image src={data.thumbnail} alt={data.name} width={340} height={192} className="object-center object-cover aspect-video"/>
+          <Card className="justify-between">
+               <Image src={data.thumbnail} alt={data.name} width={340} height={192} className="object-center object-cover w-full aspect-video"/>
                <CardHeader>
                     {data.license && (
                          <CardAction>

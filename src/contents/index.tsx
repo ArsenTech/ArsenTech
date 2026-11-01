@@ -15,6 +15,7 @@ import WorkCard from "@/components/cards/work";
 import { IBlogPostBase } from "@/lib/types";
 import BlogPosts from "@/components/blog-posts";
 import ProjectCard from "@/components/cards/project";
+import ContactSection from "@/components/sections/main/contact";
 
 interface LandingPageProps{
      recentPosts: IBlogPostBase[]
@@ -25,14 +26,14 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-12 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
                     <LandingH1 type="solid" prefix="Hello I'm" texts={["ArsenTech","a Tech Youtuber","a Developer"]}/>
                     <SocialMediaLinks/>
-                    <div className="flex items-center gap-6 flex-wrap">
-                         <Button size="xl" variant="alternate" asChild>
+                    <div className="flex items-center gap-4 flex-wrap">
+                         <Button size="xl" className="flex-1" variant="alternate" asChild>
                               <Link href="#contact">
                                    <Mail/>
                                    Contact Me
                               </Link>
                          </Button>
-                         <Button size="xl" variant="secondary" asChild>
+                         <Button size="xl" className="flex-1" variant="secondary" asChild>
                               <Link href="https://www.patreon.com/ArsenTech">
                                    <SiPatreon/>
                                    Join my Patreon
@@ -66,7 +67,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                </SiteSection>
                <SiteSection id="projects" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Projects</SectionTitle>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                          {PROJECTS.map(project=>(
                               <ProjectCard
                                    key={project.name}
@@ -75,9 +76,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                          ))}
                     </div>
                </SiteSection>
-               <SiteSection id="contact">
-                    <SectionTitle>Get in Touch</SectionTitle>
-               </SiteSection>
+               <ContactSection/>
                <SiteSection id="faqs" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">FAQs</SectionTitle>
                </SiteSection>
