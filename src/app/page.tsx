@@ -6,7 +6,7 @@ import { getRecentPosts } from "@/lib/helpers";
 export default async function Home() {
   const posts = await getRecentPosts();
   return (
-    <PageLayout anchorLinks={MAIN_ANCHOR_LINKS}>
+    <PageLayout anchorLinks={MAIN_ANCHOR_LINKS} includeSubscribePopup>
       <LandingPage recentPosts={posts}/>
     </PageLayout>
   );

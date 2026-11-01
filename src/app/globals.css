@@ -55,6 +55,19 @@
   --color-alt-input: var(--alt-input);
   --color-header-foreground: var(--header-foreground);
   --font-sans: "Inter Variable", sans-serif;
+  --animate-show-sub: show_sub 1s ease forwards;
+  --animate-hide-sub: hide_sub 0.5s ease forwards;
+
+  @keyframes show_sub {
+    0% {transform: translateX(-100%);}
+    50% {transform: translateX(5%);}
+    100% {transform: translateX(0);}
+  }
+  @keyframes hide_sub {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(5%);}
+    100% {transform: translateX(calc(-100% - 40px));}
+  }
 }
 
 :root {
