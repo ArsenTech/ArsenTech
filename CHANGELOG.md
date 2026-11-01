@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
   - Mail icon for contacting ArsenTech.
   - Search icon for discovering downloads.
   - Compass icon for exploring blog posts.
+- Contact form integration with Formspree
+- Client-side form validation using Zod and React Hook Form
+- Submission loading states and success/error notifications
+- Character counter for contact messages
 ### Moved
 - Migrated the entire blog workflow to the new website
 ### Improved

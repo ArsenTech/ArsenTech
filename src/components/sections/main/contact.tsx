@@ -7,7 +7,6 @@ import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field
 import { Input } from "@/components/ui/input";
 import { Mail, Send, User } from "lucide-react";
 import ContactCard from "@/components/cards/contact";
-import * as z from "zod"
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText, InputGroupTextarea } from "@/components/ui/input-group";
@@ -15,14 +14,7 @@ import { useTransition } from "react";
 import { Spinner } from "@/components/ui/spinner";
 import { sendMessage } from "@/actions/contact";
 import { toast } from "sonner";
-
-const ContactSchema = z.object({
-     username: z.string().trim().min(2,"The username is required").max(100,"The username is too long"),
-     email: z.email("Enter a valid email address").max(254,"the provided email is too long").trim().transform(email => email.toLowerCase()),
-     subject: z.string().trim().min(2,"The subject is required").max(100,"the subject is too long"),
-     message: z.string().trim().min(20,"The message provided here is too short").max(500,"The provided message is too long")
-})
-export type ContactType = z.infer<typeof ContactSchema>
+import { ContactType, ContactSchema } from "@/lib/schemas";
 
 export default function ContactSection(){
      const [isSubmitting, startTransition] = useTransition();
@@ -36,10 +28,24 @@ export default function ContactSection(){
           }
      })
      const onSubmit = (values: ContactType) => {
+          if(isSubmitting) return;
           startTransition(async()=>{
-               const res = await sendMessage(ContactSchema.safeParse(values));
-               if(res.error) toast.error(res.error);
-               if(res.success) toast.success(res.success);
+               try {
+                    const res = await sendMessage(values);
+                    if(res.error) {
+                         toast.error(res.error);
+                         return;
+                    }
+                    if(res.success) {
+                         toast.success(res.success);
+                         form.reset();
+                         return;
+                    }
+               } catch (err){
+                    toast.error("Something went wrong",{
+                         description: err instanceof Error ? err.message : String(err)
+                    })
+               }
           })
      }
      return (
