@@ -42,6 +42,7 @@ export default function ContactSection(){
                          return;
                     }
                } catch (err){
+                    console.error(err)
                     toast.error("Something went wrong",{
                          description: err instanceof Error ? err.message : String(err)
                     })
