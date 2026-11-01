@@ -10,10 +10,11 @@ import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import AboutSection from "@/components/sections/main/about";
-import { WORKS } from "@/lib/constants";
+import { PROJECTS, WORKS } from "@/lib/constants";
 import WorkCard from "@/components/cards/work";
 import { IBlogPostBase } from "@/lib/types";
 import BlogPosts from "@/components/blog-posts";
+import ProjectCard from "@/components/cards/project";
 
 interface LandingPageProps{
      recentPosts: IBlogPostBase[]
@@ -65,6 +66,14 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                </SiteSection>
                <SiteSection id="projects" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Projects</SectionTitle>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+                         {PROJECTS.map(project=>(
+                              <ProjectCard
+                                   key={project.name}
+                                   data={project}
+                              />
+                         ))}
+                    </div>
                </SiteSection>
                <SiteSection id="contact">
                     <SectionTitle>Get in Touch</SectionTitle>

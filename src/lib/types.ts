@@ -62,3 +62,15 @@ export interface IWorkItem{
      description: string,
      url: string
 }
+
+export interface IProject{
+     name: string,
+     description?: string
+     thumbnail: string
+     license?: {
+          name: string,
+          url: string,
+     },
+     link: string
+     contributionLink: string
+}
