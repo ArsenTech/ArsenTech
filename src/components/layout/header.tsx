@@ -32,7 +32,7 @@ export default function Header({progress}: HeaderProps){
           return "/arsentech-dark.svg"
      }, [isOpened, isScrolled, currTheme, isHovered])
      return (
-          <header className={cn(`fixed w-full top-0 left-0 z-20 transition-all border-none`,!isScrolled ? "bg-transparent py-7.5" : "bg-header py-4.5",isScrolled ? "text-header-foreground" : "text-white")}>
+          <header className={cn(`fixed w-full top-0 left-0 z-40 transition-all border-none`,!isScrolled ? "bg-transparent py-7.5" : "bg-header py-4.5",isScrolled ? "text-header-foreground" : "text-white")}>
                <div className="inner-width flex items-center justify-between">
                     <Link href="/" className={cn(isMobile && "order-0")} aria-label="ArsenTech" onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
                          <Image src={logo} alt="logo" width={150} height={32} className="object-contain"/>
