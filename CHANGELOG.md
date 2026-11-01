@@ -29,6 +29,9 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 - Renamed `manifest.json` to `manifest.webmanifest`
 - Renamed **Services** to **Works**
+- Consolidated feedback functionality into the Contact section.
+### Removed
+- Separate Feedback section from the Downloads page.
 
 ---
 
