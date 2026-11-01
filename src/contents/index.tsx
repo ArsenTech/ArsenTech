@@ -5,19 +5,26 @@ import Link from "next/link";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import SocialMediaLinks from "@/components/social-media-links";
-import { Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import AboutSection from "@/components/sections/main/about";
+import { WORKS } from "@/lib/constants";
+import WorkCard from "@/components/cards/work";
+import { IBlogPostBase } from "@/lib/types";
+import BlogPosts from "@/components/blog-posts";
 
-export default function LandingPage(){
+interface LandingPageProps{
+     recentPosts: IBlogPostBase[]
+}
+export default function LandingPage({recentPosts}: LandingPageProps){
      return (
           <main>
-               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-12 h-screen min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
+               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-12 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
                     <LandingH1 type="solid" prefix="Hello I'm" texts={["ArsenTech","a Tech Youtuber","a Developer"]}/>
                     <SocialMediaLinks/>
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-6 flex-wrap">
                          <Button size="xl" variant="alternate" asChild>
                               <Link href="#contact">
                                    <Mail/>
@@ -33,11 +40,28 @@ export default function LandingPage(){
                     </div>
                </AppSection>
                <AboutSection/>
-               <SiteSection id="services" className="bg-card text-card-foreground">
-                    <SectionTitle surface="card">Services</SectionTitle>
+               <SiteSection id="works" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">Works</SectionTitle>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                         {WORKS.map(work=>(
+                              <WorkCard
+                                   key={work.title}
+                                   data={work}
+                              />
+                         ))}
+                    </div>
                </SiteSection>
                <SiteSection id="blog">
                     <SectionTitle>Recent posts</SectionTitle>
+                    <BlogPosts posts={recentPosts}/>
+                    {recentPosts.length > 0 && (
+                         <Button size="xl" variant="secondary" asChild>
+                              <Link href="/blog#blog">
+                                   More Posts
+                                   <ArrowRight />
+                              </Link>
+                         </Button>
+                    )}
                </SiteSection>
                <SiteSection id="projects" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Projects</SectionTitle>

@@ -18,17 +18,20 @@ import PostsLoader from "@/components/loaders/posts"
 import { getRangeAsText } from "@/lib/helpers/seo"
 import usePaginatedData from "@/hooks/use-pagination"
 import { Field, FieldGroup } from "@/components/ui/field"
+import { POSTS_PER_PAGE } from "@/lib/constants"
  
 export const searchSchema = z.object({
      query: z.string().trim()
 })
 
 function BlogPosts(props: BlogPostsProps) {
+     const currPage = props.currentPage ?? 1;
+     const pageSize = props.pageSize ?? POSTS_PER_PAGE
      const Inner = dynamic(() => import("@/components/blog-posts"), {
           ssr: false,
           loading: () => <PostsLoader count={props.posts.slice(
-               (props.currentPage - 1) * props.pageSize,
-               props.currentPage + props.pageSize
+               (currPage - 1) * pageSize,
+               currPage + pageSize
           ).length} />
      })
      // eslint-disable-next-line react-hooks/static-components
@@ -66,7 +69,7 @@ export default function Search(props: SearchProps){
      }
      return (
           <main>
-               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-[50vh] md:h-[25vh] min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
+               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-[50vh] md:h-[25vh] min-h-125 px-4 text-center" style={getBackgroundImage()}>
                     <h1 className="inline-flex justify-center items-center flex-col gap-3 text-4xl sm:text-5xl lg:text-6xl font-bold">ArsenTech Blog</h1>
                     <p className="text-lg sm:text-xl">
                          {mode === "tag"

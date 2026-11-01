@@ -3,9 +3,9 @@ import { IBlogPostBase } from "@/lib/types"
 import { getBackgroundImage } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Compass, Rss } from "lucide-react";
+import { Compass, Newspaper, Rss } from "lucide-react";
 import { useMemo, useState } from "react"
-import { MAX_FEATURED_POSTS } from "@/lib/constants"
+import { MAX_FEATURED_POSTS, POSTS_PER_PAGE } from "@/lib/constants"
 import dynamic from "next/dynamic"
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
@@ -21,6 +21,7 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/in
 import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
 import SectionTitle from "@/components/section-title";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 
 interface BlogContentProps{
      posts: IBlogPostBase[],
@@ -31,13 +32,16 @@ interface BlogContentProps{
 }
 
 function BlogPosts(props: BlogPostsProps) {
+     const currPage = props.currentPage ?? 1;
+     const pageSize = props.pageSize ?? POSTS_PER_PAGE
      const Inner = dynamic(() => import("@/components/blog-posts"), {
           ssr: false,
           loading: () => <PostsLoader count={props.posts.slice(
-               (props.currentPage - 1) * props.pageSize,
-               props.currentPage + props.pageSize
+               (currPage - 1) * pageSize,
+               currPage + pageSize
           ).length} />
      })
+     // eslint-disable-next-line react-hooks/static-components
      return <Inner {...props} />
 }
 
@@ -118,7 +122,7 @@ export default function BlogContent({posts, currentPage, categories, pageSize, q
                                    </>
                               )}
                          </div>
-                         <div className="space-y-4 relative lg:sticky top-0 lg:top-[85px] h-fit -order-1 lg:order-1">
+                         <div className="space-y-4 relative lg:sticky top-0 lg:top-21.25 h-fit -order-1 lg:order-1">
                               {featured.length!==0 ? (
                                    <BlogWidget title="Featured Posts">
                                         {featured.map(post=>(
@@ -135,7 +139,16 @@ export default function BlogContent({posts, currentPage, categories, pageSize, q
                     </SiteSection>
                ) : (
                     <SiteSection>
-                         <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center text-muted-foreground">No blog posts available yet. Check back soon!</p>
+                         <Empty>
+                              <EmptyHeader>
+                                   <EmptyMedia variant="icon">
+                                        <Newspaper/>
+                                   </EmptyMedia>
+                                   <EmptyTitle>No blog posts available yet</EmptyTitle>
+                                   <EmptyDescription>Check back soon!</EmptyDescription>
+                              </EmptyHeader>
+                         </Empty>
+                         <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center text-muted-foreground">. </p>
                     </SiteSection>
                )}
           </main>

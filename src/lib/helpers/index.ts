@@ -112,6 +112,10 @@ export const getPostsByCategory = cache(async(category: string) => {
      return posts.filter(post =>post.categories.some(cat => cat.toLowerCase() === category.toLowerCase()));
 });
 
+export const getRecentPosts = cache(async(limit = 5)=>{
+     const posts = await getAllPosts();
+     return posts.slice(0,limit)
+})
 
 interface ElementWithChildren {
   children?: ReactNode

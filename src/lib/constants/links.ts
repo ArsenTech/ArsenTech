@@ -10,7 +10,7 @@ export const LINKS: ILink[] = [
      {name: "Blog", url: "/blog"}
 ]
 export const MAIN_ANCHOR_LINKS: ILink[] = [
-     {name: "Services", url: "/#services"},
+     {name: "Works", url: "/#works"},
      {name: "Recent Posts", url: "/#blog"},
      {name: "Projects", url: "/#projects"},
      {name: "FAQs", url: "/#faqs"}
