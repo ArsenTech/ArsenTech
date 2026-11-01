@@ -1,6 +1,6 @@
 import PageLayout from "@/components/layout";
 import DownloadsContent from "@/contents/downloads";
-import { DOWNLOAD_ANCHOR_LINKS } from "@/lib/constants";
+import { DOWNLOAD_ANCHOR_LINKS } from "@/lib/constants/links";
 import { metaAlternatives } from "@/lib/helpers/seo";
 import { Metadata } from "next";
 

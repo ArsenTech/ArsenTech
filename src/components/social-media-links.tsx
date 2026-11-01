@@ -1,4 +1,4 @@
-import { SOCIAL_MEDIA_LINKS } from "@/lib/constants";
+import { SOCIAL_MEDIA_LINKS } from "@/lib/constants/links";
 import Link from "next/link";
 
 export default function SocialMediaLinks(){

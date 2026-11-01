@@ -9,6 +9,7 @@ import { Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
+import AboutSection from "@/components/sections/main/about";
 
 export default function LandingPage(){
      return (
@@ -31,9 +32,7 @@ export default function LandingPage(){
                          </Button>
                     </div>
                </AppSection>
-               <SiteSection id="about">
-                    <SectionTitle>About</SectionTitle>
-               </SiteSection>
+               <AboutSection/>
                <SiteSection id="services" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Services</SectionTitle>
                </SiteSection>

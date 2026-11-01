@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react"
 import NavbarToggler from "@/components/togglers/navbar-toggler";
 import ModeToggler from "@/components/togglers/mode-toggler";
-import { LINKS } from "@/lib/constants";
+import { LINKS } from "@/lib/constants/links";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
 import { useCurrentTheme } from "@/hooks/use-current-theme";

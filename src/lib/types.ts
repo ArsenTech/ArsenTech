@@ -50,3 +50,8 @@ export interface ILink{
      name: string,
      url: string
 }
+
+export interface ISkill{
+     name: string,
+     percentage: number
+}

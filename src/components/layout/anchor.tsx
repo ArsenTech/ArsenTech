@@ -64,7 +64,7 @@ export default function AnchorNav({links}: AnchorNavProps){
                               className="group inline-flex items-center justify-center"
                          >
                          <span className={cn(
-                              "inline-block size-5 rounded-full border-2 shadow-sm transition-colors",
+                              "inline-block size-5 rounded-full border-2 shadow-md transition-colors",
                               isScrolled ? "border-primary hover:bg-primary/30" : "border-[#b3ffc1] hover:bg-[#b3ffc1]/30",
                               active && (isScrolled ? "bg-primary" : "bg-[#b3ffc1]")
                          )}/>
