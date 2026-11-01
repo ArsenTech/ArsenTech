@@ -20,10 +20,10 @@ import NoSearchResults from "@/components/shrug"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
 import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
+import SectionTitle from "@/components/section-title";
 
 interface BlogContentProps{
      posts: IBlogPostBase[],
-     totalPages: number,
      currentPage: number,
      pageSize: number,
      categories: string[],
@@ -41,7 +41,7 @@ function BlogPosts(props: BlogPostsProps) {
      return <Inner {...props} />
 }
 
-export default function BlogContent({posts, totalPages, currentPage, categories, pageSize, query}: BlogContentProps){
+export default function BlogContent({posts, currentPage, categories, pageSize, query}: BlogContentProps){
      const [search, setSearch] = useState(query)
      const [selected, setSelected] = useState<string[]>([])
      const filteredPosts = useMemo(()=>{
@@ -63,7 +63,7 @@ export default function BlogContent({posts, totalPages, currentPage, categories,
      const toggleCategory = (category: string) => setSelected(prev=>prev?.includes(category) ? prev.filter(val=>val!==category) : [...(prev||[]),category])
      return (
           <main>
-               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-screen min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
+               <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
                     <LandingH1 prefix="Blog Page For" texts={["Tech Fans", "Programmers", "Cybersecurity Fans", "People Finding for the Solutions"]}/>
                     <p className="text-lg sm:text-xl">Learn about cybersecurity, tech tutorials, unique coding projects, and other tech-related posts all in one place.</p>
                     <div className="flex items-center gap-2">
@@ -76,21 +76,27 @@ export default function BlogContent({posts, totalPages, currentPage, categories,
                     </div>
                </AppSection>
                {posts.length!==0 ? (
-                    <SiteSection id="blog" innerWidthClass="space-y-4 grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4">
+                    <SiteSection id="blog" innerWidthClass="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4">
+                         <SectionTitle className="mb-5 col-span-full">{search==="" ? "Latest Posts" : "Search Results"}</SectionTitle>
                          <div className="space-y-5">
-                              <div className="flex justify-between items-center gap-2.5 flex-wrap">
-                                   <h3 className="scroll-m-20 text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight border-b border-primary pb-2">{search==="" ? "Latest Posts" : "Search Results"}</h3>
-                                   <p className="text-sm text-muted-foreground">
-                                        {getRangeAsText(
-                                             currentPage,
-                                             pageSize,
-                                             filteredPosts.length,
-                                             "post"
-                                        )}
-                                   </p>
-                              </div>
+                              <InputGroup className="flex-1">
+                                   <InputGroupInput type="text" placeholder="Search tutorials, coding tips..." onChange={e=>setSearch(e.target.value)} value={search}/>
+                                   <InputGroupAddon>
+                                        <SearchIcon/>
+                                   </InputGroupAddon>
+                                   <InputGroupAddon align="inline-end">
+                                        <p className="text-sm text-muted-foreground">
+                                             {getRangeAsText(
+                                                  currentPage,
+                                                  pageSize,
+                                                  filteredPosts.length,
+                                                  "post"
+                                             )}
+                                        </p>
+                                   </InputGroupAddon>
+                              </InputGroup>
                               {entries.length<=0 ? (
-                                   <div className="flex !mt-0 flex-col items-center justify-center gap-3 h-full w-full">
+                                   <div className="flex mt-0! flex-col items-center justify-center gap-3 h-full w-full">
                                         <NoSearchResults tag={search}/>
                                    </div>
                               ) : (
@@ -102,7 +108,7 @@ export default function BlogContent({posts, totalPages, currentPage, categories,
                                    />
                                    <PaginationWithLinks
                                         page={currentPage}
-                                        totalCount={totalPages}
+                                        totalCount={filteredPosts.length}
                                         pageSize={pageSize}
                                         navigationMode="link"
                                         pageSizeSelectOptions={{
@@ -113,12 +119,6 @@ export default function BlogContent({posts, totalPages, currentPage, categories,
                               )}
                          </div>
                          <div className="space-y-4 relative lg:sticky top-0 lg:top-[85px] h-fit -order-1 lg:order-1">
-                              <InputGroup>
-                                   <InputGroupInput type="text" placeholder="Search tutorials, coding tips..." onChange={e=>setSearch(e.target.value)} value={search}/>
-                                   <InputGroupAddon>
-                                        <SearchIcon/>
-                                   </InputGroupAddon>
-                              </InputGroup>
                               {featured.length!==0 ? (
                                    <BlogWidget title="Featured Posts">
                                         {featured.map(post=>(

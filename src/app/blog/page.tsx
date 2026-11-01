@@ -59,7 +59,6 @@ export default async function BlogPage({searchParams}: HomepageProps) {
         pageSize={postsPerPage}
         posts={posts}
         currentPage={currentPage}
-        totalPages={posts.length}
         categories={categories}
         query={query || ""}
       />

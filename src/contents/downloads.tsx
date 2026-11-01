@@ -5,6 +5,8 @@ import Link from "next/link";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
+import SiteSection from "@/components/layout/section";
+import SectionTitle from "@/components/section-title";
 
 export default function DownloadsContent(){
      return (
@@ -15,6 +17,15 @@ export default function DownloadsContent(){
                          <Link href="#main"><Search/> Discover</Link>
                     </Button>
                </AppSection>
+               <SiteSection id="downloads">
+                    <SectionTitle>Downloads</SectionTitle>
+               </SiteSection>
+               <SiteSection id="wallpapers" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">Wallpapers</SectionTitle>
+               </SiteSection>
+               <SiteSection id="faqs">
+                    <SectionTitle>FAQs</SectionTitle>
+               </SiteSection>
           </main>
      )
 }

@@ -7,6 +7,8 @@ import AppSection from "@/components/site-section"
 import SocialMediaLinks from "@/components/social-media-links";
 import { Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
+import SiteSection from "@/components/layout/section";
+import SectionTitle from "@/components/section-title";
 
 export default function LandingPage(){
      return (
@@ -29,6 +31,24 @@ export default function LandingPage(){
                          </Button>
                     </div>
                </AppSection>
+               <SiteSection id="about">
+                    <SectionTitle>About</SectionTitle>
+               </SiteSection>
+               <SiteSection id="services" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">Services</SectionTitle>
+               </SiteSection>
+               <SiteSection id="blog">
+                    <SectionTitle>Recent posts</SectionTitle>
+               </SiteSection>
+               <SiteSection id="projects" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">Projects</SectionTitle>
+               </SiteSection>
+               <SiteSection id="contact">
+                    <SectionTitle>Get in Touch</SectionTitle>
+               </SiteSection>
+               <SiteSection id="faqs" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">FAQs</SectionTitle>
+               </SiteSection>
           </main>
      )
 }
