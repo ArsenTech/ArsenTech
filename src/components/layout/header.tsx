@@ -32,9 +32,9 @@ export default function Header({progress}: HeaderProps){
           return "/arsentech-dark.svg"
      }, [isOpened, isScrolled, currTheme, isHovered])
      return (
-          <header className={cn(`fixed w-full top-0 left-0 z-20 transition-all border-none`,!isScrolled ? "bg-transparent py-[30px]" : "bg-header py-[18px]",isScrolled ? "text-header-foreground" : "text-white")}>
+          <header className={cn(`fixed w-full top-0 left-0 z-20 transition-all border-none`,!isScrolled ? "bg-transparent py-7.5" : "bg-header py-4.5",isScrolled ? "text-header-foreground" : "text-white")}>
                <div className="inner-width flex items-center justify-between">
-                    <Link href="/" className={cn(isMobile && "order-[0]")} aria-label="ArsenTech" onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+                    <Link href="/" className={cn(isMobile && "order-0")} aria-label="ArsenTech" onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
                          <Image src={logo} alt="logo" width={150} height={32} className="object-contain"/>
                     </Link>
                     {isMobile && (
@@ -46,9 +46,9 @@ export default function Header({progress}: HeaderProps){
                               isActive={isOpened}
                          />
                     )}
-                    <div className={cn("fixed md:relative h-screen md:h-fit w-full md:w-fit top-0 max-w-[400px] md:max-w-full py-20 md:py-0 px-[50px] md:px-0 transition-all text-center z-20",isScrolled ? "bg-header" : "bg-[#353b48]","md:bg-transparent",isOpened ? "left-0" : "-left-full","md:left-0")}>
+                    <div className={cn("fixed md:relative h-screen md:h-fit w-full md:w-fit top-0 max-w-100 md:max-w-full py-20 md:py-0 px-12.5 md:px-0 transition-all text-center z-20",isScrolled ? "bg-header" : "bg-[#353b48]","md:bg-transparent",isOpened ? "left-0" : "-left-full","md:left-0")}>
                          {LINKS.map(({url,name},i)=>(
-                              <Link key={i} className={cn("block md:inline text-3xl md:text-base my-[30px] md:my-0 font-medium ml-[30px] transition-all",isScrolled ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
+                              <Link key={i} className={cn("block md:inline text-3xl md:text-base my-7.5 md:my-0 font-medium ml-7.5 transition-all",isScrolled ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
                          ))}
                     </div>
                     <ModeToggler
