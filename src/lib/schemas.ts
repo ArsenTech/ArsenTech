@@ -7,8 +7,12 @@ export const ContactSchema = z.object({
      message: z.string().trim().min(20,"The message provided here is too short").max(500,"The provided message is too long")
 })
 export const SearchSchema = z.object({
-     query: z.string().trim()
+     query: z.string().trim().min(3,"The query is required").max(250,"The query is too long")
+})
+export const FAQSchema = z.object({
+     question: z.string().trim().min(3,"The question is required").max(200,"The question is too long")
 })
 
 export type ContactType = z.infer<typeof ContactSchema>
 export type SearchType = z.infer<typeof SearchSchema>
+export type FAQType = z.infer<typeof FAQSchema>

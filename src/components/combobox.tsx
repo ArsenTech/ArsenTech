@@ -4,21 +4,24 @@ import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover
 import type { LucideIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { cn } from "cn";
 
 interface ComboboxFieldProps{
-     onChange: (value: string | null) => void;
+     onChange?: (value: string | null) => void;
      onBlur?: Noop;
-     value: string;
+     value?: string;
      disabled?: boolean;
      name?: string;
      invalid?: boolean,
-     items: string[],
+     items?: string[],
      placeholder?: string,
      Icon?: LucideIcon,
-     triggerBtn?: React.ReactNode
+     triggerBtn?: React.ReactNode,
+     className?: string,
+     id?: string
 }
 export default function ComboboxField({
-     items,
+     items = [],
      placeholder = "Search...",
      invalid,
      onChange,
@@ -27,7 +30,8 @@ export default function ComboboxField({
      disabled,
      name,
      onBlur,
-     triggerBtn
+     triggerBtn,
+     className, id
 }: ComboboxFieldProps){
      const [open, setOpen] = useState(false)
      const [search, setSearch] = useState("")
@@ -45,7 +49,7 @@ export default function ComboboxField({
                               onBlur={onBlur}
                               variant="outline"
                               type="button"
-                              className="justify-start font-normal"
+                              className={cn("justify-start font-normal",className)}
                          >
                               {Icon && <Icon className="size-4 text-muted-foreground"/>}
                               {value || placeholder}
@@ -55,6 +59,7 @@ export default function ComboboxField({
                <PopoverContent className="w-(--radix-popover-trigger-width) p-0 overflow-hidden">
                     <Command>
                          <CommandInput
+                              id={id}
                               value={search}
                               onValueChange={setSearch}
                               placeholder={placeholder}

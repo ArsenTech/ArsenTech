@@ -74,3 +74,8 @@ export interface IProject{
      link: string
      contributionLink: string
 }
+
+export interface IFAQItem{
+     question: string,
+     answer: string
+}

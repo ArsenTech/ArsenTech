@@ -1,10 +1,96 @@
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
+import { Bubble, BubbleContent } from "@/components/ui/bubble"
+import {
+  Message,
+  MessageAvatar,
+  MessageContent,
+  MessageHeader,
+} from "@/components/ui/message"
+import ComboboxField from "../combobox";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
+import { Button } from "../ui/button";
+import { Controller, useForm } from "react-hook-form";
+import { FAQSchema, FAQType } from "@/lib/schemas";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { MAIN_FAQS } from "@/lib/constants/faqs";
+import { MessageCircleQuestionMark } from "lucide-react";
+import { useState } from "react";
+import { IFAQItem } from "@/lib/types";
+import { toast } from "sonner";
 
 export default function FAQSection(){
+     const [activeFAQ, setActiveFAQ] = useState<IFAQItem | null>(null);
+     const form = useForm<FAQType>({
+          resolver: zodResolver(FAQSchema),
+          defaultValues: {
+               question: ""
+          }
+     })
+     const onReveal = (values: FAQType) => {
+          const currFAQ = MAIN_FAQS.find(val=>val.question===values.question);
+          if(!currFAQ) {
+               setActiveFAQ(null)
+               toast.error("The following answer is not found");
+               return;
+          }
+          setActiveFAQ(currFAQ)
+     }
      return (
           <SiteSection id="faqs" className="bg-card text-card-foreground">
                <SectionTitle surface="card">FAQs</SectionTitle>
+               <form onSubmit={form.handleSubmit(onReveal)}>
+                    <FieldGroup>
+                         <Controller
+                              control={form.control}
+                              name="question"
+                              render={({field, fieldState}) => (
+                                   <Field data-invalid={fieldState.invalid}>
+                                        <FieldLabel htmlFor="question">Question to answer</FieldLabel>
+                                        <ComboboxField
+                                             {...field}
+                                             onChange={(value) => {
+                                                  field.onChange(value)
+                                                  setActiveFAQ(null)
+                                             }}
+                                             invalid={fieldState.invalid}
+                                             id="question"
+                                             placeholder="Select a frequently asked question..."
+                                             items={MAIN_FAQS.map(val=>val.question)}
+                                        />
+                                        {fieldState.invalid && <FieldError errors={[fieldState.error]}/>}
+                                   </Field>
+                              )}
+                         />
+                         <Field orientation="horizontal">
+                              <Button type="submit">
+                                   <MessageCircleQuestionMark/>
+                                   Get an answer
+                              </Button>
+                         </Field>
+                    </FieldGroup>
+               </form>
+               {activeFAQ && (
+                    <div aria-live="polite" aria-atomic="true" className="w-full md:max-w-3xl py-12">
+                         <Message>
+                              <MessageAvatar>
+                                   <Avatar>
+                                        <AvatarImage src="/profile-pics/pfp.webp" alt="ArsenTech" />
+                                        <AvatarFallback>AT</AvatarFallback>
+                                   </Avatar>
+                              </MessageAvatar>
+                              <MessageContent>
+                                   <MessageHeader>ArsenTech</MessageHeader>
+                                   <Bubble variant="muted">
+                                        <BubbleContent>
+                                             {activeFAQ.answer}
+                                        </BubbleContent>
+                                   </Bubble>
+                              </MessageContent>
+                         </Message>
+                    </div>
+               )}
           </SiteSection>
      )
 }
