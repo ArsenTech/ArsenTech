@@ -1,12 +1,24 @@
 import {SiYoutube, SiGithub, SiDeviantart, SiOdysee, SiScratch, SiPatreon} from "react-icons/si"
 import {FaCodepen} from "react-icons/fa"
+import { ILink } from "./types"
 
-export const LINKS = [
-     {name: "Home", url: "/#home"},
+export const LINKS: ILink[] = [
+     {name: "Home", url: "/#banner"},
      {name: "About", url: "/#about"},
      {name: "Contact", url: "/#contact"},
      {name: "Downloads", url: "/downloads"},
      {name: "Blog", url: "/blog"}
+]
+export const MAIN_ANCHOR_LINKS: ILink[] = [
+     {name: "Services", url: "/#services"},
+     {name: "Recent Posts", url: "/#blog"},
+     {name: "Projects", url: "/#projects"},
+     {name: "FAQs", url: "/#faqs"}
+]
+export const DOWNLOAD_ANCHOR_LINKS: ILink[] = [
+     {name: "Downloads", url: "/downloads#downloads"},
+     {name: "Wallpapers", url: "/downloads#wallpapers"},
+     {name: "FAQs", url: "/downloads#faqs"}
 ]
 
 export const SOCIAL_MEDIA_LINKS = [

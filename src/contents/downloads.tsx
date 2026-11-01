@@ -14,7 +14,7 @@ export default function DownloadsContent(){
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-8 h-screen min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
                     <LandingH1 prefix="Here You Can Download" texts={["Windows versions", "Software", "Tools", "More Stuff"]}/>
                     <Button size="xl" variant="alternate" asChild>
-                         <Link href="#main"><Search/> Discover</Link>
+                         <Link href="#downloads"><Search/> Discover</Link>
                     </Button>
                </AppSection>
                <SiteSection id="downloads">

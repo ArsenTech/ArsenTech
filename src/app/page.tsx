@@ -1,9 +1,10 @@
 import PageLayout from "@/components/layout";
 import LandingPage from "@/contents";
+import { MAIN_ANCHOR_LINKS } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout anchorLinks={MAIN_ANCHOR_LINKS}>
       <LandingPage/>
     </PageLayout>
   );

@@ -45,3 +45,8 @@ export interface IBlogPostData{
      text: string,
      url: string
 }
+
+export interface ILink{
+     name: string,
+     url: string
+}

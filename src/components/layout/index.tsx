@@ -6,11 +6,14 @@ import Header from "./header"
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
+import { ILink } from "@/lib/types"
+import AnchorNav from "./anchor"
 
 interface PageLayoutProps{
-     children: React.ReactNode
+     children: React.ReactNode,
+     anchorLinks?: ILink[]
 }
-export default function PageLayout({children}: PageLayoutProps){
+export default function PageLayout({children, anchorLinks}: PageLayoutProps){
      const [isSticky, setIsSticky] = useState(false);
      const [progress, setProgress] = useState(0)
      const pathname = usePathname()
@@ -39,10 +42,13 @@ export default function PageLayout({children}: PageLayoutProps){
           return () => window.removeEventListener("scroll", onScroll)
      }, [])
      return (
-          <div className="flex min-h-screen flex-col font-[family-name:var(--font-sora)] relative">
+          <div className="flex min-h-screen flex-col font-(family-name:--font-sora) relative">
                <Header progress={progress} />
                     {children}
                <Footer/>
+               {anchorLinks && (
+                    <AnchorNav links={anchorLinks}/>
+               )}
                <Button onClick={()=>window.scrollTo({ top:0, left:0, behavior:"smooth" })} size="icon" className={cn("transition-all fixed right-7 z-10",isSticky ? "bottom-6 visible" : "bottom-0 invisible opacity-0")} title="Scroll to top">
                     <ChevronUp />
                </Button>

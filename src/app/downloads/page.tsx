@@ -1,5 +1,6 @@
 import PageLayout from "@/components/layout";
 import DownloadsContent from "@/contents/downloads";
+import { DOWNLOAD_ANCHOR_LINKS } from "@/lib/constants";
 import { metaAlternatives } from "@/lib/helpers/seo";
 import { Metadata } from "next";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function DownloadsPage(){
      return (
-          <PageLayout>
+          <PageLayout anchorLinks={DOWNLOAD_ANCHOR_LINKS}>
                <DownloadsContent/>
           </PageLayout>
      )

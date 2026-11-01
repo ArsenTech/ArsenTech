@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Refreshed the blog content and presentation
 - Improved code blocks with syntax highlighting and additional functionality
 - Refreshed the Hero section across all pages
+- Refreshed the anchor links part from v2
 ### Changed
 - Renamed `manifest.json` to `manifest.webmanifest`
 
