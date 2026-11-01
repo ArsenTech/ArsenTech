@@ -30,22 +30,15 @@ export default function ContactSection(){
      const onSubmit = (values: ContactType) => {
           if(isSubmitting) return;
           startTransition(async()=>{
-               try {
-                    const res = await sendMessage(values);
-                    if(res.error) {
-                         toast.error(res.error);
-                         return;
-                    }
-                    if(res.success) {
-                         toast.success(res.success);
-                         form.reset();
-                         return;
-                    }
-               } catch (err){
-                    console.error(err)
-                    toast.error("Something went wrong",{
-                         description: err instanceof Error ? err.message : String(err)
-                    })
+               const res = await sendMessage(values);
+               if(res.error) {
+                    toast.error(res.error);
+                    return;
+               }
+               if(res.success) {
+                    toast.success(res.success);
+                    form.reset();
+                    return;
                }
           })
      }

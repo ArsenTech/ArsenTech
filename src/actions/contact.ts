@@ -1,22 +1,35 @@
 "use server"
 import { ContactSchema, ContactType } from "@/lib/schemas";
 
-export async function sendMessage(values: ContactType): Promise<{
-     success?: string,
+type ContactResult = {
+     success?: string
      error?: string
-}>{
-     const validatedFields = ContactSchema.safeParse(values);
-     if(!validatedFields.success) return {error: "Make sure to validate each provided field."}
-     const request = {
-          name: validatedFields.data.username,
-          _replyTo: validatedFields.data.email,
-          _subject: validatedFields.data.subject,
-          message: validatedFields.data.message
+}
+
+export async function sendMessage(values: ContactType): Promise<ContactResult> {
+     const validated = ContactSchema.safeParse(values)
+     if (!validated.success) return { error: "Please check the provided fields."}
+     const { username, email, subject, message } = validated.data
+     try {
+          const res = await fetch("https://formspree.io/f/id", {
+               method: "POST",
+               headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+               },
+               body: JSON.stringify({
+                    name: username,
+                    email,
+                    subject,
+                    message,
+               }),
+               cache: "no-store",
+          })
+          if (res.status === 429) return { error: "Too many requests. Please try again later." }
+          if (!res.ok) return { error: "Failed to send message." }
+          return { success: "Message sent successfully!" }
+     } catch (error) {
+          console.error("Formspree request failed:", error)
+          return { error: "Internal server error.", }
      }
-     const res = await fetch("https://formspree.io/f/xnqolaog", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(request),
-     });
-     return res.ok ? { success: "Message sent successfully" } : { error: "Failed to send message" }
 }
