@@ -17,6 +17,7 @@ import BlogPosts from "@/components/blog-posts";
 import ProjectCard from "@/components/cards/project";
 import ContactSection from "@/components/sections/contact";
 import FAQSection from "@/components/sections/faq";
+import { MAIN_FAQS } from "@/lib/constants/faqs";
 
 interface LandingPageProps{
      recentPosts: IBlogPostBase[]
@@ -78,7 +79,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                     </div>
                </SiteSection>
                <ContactSection/>
-               <FAQSection/>
+               <FAQSection list={MAIN_FAQS}/>
           </main>
      )
 }

@@ -7,6 +7,8 @@ import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
+import FAQSection from "@/components/sections/faq";
+import { DOWNLOADS_FAQS } from "@/lib/constants/faqs";
 
 export default function DownloadsContent(){
      return (
@@ -23,9 +25,7 @@ export default function DownloadsContent(){
                <SiteSection id="wallpapers" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Wallpapers</SectionTitle>
                </SiteSection>
-               <SiteSection id="faqs">
-                    <SectionTitle>FAQs</SectionTitle>
-               </SiteSection>
+               <FAQSection list={DOWNLOADS_FAQS} surface="background"/>
           </main>
      )
 }
