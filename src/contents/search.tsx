@@ -4,7 +4,6 @@ import {zodResolver} from "@hookform/resolvers/zod"
 import { useMemo } from "react"
 import { getBackgroundImage } from "@/lib/utils"
 import { useRouter } from "next/navigation"
-import * as z from "zod"
 import { Controller, useForm } from "react-hook-form"
 import dynamic from "next/dynamic"
 import AppSection from "@/components/site-section"
@@ -19,10 +18,7 @@ import { getRangeAsText } from "@/lib/helpers/seo"
 import usePaginatedData from "@/hooks/use-pagination"
 import { Field, FieldGroup } from "@/components/ui/field"
 import { POSTS_PER_PAGE } from "@/lib/constants"
- 
-export const searchSchema = z.object({
-     query: z.string().trim()
-})
+import { SearchSchema, SearchType } from "@/lib/schemas"
 
 function BlogPosts(props: BlogPostsProps) {
      const currPage = props.currentPage ?? 1;
@@ -60,11 +56,11 @@ export default function Search(props: SearchProps){
      ,[results, keyword, mode])
      const router = useRouter();
      const entries = usePaginatedData(filteredPosts,currentPage,pageSize);
-     const form = useForm<z.infer<typeof searchSchema>>({
-          resolver: zodResolver(searchSchema),
+     const form = useForm<SearchType>({
+          resolver: zodResolver(SearchSchema),
           defaultValues: { query: keyword }
      })
-     function onSubmit(values: z.infer<typeof searchSchema>) {
+     function onSubmit(values: SearchType) {
           router.push(`/blog?query=${values.query}&page=1&pageSize=${pageSize}`)
      }
      return (

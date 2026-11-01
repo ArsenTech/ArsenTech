@@ -8,14 +8,13 @@ import {
 } from "@/components/ui/empty"
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group"
 import { SearchIcon } from "lucide-react"
-import * as z from "zod"
 import { Controller, UseFormReturn } from "react-hook-form"
-import { searchSchema } from "../contents/search"
 import { Field, FieldGroup } from "./ui/field"
+import { SearchType } from "@/lib/schemas"
 interface NoSearchResultsProps{
      tag: string
-     form?: UseFormReturn<z.infer<typeof searchSchema>>,
-     onSubmit?: (values: z.infer<typeof searchSchema>) => void
+     form?: UseFormReturn<SearchType>,
+     onSubmit?: (values: SearchType) => void
 }
 export default function NoSearchResults({tag, form, onSubmit}: NoSearchResultsProps){
      return (

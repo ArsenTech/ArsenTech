@@ -6,4 +6,9 @@ export const ContactSchema = z.object({
      subject: z.string().trim().min(2,"The subject is required").max(100,"the subject is too long"),
      message: z.string().trim().min(20,"The message provided here is too short").max(500,"The provided message is too long")
 })
+export const SearchSchema = z.object({
+     query: z.string().trim()
+})
+
 export type ContactType = z.infer<typeof ContactSchema>
+export type SearchType = z.infer<typeof SearchSchema>
