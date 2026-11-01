@@ -147,3 +147,9 @@ export async function highlightCode(code: string, language: string) {
 
   return highlighter ? highlighter.highlight(code).lines : null
 }
+
+export function getVariant(line: string){
+  if (line.startsWith("+")) return "added"
+  if (line.startsWith("-")) return "removed"
+  return "default"
+}

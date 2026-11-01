@@ -2,14 +2,14 @@
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, FileCodeIcon } from "lucide-react";
 import React from "react";
-import { CodeBlock, CodeBlockActions, CodeBlockContent, CodeBlockCopyButton, CodeBlockHeader, CodeBlockLine, CodeBlockTitle } from "./ui/code-block";
+import { CodeBlock, CodeBlockActions, CodeBlockContent, CodeBlockCopyButton, CodeBlockHeader, CodeBlockLine, CodeBlockTitle, } from "./ui/code-block";
 import { useHighlightedCode } from "@/hooks/use-highlighted-code";
+import { getVariant } from "@/lib/highlighter";
 
 interface CodeBlockProps {
   code: string
   lang?: string,
 }
-
 
 const extensions: Record<string, string> = {
   // Windows command scripts
@@ -71,6 +71,44 @@ export default function CodeSnippetBlock({ code, lang }: CodeBlockProps) {
     URL.revokeObjectURL(url)
   }
   const filename = `snippet.${extensions[lang ?? ""] ?? "txt"}`
+  if(lang==="diff") return (
+    <div className="not-prose typeset w-full my-2">
+      <CodeBlock>
+        <CodeBlockHeader>
+          <CodeBlockTitle>
+            <FileCodeIcon />
+            {lang ?? "txt"}
+          </CodeBlockTitle>
+          <CodeBlockActions>
+            <Button
+              variant="ghost"
+              size="icon-xs"
+              aria-label="Download"
+              onClick={() => download(code, filename)}
+            >
+              <DownloadIcon />
+            </Button>
+            <CodeBlockCopyButton value={code} />
+          </CodeBlockActions>
+        </CodeBlockHeader>
+        <CodeBlockContent
+          wrap
+          lineNumbers
+          id={id}
+        >
+          {code.replace(/\r\n/g, "\n").replace(/\n$/, "").split("\n").map((line, index) => {
+            const variant = getVariant(line)
+            const isChange = (variant === "added" && line.startsWith("+")) || (variant === "removed" && line.startsWith("-"))
+            return (
+              <CodeBlockLine key={index} variant={variant}>
+                {isChange ? line.slice(1) : line}
+              </CodeBlockLine>
+            )
+          })}
+        </CodeBlockContent>
+      </CodeBlock>
+    </div>
+  )
   return (
     <div className="not-prose typeset w-full my-2">
       <CodeBlock>
@@ -97,10 +135,7 @@ export default function CodeSnippetBlock({ code, lang }: CodeBlockProps) {
           id={id}
         >
           {lines.map((line, index) => (
-            <CodeBlockLine
-              key={index}
-              variant={index >= 5 && index <= 9 ? "highlighted" : "default"}
-            >
+            <CodeBlockLine key={index}>
               {line}
             </CodeBlockLine>
           ))}

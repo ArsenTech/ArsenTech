@@ -9,13 +9,14 @@ import { ArrowRight, Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
-import AboutSection from "@/components/sections/main/about";
+import AboutSection from "@/components/sections/about";
 import { PROJECTS, WORKS } from "@/lib/constants";
 import WorkCard from "@/components/cards/work";
 import { IBlogPostBase } from "@/lib/types";
 import BlogPosts from "@/components/blog-posts";
 import ProjectCard from "@/components/cards/project";
-import ContactSection from "@/components/sections/main/contact";
+import ContactSection from "@/components/sections/contact";
+import FAQSection from "@/components/sections/faq";
 
 interface LandingPageProps{
      recentPosts: IBlogPostBase[]
@@ -77,9 +78,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                     </div>
                </SiteSection>
                <ContactSection/>
-               <SiteSection id="faqs" className="bg-card text-card-foreground">
-                    <SectionTitle surface="card">FAQs</SectionTitle>
-               </SiteSection>
+               <FAQSection/>
           </main>
      )
 }
