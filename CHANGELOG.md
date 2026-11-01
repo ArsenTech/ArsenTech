@@ -7,7 +7,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## 3.0.0 - Unreleased
 ### Added
-- Icons inside hero section buttons
+- Icons to hero section buttons for clearer navigation and visual communication.
+  - Mail icon for contacting ArsenTech.
+  - Search icon for discovering downloads.
+  - Compass icon for exploring blog posts.
 ### Moved
 - Migrated the entire blog workflow to the new website
 ### Improved
