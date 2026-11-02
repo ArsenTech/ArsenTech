@@ -3,6 +3,7 @@ import SectionTitle from "@/components/section-title";
 import { Download, ExternalLink, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "../ui/input-group";
 import { Button } from "../ui/button";
+import DownloadCard from "../cards/download";
 
 export default function DownloadsSection(){
      return (
@@ -41,7 +42,12 @@ export default function DownloadsSection(){
                     </div>
                </div>
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-xols-4 gap-4 mt-4">
-                    
+                    <DownloadCard
+                         title="Windows 7"
+                         description="Windows 7 description"
+                         imageUrl="/downloads/card-img/ms/win7.webp"
+                         downloadUrl="#"
+                    />
                </div>
           </SiteSection>
      )
