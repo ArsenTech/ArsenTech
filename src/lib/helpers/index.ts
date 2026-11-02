@@ -9,7 +9,7 @@ import matter from "gray-matter"
 import {promises as fs} from "fs";
 import { MAX_RELATED_POSTS } from "../constants";
 import path from "path";
-import { cache, Children, isValidElement, ReactElement, ReactNode } from "react";
+import { cache, Children, isValidElement, ReactNode } from "react";
 
 const postsFolder = path.join(process.cwd(), "src", "posts");
 
