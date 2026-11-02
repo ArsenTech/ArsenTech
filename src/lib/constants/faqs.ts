@@ -163,7 +163,7 @@ export const DOWNLOADS_FAQS: IFAQItem[] = [
      },
      {
           question: "I'm the Copyright owner of these (this) file(s) and I Want to Take These (this) File(s) down!",
-          answer: "Please feel free to send a request by going to the contact section. Then We'll look into your request and respond to it as soon as possible :-)"
+          answer: "Please feel free to send a request by going to the contact section and write a message. Then We'll look into your request and respond to it as soon as possible :-)"
      },
      {
           question: "Are the software provided here cracked or modified in any form?",

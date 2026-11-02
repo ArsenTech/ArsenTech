@@ -5,11 +5,10 @@ import Link from "next/link";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
-import SiteSection from "@/components/layout/section";
-import SectionTitle from "@/components/section-title";
 import FAQSection from "@/components/sections/faq";
 import { DOWNLOADS_FAQS } from "@/lib/constants/faqs";
 import DownloadsSection from "@/components/sections/downloads";
+import WallpapersSection from "@/components/sections/wallpapers";
 
 export default function DownloadsContent(){
      return (
@@ -21,9 +20,7 @@ export default function DownloadsContent(){
                     </Button>
                </AppSection>
                <DownloadsSection/>
-               <SiteSection id="wallpapers" className="bg-card text-card-foreground">
-                    <SectionTitle surface="card">Wallpapers</SectionTitle>
-               </SiteSection>
+               <WallpapersSection/>
                <FAQSection list={DOWNLOADS_FAQS} surface="background"/>
           </main>
      )
