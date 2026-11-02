@@ -57,6 +57,7 @@
   --font-sans: "Inter Variable", sans-serif;
   --animate-show-sub: show_sub 1s ease forwards;
   --animate-hide-sub: hide_sub 0.5s ease forwards;
+  --breakpoint-xs: 30rem;
 
   @keyframes show_sub {
     0% {transform: translateX(-100%);}

@@ -9,6 +9,7 @@ import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import FAQSection from "@/components/sections/faq";
 import { DOWNLOADS_FAQS } from "@/lib/constants/faqs";
+import DownloadsSection from "@/components/sections/downloads";
 
 export default function DownloadsContent(){
      return (
@@ -19,9 +20,7 @@ export default function DownloadsContent(){
                          <Link href="#downloads"><Search/> Discover</Link>
                     </Button>
                </AppSection>
-               <SiteSection id="downloads">
-                    <SectionTitle>Downloads</SectionTitle>
-               </SiteSection>
+               <DownloadsSection/>
                <SiteSection id="wallpapers" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Wallpapers</SectionTitle>
                </SiteSection>
