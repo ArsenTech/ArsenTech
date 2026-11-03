@@ -46,9 +46,9 @@ export default function Header({progress}: HeaderProps){
                               isActive={isOpened}
                          />
                     )}
-                    <div className={cn("fixed md:relative h-screen md:h-fit w-full md:w-fit top-0 max-w-100 md:max-w-full py-20 md:py-0 px-12.5 md:px-0 transition-all text-center z-20",isScrolled ? "bg-header" : "bg-[#353b48]","md:bg-transparent",isOpened ? "left-0" : "-left-full","md:left-0")}>
+                    <div className={cn("fixed md:relative h-screen md:h-fit w-full md:w-fit top-0 max-w-100 md:max-w-full py-20 md:py-0 px-12.5 md:px-0 transition-all text-center z-20 flex flex-col md:flex-row items-center gap-7.5",isScrolled ? "bg-header" : "bg-[#353b48]","md:bg-transparent",isOpened ? "left-0" : "-left-full","md:left-0")}>
                          {LINKS.map(({url,name},i)=>(
-                              <Link key={i} className={cn("block md:inline text-3xl md:text-base my-7.5 md:my-0 font-medium ml-7.5 transition-all",isScrolled ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
+                              <Link key={i} className={cn("block md:inline text-2xl sm:text-3xl md:text-base md:my-0 font-medium transition-all",isScrolled ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
                          ))}
                     </div>
                     <ModeToggler

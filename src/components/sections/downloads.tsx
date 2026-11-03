@@ -67,12 +67,9 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
                     </div>
                </div>
                {filteredDownloads.length > 0 ? (
-                    <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div className="mt-4 grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                          {filteredDownloads.map(item => (
-                              <DownloadCard
-                              key={item.title}
-                              data={item}
-                              />
+                              <DownloadCard key={item.title} data={item}/>
                          ))}
                     </div>
                ) : (
