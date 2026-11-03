@@ -14,12 +14,13 @@ export const revalidate = 86400
 
 export const generateStaticParams = async() => {
   const allSlugs = await getAllSlugs();
-  return allSlugs.map(slug => ({slug}))
+  return allSlugs.map(slug => ({slug: encodeURIComponent(slug)}))
 }
 
 export const generateMetadata = async({params}: SinglePostPageProps): Promise<Metadata> => {
   const {slug} = await params;
-  const currPost = await getPostBySlug(slug);
+  const slugDecoded = decodeURIComponent(slug)
+  const currPost = await getPostBySlug(slugDecoded);
   if(!currPost || !currPost.published) return notFound();
   return {
     title: currPost.title,
@@ -38,7 +39,7 @@ export const generateMetadata = async({params}: SinglePostPageProps): Promise<Me
     openGraph: {
       title: currPost.title,
       description: currPost.description,
-      url: absoluteURL(`/blog/${slug}`),
+      url: absoluteURL(`/blog/${slugDecoded}`),
       siteName: "ArsenTech",
       locale: "en_US",
       type: "article",
@@ -46,14 +47,14 @@ export const generateMetadata = async({params}: SinglePostPageProps): Promise<Me
       authors: "ArsenTech",
       tags: currPost.tags,
       images: {
-        url: absoluteURL(`/api/og/${slug}`),
+        url: absoluteURL(`/api/og/${slugDecoded}`),
         width: 1200,
         height: 630
       }
     },
     twitter: {
       images: [{
-        url: absoluteURL(`/api/og/${slug}`),
+        url: absoluteURL(`/api/og/${slugDecoded}`),
         width: 1200,
         height: 630
       }],
@@ -61,15 +62,16 @@ export const generateMetadata = async({params}: SinglePostPageProps): Promise<Me
       title: currPost.title,
       description: currPost.description,
     },
-    alternates: metaAlternatives(`/blog/${slug}`)
+    alternates: metaAlternatives(`/blog/${slugDecoded}`)
   }
 }
 
 export default async function SinglePostPage({params}: SinglePostPageProps){
   const {slug} = await params;
-  const currPost = await getPostBySlug(slug);
+  const slugDecoded = decodeURIComponent(slug)
+  const currPost = await getPostBySlug(slugDecoded);
   if(!currPost || !currPost.published) notFound();
-  const relatedPosts = await getRelatedPosts(slug, currPost.tags)
+  const relatedPosts = await getRelatedPosts(slugDecoded, currPost.tags)
   return (
     <PageLayout>
       <BlogPost

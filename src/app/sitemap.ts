@@ -9,13 +9,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
      const allCategories = await getAllCategories();
      const now = new Date();
      const searchTagPages: MetadataRoute.Sitemap = allTags.map(tag=>({
-          url: absoluteURL(`/tags/${tag}`),
+          url: absoluteURL(`/tags/${encodeURIComponent(tag)}`),
           lastModified: now,
           changeFrequency: "weekly",
           priority: 0.7
      }))
      const searchCategoryPages: MetadataRoute.Sitemap = allCategories.map(category=>({
-          url: absoluteURL(`/categories/${category}`),
+          url: absoluteURL(`/categories/${encodeURIComponent(category)}`),
           lastModified: now,
           changeFrequency: "weekly",
           priority: 0.7
@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
      const searchPostPages: MetadataRoute.Sitemap = await Promise.all(allSlugs.map(async slug=>{
           const post = await getPostBySlug(slug)
           return {
-               url: absoluteURL(`/blog/${slug}`),
+               url: absoluteURL(`/blog/${encodeURIComponent(slug)}`),
                lastModified: post?.editDate ?? now,
                changeFrequency: "daily",
                priority: 0.8,
@@ -49,7 +49,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
           {
                url: absoluteURL("/blog"),
                lastModified: latestDate,
-               changeFrequency: "monthly",
+               changeFrequency: "weekly",
                priority: 0.8,
                images: [absoluteURL("/og-blog.png")]
           },

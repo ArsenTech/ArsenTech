@@ -34,8 +34,8 @@ const generateRSS = async() => {
           feed.addItem({
                title: post.title,
                description: post.description,
-               id: `${SITE_URL}/blog/${post.slug}`,
-               link: `${SITE_URL}/blog/${post.slug}`,
+               id: `${SITE_URL}/blog/${encodeURIComponent(post.slug)}`,
+               link: `${SITE_URL}/blog/${encodeURIComponent(post.slug)}`,
                date: post.date,
                category: post.categories.map(cat=>({name: cat})),
                author: [
