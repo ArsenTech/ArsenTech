@@ -44,7 +44,7 @@ export const generateMetadata = async({params, searchParams}: PageProps): Promis
                title: meta.title,
                description: meta.description,
                url: absoluteURL(`/categories/${category}`),
-               siteName: "ArsenTech Blog",
+               siteName: "ArsenTech",
                locale: "en_US",
                type: "website",
                images: {

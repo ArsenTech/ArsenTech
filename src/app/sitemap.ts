@@ -39,6 +39,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
                priority: 1,
                images: [absoluteURL("/og.png")]
           },
+          {
+               url: absoluteURL("/downloads"),
+               lastModified: latestDate,
+               changeFrequency: "monthly",
+               priority: 0.8,
+               images: [absoluteURL("/og.png")]
+          },
+          {
+               url: absoluteURL("/blog"),
+               lastModified: latestDate,
+               changeFrequency: "monthly",
+               priority: 0.8,
+               images: [absoluteURL("/og-blog.png")]
+          },
           ...searchPostPages,
           ...searchTagPages,
           ...searchCategoryPages

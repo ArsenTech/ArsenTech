@@ -66,7 +66,7 @@ export default function Search(props: SearchProps){
      return (
           <main>
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-[50vh] md:h-[25vh] min-h-125 px-4 text-center" style={getBackgroundImage()}>
-                    <h1 className="inline-flex justify-center items-center flex-col gap-3 text-4xl sm:text-5xl lg:text-6xl font-bold">ArsenTech Blog</h1>
+                    <h1 className="inline-flex justify-center items-center flex-col gap-3 text-4xl sm:text-5xl lg:text-6xl font-bold">ArsenTech&aps;s Blog page</h1>
                     <p className="text-lg sm:text-xl">
                          {mode === "tag"
                               ? `Top ${results.length} posts tagged with "${keyword}"`

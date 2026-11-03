@@ -39,7 +39,7 @@ export const generateMetadata = async({params}: SinglePostPageProps): Promise<Me
       title: currPost.title,
       description: currPost.description,
       url: absoluteURL(`/blog/${slug}`),
-      siteName: "ArsenTech Blog",
+      siteName: "ArsenTech",
       locale: "en_US",
       type: "article",
       publishedTime: currPost.date.toISOString(),

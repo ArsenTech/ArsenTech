@@ -21,7 +21,7 @@ export const generateMetadata = async({searchParams}: HomepageProps): Promise<Me
       title: "ArsenTech Blog",
       description: "Your go-to hub for tech tutorials, antivirus comparisons, and in-depth guides for programmers, tech enthusiasts, and more tech related curious minds.",
       url: absoluteURL("/blog"),
-      siteName: "ArsenTech Blog",
+      siteName: "ArsenTech",
       locale: "en_US",
       type: "website",
       images: {
