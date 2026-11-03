@@ -1,6 +1,6 @@
 [
   {
-    "thumbnail": "/downloads/ms/win3.1.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win3.1.webp",
     "title": "Windows 3.1",
     "path": "Win3.1.zip",
     "category": "microsoft",
@@ -8,7 +8,7 @@
     "description": "Early Windows OS with GUI, limited features."
   },
   {
-    "thumbnail": "/downloads/ms/win95.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win95.webp",
     "title": "Windows 95",
     "path": "windows/Win95.zip",
     "category": "microsoft",
@@ -17,7 +17,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/ms/win98.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win98.webp",
     "title": "Windows 98",
     "path": "windows/Win98.zip",
     "category": "microsoft",
@@ -26,7 +26,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/ms/win2000.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win2000.webp",
     "title": "Windows 2000",
     "path": "windows/Win2000.zip",
     "category": "microsoft",
@@ -35,7 +35,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/ms/winme.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/winme.webp",
     "title": "Windows ME",
     "path": "windows/WinME.zip",
     "category": "microsoft",
@@ -44,7 +44,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/ms/winxp.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/winxp.webp",
     "title": "Windows XP",
     "path": "windows/WinXP.zip",
     "category": "microsoft",
@@ -53,7 +53,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/ms/winvista.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/winvista.webp",
     "title": "Windows Vista",
     "path": "https://archive.org/details/windows-vista-ultimate-sp-2-x-64-fully-updated",
     "category": "microsoft",
@@ -61,7 +61,7 @@
     "description": "New graphics and security features, mixed reviews."
   },
   {
-    "thumbnail": "/downloads/ms/win7.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win7.webp",
     "title": "Windows 7",
     "path": "https://archive.org/details/20230422_20230422_1429",
     "category": "microsoft",
@@ -69,7 +69,7 @@
     "description": "Performance improvements over Vista, great support."
   },
   {
-    "thumbnail": "/downloads/ms/win8.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win8.webp",
     "title": "Windows 8.1",
     "path": "https://archive.org/details/win-8.1-english-x-64_20211019",
     "category": "microsoft",
@@ -77,7 +77,7 @@
     "description": "Refined desktop features and start button re-added."
   },
   {
-    "thumbnail": "/downloads/ms/win10.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win10.webp",
     "title": "Windows 10",
     "path": "https://www.microsoft.com/en-gb/software-download/windows10",
     "category": "microsoft",
@@ -85,7 +85,7 @@
     "description": "Blend of old Start menu and new modern features."
   },
   {
-    "thumbnail": "/downloads/ms/win11.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/win11.webp",
     "title": "Windows 11",
     "path": "https://www.microsoft.com/en-gb/software-download/windows11",
     "category": "microsoft",
@@ -93,7 +93,7 @@
     "description": "Focused on modern design and virtual desktops."
   },
   {
-    "thumbnail": "/downloads/softwares/7zip.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/7zip.webp",
     "title": "7zip",
     "path": "https://github.com/ip7z/7zip/releases/latest",
     "category": "software",
@@ -101,7 +101,7 @@
     "description": "High compression file archiver, open-source."
   },
   {
-    "thumbnail": "/downloads/softwares/AutoClicker.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/AutoClicker.webp",
     "title": "AutoClicker",
     "path": "https://sourceforge.net/projects/orphamielautoclicker/files/AutoClickers.exe/download",
     "category": "software",
@@ -109,7 +109,7 @@
     "description": "Automatically click the mouse at set intervals."
   },
   {
-    "thumbnail": "/downloads/softwares/fileshredder.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/fileshredder.webp",
     "title": "File Shredder",
     "path": "software/FileShredder.zip",
     "category": "software",
@@ -117,7 +117,7 @@
     "description": "Securely deletes files to prevent recovery."
   },
   {
-    "thumbnail": "/downloads/softwares/Process-Explorer.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/Process-Explorer.webp",
     "title": "Process Explorer",
     "path": "software/Process Explorer.zip",
     "category": "software",
@@ -125,7 +125,7 @@
     "description": "Shows detailed info about running processes."
   },
   {
-    "thumbnail": "/downloads/softwares/Process-Hacker.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/Process-Hacker.webp",
     "title": "Process Hacker",
     "path": "software/Process-Hacker.zip",
     "category": "software",
@@ -133,7 +133,7 @@
     "description": "Advanced task manager with extra features."
   },
   {
-    "thumbnail": "/downloads/softwares/Rufus.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/Rufus.webp",
     "title": "Rufus",
     "path": "https://github.com/pbatard/rufus/releases/latest",
     "category": "software",
@@ -141,7 +141,7 @@
     "description": "Create bootable USB drives easily."
   },
   {
-    "thumbnail": "/downloads/softwares/tc.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/tc.webp",
     "title": "Total Commander",
     "path": "https://www.ghisler.com/download.htm",
     "category": "software",
@@ -149,7 +149,7 @@
     "description": "File manager with dual-pane navigation."
   },
   {
-    "thumbnail": "/downloads/softwares/UninstallTool.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/UninstallTool.webp",
     "title": "Uninstall Tool",
     "path": "https://crystalidea.com/uninstall-tool/download",
     "category": "software",
@@ -157,7 +157,7 @@
     "description": "Efficiently manage and uninstall programs."
   },
   {
-    "thumbnail": "/downloads/softwares/wds.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/wds.webp",
     "title": "WinDirStat",
     "path": "https://github.com/windirstat/windirstat/releases/latest",
     "category": "software",
@@ -165,7 +165,7 @@
     "description": "Visual disk usage analyzer tool."
   },
   {
-    "thumbnail": "/downloads/softwares/ie.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/ie.webp",
     "title": "Internet Explorer",
     "category": "software",
     "files": [
@@ -188,7 +188,7 @@
     "path": ""
   },
   {
-    "thumbnail": "/downloads/ms/ms-dos.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/ms/ms-dos.webp",
     "title": "MS-DOS",
     "category": "microsoft",
     "files": [
@@ -218,7 +218,7 @@
     "path": ""
   },
   {
-    "thumbnail": "/downloads/updates/win2000.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/updates/win2000.webp",
     "title": "Windows 2000 Updates",
     "path": "updates/Win2000-SP4.7z",
     "category": "updates",
@@ -227,7 +227,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/updates/winxp.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/updates/winxp.webp",
     "title": "Windows XP Updates",
     "path": "updates/WinXP-SP2.7z",
     "category": "updates",
@@ -236,7 +236,7 @@
     "isRelease": true
   },
   {
-    "thumbnail": "/downloads/softwares/dotnet.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/dotnet.webp",
     "title": ".NET (Old Versions)",
     "category": "software",
     "files": [
@@ -261,7 +261,7 @@
     "path": ""
   },
   {
-    "thumbnail": "/downloads/softwares/inkball.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/inkball.webp",
     "title": "Windows Inkball Game",
     "path": "software/Windows-Inkball.zip",
     "category": "software",
@@ -269,7 +269,7 @@
     "description": "A fun game from Windows Vista."
   },
   {
-    "thumbnail": "/downloads/softwares/movie-maker.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/movie-maker.webp",
     "title": "Windows Movie Maker",
     "path": "software/Windows-Movie-Maker.zip",
     "category": "software",
@@ -277,7 +277,7 @@
     "description": "Classic video editing software from Windows."
   },
   {
-    "thumbnail": "/downloads/softwares/pinball.webp",
+    "thumbnail": "https://arsentech.github.io/ArsenTech/images/downloads/softwares/pinball.webp",
     "title": "Windows Pinball Game",
     "path": "software/Windows-Pinball-Game.zip",
     "category": "software",
