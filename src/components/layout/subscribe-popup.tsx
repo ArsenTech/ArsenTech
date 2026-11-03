@@ -6,10 +6,12 @@ import Link from "next/link"
 import { SiYoutube } from "react-icons/si"
 import { useEffect, useState } from "react"
 import { cn } from "cn"
+import usePFP from "@/hooks/use-pfp"
 
 export default function SubscribePopup(){
      const [visible, setVisible] = useState(false);
      const [isClosing, setIsClosing] = useState(false);
+     const {main} = usePFP()
 
      useEffect(() => {
           if (sessionStorage.getItem("subscribe-dismissed") === "true") return;
@@ -58,7 +60,7 @@ export default function SubscribePopup(){
                >
                     <X />
                </Button>
-               <Image src="/profile-pics/pfp.webp" alt="ArsenTech" width={96} height={96} className="rounded-full object-center"/>
+               <Image src={main} alt="ArsenTech" width={96} height={96} className="rounded-full object-center"/>
                <div className="space-y-1">
                     <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-0">ArsenTech</h2>
                     <p className="text-sm text-muted-foreground">Subscribe To My YouTube Channel</p>

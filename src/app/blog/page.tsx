@@ -54,7 +54,7 @@ export default async function BlogPage({searchParams}: HomepageProps) {
   const posts = await getAllPosts();
   const categories = await getCategories(posts);
   return (
-    <PageLayout>
+    <PageLayout includeSubscribePopup>
       <BlogContent
         pageSize={postsPerPage}
         posts={posts}

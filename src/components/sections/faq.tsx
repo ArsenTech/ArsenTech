@@ -19,6 +19,7 @@ import { useState } from "react";
 import { IFAQItem } from "@/lib/types";
 import { toast } from "sonner";
 import { cn } from "cn";
+import usePFP from "@/hooks/use-pfp";
 
 interface FAQSectionProps{
      list: IFAQItem[],
@@ -26,6 +27,8 @@ interface FAQSectionProps{
 }
 export default function FAQSection({list, surface="card"}: FAQSectionProps){
      const [activeFAQ, setActiveFAQ] = useState<IFAQItem | null>(null);
+     const {main} = usePFP()
+     
      const form = useForm<FAQType>({
           resolver: zodResolver(FAQSchema),
           defaultValues: {
@@ -85,7 +88,7 @@ export default function FAQSection({list, surface="card"}: FAQSectionProps){
                               <Message>
                                    <MessageAvatar>
                                         <Avatar>
-                                             <AvatarImage src="/profile-pics/pfp.webp" alt="ArsenTech" />
+                                             <AvatarImage src={main} alt="ArsenTech" />
                                              <AvatarFallback>AT</AvatarFallback>
                                         </Avatar>
                                    </MessageAvatar>
