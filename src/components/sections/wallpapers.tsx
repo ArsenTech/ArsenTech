@@ -111,7 +111,7 @@ export default function WallpapersSection(){
                          alt={wallpaper? `Preview of wallpaper #${wallpaper}`: "Select a wallpaper to view its preview"}
                          width={600}
                          height={300}
-                         className="aspect-2/1 w-full max-w-150 rounded-md object-contain"
+                         className="aspect-2/1 w-full h-full max-w-150 max-h-75 rounded-md object-contain"
                          onError={() => setPreviewError(true)}
                     />
                     <form
@@ -122,7 +122,7 @@ export default function WallpapersSection(){
                               control={form.control}
                               name="wallpaper"
                               render={({ field, fieldState }) => (
-                                   <div className="min-w-0 space-y-1">
+                                   <div className="min-w-0 space-y-1 flex-1">
                                         <Select
                                              name={field.name}
                                              value={field.value}
@@ -137,7 +137,7 @@ export default function WallpapersSection(){
                                                   aria-label="Choose a wallpaper"
                                                   aria-invalid={fieldState.invalid}
                                                   aria-describedby={fieldState.invalid ? "wallpaper-error" : undefined}
-                                                  className="flex-1"
+                                                  className="w-full"
                                              >
                                                   <SelectValue placeholder="Choose a wallpaper"/>
                                              </SelectTrigger>
@@ -167,7 +167,7 @@ export default function WallpapersSection(){
                               control={form.control}
                               name="size"
                               render={({ field, fieldState }) => (
-                                   <div className="min-w-0 space-y-1">
+                                   <div className="min-w-0 space-y-1 flex-1">
                                         <Select
                                              name={field.name}
                                              value={field.value}
@@ -180,7 +180,7 @@ export default function WallpapersSection(){
                                                   aria-label="Choose wallpaper size"
                                                   aria-invalid={fieldState.invalid}
                                                   aria-describedby={fieldState.invalid ? "size-error" : undefined}
-                                                  className="flex-1"
+                                                  className="w-full"
                                              >
                                                   <SelectValue placeholder="Choose a size"/>
                                              </SelectTrigger>
