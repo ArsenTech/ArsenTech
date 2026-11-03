@@ -95,7 +95,7 @@ export default function WallpapersSection(){
                })
           }
      }
-     const previewSrc = wallpaper && !previewError ? absoluteCDN(`/images/downloads/wallpapers/coding${wallpaper}.webp`) : "backgrounds/blank.webp"
+     const previewSrc = wallpaper && !previewError ? absoluteCDN(`/images/downloads/wallpapers/coding${wallpaper}.webp`) : "/backgrounds/blank.webp"
      
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">
