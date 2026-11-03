@@ -1,12 +1,12 @@
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import { Download, ExternalLink, FilterX, Search, X } from "lucide-react";
-import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "../ui/input-group";
-import { Button } from "../ui/button";
-import DownloadCard from "../cards/download";
+import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "@/components/ui/input-group";
+import { Button } from "@/components/ui/button";
+import DownloadCard from "@/components/items/download";
 import { useMemo, useState } from "react";
 import { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "../ui/empty";
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 
 interface DownloadsSectionProps{
      list: IDownloadItem[]

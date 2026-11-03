@@ -5,9 +5,9 @@ import Link from "next/link";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
-import FAQSection from "@/components/sections/faq";
-import DownloadsSection from "@/components/sections/downloads";
-import WallpapersSection from "@/components/sections/wallpapers";
+import FAQSection from "@/sections/faq";
+import DownloadsSection from "@/sections/downloads";
+import WallpapersSection from "@/sections/wallpapers";
 import { IDownloadItem } from "@/lib/types/downloads";
 import { IFAQItem } from "@/lib/types";
 

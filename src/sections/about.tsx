@@ -2,10 +2,10 @@ import { Dot } from "lucide-react";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import Image from "next/image";
-import { Progress } from "@/components/ui/progress";
-import ChannelCard from "@/components/cards/channel";
+import ChannelCard from "@/components/items/channel";
 import usePFP from "@/hooks/use-pfp";
 import { ISkill } from "@/lib/types";
+import Skill from "@/components/items/skill";
 
 interface AboutSectionProps{
      skills: ISkill[]
@@ -29,19 +29,7 @@ export default function AboutSection({skills}: AboutSectionProps){
                </div>
                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {skills.map(skill=>(
-                         <div key={skill.name} className="space-y-4">
-                              <div className="flex justify-between items-center gap-2">
-                                   <span className="text-base">{skill.name}</span>
-                                   <span className="text-base text-muted-foreground">
-                                   {skill.percentage}%
-                                   </span>
-                              </div>
-                              <Progress
-                                   value={skill.percentage}
-                                   aria-label={`${skill.name} proficiency`}
-                                   className="h-1.5"
-                              />
-                         </div>
+                         <Skill key={skill.name} data={skill}/>
                     ))}
                </div>
                <div className="flex flex-col gap-3 items-center justify-center mt-5">

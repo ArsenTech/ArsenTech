@@ -7,10 +7,10 @@ import {
   MessageContent,
   MessageHeader,
 } from "@/components/ui/message"
-import ComboboxField from "../combobox";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
-import { Button } from "../ui/button";
+import ComboboxField from "@/components/combobox";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Button } from "@/components/ui/button";
 import { Controller, useForm } from "react-hook-form";
 import { FAQSchema, FAQType } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";

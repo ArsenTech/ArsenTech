@@ -6,7 +6,7 @@ import { SiGithub, SiPatreon, SiYoutube } from "react-icons/si";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Mail, Send, User } from "lucide-react";
-import ContactCard from "@/components/cards/contact";
+import ContactCard from "@/components/items/contact";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText, InputGroupTextarea } from "@/components/ui/input-group";

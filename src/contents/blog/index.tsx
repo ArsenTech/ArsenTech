@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Compass, Rss } from "lucide-react";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
-import BlogSection from "@/components/sections/blog-section";
+import BlogSection from "@/sections/blog-section";
 
 interface BlogContentProps{
      posts: IBlogPostBase[],
