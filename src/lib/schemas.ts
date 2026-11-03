@@ -1,5 +1,5 @@
 import * as z from "zod"
-import {WALLPAPER_IDS, WALLPAPER_SIZE_VALUES} from "@/lib/constants/data/wallpapers"
+import {WALLPAPER_IDS, WALLPAPER_SIZE_VALUES} from "@/lib/constants/wallpapers"
 
 export const ContactSchema = z.object({
      username: z.string().trim().min(2,"The username is required").max(100,"The username is too long"),

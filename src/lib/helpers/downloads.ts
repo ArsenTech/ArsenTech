@@ -1,4 +1,4 @@
-import { WALLPAPER_IDS, WALLPAPER_SIZE_VALUES } from "../constants/data/wallpapers";
+import { WALLPAPER_IDS, WALLPAPER_SIZE_VALUES } from "../constants/wallpapers";
 
 const CDN_BASE = "https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/wallpapers"
 
