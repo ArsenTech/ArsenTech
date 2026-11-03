@@ -95,7 +95,7 @@ export default function WallpapersSection(){
                })
           }
      }
-     const previewSrc = wallpaper && !previewError ? `/downloads/wallpaperImg/coding${wallpaper}.webp` : "/downloads/blank.webp"
+     const previewSrc = wallpaper && !previewError ? `/downloads/wallpapers/coding${wallpaper}.webp` : "/downloads/blank.webp"
      
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">
