@@ -7,7 +7,7 @@ import {toString} from "mdast-util-to-string"
 import GithubSlugger from "github-slugger"
 import matter from "gray-matter"
 import {promises as fs} from "fs";
-import { MAX_RELATED_POSTS } from "../constants";
+import { MAX_RELATED_POSTS } from "../../constants";
 import path from "path";
 import { cache } from "react";
 

@@ -1,7 +1,7 @@
 import PageLayout from "@/components/layout";
 import LandingPage from "@/contents";
 import { MAIN_ANCHOR_LINKS } from "@/lib/constants/links";
-import { getRecentPosts } from "@/lib/helpers/blog";
+import { getRecentPosts } from "@/lib/helpers/data/blog";
 import { getProjects, getSkills } from "@/lib/helpers/data";
 import { getMainFAQ } from "@/lib/helpers/data/faqs";
 

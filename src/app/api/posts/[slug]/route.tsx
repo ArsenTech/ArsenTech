@@ -1,4 +1,4 @@
-import { getPostBySlug } from "@/lib/helpers/blog";
+import { getPostBySlug } from "@/lib/helpers/data/blog";
 import { NextResponse } from "next/server";
 
 export const runtime = "nodejs"

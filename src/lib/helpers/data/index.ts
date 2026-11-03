@@ -5,7 +5,7 @@ import { absoluteCDN } from "..";
 
 export const getSkills = cache(async(): Promise<ISkill[]> =>{
      try {
-          const res = await fetch(absoluteCDN("/skills.json"));
+          const res = await fetch(absoluteCDN("/data/skills.json"));
           if(!res.ok) return []
           return await res.json();
      } catch {
@@ -15,7 +15,7 @@ export const getSkills = cache(async(): Promise<ISkill[]> =>{
 
 export const getProjects = cache(async(): Promise<IProject[]> =>{
      try {
-          const res = await fetch(absoluteCDN("/projects.json"));
+          const res = await fetch(absoluteCDN("/data/projects.json"));
           if(!res.ok) return []
           const data = await res.json() as IProject[]
           return data.sort(({name: a},{name: b})=>a.localeCompare(b))
@@ -26,7 +26,7 @@ export const getProjects = cache(async(): Promise<IProject[]> =>{
 
 export const getDownloads = cache(async(): Promise<IDownloadItem[]> =>{
      try {
-          const res = await fetch(absoluteCDN("/downloads.json"));
+          const res = await fetch(absoluteCDN("/data/downloads.json"));
           if(!res.ok) return []
           return await res.json();
      } catch {

@@ -4,7 +4,7 @@ import { absoluteCDN } from "..";
 
 export const getMainFAQ = cache(async(): Promise<IFAQItem[]> =>{
      try {
-          const res = await fetch(absoluteCDN("/main-faq.json"));
+          const res = await fetch(absoluteCDN("/data/main-faq.json"));
           if(!res.ok) return [];
           const data: IFAQItem[] = await res.json()
           return data.sort(({question: a}, {question: b})=>a.localeCompare(b))
@@ -14,7 +14,7 @@ export const getMainFAQ = cache(async(): Promise<IFAQItem[]> =>{
 })
 export const getDownloadsFAQ = cache(async(): Promise<IFAQItem[]> =>{
      try {
-          const res = await fetch(absoluteCDN("/downloads-faq.json"));
+          const res = await fetch(absoluteCDN("/data/downloads-faq.json"));
           if(!res.ok) return [];
           const data: IFAQItem[] = await res.json()
           return data.sort(({question: a}, {question: b})=>a.localeCompare(b))

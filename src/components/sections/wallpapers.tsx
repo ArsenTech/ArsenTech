@@ -14,7 +14,7 @@ import { SiDeviantart } from "react-icons/si"
 import Link from "next/link"
 import { getSize, WallpaperSizeResult } from "@/actions/wallpapers"
 import { toast } from "sonner"
-import { formatBytes } from "@/lib/helpers"
+import { absoluteCDN, formatBytes } from "@/lib/helpers"
 
 export default function WallpapersSection(){
      const form = useForm<WallpaperType>({
@@ -95,7 +95,7 @@ export default function WallpapersSection(){
                })
           }
      }
-     const previewSrc = wallpaper && !previewError ? `/downloads/wallpapers/coding${wallpaper}.webp` : "/downloads/blank.webp"
+     const previewSrc = wallpaper && !previewError ? absoluteCDN(`/images/downloads/wallpapers/coding${wallpaper}.webp`) : "backgrounds/blank.webp"
      
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">

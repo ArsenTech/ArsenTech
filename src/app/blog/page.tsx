@@ -1,7 +1,7 @@
 import PageLayout from "@/components/layout";
 import BlogContent from "@/contents/blog";
 import { KEYWORDS, POSTS_PER_PAGE } from "@/lib/constants";
-import { getAllPosts, getCategories } from "@/lib/helpers/blog";
+import { getAllPosts, getCategories } from "@/lib/helpers/data/blog";
 import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo";
 import type { Metadata } from "next";
 
