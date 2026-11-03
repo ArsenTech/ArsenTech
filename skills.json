@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Web Dev (HTML, CSS, JS)",
+    "percentage": 100
+  },
+  {
+    "name": "TypeScript",
+    "percentage": 98
+  },
+  {
+    "name": "React",
+    "percentage": 95
+  },
+  {
+    "name": "Next.js",
+    "percentage": 90
+  },
+  {
+    "name": "Tailwind CSS",
+    "percentage": 100
+  },
+  {
+    "name": "shadcn ui",
+    "percentage": 100
+  }
+]
