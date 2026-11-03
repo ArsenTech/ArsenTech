@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
           "application/octet-stream",
 
         "Content-Disposition":
-          `attachment; filename="ArsenTech-Wallpaper-${wallpaper}-${size}.webp"`,
+          `attachment; filename="ArsenTech-Wallpaper-${wallpaper}-${size}.png"`,
 
         "Cache-Control": "private, no-store",
       },

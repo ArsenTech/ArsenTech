@@ -4,35 +4,16 @@ import { Controller, useForm, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import Image from "next/image"
 import { AlertTriangleIcon, Download } from "lucide-react"
-
 import SiteSection from "@/components/layout/section"
 import SectionTitle from "@/components/section-title"
 import { Button } from "@/components/ui/button"
-
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectSeparator,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-
-import {
-  WALLPAPER_GROUPS,
-  WALLPAPER_SIZES,
-  DEFAULT_WALLPAPER_SIZE,
-} from "@/lib/constants/wallpapers"
-
-import {
-  WallpaperSchema,
-  type WallpaperType,
-} from "@/lib/schemas"
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectSeparator, SelectTrigger, SelectValue,} from "@/components/ui/select"
+import { WALLPAPER_GROUPS, WALLPAPER_SIZES, DEFAULT_WALLPAPER_SIZE,} from "@/lib/constants/wallpapers"
+import { WallpaperSchema, type WallpaperType,} from "@/lib/schemas"
 import { SiDeviantart } from "react-icons/si"
 import Link from "next/link"
 import { getSize, WallpaperSizeResult } from "@/actions/wallpapers"
+import { toast } from "sonner"
 
 function formatBytes(bytes: number) {
      if (bytes === 0) return "0 B"
@@ -71,7 +52,6 @@ export default function WallpapersSection(){
           return () => clearTimeout(timeout)
      }, [wallpaper])
      const selectionKey = `${wallpaper}:${size}`
-
      useEffect(() => {
           if (!wallpaper || !size) return
           let cancelled = false
@@ -82,8 +62,8 @@ export default function WallpapersSection(){
                if (!cancelled) setSizeState({
                     key,
                     result: {
-                    status: "unknown",
-                    bytes: null,
+                         status: "unknown",
+                         bytes: null,
                     },
                })
           })
@@ -107,14 +87,20 @@ export default function WallpapersSection(){
                     : "Size unavailable"
      function onDownload(values: WallpaperType) {
           if (sizeResult?.status === "missing") return;
-          const params = new URLSearchParams(values)
-          window.open(
-               `/api/wallpapers/download?${params}`,
-               "_blank",
-               "noopener,noreferrer"
-          )
+          try {
+               const params = new URLSearchParams(values)
+               window.open(
+                    `/api/wallpaper?${params}`,
+                    "_blank",
+                    "noopener,noreferrer"
+               )
+          } catch (err){
+               toast.error("Failed to download the wallpaper",{
+                    description: err instanceof Error ? err.message : String(err)
+               })
+          }
      }
-     const previewSrc = wallpaper && !previewError ? `/downloads/wallpapeImg/coding${wallpaper}.webp` : "/downloads/blank.webp"
+     const previewSrc = wallpaper && !previewError ? `/downloads/wallpaperImg/coding${wallpaper}.webp` : "/downloads/blank.webp"
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">
                <SectionTitle surface="card">Wallpapers</SectionTitle>
