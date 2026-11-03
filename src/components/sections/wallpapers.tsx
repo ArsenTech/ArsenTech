@@ -114,7 +114,7 @@ export default function WallpapersSection(){
                "noopener,noreferrer"
           )
      }
-     const previewSrc = wallpaper && !previewError ? `/downloads/wallpapers/previews/${wallpaper}.webp` : "/downloads/blank.webp"
+     const previewSrc = wallpaper && !previewError ? `/downloads/wallpapeImg/coding${wallpaper}.webp` : "/downloads/blank.webp"
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">
                <SectionTitle surface="card">Wallpapers</SectionTitle>
