@@ -10,14 +10,15 @@ import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import AboutSection from "@/components/sections/about";
-import { PROJECTS, WORKS } from "@/lib/constants";
+import { WORKS } from "@/lib/constants/data";
 import WorkCard from "@/components/cards/work";
-import { IBlogPostBase } from "@/lib/types";
+import { IBlogPostBase } from "@/lib/types/blog";
 import BlogPosts from "@/components/blog-posts";
 import ProjectCard from "@/components/cards/project";
 import ContactSection from "@/components/sections/contact";
 import FAQSection from "@/components/sections/faq";
-import { MAIN_FAQS } from "@/lib/constants/faqs";
+import { MAIN_FAQS } from "@/lib/constants/data/faqs";
+import { PROJECTS } from "@/lib/constants/data/projects";
 
 interface LandingPageProps{
      recentPosts: IBlogPostBase[]

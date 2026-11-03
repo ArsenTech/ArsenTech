@@ -1,6 +1,6 @@
 "use client"
 import { useIsMobile } from "@/hooks/use-is-mobile";
-import { IBlogPostData, TOCItem } from "@/lib/types";
+import { IBlogPostData, TOCItem } from "@/lib/types/blog";
 import { useMemo, useState } from "react";
 import TableOfContents from "./widget/toc";
 import BlogAccessibility from "./accessibility";
@@ -27,7 +27,7 @@ export default function BlogDataWrapper({toc, children, metaData}: BlogControlsP
           }
      }
      return (
-          <SiteSection className="!px-0 !pt-10 !pb-0 md:!pb-10" innerWidthClass={cn(hasTOC ? "grid grid-cols-1 lg:grid-cols-[1.5fr_3fr] gap-4" : "space-y-3")} id="blog-content">
+          <SiteSection className="px-0! pt-10! pb-0! md:pb-10!" innerWidthClass={cn(hasTOC ? "grid grid-cols-1 lg:grid-cols-[1.5fr_3fr] gap-4" : "space-y-3")} id="blog-content">
                <TableOfContents
                     isTablet={isTablet}
                     data={toc}

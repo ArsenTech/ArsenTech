@@ -3,7 +3,7 @@ import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
-import { SKILLS } from "@/lib/constants";
+import { SKILLS } from "@/lib/constants/data";
 import ChannelCard from "@/components/cards/channel";
 
 export default function AboutSection(){

@@ -16,7 +16,7 @@ export default function PostSection({sectionTitle, children, innerWidthClass, co
      const shouldCollapse = collapsible===true || (collapsible==="mobile" && isMobile)
      const [isOpen, setIsOpen] = useState(shouldCollapse)
      return (
-          <SiteSection className="!px-0 !pb-10 !pt-0" innerWidthClass={cn("flex flex-col gap-3 items-start justify-center w-full ",innerWidthClass)} {...props}>
+          <SiteSection className="px-0! pb-10! pt-0!" innerWidthClass={cn("flex flex-col gap-3 items-start justify-center w-full ",innerWidthClass)} {...props}>
                {shouldCollapse ? (
                     <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full h-full space-y-5">
                          <div className="flex justify-between items-center gap-2 w-full">

@@ -1,4 +1,4 @@
-import { IFAQItem } from "../types";
+import { IFAQItem } from "../../types";
 
 export const MAIN_FAQS: IFAQItem[] = [
      // Malware Testing

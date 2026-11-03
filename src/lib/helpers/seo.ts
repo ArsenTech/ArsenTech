@@ -9,12 +9,9 @@ export const absoluteURL = (path?: string) => !path ? SITE_URL : `${SITE_URL}${p
 
 export function getRangeAsText(page: number, pageSize: number, totalResults: number, itemName = 'result'): string {
   if (totalResults === 0) return `Showing 0 ${itemName}s on this page`;
-
   const start = (page - 1) * pageSize + 1;
   const end = Math.min(page * pageSize, totalResults);
-
   if (start >= totalResults) return `Showing ${totalResults} of ${totalResults} ${itemName}s`;
-
   return `Showing ${start} - ${end} of ${totalResults} ${totalResults <= 1 ? itemName : `${itemName}s`}`;
 }
 

@@ -1,16 +1,10 @@
-import {
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty"
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group"
 import { SearchIcon } from "lucide-react"
 import { Controller, UseFormReturn } from "react-hook-form"
 import { Field, FieldGroup } from "./ui/field"
 import { SearchType } from "@/lib/schemas"
+
 interface NoSearchResultsProps{
      tag: string
      form?: UseFormReturn<SearchType>,

@@ -1,7 +1,7 @@
 
 import { Download, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import type { IDownloadItem } from "@/lib/types"
+import type { IDownloadItem } from "@/lib/types/downloads"
 import {
      DropdownMenu,
      DropdownMenuContent,
@@ -10,20 +10,12 @@ import {
      DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { useState } from "react"
+import { getDownloadUrl } from "@/lib/helpers/downloads"
 
 interface DownloadCardProps {
      data: IDownloadItem
 }
-function getDownloadUrl(path: string, isRelease = false): string {
-     const filePath = path.replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/")
-     return isRelease
-          ? `https://github.com/ArsenTech/downloads/releases/download/${filePath}`
-          : `https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/static-files/${filePath}`
-}
-
-export default function DownloadCard({
-  data,
-}: DownloadCardProps) {
+export default function DownloadCard({data,}: DownloadCardProps) {
      const [menuOpen, setMenuOpen] = useState(false)
      const buttonClass = "border-primary! bg-primary/20! hover:bg-primary/40!"
      const hasMultipleFiles = data.type !== "external" && !!data.files?.length

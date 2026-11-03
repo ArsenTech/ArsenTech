@@ -1,5 +1,5 @@
 "use client"
-import { IBlogPostBase } from "@/lib/types"
+import { IBlogPostBase } from "@/lib/types/blog"
 import BlogItem from "./blog/item"
 import { Newspaper } from "lucide-react"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "./ui/empty"

@@ -10,6 +10,7 @@ import { cn } from "cn"
 export default function SubscribePopup(){
      const [visible, setVisible] = useState(false);
      const [isClosing, setIsClosing] = useState(false);
+
      useEffect(() => {
           if (sessionStorage.getItem("subscribe-dismissed") === "true") return;
           const timeout = setTimeout(() => {
@@ -17,6 +18,7 @@ export default function SubscribePopup(){
           }, 2500)
           return () => clearTimeout(timeout)
      }, [])
+
      const closePopup = () => {
           if (isClosing) return;
           sessionStorage.setItem("subscribe-dismissed", "true")
@@ -26,7 +28,9 @@ export default function SubscribePopup(){
           }
           setIsClosing(true)
      }
-     if (!visible) return null
+
+     if (!visible) return null;
+     
      return (
           <div role="region"
                aria-label="Subscribe to ArsenTech"

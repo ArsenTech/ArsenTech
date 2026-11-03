@@ -1,7 +1,7 @@
 
 import { NextRequest } from "next/server"
 import { WallpaperSchema } from "@/lib/schemas"
-import { getWallpaperFileUrl } from "@/lib/server/wallpapers"
+import { getWallpaperFileUrl } from "@/lib/helpers/downloads"
 
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams

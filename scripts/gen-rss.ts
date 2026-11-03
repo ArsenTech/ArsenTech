@@ -1,7 +1,7 @@
 import { Feed } from "feed"
 import fs from "fs"
 import path from "path"
-import { getAllPosts } from "@/lib/helpers"
+import { getAllPosts } from "@/lib/helpers/blog"
 
 const SITE_URL = "https://arsentech-yt.vercel.app"
 

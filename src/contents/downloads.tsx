@@ -6,7 +6,7 @@ import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
 import FAQSection from "@/components/sections/faq";
-import { DOWNLOADS_FAQS } from "@/lib/constants/faqs";
+import { DOWNLOADS_FAQS } from "@/lib/constants/data/faqs";
 import DownloadsSection from "@/components/sections/downloads";
 import WallpapersSection from "@/components/sections/wallpapers";
 

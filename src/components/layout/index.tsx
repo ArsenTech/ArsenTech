@@ -31,7 +31,6 @@ export default function PageLayout({children, anchorLinks, includeSubscribePopup
                const progressPercent = (scrolled / totalHeight) * 100
                setProgress(progressPercent)
           }
-
           if (pathname.startsWith("/blog/")) {
                window.addEventListener("scroll", handleScroll)
                return () => window.removeEventListener("scroll", handleScroll)

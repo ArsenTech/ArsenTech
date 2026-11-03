@@ -1,5 +1,5 @@
 import { SITE_URL } from "@/lib/constants";
-import { getAllCategories, getAllSlugs, getAllTags, getPostBySlug } from "@/lib/helpers";
+import { getAllCategories, getAllSlugs, getAllTags, getPostBySlug } from "@/lib/helpers/blog";
 import { absoluteURL } from "@/lib/helpers/seo";
 import { MetadataRoute } from "next";
 

@@ -26,7 +26,7 @@ export default function BlogAccessibility({currTitle, setIsOpen, isTablet, hasTO
           }
      },[])
      return (
-          <div className={cn("sticky top-[69px] w-full not-prose py-3 mb-5 z-10 px-1.5 flex items-center justify-between gap-2 bg-background border-b transition-all",isSticky ? "border-accent" : "border-transparent")}>
+          <div className={cn("sticky top-17.5 w-full not-prose py-3 mb-5 z-10 px-1.5 flex items-center justify-between gap-2 bg-background border-b transition-all",isSticky ? "border-accent" : "border-transparent")}>
                <Breadcrumb className="w-3/5">
                     <BreadcrumbList className="text-xs sm:text-sm">
                          <BreadcrumbItem>

@@ -1,5 +1,5 @@
 "use client"
-import { IBlogPostBase } from "@/lib/types"
+import { IBlogPostBase } from "@/lib/types/blog"
 import { getBackgroundImage } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

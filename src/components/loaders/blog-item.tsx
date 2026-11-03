@@ -9,7 +9,7 @@ export default function BlogItemLoader(){
                <Skeleton className="w-1/2 h-3"/>
                <div className="flex justify-between items-center gap-4">
                     <Skeleton className="h-5 w-1/2"/>
-                    <Skeleton className="h-9 w-9 md:w-[132px]"/>
+                    <Skeleton className="h-9 w-9 md:w-33"/>
                </div>
           </div>
      )

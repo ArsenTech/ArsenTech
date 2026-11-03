@@ -1,4 +1,4 @@
-import { IDownloadItem } from "../types";
+import { IDownloadItem } from "../../types/downloads";
 
 export const DOWNLOADS: IDownloadItem[] = [
      {

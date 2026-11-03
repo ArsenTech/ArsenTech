@@ -1,5 +1,5 @@
 "use client"
-import { IBlogPostBase } from "@/lib/types"
+import { IBlogPostBase } from "@/lib/types/blog"
 import {zodResolver} from "@hookform/resolvers/zod"
 import { useMemo } from "react"
 import { getBackgroundImage } from "@/lib/utils"
@@ -30,6 +30,7 @@ function BlogPosts(props: BlogPostsProps) {
                currPage + pageSize
           ).length} />
      })
+     // TODO: Make it simple
      // eslint-disable-next-line react-hooks/static-components
      return <Inner {...props} />
 }

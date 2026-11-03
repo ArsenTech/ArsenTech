@@ -1,4 +1,3 @@
-
 export const WALLPAPER_GROUPS = {
      Javascript: [1, 2, 3, 4, 5],
      Python: [6, 7, 8, 9, 10],
@@ -28,11 +27,3 @@ export const WALLPAPER_SIZES = {
 export const WALLPAPER_IDS = new Set<string>(Object.values(WALLPAPER_GROUPS).flat().map(String))
 export const WALLPAPER_SIZE_VALUES = new Set<string>(Object.values(WALLPAPER_SIZES).flat().map(item => item.value))
 export const DEFAULT_WALLPAPER_SIZE = "1920x1080"
-
-export function isValidWallpaper(wallpaper: string,size: string
-) {
-     return (
-          WALLPAPER_IDS.has(wallpaper) &&
-          WALLPAPER_SIZE_VALUES.has(size)
-     )
-}

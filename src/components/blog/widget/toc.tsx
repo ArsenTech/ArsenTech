@@ -1,7 +1,7 @@
 "use client"
 import { useActiveHeading } from "@/hooks/use-active-heading";
 import { BlogWidget } from ".";
-import {TOCItem} from "@/lib/types"
+import {TOCItem} from "@/lib/types/blog"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -54,7 +54,7 @@ export default function TableOfContents({data, isTablet, isOpen, setIsOpen, curr
           </ScrollArea>
      )
      return !isTablet ? (
-          <div className="space-y-4 relative lg:sticky mb-3 lg:mb-0 top-0 lg:top-[85px] h-fit">
+          <div className="space-y-4 relative lg:sticky mb-3 lg:mb-0 top-0 lg:top-21.25 h-fit">
                <BlogWidget title="Table of contents">
                     {tocData}
                </BlogWidget>

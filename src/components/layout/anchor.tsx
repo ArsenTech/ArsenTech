@@ -9,6 +9,7 @@ interface AnchorNavProps{
 export default function AnchorNav({links}: AnchorNavProps){
      const [isScrolled, setIsScrolled] = useState(false);
      const [activeId, setActiveId] = useState<string | null>(null)
+     
      useEffect(() => {
           let frame = 0
           const handleScroll = () => {
@@ -46,6 +47,7 @@ export default function AnchorNav({links}: AnchorNavProps){
      }, [links])
 
      if (links.length === 0) return null;
+
      return (
           <nav
                aria-label="Page sections"

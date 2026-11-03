@@ -8,21 +8,13 @@ import SiteSection from "@/components/layout/section"
 import SectionTitle from "@/components/section-title"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectSeparator, SelectTrigger, SelectValue,} from "@/components/ui/select"
-import { WALLPAPER_GROUPS, WALLPAPER_SIZES, DEFAULT_WALLPAPER_SIZE,} from "@/lib/constants/wallpapers"
+import { WALLPAPER_GROUPS, WALLPAPER_SIZES, DEFAULT_WALLPAPER_SIZE,} from "@/lib/constants/data/wallpapers"
 import { WallpaperSchema, type WallpaperType,} from "@/lib/schemas"
 import { SiDeviantart } from "react-icons/si"
 import Link from "next/link"
 import { getSize, WallpaperSizeResult } from "@/actions/wallpapers"
 import { toast } from "sonner"
-
-function formatBytes(bytes: number) {
-     if (bytes === 0) return "0 B"
-     const units = ["B", "KiB", "MiB", "GiB"]
-     const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)),units.length - 1)
-     return `${(bytes / 1024 ** index).toFixed(2)} ${units[index]}`
-}
-
-// TODO: Address mapping issues and review the output
+import { formatBytes } from "@/lib/helpers"
 
 export default function WallpapersSection(){
      const form = useForm<WallpaperType>({
@@ -45,13 +37,15 @@ export default function WallpapersSection(){
           key: string
           result: WallpaperSizeResult
      } | null>(null)
+     const selectionKey = `${wallpaper}:${size}`
+
      useEffect(() => {
           const timeout = setTimeout(() => {
                setPreviewError(false)
           }, 100)
           return () => clearTimeout(timeout)
      }, [wallpaper])
-     const selectionKey = `${wallpaper}:${size}`
+
      useEffect(() => {
           if (!wallpaper || !size) return
           let cancelled = false
@@ -85,6 +79,7 @@ export default function WallpapersSection(){
                     : sizeResult.bytes !== null
                     ? formatBytes(sizeResult.bytes)
                     : "Size unavailable"
+
      function onDownload(values: WallpaperType) {
           if (sizeResult?.status === "missing") return;
           try {
@@ -101,6 +96,7 @@ export default function WallpapersSection(){
           }
      }
      const previewSrc = wallpaper && !previewError ? `/downloads/wallpaperImg/coding${wallpaper}.webp` : "/downloads/blank.webp"
+     
      return (
           <SiteSection id="wallpapers" className="bg-card text-card-foreground">
                <SectionTitle surface="card">Wallpapers</SectionTitle>

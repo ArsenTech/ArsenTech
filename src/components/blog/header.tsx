@@ -1,4 +1,4 @@
-import { IBlogPostBase } from "@/lib/types";
+import { IBlogPostBase } from "@/lib/types/blog";
 import { getBackgroundImage } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
@@ -12,7 +12,7 @@ interface BlogHeaderProps{
 export default function BlogHeader({data}: BlogHeaderProps){
      const {title,description,author,date,editDate} = data
      return (
-          <SiteSection className="text-white flex items-center justify-center flex-col gap-5 h-screen md:h-[50vh] min-h-[640px] px-4 text-center" style={getBackgroundImage()}>
+          <SiteSection className="text-white flex items-center justify-center flex-col gap-5 h-screen md:h-[50vh] min-h-160 px-4 text-center" style={getBackgroundImage()}>
                <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold">{title}</h1>
                <p className="text-lg sm:text-xl">{description}</p>
                {data.categories.length!==0 ? (

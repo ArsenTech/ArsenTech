@@ -1,7 +1,7 @@
 import PageLayout from "@/components/layout"
 import Search from "@/contents/search"
 import { KEYWORDS, POSTS_IN_SEARCH } from "@/lib/constants"
-import { getAllCategories, getPostsByCategory } from "@/lib/helpers"
+import { getAllCategories, getPostsByCategory } from "@/lib/helpers/blog"
 import { absoluteURL, metaAlternatives } from "@/lib/helpers/seo"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"

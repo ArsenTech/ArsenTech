@@ -11,10 +11,10 @@ export default function BlogInteractions({postTitle}: BlogInteractionsProps){
      return (
           <PostSection sectionTitle="Interactions" collapsible="mobile" id="interactions">
                <Giscus
-                    repo="arsentech/blog"
-                    repoId="R_kgDOOQZTMQ"
-                    category="Blog comments"
-                    categoryId="DIC_kwDOOQZTMc4CqOxn"
+                    repo="ArsenTech/ArsenTech"
+                    repoId="MDEwOlJlcG9zaXRvcnkzMDc4MjgxNDA="
+                    category="Blog Comments"
+                    categoryId="DIC_kwDOElkVrM4DKTqp"
                     mapping="pathname"
                     reactionsEnabled="1"
                     term={postTitle}

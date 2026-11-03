@@ -3,7 +3,7 @@ import CodeSnippetBlock from "./code-block";
 import { Tabs, TabsTrigger, TabsList, TabsContent } from "@/components/ui/tabs"
 
 interface CMDBlockProps{
-     shell?: "cmd" | "bash" | "zsh" | "text" | "bat",
+     shell?: "cmd" | "bash" | "zsh" | "text" | "bat" | "sh" | "fish",
      data: {
           [cmd: string]: string
      }

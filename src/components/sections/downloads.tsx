@@ -4,9 +4,9 @@ import { Download, ExternalLink, FilterX, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "../ui/input-group";
 import { Button } from "../ui/button";
 import DownloadCard from "../cards/download";
-import { DOWNLOADS } from "@/lib/constants/downloads";
+import { DOWNLOADS } from "@/lib/constants/data/downloads";
 import { useMemo, useState } from "react";
-import { DownloadCategory } from "@/lib/types";
+import { DownloadCategory } from "@/lib/types/downloads";
 import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "../ui/empty";
 
 export default function DownloadsSection(){

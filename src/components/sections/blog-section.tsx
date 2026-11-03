@@ -15,7 +15,7 @@ import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
 import SectionTitle from "@/components/section-title";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
-import { IBlogPostBase } from "@/lib/types";
+import { IBlogPostBase } from "@/lib/types/blog";
 
 function BlogPosts(props: BlogPostsProps) {
      const currPage = props.currentPage ?? 1;
@@ -27,6 +27,7 @@ function BlogPosts(props: BlogPostsProps) {
                currPage + pageSize
           ).length} />
      })
+     // TODO: Make it simple
      // eslint-disable-next-line react-hooks/static-components
      return <Inner {...props} />
 }

@@ -1,4 +1,4 @@
-import { IBlogPostData, TOCItem } from "@/lib/types"
+import { IBlogPostData, TOCItem } from "@/lib/types/blog"
 import { MDXRemote } from "next-mdx-remote-client/rsc";
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'

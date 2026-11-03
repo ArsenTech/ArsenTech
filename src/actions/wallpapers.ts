@@ -1,4 +1,3 @@
-
 "use server"
 
 import {
@@ -6,7 +5,7 @@ import {
   type WallpaperType,
 } from "@/lib/schemas"
 
-import { getWallpaperFileUrl } from "@/lib/server/wallpapers"
+import { getWallpaperFileUrl } from "@/lib/helpers/downloads"
 
 export type WallpaperSizeResult =
      | { status: "available"; bytes: number | null }
