@@ -3,11 +3,14 @@ import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
-import { SKILLS } from "@/lib/constants/data";
 import ChannelCard from "@/components/cards/channel";
 import usePFP from "@/hooks/use-pfp";
+import { ISkill } from "@/lib/types";
 
-export default function AboutSection(){
+interface AboutSectionProps{
+     skills: ISkill[]
+}
+export default function AboutSection({skills}: AboutSectionProps){
      const pfps = usePFP()
      return (
           <SiteSection id="about">
@@ -25,7 +28,7 @@ export default function AboutSection(){
                     </div>
                </div>
                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {SKILLS.map(skill=>(
+                    {skills.map(skill=>(
                          <div key={skill.name} className="space-y-4">
                               <div className="flex justify-between items-center gap-2">
                                    <span className="text-base">{skill.name}</span>

@@ -4,17 +4,19 @@ import { Download, ExternalLink, FilterX, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "../ui/input-group";
 import { Button } from "../ui/button";
 import DownloadCard from "../cards/download";
-import { DOWNLOADS } from "@/lib/constants/data/downloads";
 import { useMemo, useState } from "react";
-import { DownloadCategory } from "@/lib/types/downloads";
+import { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
 import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "../ui/empty";
 
-export default function DownloadsSection(){
+interface DownloadsSectionProps{
+     list: IDownloadItem[]
+}
+export default function DownloadsSection({list}: DownloadsSectionProps){
      const [search, setSearch] = useState("");
      const [category, setCategory] = useState<DownloadCategory | "">("");
      const filteredDownloads = useMemo(() => {
           const query = search.trim().toLowerCase()
-          return DOWNLOADS.filter((item) => {
+          return list.filter((item) => {
                const matchesCategory = category === "" || item.category === category
                const matchesSearch = query === "" || [
                     item.title,
@@ -23,7 +25,7 @@ export default function DownloadsSection(){
                ].some(value =>value.toLowerCase().includes(query))
                return matchesCategory && matchesSearch
           })
-     }, [search, category])
+     }, [search, category, list])
      return (
           <SiteSection id="downloads">
                <SectionTitle>Downloads</SectionTitle>

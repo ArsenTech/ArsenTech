@@ -6,11 +6,16 @@ import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
 import { Search } from "lucide-react";
 import FAQSection from "@/components/sections/faq";
-import { DOWNLOADS_FAQS } from "@/lib/constants/data/faqs";
 import DownloadsSection from "@/components/sections/downloads";
 import WallpapersSection from "@/components/sections/wallpapers";
+import { IDownloadItem } from "@/lib/types/downloads";
+import { IFAQItem } from "@/lib/types";
 
-export default function DownloadsContent(){
+interface DownloadsContentProps{
+     list: IDownloadItem[],
+     faqs: IFAQItem[]
+}
+export default function DownloadsContent({list,faqs}: DownloadsContentProps){
      return (
           <main>
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-8 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
@@ -19,9 +24,9 @@ export default function DownloadsContent(){
                          <Link href="#downloads"><Search/> Discover</Link>
                     </Button>
                </AppSection>
-               <DownloadsSection/>
+               <DownloadsSection list={list}/>
                <WallpapersSection/>
-               <FAQSection list={DOWNLOADS_FAQS} surface="background"/>
+               <FAQSection list={faqs} surface="background"/>
           </main>
      )
 }

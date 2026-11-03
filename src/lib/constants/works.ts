@@ -1,14 +1,6 @@
 import { Bug, CodeIcon, Gamepad2, Hammer, ImageIcon, Laptop } from "lucide-react"
-import { IWorkItem, ISkill } from "@/lib/types"
+import { IWorkItem } from "@/lib/types"
 
-export const SKILLS: ISkill[] = [
-     {name: "Web Dev (HTML, CSS, JS)", percentage: 100},
-     {name: "TypeScript", percentage: 98},
-     {name: "React", percentage: 95},
-     {name: "Next.js", percentage: 90},
-     {name: "Tailwind CSS", percentage: 100},
-     {name: "shadcn ui", percentage: 100}
-]
 export const WORKS: IWorkItem[] = [
      {Icon: Laptop, title: "Tutorials", description: "Tech Tutorials (Windows, iPhone, Linux, and Android) and Malware Removal Tutorials in One Playlist", url: "https://www.youtube.com/playlist?list=PLsOMVP9OgGeosVdpYLlVuNTa-iiOSvGHS"},
      {Icon: CodeIcon, title: "WebDev Tutorials", description: "HTML, CSS, Javascript, React, and Any JS Framework Tutorials In One Playlist", url: "https://www.youtube.com/playlist?list=PLgdpvA9j5I7RrhEcmB_44nTsTc39GUUwX"},

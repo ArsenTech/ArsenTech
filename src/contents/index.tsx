@@ -10,20 +10,22 @@ import { SiPatreon } from "react-icons/si";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import AboutSection from "@/components/sections/about";
-import { WORKS } from "@/lib/constants/data";
+import { WORKS } from "@/lib/constants/works";
 import WorkCard from "@/components/cards/work";
 import { IBlogPostBase } from "@/lib/types/blog";
 import BlogPosts from "@/components/blog-posts";
 import ProjectCard from "@/components/cards/project";
 import ContactSection from "@/components/sections/contact";
 import FAQSection from "@/components/sections/faq";
-import { MAIN_FAQS } from "@/lib/constants/data/faqs";
-import { PROJECTS } from "@/lib/constants/data/projects";
+import { IFAQItem, IProject, ISkill } from "@/lib/types";
 
 interface LandingPageProps{
-     recentPosts: IBlogPostBase[]
+     recentPosts: IBlogPostBase[],
+     faqList: IFAQItem[],
+     projects: IProject[],
+     skills: ISkill[]
 }
-export default function LandingPage({recentPosts}: LandingPageProps){
+export default function LandingPage({recentPosts, faqList, projects, skills}: LandingPageProps){
      return (
           <main>
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-12 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
@@ -44,7 +46,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                          </Button>
                     </div>
                </AppSection>
-               <AboutSection/>
+               <AboutSection skills={skills}/>
                <SiteSection id="works" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Works</SectionTitle>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
@@ -71,7 +73,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                <SiteSection id="projects" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Projects</SectionTitle>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                         {PROJECTS.map(project=>(
+                         {projects.map(project=>(
                               <ProjectCard
                                    key={project.name}
                                    data={project}
@@ -80,7 +82,7 @@ export default function LandingPage({recentPosts}: LandingPageProps){
                     </div>
                </SiteSection>
                <ContactSection/>
-               <FAQSection list={MAIN_FAQS}/>
+               <FAQSection list={faqList}/>
           </main>
      )
 }

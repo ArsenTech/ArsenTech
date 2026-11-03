@@ -16,3 +16,7 @@ export function formatBytes(bytes: number) {
      const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)),units.length - 1)
      return `${(bytes / 1024 ** index).toFixed(2)} ${units[index]}`
 }
+export function absoluteCDN(path: `/${string}`){
+     const baseURL = "https://arsentech.github.io/ArsenTech"
+     return `${baseURL}${path}`
+}
