@@ -15,15 +15,12 @@ import type { IBlogPostBase } from "@/lib/types/blog";
 import { FiltersLoader, FeaturedPostsLoader } from "@/loaders/widgets";
 
 const BlogPosts = dynamic(() => import("@/components/lists/blog-posts"), {
-     ssr: false,
      loading: () => <PostsLoader count={POSTS_PER_PAGE} />
 })
 const FeaturedPosts = dynamic(()=>import("@/components/blog/widget/featured"),{
-     ssr: false,
      loading: FeaturedPostsLoader
 });
 const CollapsibleFilters = dynamic(()=>import("@/components/blog/widget/filters"),{
-     ssr: false,
      loading: FiltersLoader
 })
 
