@@ -5,33 +5,73 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-## 3.0.0 - Unreleased
+## 3.0.0 - 2026-11-04
+
 ### Added
 - Icons to hero section buttons for clearer navigation and visual communication.
-  - Mail icon for contacting ArsenTech.
-  - Search icon for discovering downloads.
-  - Compass icon for exploring blog posts.
-- Contact form integration with Formspree
-- Client-side form validation using Zod and React Hook Form
-- Submission loading states and success/error notifications
-- Character counter for contact messages
+- Contact form with Formspree integration.
+  - Client-side and server-side validation using Zod.
+  - React Hook Form integration.
+  - Submission loading states and success/error notifications.
+  - Character counter for messages.
+- Minimalistic, searchable FAQ system shared across the main and Downloads pages.
+- Search and category filtering for software downloads.
+- Improved download cards supporting multiple versions, GitHub Releases, and external sources.
+- Interactive wallpaper downloader featuring:
+  - Wallpaper and resolution selection.
+  - Automatic preview updates.
+  - File-size retrieval using Server Actions.
+  - Downloads through a CDN-backed endpoint.
+- Subscribe popup with delayed appearance, animations, and session-based dismissal memory.
+- Loading skeletons for dynamically loaded components.
+- Dark mode support across the redesigned components.
+
 ### Moved
-- Migrated the entire blog workflow to the new website
-### Improved
-- Refreshed the blog content and presentation
-- Improved code blocks with syntax highlighting and additional functionality
-- Refreshed sections across all pages
-  - Hero Section
-  - About Section
-  - Works Section
-  - Recent Posts Section
-- Refreshed the anchor links part from v2
-### Changed
-- Renamed `manifest.json` to `manifest.webmanifest`
-- Renamed **Services** to **Works**
+- Migrated the entire blog workflow into the unified ArsenTech website.
 - Consolidated feedback functionality into the Contact section.
+- Moved page-specific navigation links into anchor navigation where appropriate.
+
+### Improved
+- Refreshed the design and layout across all major website pages.
+- Redesigned the following landing page sections:
+  - Hero
+  - About
+  - Works
+  - Recent Posts
+  - Projects
+  - FAQs
+  - Get in Touch
+- Redesigned the Downloads page, including software downloads, wallpapers, and FAQs.
+- Improved blog content presentation, search, filtering, and pagination.
+- Upgraded MDX code blocks with:
+  - Shiki syntax highlighting.
+  - Additional language support.
+  - Diff highlighting for added and removed lines.
+  - Copy and download functionality.
+  - Line numbers and light/dark theme support.
+- Updated Projects with compact thumbnail cards and license badges.
+- Refreshed anchor navigation with scroll spy functionality.
+- Improved responsive layouts and visual consistency across light and dark themes.
+- Improved component reusability and organization.
+
+### Optimized
+- Added targeted dynamic imports and loading skeletons to reduce unnecessary initial component loading.
+- Introduced request-level deduplication using React's `cache()`.
+- Refined Client and Server Component boundaries, removing unnecessary `"use client"` directives.
+- Refactored and organized components, files, and imports.
+- Moved large, extensible datasets into JSON.
+- Optimized existing functionality and resolved leftover bugs.
+
+### Changed
+- Renamed `manifest.json` to `manifest.webmanifest`.
+- Renamed **Services** to **Works**, with updated content and navigation.
+- Replaced the old accordion-based FAQ presentation with a searchable question-and-answer interface.
+- Updated section layouts and styling to use reusable shadcn components and the ArsenTech green OKLCH theme.
+
 ### Removed
 - Separate Feedback section from the Downloads page.
+- Legacy Works lightbox gallery.
+- Redundant components and unnecessary legacy styling.
 
 ---
 
