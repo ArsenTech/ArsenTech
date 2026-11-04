@@ -9,7 +9,7 @@ import AppSection from "@/components/site-section"
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import { useState } from "react";
-import BlogContentLoader from "@/components/loaders/content/blog";
+import BlogContentLoader from "@/loaders/content/blog";
 import dynamic from "next/dynamic";
 
 const BlogSectionContent = dynamic(()=>import("@/sections/blog"),{

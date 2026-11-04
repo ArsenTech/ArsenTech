@@ -7,15 +7,15 @@ import AppSection from "@/components/site-section"
 import SocialMediaLinks from "@/components/social-media-links";
 import { ArrowRight, Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
-import AboutSection from "@/sections/about";
 import { IBlogPostBase } from "@/lib/types/blog";
-import ContactSection from "@/sections/contact";
-import FAQSection from "@/sections/faq";
 import { IFAQItem, IProject, ISkill } from "@/lib/types";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
-import { PostsLoader, ProjectsLoader, WorksLoader } from "@/components/loaders/lists";
+import { PostsLoader, ProjectsLoader, WorksLoader } from "@/loaders/lists";
 import dynamic from "next/dynamic";
+import FAQLoader from "@/loaders/content/faq";
+import AboutLoader from "@/loaders/content/about";
+import ContactLoader from "@/loaders/content/contact";
 
 const BlogPosts = dynamic(()=>import("@/components/lists/blog-posts"),{
      ssr: false,
@@ -28,6 +28,18 @@ const WorksList = dynamic(()=>import("@/components/lists/works"),{
 const ProjectsList = dynamic(()=>import("@/components/lists/projects"),{
      ssr: false,
      loading: ProjectsLoader
+});
+const FAQSection = dynamic(()=>import("@/sections/faq"),{
+     ssr: false,
+     loading: FAQLoader
+});
+const AboutSection = dynamic(()=>import("@/sections/about"),{
+     ssr: false,
+     loading: AboutLoader
+})
+const ContactSection = dynamic(()=>import("@/sections/contact"),{
+     ssr: false,
+     loading: ContactLoader
 });
 
 interface LandingPageProps{
@@ -57,13 +69,16 @@ export default function LandingPage({recentPosts, faqList, projects, skills}: La
                          </Button>
                     </div>
                </AppSection>
-               <AboutSection skills={skills}/>
+               <SiteSection id="about">
+                    <SectionTitle>About</SectionTitle>
+                    <AboutSection skills={skills}/>
+               </SiteSection>
                <SiteSection id="works" className="bg-card text-card-foreground">
                     <SectionTitle surface="card">Works</SectionTitle>
                     <WorksList/>
                </SiteSection>
                <SiteSection id="blog">
-               <SectionTitle>Recent posts</SectionTitle>
+                    <SectionTitle>Recent posts</SectionTitle>
                     <BlogPosts posts={recentPosts}/>
                     {recentPosts.length > 0 && (
                          <Button size="xl" variant="secondary" asChild>
@@ -78,8 +93,14 @@ export default function LandingPage({recentPosts, faqList, projects, skills}: La
                     <SectionTitle surface="card">Projects</SectionTitle>
                     <ProjectsList projects={projects}/>
                </SiteSection>
-               <ContactSection/>
-               <FAQSection list={faqList}/>
+               <SiteSection id="contact">
+                    <SectionTitle className="mb-5">Get in Touch</SectionTitle>
+                    <ContactSection/>
+               </SiteSection>
+               <SiteSection id="faqs" className="bg-card text-card-foreground">
+                    <SectionTitle surface="card">FAQs</SectionTitle>
+                    <FAQSection list={faqList}/>
+               </SiteSection>
           </main>
      )
 }

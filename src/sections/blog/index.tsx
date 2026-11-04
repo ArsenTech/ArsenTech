@@ -1,9 +1,9 @@
 import { Newspaper } from "lucide-react";
 import { useMemo, useState } from "react"
-import { MAX_FEATURED_POSTS } from "@/lib/constants"
+import { MAX_FEATURED_POSTS, POSTS_PER_PAGE } from "@/lib/constants"
 import dynamic from "next/dynamic"
 import SiteSection from "@/components/layout/section";
-import { PostsLoader } from "@/components/loaders/lists";
+import { PostsLoader } from "@/loaders/lists";
 import { SearchIcon } from "lucide-react"
 import { PaginationWithLinks } from "@/components/pagination-with-links"
 import NoSearchResults from "@/components/shrug"
@@ -12,11 +12,11 @@ import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { IBlogPostBase } from "@/lib/types/blog";
-import { FiltersLoader, FeaturedPostsLoader } from "@/components/loaders/widgets";
+import { FiltersLoader, FeaturedPostsLoader } from "@/loaders/widgets";
 
 const BlogPosts = dynamic(() => import("@/components/lists/blog-posts"), {
      ssr: false,
-     loading: () => <PostsLoader count={8} />
+     loading: () => <PostsLoader count={POSTS_PER_PAGE} />
 })
 const FeaturedPosts = dynamic(()=>import("@/components/blog/widget/featured"),{
      ssr: false,

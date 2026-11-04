@@ -1,10 +1,14 @@
-import { Skeleton } from "../ui/skeleton";
+import { Skeleton } from "@/components/ui/skeleton";
 import { BlogItemLoader, DownloadCardLoader, ProjectCardLoader, WorkCardLoader } from "./items";
 
 export function PostsLoader({count = 10}: {count?: number}){
-     return Array.from({length: count}).map((_,i)=>(
-          <BlogItemLoader key={`post-${i+1}`}/>
-     ))
+     return (
+          <div className="space-y-4 w-full">
+               {Array.from({length: count}).map((_,i)=>(
+                    <BlogItemLoader key={`post-${i+1}`}/>
+               ))}
+          </div>
+     )
 }
 export function WorksLoader(){
      return (

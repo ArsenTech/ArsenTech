@@ -1,6 +1,6 @@
 import { MAX_FEATURED_POSTS } from "@/lib/constants";
-import { Card, CardContent, CardHeader } from "../ui/card";
-import { Skeleton } from "../ui/skeleton";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function WidgetLoader({children}: {children: React.ReactNode}){
      return (

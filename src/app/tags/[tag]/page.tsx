@@ -31,7 +31,12 @@ export const generateMetadata = async({params, searchParams}: PageProps): Promis
           title: `Top ${results.length} posts tagged with "${tagDecoded}" - Updated ${now.getFullYear()}`,
           description: `Explore ${results.length} blog posts tagged with "${tagDecoded}" — from coding tutorials to tech insights`,
      }
-     const ogImage = absoluteURL(`/api/og?title=${encodeURIComponent(meta.title)}&description=${encodeURIComponent(meta.description)}&date=${now.toISOString()}`)
+     const ogParams = new URLSearchParams({
+          title: encodeURIComponent(meta.title),
+          description: encodeURIComponent(meta.description),
+          date: now.toISOString()
+     })
+     const ogImage = absoluteURL(`/api/og?${ogParams.toString()}`)
      return {
           title: meta.title,
           description: meta.description,

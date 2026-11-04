@@ -20,7 +20,11 @@ export default function BlogPosts({posts}: BlogPostsProps){
                </EmptyHeader>
           </Empty>
      )
-     return posts.map(post=>(
-          <BlogItem key={post.slug} postData={post}/>
-     ))
+     return (
+          <div className="space-y-4 w-full">
+               {posts.map(post=>(
+                    <BlogItem key={post.slug} postData={post}/>
+               ))}
+          </div>
+     ) 
 }

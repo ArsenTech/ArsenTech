@@ -18,10 +18,10 @@ export default function ContactCard({Icon, username, cta, url, className}: Conta
                     <Icon className="size-8 shrink-0 text-primary" />
                     <h3 className="text-center text-lg font-semibold sm:text-left md:text-xl lg:text-2xl">{username}</h3>
                </div>
-               <Button variant="outline" size="lg" asChild>
+               <Button variant="outline" size="contact-button" asChild aria-label={cta}>
                     <Link href={url} target="_blank" rel="noopener nofollow noreferrer">
                          <Icon className="size-4 sm:size-5"/>
-                         {cta}
+                         <span className="lg:sr-only xl:not-sr-only">{cta}</span>
                     </Link>
                </Button>
           </div>

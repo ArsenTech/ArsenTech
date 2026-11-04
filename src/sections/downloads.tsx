@@ -1,11 +1,9 @@
-import SiteSection from "@/components/layout/section";
-import SectionTitle from "@/components/section-title";
 import { Download, ExternalLink, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";
 import { useMemo, useState } from "react";
 import { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
-import { DownloadsLoader } from "@/components/loaders/lists";
+import { DownloadsLoader } from "@/loaders/lists";
 import dynamic from "next/dynamic";
 
 const DownloadsFilterList = dynamic(()=>import("@/components/lists/downloads"),{
@@ -16,7 +14,7 @@ const DownloadsFilterList = dynamic(()=>import("@/components/lists/downloads"),{
 interface DownloadsSectionProps{
      list: IDownloadItem[]
 }
-export default function DownloadsSection({list}: DownloadsSectionProps){
+export default function DownloadsSectionContent({list}: DownloadsSectionProps){
      const [search, setSearch] = useState("");
      const [category, setCategory] = useState<DownloadCategory | "">("");
      const filteredDownloads = useMemo(() => {
@@ -32,8 +30,7 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
           })
      }, [search, category, list])
      return (
-          <SiteSection id="downloads">
-               <SectionTitle>Downloads</SectionTitle>
+          <>
                <div className="flex justify-center items-center flex-col gap-4">
                     <InputGroup>
                          <InputGroupInput type="text" value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search..." />
@@ -78,6 +75,6 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
                          setCategory("")
                     }}
                />
-          </SiteSection>
+          </>
      )
 }

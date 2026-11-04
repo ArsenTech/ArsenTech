@@ -1,12 +1,21 @@
 import BlogHeader from "@/components/blog/header";
 import { Badge } from "@/components/ui/badge";
-import BlogItem from "@/components/items/blog";
 import { IBlogPostBase, IBlogPostFull } from "@/lib/types/blog";
 import BlogContent from "@/components/blog/content";
 import PostSection from "@/sections/blog/post";
-import BlogInteractions from "@/components/blog/interactions";
 import Link from "next/link";
 import { absoluteURL } from "@/lib/helpers/seo";
+import { MAX_RELATED_POSTS } from "@/lib/constants";
+import { PostsLoader } from "@/loaders/lists";
+import dynamic from "next/dynamic";
+import GiscusLoader from "@/loaders/giscus";
+
+const BlogPosts = dynamic(() => import("@/components/lists/blog-posts"), {
+     loading: () => <PostsLoader count={MAX_RELATED_POSTS} />
+})
+const BlogInteractions = dynamic(()=>import("@/components/blog/interactions"),{
+     loading: GiscusLoader
+});
 
 interface BlogPostProps {
      postData: IBlogPostFull
@@ -40,11 +49,7 @@ export default function BlogPost({postData, relatedPosts}: BlogPostProps){
                ) : null}
                {relatedPosts.length!==0 ? (
                     <PostSection sectionTitle="Related Posts">
-                         <div className="space-y-4 w-full">
-                              {relatedPosts.map(post=>(
-                                   <BlogItem key={post.slug} postData={post}/>
-                              ))}
-                         </div>
+                         <BlogPosts posts={relatedPosts}/>
                     </PostSection>
                ) : null}
                <BlogInteractions postTitle={postData.title}/>

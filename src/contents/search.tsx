@@ -2,7 +2,7 @@
 import { IBlogPostBase } from "@/lib/types/blog"
 import { getBackgroundImage } from "@/lib/utils"
 import AppSection from "@/components/site-section"
-import { SearchContentLoader } from "@/components/loaders/content/blog"
+import { SearchContentLoader } from "@/loaders/content/blog"
 import dynamic from "next/dynamic"
 
 const SearchSection = dynamic(()=>import("@/sections/search"),{

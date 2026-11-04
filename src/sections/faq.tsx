@@ -1,5 +1,3 @@
-import SiteSection from "@/components/layout/section";
-import SectionTitle from "@/components/section-title";
 import { Bubble, BubbleContent } from "@/components/ui/bubble"
 import {
   Message,
@@ -18,14 +16,12 @@ import { MessageCircleQuestionMark } from "lucide-react";
 import { useState } from "react";
 import { IFAQItem } from "@/lib/types";
 import { toast } from "sonner";
-import { cn } from "cn";
 import usePFP from "@/hooks/use-pfp";
 
 interface FAQSectionProps{
-     list: IFAQItem[],
-     surface?: "background" | "card"
+     list: IFAQItem[]
 }
-export default function FAQSection({list, surface="card"}: FAQSectionProps){
+export default function FAQSection({list}: FAQSectionProps){
      const [activeFAQ, setActiveFAQ] = useState<IFAQItem | null>(null);
      const {main} = usePFP()
      const form = useForm<FAQType>({
@@ -44,8 +40,7 @@ export default function FAQSection({list, surface="card"}: FAQSectionProps){
           setActiveFAQ(currFAQ)
      }
      return (
-          <SiteSection id="faqs" className={cn(surface==="card" && "bg-card text-card-foreground")}>
-               <SectionTitle surface={surface}>FAQs</SectionTitle>
+          <>
                <form onSubmit={form.handleSubmit(onReveal)}>
                     <FieldGroup>
                          <Controller
@@ -103,6 +98,6 @@ export default function FAQSection({list, surface="card"}: FAQSectionProps){
                          </div>
                     )}
                </div>
-          </SiteSection>
+          </>
      )
 }

@@ -4,8 +4,6 @@ import { Controller, useForm, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import Image from "next/image"
 import { AlertTriangleIcon, Download } from "lucide-react"
-import SiteSection from "@/components/layout/section"
-import SectionTitle from "@/components/section-title"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectSeparator, SelectTrigger, SelectValue,} from "@/components/ui/select"
 import { WALLPAPER_GROUPS, WALLPAPER_SIZES, DEFAULT_WALLPAPER_SIZE,} from "@/lib/constants/wallpapers"
@@ -16,7 +14,7 @@ import { getSize, WallpaperSizeResult } from "@/actions/wallpapers"
 import { toast } from "sonner"
 import { absoluteCDN, formatBytes } from "@/lib/helpers"
 
-export default function WallpapersSection(){
+export default function WallpapersSectionContent(){
      const form = useForm<WallpaperType>({
           resolver: zodResolver(WallpaperSchema),
           defaultValues: {
@@ -98,147 +96,144 @@ export default function WallpapersSection(){
      const previewSrc = wallpaper && !previewError ? absoluteCDN(`/images/downloads/wallpapers/coding${wallpaper}.webp`) : "/backgrounds/blank.webp"
      
      return (
-          <SiteSection id="wallpapers" className="bg-card text-card-foreground">
-               <SectionTitle surface="card">Wallpapers</SectionTitle>
-               <div className="flex flex-col items-center gap-2">
-                    <Image
-                         key={previewSrc}
-                         src={previewSrc}
-                         alt={wallpaper? `Preview of wallpaper #${wallpaper}`: "Select a wallpaper to view its preview"}
-                         width={600}
-                         height={300}
-                         className="aspect-2/1 w-full h-full max-w-150 max-h-75 rounded-md object-contain"
-                         onError={() => setPreviewError(true)}
+          <div className="flex flex-col items-center gap-2">
+               <Image
+                    key={previewSrc}
+                    src={previewSrc}
+                    alt={wallpaper? `Preview of wallpaper #${wallpaper}`: "Select a wallpaper to view its preview"}
+                    width={600}
+                    height={300}
+                    className="aspect-2/1 w-full max-w-150 rounded-md object-cover shadow-sm"
+                    onError={() => setPreviewError(true)}
+               />
+               <form
+                    onSubmit={form.handleSubmit(onDownload)}
+                    className="flex w-full max-w-150 items-center justify-center gap-2 flex-wrap"
+               >
+                    <Controller
+                         control={form.control}
+                         name="wallpaper"
+                         render={({ field, fieldState }) => (
+                              <div className="min-w-0 space-y-1 flex-1">
+                                   <Select
+                                        name={field.name}
+                                        value={field.value}
+                                        onValueChange={(value) => {
+                                             field.onChange(value)
+                                             form.setValue("size",DEFAULT_WALLPAPER_SIZE,{ shouldValidate: true })
+                                        }}
+                                   >
+                                        <SelectTrigger
+                                             ref={field.ref}
+                                             id="wallpaper"
+                                             aria-label="Choose a wallpaper"
+                                             aria-invalid={fieldState.invalid}
+                                             aria-describedby={fieldState.invalid ? "wallpaper-error" : undefined}
+                                             className="w-full"
+                                        >
+                                             <SelectValue placeholder="Choose a wallpaper"/>
+                                        </SelectTrigger>
+                                        <SelectContent side="top" align="start">
+                                             {Object.entries(WALLPAPER_GROUPS).map(([group, ids], index) => (
+                                                  <div key={group}>
+                                                       {index > 0 && <SelectSeparator />}
+                                                       <SelectGroup>
+                                                            <SelectLabel>{group}</SelectLabel>
+                                                            {ids.map(id => (
+                                                                 <SelectItem key={id} value={String(id)}>
+                                                                      Wallpaper #{id}
+                                                                 </SelectItem>
+                                                            ))}
+                                                       </SelectGroup>
+                                                  </div>
+                                             ))}
+                                        </SelectContent>
+                                   </Select>
+                                   {fieldState.error && (
+                                        <p id="wallpaper-error" role="alert" className="text-xs text-destructive">{fieldState.error.message}</p>
+                                   )}
+                              </div>
+                         )}
                     />
-                    <form
-                         onSubmit={form.handleSubmit(onDownload)}
-                         className="flex w-full max-w-150 items-center justify-center gap-2"
+                    <Controller
+                         control={form.control}
+                         name="size"
+                         render={({ field, fieldState }) => (
+                              <div className="min-w-0 space-y-1 flex-1">
+                                   <Select
+                                        name={field.name}
+                                        value={field.value}
+                                        onValueChange={field.onChange}
+                                        disabled={!wallpaper}
+                                   >
+                                        <SelectTrigger
+                                             ref={field.ref}
+                                             id="wallpaper-size"
+                                             aria-label="Choose wallpaper size"
+                                             aria-invalid={fieldState.invalid}
+                                             aria-describedby={fieldState.invalid ? "size-error" : undefined}
+                                             className="w-full"
+                                        >
+                                             <SelectValue placeholder="Choose a size"/>
+                                        </SelectTrigger>
+                                        <SelectContent side="top" align="start">
+                                             {Object.entries(WALLPAPER_SIZES).map(([group, sizes], index) => (
+                                                  <div key={group}>
+                                                       {index > 0 && <SelectSeparator />}
+                                                       <SelectGroup>
+                                                            <SelectLabel>{group}</SelectLabel>
+                                                            {sizes.map(item => (
+                                                                 <SelectItem key={item.value} value={item.value}>
+                                                                      {item.text}
+                                                                 </SelectItem>
+                                                            ))}
+                                                       </SelectGroup>
+                                                  </div>
+                                             ))}
+                                        </SelectContent>
+                                   </Select>
+                                   {fieldState.error && (
+                                        <p
+                                             id="size-error"
+                                             role="alert"
+                                             className="text-xs text-destructive"
+                                        >
+                                             {fieldState.error.message}
+                                        </p>
+                                   )}
+                              </div>
+                         )}
+                    />
+                    <Button
+                         type="submit"
+                         variant="secondary"
+                         disabled={sizeResult?.status === "missing"}
+                         className="flex-1"
                     >
-                         <Controller
-                              control={form.control}
-                              name="wallpaper"
-                              render={({ field, fieldState }) => (
-                                   <div className="min-w-0 space-y-1 flex-1">
-                                        <Select
-                                             name={field.name}
-                                             value={field.value}
-                                             onValueChange={(value) => {
-                                                  field.onChange(value)
-                                                  form.setValue("size",DEFAULT_WALLPAPER_SIZE,{ shouldValidate: true })
-                                             }}
-                                        >
-                                             <SelectTrigger
-                                                  ref={field.ref}
-                                                  id="wallpaper"
-                                                  aria-label="Choose a wallpaper"
-                                                  aria-invalid={fieldState.invalid}
-                                                  aria-describedby={fieldState.invalid ? "wallpaper-error" : undefined}
-                                                  className="w-full"
-                                             >
-                                                  <SelectValue placeholder="Choose a wallpaper"/>
-                                             </SelectTrigger>
-                                             <SelectContent side="top" align="start">
-                                                  {Object.entries(WALLPAPER_GROUPS).map(([group, ids], index) => (
-                                                       <div key={group}>
-                                                            {index > 0 && <SelectSeparator />}
-                                                            <SelectGroup>
-                                                                 <SelectLabel>{group}</SelectLabel>
-                                                                 {ids.map(id => (
-                                                                      <SelectItem key={id} value={String(id)}>
-                                                                           Wallpaper #{id}
-                                                                      </SelectItem>
-                                                                 ))}
-                                                            </SelectGroup>
-                                                       </div>
-                                                  ))}
-                                             </SelectContent>
-                                        </Select>
-                                        {fieldState.error && (
-                                             <p id="wallpaper-error" role="alert" className="text-xs text-destructive">{fieldState.error.message}</p>
-                                        )}
-                                   </div>
-                              )}
-                         />
-                         <Controller
-                              control={form.control}
-                              name="size"
-                              render={({ field, fieldState }) => (
-                                   <div className="min-w-0 space-y-1 flex-1">
-                                        <Select
-                                             name={field.name}
-                                             value={field.value}
-                                             onValueChange={field.onChange}
-                                             disabled={!wallpaper}
-                                        >
-                                             <SelectTrigger
-                                                  ref={field.ref}
-                                                  id="wallpaper-size"
-                                                  aria-label="Choose wallpaper size"
-                                                  aria-invalid={fieldState.invalid}
-                                                  aria-describedby={fieldState.invalid ? "size-error" : undefined}
-                                                  className="w-full"
-                                             >
-                                                  <SelectValue placeholder="Choose a size"/>
-                                             </SelectTrigger>
-                                             <SelectContent side="top" align="start">
-                                                  {Object.entries(WALLPAPER_SIZES).map(([group, sizes], index) => (
-                                                       <div key={group}>
-                                                            {index > 0 && <SelectSeparator />}
-                                                            <SelectGroup>
-                                                                 <SelectLabel>{group}</SelectLabel>
-                                                                 {sizes.map(item => (
-                                                                      <SelectItem key={item.value} value={item.value}>
-                                                                           {item.text}
-                                                                      </SelectItem>
-                                                                 ))}
-                                                            </SelectGroup>
-                                                       </div>
-                                                  ))}
-                                             </SelectContent>
-                                        </Select>
-                                        {fieldState.error && (
-                                             <p
-                                                  id="size-error"
-                                                  role="alert"
-                                                  className="text-xs text-destructive"
-                                             >
-                                                  {fieldState.error.message}
-                                             </p>
-                                        )}
-                                   </div>
-                              )}
-                         />
-                         <Button
-                              type="submit"
-                              variant="secondary"
-                              disabled={sizeResult?.status === "missing"}
-                              className="flex-1"
-                         >
-                              <Download />
-                              Download
+                         <Download />
+                         Download
+                    </Button>
+               </form>
+               <div className="flex w-full max-w-150 items-center justify-between gap-2 relative group">
+                    <p
+                         role="status"
+                         className="text-sm text-muted-foreground"
+                    >
+                         Size of selected wallpaper: {fileSizeText}
+                    </p>
+                    <div className="flex items-center justify-center gap-2">
+                         <Button variant="secondary" size="icon" title="For More Wallpapers, Visit My DeviantArt Page" asChild>
+                              <Link href={"https://www.deviantart.com/arsen2005"} target="_blank" rel="noopener noreferrer nofollow">
+                                   <SiDeviantart/>
+                              </Link>
                          </Button>
-                    </form>
-                    <div className="flex w-full max-w-150 items-center justify-between gap-2 relative group">
-                         <p
-                              role="status"
-                              className="text-sm text-muted-foreground"
-                         >
-                              Size of selected wallpaper: {fileSizeText}
-                         </p>
-                         <div className="flex items-center justify-center gap-2">
-                              <Button variant="secondary" size="icon" title="For More Wallpapers, Visit My DeviantArt Page" asChild>
-                                   <Link href={"https://www.deviantart.com/arsen2005"} target="_blank" rel="noopener noreferrer nofollow">
-                                        <SiDeviantart/>
-                                   </Link>
-                              </Button>
-                              <AlertTriangleIcon className="group-hover:text-primary transition-colors"/>
-                         </div>
-                         <div className="p-4 border bg-card text-card-foreground rounded-md rounded-tr-none shadow-sm space-y-2 absolute top-10 z-20 invisible group-hover:visible">
-                              <p className="text-sm">These wallpapers use satire code snippets to highlight best practices in development.</p>
-                              <p className="text-sm">No real company is targeted — the goal is to inspire better software decisions, not provoke drama.</p>
-                         </div>
+                         <AlertTriangleIcon className="group-hover:text-primary transition-colors"/>
+                    </div>
+                    <div className="p-4 border bg-card text-card-foreground rounded-md rounded-tr-none shadow-sm space-y-2 absolute top-10 z-20 invisible group-hover:visible">
+                         <p className="text-sm">These wallpapers use satire code snippets to highlight best practices in development.</p>
+                         <p className="text-sm">No real company is targeted — the goal is to inspire better software decisions, not provoke drama.</p>
                     </div>
                </div>
-          </SiteSection>
+          </div>
      )
 }

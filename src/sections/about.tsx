@@ -1,20 +1,22 @@
 import { Dot } from "lucide-react";
-import SiteSection from "@/components/layout/section";
-import SectionTitle from "@/components/section-title";
 import Image from "next/image";
 import ChannelCard from "@/components/items/channel";
 import usePFP from "@/hooks/use-pfp";
 import { ISkill } from "@/lib/types";
-import Skill from "@/components/items/skill";
+import dynamic from "next/dynamic";
+import { SkillsLoader } from "@/loaders/content/about";
+
+const SkillsList = dynamic(()=>import("@/components/lists/skills"),{
+     loading: SkillsLoader
+});
 
 interface AboutSectionProps{
      skills: ISkill[]
 }
-export default function AboutSection({skills}: AboutSectionProps){
+export default function AboutSectionContent({skills}: AboutSectionProps){
      const pfps = usePFP()
      return (
-          <SiteSection id="about">
-               <SectionTitle>About</SectionTitle>
+          <>
                <div className="flex items-center flex-wrap gap-5 md:gap-10">
                     <Image src={pfps.main} alt="ArsenTech" width={200} height={200} loading="lazy" className="rounded-full aspect-square object-center mx-auto md:mx-0"/>
                     <div className="w-full md:flex-1 text-center md:text-left space-y-2.5">
@@ -27,11 +29,7 @@ export default function AboutSection({skills}: AboutSectionProps){
                          <p className="text-sm md:text-base text-left leading-6 mt-5">Arsen, also known online as ArsenTech (formerly known as Arsen Technologies) is an Armenian Tech YouTuber, Programmer (Coder), Developer known for his Tutorials, Virus Testing, Windows Experiments and much more content (formerly Powerpoint OS Videos). I Live in Yerevan, but my Videos are English as of 2020. I&apos;m Working on Programming, Video Editing.</p>
                     </div>
                </div>
-               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {skills.map(skill=>(
-                         <Skill key={skill.name} data={skill}/>
-                    ))}
-               </div>
+               <SkillsList skills={skills}/>
                <div className="flex flex-col gap-3 items-center justify-center mt-5">
                     <h3 className="font-semibold text-2xl">My Other Channels</h3>
                     <ChannelCard
@@ -56,6 +54,6 @@ export default function AboutSection({skills}: AboutSectionProps){
                          url="https://www.youtube.com/channel/UChjvr_TFywsE23UPlwd-wFQ?sub_confirmation=1"
                     />
                </div>
-          </SiteSection>
+          </>
      )
 }
