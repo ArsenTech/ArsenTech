@@ -12,28 +12,16 @@ import SiteSection from "@/components/layout/section"
 import { PaginationWithLinks } from "@/components/pagination-with-links"
 import NoSearchResults from "@/components/shrug"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
-import { BlogPostsProps } from "@/components/blog-posts"
 import PostsLoader from "@/components/loaders/posts"
 import { getRangeAsText } from "@/lib/helpers/seo"
 import usePaginatedData from "@/hooks/use-pagination"
 import { Field, FieldGroup } from "@/components/ui/field"
-import { POSTS_PER_PAGE } from "@/lib/constants"
 import { SearchSchema, SearchType } from "@/lib/schemas"
 
-function BlogPosts(props: BlogPostsProps) {
-     const currPage = props.currentPage ?? 1;
-     const pageSize = props.pageSize ?? POSTS_PER_PAGE
-     const Inner = dynamic(() => import("@/components/blog-posts"), {
-          ssr: false,
-          loading: () => <PostsLoader count={props.posts.slice(
-               (currPage - 1) * pageSize,
-               currPage + pageSize
-          ).length} />
-     })
-     // TODO: Make it simple
-     // eslint-disable-next-line react-hooks/static-components
-     return <Inner {...props} />
-}
+const BlogPosts = dynamic(() => import("@/components/blog-posts"), {
+     ssr: false,
+     loading: () => <PostsLoader count={5} />
+})
 
 interface SearchPropsBase{
      results: IBlogPostBase[],
@@ -102,11 +90,7 @@ export default function Search(props: SearchProps){
                               </FieldGroup>
                          </form>
                          <div className="space-y-5 w-full">
-                              <BlogPosts
-                                   posts={entries}
-                                   currentPage={currentPage}
-                                   pageSize={pageSize}
-                              />
+                              <BlogPosts posts={entries}/>
                               <PaginationWithLinks
                                    page={currentPage}
                                    totalCount={totalPages}

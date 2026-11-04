@@ -1,9 +1,8 @@
 import { Newspaper } from "lucide-react";
 import { useMemo, useState } from "react"
-import { MAX_FEATURED_POSTS, POSTS_PER_PAGE } from "@/lib/constants"
+import { MAX_FEATURED_POSTS } from "@/lib/constants"
 import dynamic from "next/dynamic"
 import SiteSection from "@/components/layout/section";
-import { BlogPostsProps } from "@/components/blog-posts";
 import PostsLoader from "@/components/loaders/posts";
 import { SearchIcon } from "lucide-react"
 import { BlogWidget, BlogWidgetCard } from "@/components/blog/widget"
@@ -17,20 +16,10 @@ import SectionTitle from "@/components/section-title";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { IBlogPostBase } from "@/lib/types/blog";
 
-function BlogPosts(props: BlogPostsProps) {
-     const currPage = props.currentPage ?? 1;
-     const pageSize = props.pageSize ?? POSTS_PER_PAGE
-     const Inner = dynamic(() => import("@/components/blog-posts"), {
-          ssr: false,
-          loading: () => <PostsLoader count={props.posts.slice(
-               (currPage - 1) * pageSize,
-               currPage + pageSize
-          ).length} />
-     })
-     // TODO: Make it simple
-     // eslint-disable-next-line react-hooks/static-components
-     return <Inner {...props} />
-}
+const BlogPosts = dynamic(() => import("@/components/blog-posts"), {
+     ssr: false,
+     loading: () => <PostsLoader count={8} />
+})
 
 interface BlogSectionProps{
      posts: IBlogPostBase[],
@@ -98,11 +87,7 @@ export default function BlogSection({posts, currentPage, categories, pageSize, q
                          </div>
                     ) : (
                          <>
-                         <BlogPosts
-                              posts={entries}
-                              currentPage={currentPage}
-                              pageSize={pageSize}
-                         />
+                         <BlogPosts posts={entries}/>
                          <PaginationWithLinks
                               page={currentPage}
                               totalCount={filteredPosts.length}

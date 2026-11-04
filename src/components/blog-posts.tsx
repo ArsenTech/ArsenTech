@@ -4,10 +4,8 @@ import BlogItem from "./blog/item"
 import { Newspaper } from "lucide-react"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "./ui/empty"
 
-export interface BlogPostsProps{
+interface BlogPostsProps{
      posts: IBlogPostBase[],
-     currentPage?: number,
-     pageSize?: number,
 }
 
 export default function BlogPosts({posts}: BlogPostsProps){
