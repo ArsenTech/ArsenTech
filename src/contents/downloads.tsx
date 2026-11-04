@@ -1,4 +1,3 @@
-"use client"
 import { getBackgroundImage } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -14,15 +13,12 @@ import dynamic from "next/dynamic";
 import FAQLoader from "@/loaders/content/faq";
 
 const DownloadsSectionContent = dynamic(()=>import("@/sections/downloads"),{
-     ssr: false,
      loading: DownloadsLoader
 });
 const WallpapersSectionContent = dynamic(()=>import("@/sections/wallpapers"),{
-     ssr: false,
      loading: WallpapersLoader
 });
 const FAQSection = dynamic(()=>import("@/sections/faq"),{
-     ssr: false,
      loading: FAQLoader
 });
 

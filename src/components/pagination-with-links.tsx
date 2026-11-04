@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { type ReactNode, useCallback, useTransition } from "react";
 import {
   Pagination,

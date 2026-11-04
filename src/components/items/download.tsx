@@ -1,4 +1,4 @@
-
+"use client"
 import { Download, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import type { IDownloadItem } from "@/lib/types/downloads"

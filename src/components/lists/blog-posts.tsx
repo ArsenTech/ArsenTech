@@ -1,4 +1,4 @@
-"use client"
+
 import type { IBlogPostBase } from "@/lib/types/blog"
 import BlogItem from "@/components/items/blog"
 import { Newspaper } from "lucide-react"

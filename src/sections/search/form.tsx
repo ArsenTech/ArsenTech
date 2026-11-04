@@ -1,4 +1,4 @@
-"use client"
+
 import { Controller } from "react-hook-form"
 import { SearchIcon } from "lucide-react"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"

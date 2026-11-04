@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, FileCodeIcon } from "lucide-react";
 import React from "react";

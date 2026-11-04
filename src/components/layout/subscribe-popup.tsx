@@ -1,4 +1,4 @@
-"use client"
+
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"

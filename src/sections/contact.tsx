@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { SiGithub, SiPatreon, SiYoutube } from "react-icons/si";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";

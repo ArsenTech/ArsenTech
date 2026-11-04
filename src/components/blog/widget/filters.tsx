@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge";
 import { BlogWidget } from ".";
 import { useEffect, useRef, useState } from "react";

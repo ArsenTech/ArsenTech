@@ -1,4 +1,4 @@
-"use client"
+
 import ProjectCard from "@/components/items/project";
 import type { IProject } from "@/lib/types";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";

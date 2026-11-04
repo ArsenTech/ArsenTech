@@ -1,3 +1,4 @@
+"use client"
 import { FilterX, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import DownloadCard from "@/components/items/download";

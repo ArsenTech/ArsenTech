@@ -1,3 +1,4 @@
+"use client"
 import { Bubble, BubbleContent } from "@/components/ui/bubble"
 import {
   Message,

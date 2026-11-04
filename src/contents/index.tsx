@@ -1,4 +1,4 @@
-"use client"
+
 import { getBackgroundImage } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -18,27 +18,21 @@ import AboutLoader from "@/loaders/content/about";
 import ContactLoader from "@/loaders/content/contact";
 
 const BlogPosts = dynamic(()=>import("@/components/lists/blog-posts"),{
-     ssr: false,
      loading: () => <PostsLoader count={5}/>
 });
 const WorksList = dynamic(()=>import("@/components/lists/works"),{
-     ssr: false,
      loading: WorksLoader
 });
 const ProjectsList = dynamic(()=>import("@/components/lists/projects"),{
-     ssr: false,
      loading: ProjectsLoader
 });
 const FAQSection = dynamic(()=>import("@/sections/faq"),{
-     ssr: false,
      loading: FAQLoader
 });
 const AboutSection = dynamic(()=>import("@/sections/about"),{
-     ssr: false,
      loading: AboutLoader
 })
 const ContactSection = dynamic(()=>import("@/sections/contact"),{
-     ssr: false,
      loading: ContactLoader
 });
 

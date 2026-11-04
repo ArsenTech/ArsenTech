@@ -1,3 +1,4 @@
+"use client"
 import { Noop } from "react-hook-form";
 import { Command, CommandInput, CommandEmpty, CommandList, CommandGroup, CommandItem } from "@/components/ui/command";
 import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover";

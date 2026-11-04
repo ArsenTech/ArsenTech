@@ -1,3 +1,4 @@
+"use client"
 import type { ILink } from "@/lib/types"
 import { cn } from "cn";
 import Link from "next/link"

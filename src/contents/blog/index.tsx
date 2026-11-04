@@ -13,6 +13,7 @@ import BlogContentLoader from "@/loaders/content/blog";
 import dynamic from "next/dynamic";
 
 const BlogSectionContent = dynamic(()=>import("@/sections/blog"),{
+     ssr: false,
      loading: BlogContentLoader
 });
 

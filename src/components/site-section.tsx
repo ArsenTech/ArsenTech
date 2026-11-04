@@ -1,4 +1,4 @@
-"use client"
+
 import { cn } from "@/lib/utils";
 
 export default function SiteSection({className, ...props}: React.ComponentProps<"section">){

@@ -1,4 +1,4 @@
-"use client"
+
 import CodeSnippetBlock from "@/components/code-block";
 import { Tabs, TabsTrigger, TabsList, TabsContent } from "@/components/ui/tabs"
 

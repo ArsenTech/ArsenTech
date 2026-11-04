@@ -1,5 +1,4 @@
 import { Skeleton } from "@/components/ui/skeleton"
-import { useIsMobile } from "@/hooks/use-is-mobile"
 import { Dot } from "lucide-react"
 
 function ChannelCardLoader(){
@@ -35,7 +34,6 @@ export function SkillsLoader(){
      )
 }
 export default function AboutLoader(){
-     const isMobile = useIsMobile();
      return (
           <>
           <div className="flex items-center flex-wrap gap-5 md:gap-10 w-full">
@@ -48,12 +46,8 @@ export default function AboutLoader(){
                          <Skeleton className="w-20 h-5"/>
                     </div>
                     <div className="space-y-1 w-full">
-                         {isMobile && (
-                              <>
-                              <Skeleton className="w-full h-4 md:h-5"/>
-                              <Skeleton className="w-full h-4 md:h-5"/>
-                              </>
-                         )}
+                         <Skeleton className="w-full h-4 md:h-5 block md:hidden"/>
+                         <Skeleton className="w-full h-4 md:h-5 block md:hidden"/>
                          <Skeleton className="w-full h-4 md:h-5"/>
                          <Skeleton className="w-full h-4 md:h-5"/>
                          <Skeleton className="w-3/4 h-4 md:h-5"/>

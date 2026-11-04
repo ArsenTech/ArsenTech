@@ -1,5 +1,5 @@
+"use client"
 import * as React from "react"
-
 import { loadHighlighter } from "@/lib/highlighter"
 
 export function useHighlightedCode(value: string, language: string) {

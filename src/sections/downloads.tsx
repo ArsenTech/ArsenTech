@@ -1,3 +1,4 @@
+"use client"
 import { Download, ExternalLink, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";

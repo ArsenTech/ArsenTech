@@ -1,4 +1,4 @@
-"use client"
+
 import type { IBlogPostBase } from "@/lib/types/blog"
 import { getBackgroundImage } from "@/lib/utils"
 import AppSection from "@/components/site-section"

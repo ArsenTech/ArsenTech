@@ -1,4 +1,4 @@
-"use client"
+
 import { Button } from "@/components/ui/button";
 import type { IWorkItem } from "@/lib/types";
 import { ArrowRight } from "lucide-react";
