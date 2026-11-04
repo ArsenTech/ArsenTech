@@ -1,0 +1,172 @@
+---
+title: "How to Make Your Windows 10 Terminal Look Modern & Stylish"
+description: "This guide shows how to customize your Windows Terminal to look modern, stylish, and cool. It's ideal for Windows 10 users and those who are used to downloading and installing (without Winget)."
+date: "2025-11-24"
+editDate: "2026-06-02"
+tags: ["oh my posh", "oh-my-posh", "cmd", "nerd fonts", "windows", "powershell", "windows powershell", "windows 10", "cmd windows", "nerd-fonts", "nerd fonts windows", "oh my posh windows"]
+published: true
+featured: false
+categories: ["Tutorial","Terminal","Windows"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Do you want to make your Windows Terminal look modern, professional, and stylish?
+This guide will show you how to customize CMD and PowerShell using:
+- [**oh-my-posh**](https://ohmyposh.dev/)
+- [**Nerd Fonts**](https://www.nerdfonts.com/)
+- [**Clink**](https://chrisant996.github.io/clink/)
+all without using ``winget``.
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/xqn9rUakaGw)
+
+## Step 1 - Downloading Tools
+Before customizing your terminal, download the required tools.
+
+### Nerd Fonts
+1. Go to the official Nerd Fonts download page:
+     https://www.nerdfonts.com/font-downloads
+2. Choose a font such as **Fira Code Nerd Font**, then download it.
+
+### Oh My Posh
+1. Go to the Official GitHub repo of oh-my-posh:
+     https://github.com/JanDeDobbeleer/oh-my-posh
+2. Open the Releases section
+3. Download the installer: `install-x64.msi`
+
+### Clink (For CMD Customization)
+1. Go to the official site of Clink:
+     https://chrisant996.github.io/clink/
+2. Download the **Installer (EXE)**.
+
+## Step 2 - Changing the color scheme
+Open Command Prompt using:
+<KbdGroup>
+     <Kbd>⊞</Kbd>
+     <span>+</span>
+     <Kbd>R</Kbd>
+</KbdGroup>
+Type `cmd`, and press <kbd>Enter</kbd>.
+Right-click on the CMD title bar → Defaults → Colors, and set your preferred colors.
+
+### Converting to RGB
+To quickly generate RGB values from Hex, use this prompt:
+```
+Convert hex to RGB from the following text:
+<text to convert hex colors>
+Make sure to format it like this: `Red, Green, Blue`
+```
+<details>
+     <summary>Example in JSON</summary>
+     ```json
+     "cursorColor": "248, 248, 242",
+     "selectionBackground": "68, 71, 90",
+     "background": "40, 42, 54",
+     "foreground": "248, 248, 242",
+     "black": "33, 34, 44",
+     "blue": "189, 147, 249",
+     "cyan": "139, 233, 253",
+     "green": "80, 250, 123",
+     "purple": "255, 121, 198",
+     "red": "255, 85, 85",
+     "white": "248, 248, 242",
+     "yellow": "241, 250, 140",
+     "brightBlack": "98, 114, 164",
+     "brightBlue": "214, 172, 255",
+     "brightCyan": "164, 255, 255",
+     "brightGreen": "105, 255, 148",
+     "brightPurple": "255, 146, 223",
+     "brightRed": "255, 110, 110",
+     "brightWhite": "255, 255, 255",
+     "brightYellow": "255, 255, 165"
+     ```
+</details>
+
+After copying the RGB values, paste them into CMD's color settings → click OK, then close the terminal.
+
+### Example Color Scheme — Dracula
+| Color         | Red | Green | Blue |
+| ------------- | --- | ----- | ---- |
+| Background    | 40  | 42    | 54   |
+| Foreground    | 248 | 248   | 242  |
+| Red           | 255 | 85    | 85   |
+| Green         | 80  | 250   | 123  |
+| Yellow        | 241 | 250   | 140  |
+| Blue          | 189 | 147   | 249  |
+| Purple        | 255 | 121   | 198  |
+| Cyan          | 139 | 233   | 253  |
+| White         | 248 | 248   | 242  |
+| Bright Black  | 98  | 114   | 164  |
+| Bright Red    | 255 | 110   | 110  |
+| Bright Green  | 105 | 255   | 148  |
+| Bright Yellow | 255 | 255   | 165  |
+| Bright Blue   | 214 | 172   | 255  |
+| Bright Purple | 255 | 146   | 223  |
+| Bright Cyan   | 164 | 255   | 255  |
+| Bright White  | 250 | 250   | 250  |
+
+## Step 3 - Changing the Terminal Font
+1. Once you've downloaded the Nerd Font, extract the downloaded Nerd Font archive.
+2. Select all fonts inside the extracted folder.
+3. Copy them to `C:\Windows\Fonts`.
+4. Open the CMD → Right-click on the CMD title bar → Defaults → Font.
+5. Select your installed Nerd Font, and close the CMD.
+
+## Step 4 - Installing oh-my-posh + Clink
+1. Run the oh-my-posh installer (`install-x64.msi`)
+2. Run the Clink installer and complete the setup wizard.
+3. Reopen CMD and run:
+     ```cmd
+     clink config prompt use oh-my-posh
+     clink set ohmyposh.theme %POSH_THEMES_PATH%\<theme>.omp.json
+     ```
+> `<theme>` - Any [oh-my-posh theme](https://ohmyposh.dev/docs/themes) (example: atomic)
+
+## Step 5 - PowerShell customization
+1. Download and install PowerShell 7+ (MSI package):
+     https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5#install-the-msi-package
+2. Open PowerShell 7 and run:
+     ```powershell
+     notepad $PROFILE
+     ```
+     If prompted, click **yes**.
+3. Add the following line:
+     ```powershell
+     oh-my-posh init pwsh -c "$env:POSH_THEMES_PATH/<theme>.omp.json" | Invoke-Expression
+     ```
+4. Save and close Notepad.
+
+## Visual Studio Code Integration
+1. Open Visual Studio Code → Terminal → New Terminal
+2. Click the dropdown menu and select "Configure Terminal Settings."
+3. Search for **"font"** in the settings search bar, and set your Nerd Font (e.g., Fira Code Nerd Font)
+4. Optionally increase the font size
+5. Restart the VS Code terminal
+
+## Visual Studio Implementation
+1. Open Visual Studio Code, click Continue without code
+2. Go to Tools → Options
+3. Navigate to `Environment → Fonts and Colors`,
+4. Set "Show settings for" to **Terminal**
+5. Select your installed nerd font.
+6. Adjust the font size, and click **OK**
+
+Increase the font size a little bit to make it comfortable, and click ok.
+
+## Conclusion
+And that's it! Your Windows 10 terminal is now fully modern, clean, and stylish. With oh-my-posh, Nerd Fonts, and Clink, your terminal becomes far more powerful and visually appealing than the default setup.
+
+Whether you're a developer, student, or casual Windows 10 user, having a polished terminal makes your workflow more enjoyable.
+Feel free to try different fonts, themes, and color schemes until you find your perfect style.
+
+Thanks for reading! If you want more tutorials like this, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io

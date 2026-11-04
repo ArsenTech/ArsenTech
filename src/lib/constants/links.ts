@@ -1,0 +1,31 @@
+import {SiYoutube, SiGithub, SiDeviantart, SiOdysee, SiScratch, SiPatreon} from "react-icons/si"
+import {FaCodepen} from "react-icons/fa"
+import type { ILink } from "@/lib/types"
+
+export const LINKS: ILink[] = [
+     {name: "Home", url: "/#banner"},
+     {name: "About", url: "/#about"},
+     {name: "Contact", url: "/#contact"},
+     {name: "Downloads", url: "/downloads"},
+     {name: "Blog", url: "/blog"}
+]
+export const MAIN_ANCHOR_LINKS: ILink[] = [
+     {name: "Works", url: "/#works"},
+     {name: "Recent Posts", url: "/#blog"},
+     {name: "Projects", url: "/#projects"},
+     {name: "FAQs", url: "/#faqs"}
+]
+export const DOWNLOAD_ANCHOR_LINKS: ILink[] = [
+     {name: "Downloads", url: "/downloads#downloads"},
+     {name: "Wallpapers", url: "/downloads#wallpapers"},
+     {name: "FAQs", url: "/downloads#faqs"}
+]
+export const SOCIAL_MEDIA_LINKS = [
+     {Icon: SiYoutube, url: "https://www.youtube.com/c/ArsenTech/", title: "Subscribe on YouTube"},
+     {Icon: SiPatreon, url: "https://www.patreon.com/ArsenTech", title: "Join my Patreon"},
+     {Icon: FaCodepen, url: "https://codepen.io/ArsenJS/", title: "Follow on Codepen"},
+     {Icon: SiGithub, url: "https://github.com/ArsenTech/", title: "Follow on GitHub"},
+     {Icon: SiDeviantart, url: "https://www.deviantart.com/arsen2005", title: "Follow on DeviantArt"},
+     {Icon: SiScratch, url: "https://scratch.mit.edu/users/ArsenTech/", title: "Follow on Scratch"},
+     {Icon: SiOdysee, url: "https://odysee.com/@ArsenTech", title: "Follow on Odysee"},
+]

@@ -1,26 +1,25 @@
 import PageLayout from "@/components/layout";
-import { SOCIAL_MEDIA_LINKS } from "@/lib/constants";
-import { getBackgroundImage } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
+import LandingPage from "@/contents";
+import { MAIN_ANCHOR_LINKS } from "@/lib/constants/links";
+import { getRecentPosts } from "@/lib/helpers/data/blog";
+import { getProjects, getSkills } from "@/lib/helpers/data";
+import { getMainFAQ } from "@/lib/helpers/data/faqs";
 
-export default function Home() {
+export default async function Home() {
+  const [skills, posts, projects, faqs] = await Promise.all([
+    getSkills(),
+    getRecentPosts(),
+    getProjects(),
+    getMainFAQ()
+  ]);
   return (
-    <PageLayout>
-      <main>
-        <section id="#banner" className="text-white flex items-center justify-center flex-col gap-5 h-screen min-h-[500px] px-4 text-center" style={getBackgroundImage()}>
-          <Link href="https://arsentech.github.io">
-            <Image src="/arsentech-dark.svg" alt="logo" width={300} height={64}/>
-          </Link>
-          <h1 className="text-4xl sm:text-6xl font-bold">Coming Soon...</h1>
-          <p className="text-lg sm:text-xl">I&apos;m working on something exciting for the website. Stay tuned!</p>
-          <div className="flex justify-center flex-wrap gap-6">
-            {SOCIAL_MEDIA_LINKS.map(({Icon,url},i)=>(
-              <Link key={i} href={url} className="text-2xl hover:text-[#59facf] transition"><Icon/></Link>
-            ))}
-          </div>
-        </section>
-      </main>
+    <PageLayout anchorLinks={MAIN_ANCHOR_LINKS} includeSubscribePopup>
+      <LandingPage
+        skills={skills}
+        recentPosts={posts}
+        projects={projects}
+        faqList={faqs}
+      />
     </PageLayout>
   );
 }

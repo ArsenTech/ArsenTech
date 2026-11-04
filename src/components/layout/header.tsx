@@ -1,59 +1,62 @@
-import { useIsMobile } from "@/hooks/use-is-mobile";
-import { cn, getInitialLogo } from "@/lib/utils";
+"use client"
+import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useEffect, useState } from "react"
-import NavbarToggler from "../navbar-toggler";
-import ModeToggler from "../mode-toggler";
-import { LINKS } from "@/lib/constants";
+import { useEffect, useMemo, useState } from "react"
+import NavbarToggler from "@/components/togglers/navbar-toggler";
+import ModeToggler from "@/components/togglers/mode-toggler";
+import { LINKS } from "@/lib/constants/links";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+import { Progress } from "@/components/ui/progress";
+import { useCurrentTheme } from "@/hooks/use-current-theme";
 
-export default function Header(){
-     const {theme} = useTheme()
-     const [isSticky, setIsSticky] = useState(false);
-     const [toggled, setToggled] = useState(false);
-     const [logoImg, setLogoImg] = useState(getInitialLogo(theme))
-     useEffect(()=>{
-          function handleScroll(this: Window) {
-               setIsSticky(this.scrollY > 20)
-          }
-          window.addEventListener("scroll",handleScroll)
-          return () => {
-               window.removeEventListener("scroll",handleScroll)
-          }
-     },[])
-     useEffect(()=>{
-          setLogoImg(getInitialLogo(theme))
-     },[theme])
-     const handleMouseEnter = () => setLogoImg("/arsentech-colorful.svg");
-     const handleMouseLeave = () => setLogoImg(getInitialLogo(theme))
-     const textColorClass = isSticky ? "text-header-foreground" : "text-white"
-     const bgColorClass = isSticky ? "bg-header-foreground" : "bg-white";
-     const imgColorClass = isSticky ? "invert-image-color" : "invert"
-     const isMobile = useIsMobile();
+interface HeaderProps {
+     progress?: number;
+}
+export default function Header({progress}: HeaderProps){
+     const [isScrolled, setIsScrolled] = useState(false);
+     const [isHovered, setIsHovered] = useState(false);
+     const currTheme = useCurrentTheme()
+     const [isOpened, setIsOpened] = useState(false);
+     useEffect(() => {
+          const handleScroll = () => {
+               setIsScrolled(window.scrollY > 20);
+          };
+          handleScroll();
+          window.addEventListener("scroll", handleScroll);
+          return () => window.removeEventListener("scroll", handleScroll);
+     }, []);
+     const logo = useMemo(() => {
+          const defaultLogo = currTheme === "dark" ? "/arsentech-dark.svg" : "/arsentech-light.svg"
+          if (isOpened || isScrolled) return isHovered ? "/arsentech-colorful.svg" : defaultLogo
+          return "/arsentech-dark.svg"
+     }, [isOpened, isScrolled, currTheme, isHovered])
      return (
-          <header className={cn(`fixed w-full top-0 left-0 z-10 transition-all`,!isSticky ? "bg-transparent py-[30px]" : "bg-header py-[18px]",textColorClass)}>
+          <header className={cn(`fixed w-full top-0 left-0 z-40 transition-all border-none`,!isScrolled ? "bg-transparent py-7.5" : "bg-header py-4.5",isScrolled ? "text-header-foreground" : "text-white")}>
                <div className="inner-width flex items-center justify-between">
-                    <Link href="https://arsentech.github.io" className={cn(isMobile && "order-[0]")} aria-label="ArsenTech" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                         <Image src={!isSticky ? "/arsentech-dark.svg" : logoImg} alt="logo" width={150} height={32} objectFit="contain"/>
+                    <Link href="/" aria-label="ArsenTech" onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+                         <Image src={logo} alt="logo" width={150} height={32} className="object-contain"/>
                     </Link>
-                    {isMobile && (
-                         <NavbarToggler
-                              onClick={()=>setToggled(!toggled)}
-                              lineClass={bgColorClass}
-                              className={cn(isMobile && "-order-1")}
-                              isActive={toggled}
-                         />
-                    )}
-                    <div className={cn("navbar-menu-mobile md:navbar-menu",isSticky ? "bg-header" : "bg-[#353b48]","md:bg-transparent",toggled ? "left-0" : "-left-full","md:left-0")}>
+                    <NavbarToggler
+                         onClick={()=>setIsOpened(!isOpened)}
+                         aria-expanded={isOpened}
+                         lineClass={isScrolled ? "bg-header-foreground" : "bg-white"}
+                         className="-order-1 md:order-0 inline-block md:hidden"
+                         isActive={isOpened}
+                    />
+                    <div className={cn("fixed md:relative h-screen md:h-fit w-full md:w-fit top-0 max-w-100 md:max-w-full py-20 md:py-0 px-12.5 md:px-0 transition-all text-center z-20 flex flex-col md:flex-row items-center gap-7.5",isScrolled ? "bg-header" : "bg-[#353b48]","md:bg-transparent",isOpened ? "left-0" : "-left-full","md:left-0")}>
                          {LINKS.map(({url,name},i)=>(
-                              <Link key={i} className={cn("block md:inline text-3xl md:text-base my-[30px] md:my-0 font-medium ml-[30px] transition-all",isSticky ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
+                              <Link key={i} className={cn("block md:inline text-2xl sm:text-3xl md:text-base md:my-0 font-medium transition-all",isScrolled ? "hover:text-primary" : 'hover:text-[#92e5a1]')} href={url}>{name}</Link>
                          ))}
                     </div>
                     <ModeToggler
-                         className={imgColorClass}
+                         className={(isScrolled && currTheme!=="dark") ? "invert-image-color" : "invert"}
                     />
                </div>
+               {!!progress && (
+                    <div className="absolute bottom-0 left-0 w-full">
+                         <Progress value={progress} className="rounded-none"/>
+                    </div>
+               )}
           </header>
      )
 }

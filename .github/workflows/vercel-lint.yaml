@@ -1,0 +1,41 @@
+name: CI
+permissions:
+  checks: write
+  statuses: write
+  contents: read
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Notify Vercel (lint started)
+        uses: vercel/repository-dispatch/actions/status@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          sha: ${{ github.sha }}
+          state: in_progress
+          name: "Vercel - arsentech-yt: lint"
+
+      - name: Notify Vercel (lint success)
+        if: success()
+        uses: vercel/repository-dispatch/actions/status@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          sha: ${{ github.sha }}
+          state: success
+          name: "Vercel - arsentech-yt: lint"
+
+      - name: Notify Vercel (lint failure)
+        if: failure()
+        uses: vercel/repository-dispatch/actions/status@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          sha: ${{ github.sha }}
+          state: failure
+          name: "Vercel - arsentech-yt: lint"

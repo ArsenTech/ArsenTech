@@ -1,0 +1,172 @@
+---
+title: "How to Remove The MEMZ Trojan"
+description: "This guide will help you remove the MEMZ trojan without any antivirus software or any help on your infected Windows PC. You'll learn to fix MBR corruptions after reading the post"
+date: "2025-11-26"
+tags: ["memz trojan", "malware", "memz", "remove memz trojan", "delete memz trojan", "memz trojan removal", "memz trojan malware", "remove memz", "delete memz", "memz removal", "computer virus", "how to remove memz", "troubleshooting", "windows"]
+published: true
+featured: true
+categories: ["Malware Removal", "Windows", "Cybersecurity", "Troubleshooting", "Bootable USB"]
+author: ArsenTech
+authorURL: https://github.com/ArsenTech
+---
+## Introduction
+Did your PC get infected by the MEMZ Trojan and now you're stuck with an overwritten MBR, a broken bootloader, or a system that refuses to start?
+This guide will show you how to repair the MBR and remove MEMZ without antivirus tools or external help.
+
+> [!WARNING]
+> Do NOT run malware on a real PC.
+> All demonstrations on ArsenTech are done inside isolated virtual machines.
+> Follow the guide carefully — bootloader repair is sensitive.
+
+If you prefer watching instead of reading, here's the full video guide: [Watch the video on YouTube](https://youtu.be/ygHm63stHPA)
+
+## Step 1 - Prepare for the flash drive
+To fix MEMZ's MBR destruction, you must boot into a safe offline environment, since the trojan overwrites the MBR during its final payload.
+
+What You Need
+- A clean computer
+- A USB flash drive
+- A Windows ISO (from trusted sources)
+- Rufus, Ventoy, or any bootable USB creator
+
+Steps
+1. Create a Windows installation USB (see the Bootable USB blog post for help).
+2. Insert the USB into the infected computer.
+3. Enter the Boot Menu (F2, F8, F11, F12, Esc depending on brand).
+4. Boot from the USB.
+5. Click **Next**, then **Repair your computer**.
+
+> [!IMPORTANT]
+> The Windows installation USB is required because MEMZ corrupts the MBR.
+> You need an offline repair environment to fix the bootloader safely.
+
+## Step 2 - Run Startup Repair
+Inside the Windows Recovery Environment:
+```
+Troubleshoot → Advanced Options → Startup Repair
+```
+> [!NOTE]
+> Startup Repair may take a long time. This is normal, so be patient :-)
+
+If Startup Repair works, Windows may boot normally afterward.
+If not, continue to Step 3.
+
+## Step 3 - Fix the MBR and Boot Sector
+If Startup Repair didn't fix the bootloader:
+1. Boot from the USB again
+2. Click **Next → Repair your computer**
+3. Open `Troubleshoot → Advanced Options → Command Prompt`
+
+Run these commands:
+```cmd
+bootrec /fixmbr
+bootrec /fixboot
+bootrec /rebuildbcd
+```
+
+If all three succeed, restart your PC.
+If you see Access Denied, continue to Step 4.
+
+## Step 4 - If the MBR fix failed
+This section handles the “hard cases” where MEMZ caused deeper damage.
+
+### 1 — Check that Partitions Still Exist
+```cmd
+diskpart
+list vol
+```
+
+Check if:
+1. Your Windows partition is still NTFS
+2. Its size matches your real drive
+
+If partitions are intact → proceed.
+If they look wrong, missing, or RAW, skip to Step 4.4.
+
+### 2 — Try Rebuilding BCD Without bootrec
+```cmd
+bcdboot C:\Windows /f ALL
+```
+If this boots Windows → fixed! Otherwise, continue.
+
+### 3 — Recreate the MBR Manually (Legacy BIOS Only)
+> [!CAUTION]
+> This only applies to Legacy BIOS systems.
+> Do NOT use this on UEFI systems.
+
+```cmd
+diskpart
+list disk
+select disk 0
+list partition
+select partition X   :: your system reserved partition (100 500 MB)
+active
+exit
+```
+Then:
+```cmd
+bootsect /nt60 sys /mbr
+```
+
+Reboot. If Windows boots → fixed.
+If not, proceed.
+
+### 4 — Use TestDisk to Recover the Partition Table
+Download TestDisk on a clean PC: https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.2-WIP.win.zip
+
+Place TestDisk on a separate USB and run it from Windows Recovery.
+
+Navigation path:
+```
+TestDisk → No Log → Select Disk → EFI GPT → Analyze → Quick Search → Write
+```
+- Select the partition containing your Windows files
+- Choose **Write** to restore the correct table
+- Press **Y** to confirm
+
+If this restores the table, reboot. Otherwise go to Final Stage.
+
+### Final Stage — When Nothing Works
+
+MEMZ may completely destroy your bootloader beyond repair.
+
+You must reinstall Windows if:
+- Partitions are missing
+- Disk shows as RAW
+- BCD cannot be rebuilt
+- MBR and EFI both fail
+- TestDisk cannot rebuild the boot sector
+
+What to do:
+- [X] Recover your files (TestDisk, Linux Live USB, Windows PE)
+- [X] Back up everything
+- [X] Reinstall Windows
+
+> [!TIP]
+> MEMZ doesn't delete personal files.
+> Only the MBR and bootloader are destroyed.
+> Your data is almost always recoverable.
+
+## Conclusion
+And that's it! You have fully removed the MEMZ Trojan and restored the MBR.
+Since MEMZ specifically corrupts the Master Boot Record, repairing the bootloader is essential to fully recover the computer.
+
+To prevent future infections:
+- Delete suspicious `.exe` files immediately
+- Never run unknown programs
+- Use a stronger antivirus
+- Keep real-time protection enabled
+- Always use a virtual machine for malware testing
+- Follow safe browsing habits & avoid unknown downloads
+
+Thanks for reading! If you want more malware removal guides and educational malware tests, check out my YouTube channel!
+
+> GitHub [@ArsenTech][github-url] &nbsp;&middot;&nbsp;
+> YouTube [@ArsenTech][yt-url] &nbsp;&middot;&nbsp;
+> Patreon [ArsenTech][patreon-url] &nbsp;&middot;&nbsp;
+> [ArsenTech's Website][website-url]
+
+[yt-url]:https://www.youtube.com/channel/UCrtH0g6NE8tW5VIEgDySYtg
+[patreon-url]:https://www.patreon.com/ArsenTech
+[github-url]: https://github.com/ArsenTech
+[website-url]: https://arsentech.github.io
