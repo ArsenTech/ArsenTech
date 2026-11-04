@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore generated RSS feed
+public/rss.xml
+public/rss.json
+public/atom.xml
+.env
+public/sponsors/.cache.json
