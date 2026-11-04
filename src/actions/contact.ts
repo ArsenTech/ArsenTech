@@ -26,6 +26,6 @@ export async function sendMessage(values: ContactType): Promise<ActionResult> {
           return { success: "Message sent successfully!" }
      } catch (error) {
           console.error("Formspree request failed:", error)
-          return { error: "Internal server error.", }
+          return { error: "Internal server error.", description: error instanceof Error ? error.message : String(error) }
      }
 }
