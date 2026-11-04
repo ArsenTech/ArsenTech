@@ -6,7 +6,15 @@ import Link from "next/link";
 import { Compass, Rss } from "lucide-react";
 import LandingH1 from "@/components/h1-animated-text";
 import AppSection from "@/components/site-section"
-import BlogSection from "@/sections/blog-section";
+import SiteSection from "@/components/layout/section";
+import SectionTitle from "@/components/section-title";
+import { useState } from "react";
+import BlogContentLoader from "@/components/loaders/content/blog";
+import dynamic from "next/dynamic";
+
+const BlogSectionContent = dynamic(()=>import("@/sections/blog"),{
+     loading: BlogContentLoader
+});
 
 interface BlogContentProps{
      posts: IBlogPostBase[],
@@ -16,7 +24,8 @@ interface BlogContentProps{
      query: string,
 }
 
-export default function BlogContent(props: BlogContentProps){
+export default function BlogContent({query,...props}: BlogContentProps){
+     const [search, setSearch] = useState(query)
      return (
           <main>
                <AppSection id="banner" className="text-white flex items-center justify-center flex-col gap-5 h-screen min-h-125 px-4 text-center" style={getBackgroundImage()}>
@@ -31,7 +40,14 @@ export default function BlogContent(props: BlogContentProps){
                          </Button>
                     </div>
                </AppSection>
-               <BlogSection {...props}/>
+               <SiteSection id="blog" innerWidthClass="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4">
+                    <SectionTitle className="mb-0 col-span-full -order-2">{search==="" ? "Latest Posts" : "Search Results"}</SectionTitle>
+                    <BlogSectionContent
+                         {...props}
+                         search={search}
+                         onSearch={setSearch}
+                    />
+               </SiteSection>
           </main>
      )
 }

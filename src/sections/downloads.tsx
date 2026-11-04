@@ -1,12 +1,17 @@
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
-import { Download, ExternalLink, FilterX, Search, X } from "lucide-react";
+import { Download, ExternalLink, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";
-import DownloadCard from "@/components/items/download";
 import { useMemo, useState } from "react";
 import { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
+import { DownloadsLoader } from "@/components/loaders/lists";
+import dynamic from "next/dynamic";
+
+const DownloadsFilterList = dynamic(()=>import("@/components/lists/downloads"),{
+     ssr: false,
+     loading: DownloadsLoader
+});
 
 interface DownloadsSectionProps{
      list: IDownloadItem[]
@@ -14,7 +19,6 @@ interface DownloadsSectionProps{
 export default function DownloadsSection({list}: DownloadsSectionProps){
      const [search, setSearch] = useState("");
      const [category, setCategory] = useState<DownloadCategory | "">("");
-     const [shown, setShown] = useState(8)
      const filteredDownloads = useMemo(() => {
           const query = search.trim().toLowerCase()
           return list.filter((item) => {
@@ -67,40 +71,13 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
                          </div>
                     </div>
                </div>
-               {filteredDownloads.length > 0 ? (
-                    <div className="mt-4 grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                         {filteredDownloads.slice(0,shown).map(item => (
-                              <DownloadCard key={item.title} data={item}/>
-                         ))}
-                    </div>
-               ) : (
-                    <Empty>
-                         <EmptyHeader>
-                              <EmptyMedia variant="icon">
-                                   <Search/>
-                              </EmptyMedia>
-                              <EmptyTitle>No downloads found</EmptyTitle>
-                              <EmptyDescription>Try another search or select a different category.</EmptyDescription>
-                         </EmptyHeader>
-                         <EmptyContent>
-                              <Button
-                                   variant="outline"
-                                   onClick={() => {
-                                        setSearch("")
-                                        setCategory("")
-                                   }}
-                              >
-                                   <FilterX />
-                                   Clear filters
-                              </Button>
-                         </EmptyContent>
-                    </Empty>
-               )}
-               {shown < filteredDownloads.length && (
-                    <Button variant="secondary" size="xl" className="mt-4" onClick={()=>setShown(prev=>prev+8)}>
-                         Load More
-                    </Button>
-               )}
+               <DownloadsFilterList
+                    downloads={filteredDownloads}
+                    onClear={()=>{
+                         setSearch("")
+                         setCategory("")
+                    }}
+               />
           </SiteSection>
      )
 }

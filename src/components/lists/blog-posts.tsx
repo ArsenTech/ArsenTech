@@ -1,8 +1,8 @@
 "use client"
 import { IBlogPostBase } from "@/lib/types/blog"
-import BlogItem from "./blog/item"
+import BlogItem from "../items/blog"
 import { Newspaper } from "lucide-react"
-import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "./ui/empty"
+import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "../ui/empty"
 
 interface BlogPostsProps{
      posts: IBlogPostBase[],

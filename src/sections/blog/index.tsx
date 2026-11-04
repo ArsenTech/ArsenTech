@@ -3,22 +3,28 @@ import { useMemo, useState } from "react"
 import { MAX_FEATURED_POSTS } from "@/lib/constants"
 import dynamic from "next/dynamic"
 import SiteSection from "@/components/layout/section";
-import PostsLoader from "@/components/loaders/posts";
+import { PostsLoader } from "@/components/loaders/lists";
 import { SearchIcon } from "lucide-react"
-import { BlogWidget, BlogWidgetCard } from "@/components/blog/widget"
 import { PaginationWithLinks } from "@/components/pagination-with-links"
-import CollapsibleFilters from "@/components/blog/widget/filters"
 import NoSearchResults from "@/components/shrug"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
 import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
-import SectionTitle from "@/components/section-title";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { IBlogPostBase } from "@/lib/types/blog";
+import { FiltersLoader, FeaturedPostsLoader } from "@/components/loaders/widgets";
 
-const BlogPosts = dynamic(() => import("@/components/blog-posts"), {
+const BlogPosts = dynamic(() => import("@/components/lists/blog-posts"), {
      ssr: false,
      loading: () => <PostsLoader count={8} />
+})
+const FeaturedPosts = dynamic(()=>import("@/components/blog/widget/featured"),{
+     ssr: false,
+     loading: FeaturedPostsLoader
+});
+const CollapsibleFilters = dynamic(()=>import("@/components/blog/widget/filters"),{
+     ssr: false,
+     loading: FiltersLoader
 })
 
 interface BlogSectionProps{
@@ -26,10 +32,10 @@ interface BlogSectionProps{
      currentPage: number,
      pageSize: number,
      categories: string[],
-     query: string,
+     search: string,
+     onSearch: (value: string) => void
 }
-export default function BlogSection({posts, currentPage, categories, pageSize, query}: BlogSectionProps){
-     const [search, setSearch] = useState(query)
+export default function BlogSectionContent({posts, currentPage, categories, pageSize, search, onSearch}: BlogSectionProps){
      const [selected, setSelected] = useState<string[]>([])
      const filteredPosts = useMemo(()=>{
           const currPosts = posts.filter(val=>
@@ -46,8 +52,8 @@ export default function BlogSection({posts, currentPage, categories, pageSize, q
           return flairFilters;
      },[search,posts,selected])
      const entries = usePaginatedData(filteredPosts,currentPage,pageSize);
-     const featured = posts.filter(post=>post.featured).slice(0,MAX_FEATURED_POSTS);
      const toggleCategory = (category: string) => setSelected(prev=>prev?.includes(category) ? prev.filter(val=>val!==category) : [...(prev||[]),category])
+
      if(posts.length===0) return (
           <SiteSection id="blog">
                <Empty>
@@ -61,12 +67,12 @@ export default function BlogSection({posts, currentPage, categories, pageSize, q
                </Empty>
           </SiteSection>
      )
+     
      return (
-          <SiteSection id="blog" innerWidthClass="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4">
-               <SectionTitle className="mb-0 col-span-full -order-2">{search==="" ? "Latest Posts" : "Search Results"}</SectionTitle>
+          <>
                <div className="space-y-5">
                     <InputGroup className="flex-1">
-                         <InputGroupInput type="text" placeholder="Search tutorials, coding tips..." onChange={e=>setSearch(e.target.value)} value={search}/>
+                         <InputGroupInput type="text" placeholder="Search tutorials, coding tips..." onChange={e=>onSearch(e.target.value)} value={search}/>
                          <InputGroupAddon>
                               <SearchIcon/>
                          </InputGroupAddon>
@@ -101,19 +107,13 @@ export default function BlogSection({posts, currentPage, categories, pageSize, q
                     )}
                </div>
                <div className="space-y-4 relative lg:sticky top-0 lg:top-21.25 h-fit -order-1 lg:order-1">
-                    {featured.length!==0 ? (
-                         <BlogWidget title="Featured Posts">
-                              {featured.map(post=>(
-                                   <BlogWidgetCard key={post.slug} postData={post}/>
-                              ))}
-                         </BlogWidget>
-                    ) : null}
+                    <FeaturedPosts posts={posts.filter(post=>post.featured).slice(0,MAX_FEATURED_POSTS)}/>
                     <CollapsibleFilters
                          tags={categories}
                          onToggleCategory={toggleCategory}
                          selected={selected}
                     />
                </div>
-          </SiteSection>
+          </>
      )
 }

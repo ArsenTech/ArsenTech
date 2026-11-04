@@ -1,9 +1,9 @@
 import BlogHeader from "@/components/blog/header";
 import { Badge } from "@/components/ui/badge";
-import BlogItem from "@/components/blog/item";
+import BlogItem from "@/components/items/blog";
 import { IBlogPostBase, IBlogPostFull } from "@/lib/types/blog";
 import BlogContent from "@/components/blog/content";
-import PostSection from "@/components/blog/post-section";
+import PostSection from "@/sections/blog/post";
 import BlogInteractions from "@/components/blog/interactions";
 import Link from "next/link";
 import { absoluteURL } from "@/lib/helpers/seo";

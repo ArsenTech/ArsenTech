@@ -39,7 +39,7 @@ export const useMDXComponents = (components: MDXComponents): MDXComponents => ({
   h4: (props) => <h4 className="scroll-m-40 text-xl font-semibold tracking-tight" {...props} />,
   h5: (props) => <h5 className="scroll-m-40 text-lg font-semibold tracking-tight" {...props} />,
   h6: (props) => <h6 className="scroll-m-40 text-sm font-semibold tracking-tight" {...props} />,
-  p: (props) => <p className="leading-7 [&:not(:first-child)]:mt-4" {...props} />,
+  p: (props) => <p className="leading-7 not-first:mt-4" {...props} />,
   a: (props) => <Link className={cn(buttonVariants({ variant: "link" }), "px-0.5 py-0 whitespace-normal text-sm md:text-base break-all")} target="_blank" rel="noopener nofollower noreferrer" {...props} />,
   blockquote: (props) => <Blockquote {...props}/>,
   small: (props) => <small className="text-sm font-medium leading-none" {...props} />,

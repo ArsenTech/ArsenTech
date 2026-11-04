@@ -27,26 +27,24 @@ export default function ProjectCard({data}: ProjectCardProps){
                     )}
                     <CardTitle>{data.name}</CardTitle>
                     {data.description && (
-                         <CardDescription className="col-span-2">
+                         <CardDescription className="col-span-full">
                               {data.description}
                          </CardDescription>
                     )}
                </CardHeader>
-               <CardFooter>
-                    <div className="flex items-center gap-2 flex-wrap w-full">
-                         <Button className="flex-1" asChild>
-                              <Link href={data.link} target="_blank" rel="noopener nofollow noreferrer">
-                                   Learn More
-                                   <ArrowRight/>
-                              </Link>
-                         </Button>
-                         <Button className="flex-1" variant="secondary" asChild>
-                              <Link href={data.contributionLink} target="_blank" rel="noopener nofollow noreferrer">
-                                   <Code/>
-                                   Get Involved
-                              </Link>
-                         </Button>
-                    </div>
+               <CardFooter className="gap-2 flex-wrap w-full">
+                    <Button className="flex-1" asChild>
+                         <Link href={data.link} target="_blank" rel="noopener nofollow noreferrer">
+                              Learn More
+                              <ArrowRight/>
+                         </Link>
+                    </Button>
+                    <Button className="flex-1" variant="secondary" asChild>
+                         <Link href={data.contributionLink} target="_blank" rel="noopener nofollow noreferrer">
+                              <Code/>
+                              Get Involved
+                         </Link>
+                    </Button>
                </CardFooter>
           </Card>
      )

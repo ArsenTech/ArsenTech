@@ -1,6 +1,6 @@
 "use client"
 import Giscus from '@giscus/react';
-import PostSection from './post-section';
+import PostSection from '@/sections/blog/post';
 import { useCurrentTheme } from '@/hooks/use-current-theme';
 
 interface BlogInteractionsProps{

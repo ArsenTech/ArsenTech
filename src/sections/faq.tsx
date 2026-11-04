@@ -28,7 +28,6 @@ interface FAQSectionProps{
 export default function FAQSection({list, surface="card"}: FAQSectionProps){
      const [activeFAQ, setActiveFAQ] = useState<IFAQItem | null>(null);
      const {main} = usePFP()
-     
      const form = useForm<FAQType>({
           resolver: zodResolver(FAQSchema),
           defaultValues: {
