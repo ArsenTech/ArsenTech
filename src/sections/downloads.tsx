@@ -14,6 +14,7 @@ interface DownloadsSectionProps{
 export default function DownloadsSection({list}: DownloadsSectionProps){
      const [search, setSearch] = useState("");
      const [category, setCategory] = useState<DownloadCategory | "">("");
+     const [shown, setShown] = useState(8)
      const filteredDownloads = useMemo(() => {
           const query = search.trim().toLowerCase()
           return list.filter((item) => {
@@ -68,7 +69,7 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
                </div>
                {filteredDownloads.length > 0 ? (
                     <div className="mt-4 grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                         {filteredDownloads.map(item => (
+                         {filteredDownloads.slice(0,shown).map(item => (
                               <DownloadCard key={item.title} data={item}/>
                          ))}
                     </div>
@@ -94,6 +95,11 @@ export default function DownloadsSection({list}: DownloadsSectionProps){
                               </Button>
                          </EmptyContent>
                     </Empty>
+               )}
+               {shown < filteredDownloads.length && (
+                    <Button variant="secondary" size="xl" className="mt-4" onClick={()=>setShown(prev=>prev+8)}>
+                         Load More
+                    </Button>
                )}
           </SiteSection>
      )
