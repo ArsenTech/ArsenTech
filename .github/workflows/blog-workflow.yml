@@ -18,5 +18,5 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: "BLOG-POSTS"
-          feed_list: "https://arsentech-blog.vercel.app/rss.xml"
+          feed_list: "https://arsentech-yt.vercel.app/rss.xml"
           commit_message: "Updated README with latest blog posts"

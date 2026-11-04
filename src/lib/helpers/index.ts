@@ -15,6 +15,6 @@ export function formatBytes(bytes: number) {
      return `${(bytes / 1024 ** index).toFixed(2)} ${units[index]}`
 }
 export function absoluteCDN(path: `/${string}`){
-     const baseURL = "https://arsentech.github.io/ArsenTech"
+     const baseURL = "https://arsentech-yt.vercel.app/ArsenTech"
      return `${baseURL}${path}`
 }

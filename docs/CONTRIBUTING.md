@@ -73,7 +73,7 @@ further defined and clarified by project maintainers.
 ### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the developer at [the contact page](https://arsentech.github.io/#contact). All
+reported by contacting the developer at [the contact page](https://arsentech-yt.vercel.app/#contact). All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The developer is
 obligated to maintain confidentiality with regard to the reporter of an incident.

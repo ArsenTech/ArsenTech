@@ -33,7 +33,7 @@ export const generateMetadata = async({params}: SinglePostPageProps): Promise<Me
       },
       {
         name: "ArsenTech",
-        url: "https://arsentech.github.io/"
+        url: "https://arsentech-yt.vercel.app/"
       }
     ],
     openGraph: {

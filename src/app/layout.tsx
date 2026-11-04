@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "ArsenTech",
-      url: "https://arsentech.github.io/"
+      url: "https://arsentech-yt.vercel.app/"
     }
   ],
   keywords: KEYWORDS,

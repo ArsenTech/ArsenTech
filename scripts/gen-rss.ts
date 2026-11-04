@@ -19,7 +19,7 @@ const generateRSS = async() => {
           category: "Tech",
           author: {
                name: "ArsenTech",
-               link: "https://arsentech.github.io",
+               link: "https://arsentech-yt.vercel.app",
           },
           feedLinks: {
                rss2: `${SITE_URL}/rss.xml`,
@@ -45,7 +45,7 @@ const generateRSS = async() => {
                     },
                     {
                          name: "ArsenTech",
-                         link: "https://arsentech.github.io",
+                         link: "https://arsentech-yt.vercel.app",
                     }
                ]
           })
