@@ -22,7 +22,7 @@ export async function sendMessage(values: ContactType): Promise<ActionResult> {
                cache: "no-store",
           })
           if (res.status === 429) return { error: "Too many requests. Please try again later." }
-          if (!res.ok) return { error: "Failed to send message.", description: res.statusText }
+          if (!res.ok) return { error: "Failed to send message.", description: `${res.statusText} (${res.status})` }
           return { success: "Message sent successfully!" }
      } catch (error) {
           console.error("Formspree request failed:", error)
