@@ -1,6 +1,6 @@
 "use server"
 import { ContactSchema, ContactType } from "@/lib/schemas";
-import { ActionResult } from "next/dist/shared/lib/app-router-types";
+import type { ActionResult } from "@/lib/types";
 
 export async function sendMessage(values: ContactType): Promise<ActionResult> {
      const validated = ContactSchema.safeParse(values)
@@ -22,7 +22,7 @@ export async function sendMessage(values: ContactType): Promise<ActionResult> {
                cache: "no-store",
           })
           if (res.status === 429) return { error: "Too many requests. Please try again later." }
-          if (!res.ok) return { error: "Failed to send message." }
+          if (!res.ok) return { error: "Failed to send message.", description: res.statusText }
           return { success: "Message sent successfully!" }
      } catch (error) {
           console.error("Formspree request failed:", error)

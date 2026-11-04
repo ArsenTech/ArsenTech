@@ -40,5 +40,6 @@ export interface IFAQItem{
 export interface ElementWithChildren {children?: ReactNode}
 export interface ActionResult{
      success?: string
-     error?: string
+     error?: string,
+     description?: string
 }

@@ -30,7 +30,9 @@ export default function ContactSection(){
           startTransition(async()=>{
                const res = await sendMessage(values);
                if(res.error) {
-                    toast.error(res.error);
+                    toast.error(res.error, res.description ? {
+                         description: res.description
+                    } : undefined);
                     return;
                }
                if(res.success) {
