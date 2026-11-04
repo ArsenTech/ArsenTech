@@ -1,8 +1,6 @@
 import { Children, isValidElement, ReactNode } from "react";
+import type { ElementWithChildren } from "@/lib/types";
 
-interface ElementWithChildren {
-  children?: ReactNode
-}
 export function flattenChildrenToString(children: ReactNode): string {
      return Children.toArray(children).reduce<string>((text, child) => {
           if (typeof child === "string" ||typeof child === "number" ||typeof child === "bigint") return text + String(child)

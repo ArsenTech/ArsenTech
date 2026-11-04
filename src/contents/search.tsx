@@ -1,5 +1,5 @@
 "use client"
-import { IBlogPostBase } from "@/lib/types/blog"
+import type { IBlogPostBase } from "@/lib/types/blog"
 import { getBackgroundImage } from "@/lib/utils"
 import AppSection from "@/components/site-section"
 import { SearchContentLoader } from "@/loaders/content/blog"

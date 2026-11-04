@@ -1,11 +1,11 @@
 "use client"
 import { useIsMobile } from "@/hooks/use-is-mobile";
-import { IBlogPostData, TOCItem } from "@/lib/types/blog";
+import type { IBlogPostData, TOCItem } from "@/lib/types/blog";
 import { useMemo, useState } from "react";
-import TableOfContents from "./widget/toc";
-import BlogAccessibility from "./accessibility";
+import TableOfContents from "@/components/blog/widget/toc";
+import BlogAccessibility from "@/components/blog/accessibility";
 import { cn } from "@/lib/utils";
-import SiteSection from "../layout/section";
+import SiteSection from "@/components/layout/section";
 import { toast } from "sonner";
 
 interface BlogControlsProps{

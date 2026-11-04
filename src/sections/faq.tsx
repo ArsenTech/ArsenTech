@@ -14,7 +14,7 @@ import { FAQSchema, FAQType } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MessageCircleQuestionMark } from "lucide-react";
 import { useState } from "react";
-import { IFAQItem } from "@/lib/types";
+import type { IFAQItem } from "@/lib/types";
 import { toast } from "sonner";
 import usePFP from "@/hooks/use-pfp";
 

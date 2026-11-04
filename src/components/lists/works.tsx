@@ -1,7 +1,7 @@
 import { WORKS } from "@/lib/constants/works";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "../ui/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { Laptop } from "lucide-react";
-import WorkCard from "../items/work";
+import WorkCard from "@/components/items/work";
 
 export default function WorksList(){
      if(WORKS.length===0) return (

@@ -1,5 +1,5 @@
 import { absoluteCDN } from ".";
-import { WALLPAPER_IDS, WALLPAPER_SIZE_VALUES } from "../constants/wallpapers";
+import { WALLPAPER_IDS, WALLPAPER_SIZE_VALUES } from "@/lib/constants/wallpapers";
 
 export function getWallpaperFileUrl(wallpaper: string,size: string): string | null {
      if (!isValidWallpaper(wallpaper, size)) return null;

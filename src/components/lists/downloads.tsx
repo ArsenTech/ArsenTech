@@ -1,7 +1,7 @@
 import { FilterX, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import DownloadCard from "@/components/items/download";
-import { IDownloadItem } from "@/lib/types/downloads";
+import type { IDownloadItem } from "@/lib/types/downloads";
 import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { useState } from "react";
 

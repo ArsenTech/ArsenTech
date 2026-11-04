@@ -1,8 +1,8 @@
 import { Skeleton } from "@/components/ui/skeleton";
-import { FeaturedPostsLoader, FiltersLoader } from "../widgets";
-import { PostsLoader } from "../lists";
+import { FeaturedPostsLoader, FiltersLoader } from "@/loaders/widgets";
+import { PostsLoader } from "@/loaders/lists";
 import { POSTS_PER_PAGE } from "@/lib/constants";
-import PaginationLoader from "../pagination";
+import PaginationLoader from "@/loaders/pagination";
 import SiteSection from "@/components/layout/section";
 
 function BlogPostsLoader(){

@@ -1,7 +1,7 @@
 "use client"
 import ProjectCard from "@/components/items/project";
-import { IProject } from "@/lib/types";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "../ui/empty";
+import type { IProject } from "@/lib/types";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { GalleryThumbnails } from "lucide-react";
 
 interface ProjectsSectionProps{

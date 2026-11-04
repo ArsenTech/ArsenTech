@@ -14,3 +14,8 @@ export interface IDownloadItem{
      isRelease?: boolean,
      files?: IDownloadFile[]
 }
+export type WallpaperSizeResult =
+     | { status: "available"; bytes: number | null }
+     | { status: "missing"; bytes: null }
+     | { status: "unknown"; bytes: null }
+     | { status: "invalid"; bytes: null; error: string }

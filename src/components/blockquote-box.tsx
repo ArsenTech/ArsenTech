@@ -1,4 +1,4 @@
-import { BlockquoteVariant } from "@/lib/types";
+import type { BlockquoteVariant } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { extractTextFromReactNode, stripDirective } from "@/lib/helpers/blockquotes";

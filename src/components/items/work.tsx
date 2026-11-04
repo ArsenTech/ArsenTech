@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { IWorkItem } from "@/lib/types";
+import type { IWorkItem } from "@/lib/types";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 

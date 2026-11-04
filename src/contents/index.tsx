@@ -7,8 +7,8 @@ import AppSection from "@/components/site-section"
 import SocialMediaLinks from "@/components/social-media-links";
 import { ArrowRight, Mail } from "lucide-react";
 import { SiPatreon } from "react-icons/si";
-import { IBlogPostBase } from "@/lib/types/blog";
-import { IFAQItem, IProject, ISkill } from "@/lib/types";
+import type { IBlogPostBase } from "@/lib/types/blog";
+import type { IFAQItem, IProject, ISkill } from "@/lib/types";
 import SiteSection from "@/components/layout/section";
 import SectionTitle from "@/components/section-title";
 import { PostsLoader, ProjectsLoader, WorksLoader } from "@/loaders/lists";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Edit, User } from "lucide-react";
 import { format } from "date-fns";
-import { IBlogPostBase } from "@/lib/types/blog";
+import type { IBlogPostBase } from "@/lib/types/blog";
 import { useIsMobile } from "@/hooks/use-is-mobile";
 
 export interface BlogItemProps{

@@ -1,5 +1,5 @@
 import { Skeleton } from "@/components/ui/skeleton"
-import { DownloadsLoader as ListLoader } from "../lists"
+import { DownloadsLoader as ListLoader } from "@/loaders/lists"
 
 export default function DownloadsLoader(){
      return (

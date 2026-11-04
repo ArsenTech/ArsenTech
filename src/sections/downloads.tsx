@@ -2,7 +2,7 @@ import { Download, ExternalLink, Search, X } from "lucide-react";
 import { InputGroup, InputGroupInput, InputGroupAddon, InputGroupButton } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";
 import { useMemo, useState } from "react";
-import { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
+import type { DownloadCategory, IDownloadItem } from "@/lib/types/downloads";
 import { DownloadsLoader } from "@/loaders/lists";
 import dynamic from "next/dynamic";
 

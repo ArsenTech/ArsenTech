@@ -1,8 +1,8 @@
-import { IBlogPostBase } from "@/lib/types/blog";
+import type { IBlogPostBase } from "@/lib/types/blog";
 import { getBackgroundImage } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import SiteSection from "../site-section";
+import SiteSection from "@/components/site-section";
 import { Calendar, Edit, User } from "lucide-react";
 import { format } from "date-fns";
 

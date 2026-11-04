@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, FileCodeIcon } from "lucide-react";
 import React from "react";
-import { CodeBlock, CodeBlockActions, CodeBlockContent, CodeBlockCopyButton, CodeBlockHeader, CodeBlockLine, CodeBlockTitle, } from "./ui/code-block";
+import { CodeBlock, CodeBlockActions, CodeBlockContent, CodeBlockCopyButton, CodeBlockHeader, CodeBlockLine, CodeBlockTitle, } from "@/components/ui/code-block";
 import { useHighlightedCode } from "@/hooks/use-highlighted-code";
 import { getVariant } from "@/lib/highlighter";
 

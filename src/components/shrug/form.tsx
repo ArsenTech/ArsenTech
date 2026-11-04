@@ -1,7 +1,7 @@
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group"
 import { SearchIcon } from "lucide-react"
 import { Controller } from "react-hook-form"
-import { Field, FieldError, FieldGroup } from "../ui/field"
+import { Field, FieldError, FieldGroup } from "@/components/ui/field"
 import useSearchForm from "@/hooks/use-search-form"
 
 interface FallbackSearchFormProps{

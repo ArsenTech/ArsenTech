@@ -1,6 +1,6 @@
 import BlogHeader from "@/components/blog/header";
 import { Badge } from "@/components/ui/badge";
-import { IBlogPostBase, IBlogPostFull } from "@/lib/types/blog";
+import type { IBlogPostBase, IBlogPostFull } from "@/lib/types/blog";
 import BlogContent from "@/components/blog/content";
 import PostSection from "@/sections/blog/post";
 import Link from "next/link";

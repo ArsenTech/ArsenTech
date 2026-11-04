@@ -1,4 +1,4 @@
-import { IFAQItem } from "@/lib/types";
+import type { IFAQItem } from "@/lib/types";
 import { cache } from "react";
 import { absoluteCDN } from "..";
 

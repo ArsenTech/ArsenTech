@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Maximize2, Minimize2 } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
-type PostSectionProps = SiteSectionProps & {
+interface PostSectionProps extends SiteSectionProps {
      sectionTitle: string,
      collapsible?: boolean | "mobile"
 }

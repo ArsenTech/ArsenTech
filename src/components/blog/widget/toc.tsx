@@ -1,7 +1,7 @@
 "use client"
 import { useActiveHeading } from "@/hooks/use-active-heading";
 import { BlogWidget } from ".";
-import {TOCItem} from "@/lib/types/blog"
+import type { TOCItem } from "@/lib/types/blog"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";

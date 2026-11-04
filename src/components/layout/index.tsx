@@ -6,7 +6,7 @@ import Header from "./header"
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
-import { ILink } from "@/lib/types"
+import type { ILink } from "@/lib/types"
 import AnchorNav from "./anchor"
 import SubscribePopup from "./subscribe-popup"
 

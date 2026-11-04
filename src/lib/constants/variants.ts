@@ -1,4 +1,4 @@
-import { BlockquoteVariant, IBlockquoteBox } from "@/lib/types";
+import type { BlockquoteVariant, IBlockquoteBox } from "@/lib/types";
 import {Info, Lightbulb, CircleAlert, TriangleAlert, ShieldAlert} from "lucide-react"
 
 export const VARIANTS: Record<BlockquoteVariant,IBlockquoteBox> = {

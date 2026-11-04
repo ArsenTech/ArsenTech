@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { SITE_URL } from "../constants";
+import { SITE_URL } from "@/lib/constants";
 
 export function getValueFromKey(searchParams: URLSearchParams, key: string, fallbackValue=""): string{
   const hasKey = searchParams.has(key);

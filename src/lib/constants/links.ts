@@ -1,6 +1,6 @@
 import {SiYoutube, SiGithub, SiDeviantart, SiOdysee, SiScratch, SiPatreon} from "react-icons/si"
 import {FaCodepen} from "react-icons/fa"
-import { ILink } from "../types"
+import type { ILink } from "@/lib/types"
 
 export const LINKS: ILink[] = [
      {name: "Home", url: "/#banner"},

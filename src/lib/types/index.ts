@@ -1,4 +1,5 @@
-import { LucideIcon } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+import type { ReactNode } from "react"
 
 export type BlockquoteVariant = "note" | "tip" | "important" | "warning" | "caution"
 export interface IBlockquoteBox{
@@ -35,4 +36,9 @@ export interface IProject{
 export interface IFAQItem{
      question: string,
      answer: string
+}
+export interface ElementWithChildren {children?: ReactNode}
+export interface ActionResult{
+     success?: string
+     error?: string
 }

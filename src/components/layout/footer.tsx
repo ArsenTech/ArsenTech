@@ -1,7 +1,7 @@
 import { getBackgroundImage} from "@/lib/utils"
 import Link from "next/link"
 import { useState } from "react"
-import SocialMediaLinks from "../social-media-links"
+import SocialMediaLinks from "@/components/social-media-links"
 
 export default function Footer(){
      const [date] = useState(new Date())

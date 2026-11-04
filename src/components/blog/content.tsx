@@ -1,9 +1,9 @@
-import { IBlogPostData, TOCItem } from "@/lib/types/blog"
+import type { IBlogPostData, TOCItem } from "@/lib/types/blog"
 import { MDXRemote } from "next-mdx-remote-client/rsc";
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import BlogDataWrapper from "./data-wrapper";
+import BlogDataWrapper from "@/components/blog/data-wrapper";
 import { useMDXComponents } from "@/mdx-components";
 
 interface BlogContentProps{

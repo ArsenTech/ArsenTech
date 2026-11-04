@@ -15,7 +15,7 @@ import {
   type ReactElement,
   type ReactNode,
 } from "react"
-import { flattenChildrenToString } from "./lib/helpers";
+import { flattenChildrenToString } from "@/lib/helpers";
 
 interface CodeElementProps {
   children?: ReactNode

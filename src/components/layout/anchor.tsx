@@ -1,4 +1,4 @@
-import { ILink } from "@/lib/types"
+import type { ILink } from "@/lib/types"
 import { cn } from "cn";
 import Link from "next/link"
 import { useEffect, useState } from "react";

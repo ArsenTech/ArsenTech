@@ -1,6 +1,6 @@
 import { LucideIcon } from "lucide-react"
 import { IconType } from "react-icons/lib"
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { cn } from "cn"
 

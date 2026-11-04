@@ -1,12 +1,8 @@
 "use server"
 import { ContactSchema, ContactType } from "@/lib/schemas";
+import { ActionResult } from "next/dist/shared/lib/app-router-types";
 
-type ContactResult = {
-     success?: string
-     error?: string
-}
-
-export async function sendMessage(values: ContactType): Promise<ContactResult> {
+export async function sendMessage(values: ContactType): Promise<ActionResult> {
      const validated = ContactSchema.safeParse(values)
      if (!validated.success) return { error: "Please check the provided fields."}
      const { username, email, subject, message } = validated.data

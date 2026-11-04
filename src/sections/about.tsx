@@ -2,7 +2,7 @@ import { Dot } from "lucide-react";
 import Image from "next/image";
 import ChannelCard from "@/components/items/channel";
 import usePFP from "@/hooks/use-pfp";
-import { ISkill } from "@/lib/types";
+import type { ISkill } from "@/lib/types";
 import dynamic from "next/dynamic";
 import { SkillsLoader } from "@/loaders/content/about";
 

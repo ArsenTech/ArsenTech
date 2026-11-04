@@ -4,7 +4,7 @@ import { ArrowRight, Code, Scale } from "lucide-react";
 import { Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { IProject } from "@/lib/types";
+import type { IProject } from "@/lib/types";
 import Link from "next/link";
 
 interface ProjectCardProps{

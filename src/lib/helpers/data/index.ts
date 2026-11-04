@@ -1,6 +1,6 @@
 import { cache } from "react";
-import { IProject, ISkill } from "../../types";
-import { IDownloadItem } from "@/lib/types/downloads";
+import type { IProject, ISkill } from "@/lib/types";
+import type { IDownloadItem } from "@/lib/types/downloads";
 import { absoluteCDN } from "..";
 
 export const getSkills = cache(async(): Promise<ISkill[]> =>{

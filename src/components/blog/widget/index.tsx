@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {format} from "date-fns"
 import Link from "next/link";
-import { BlogItemProps } from "../../items/blog";
+import { BlogItemProps } from "@/components/items/blog";
 import { Calendar } from "lucide-react";
 
 interface BlogWidgetProps{

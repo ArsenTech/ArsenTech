@@ -6,16 +6,9 @@ import {
 } from "@/lib/schemas"
 
 import { getWallpaperFileUrl } from "@/lib/helpers/downloads"
+import type { WallpaperSizeResult } from "@/lib/types/downloads"
 
-export type WallpaperSizeResult =
-     | { status: "available"; bytes: number | null }
-     | { status: "missing"; bytes: null }
-     | { status: "unknown"; bytes: null }
-     | { status: "invalid"; bytes: null; error: string }
-
-export async function getSize(
-  values: WallpaperType
-): Promise<WallpaperSizeResult> {
+export async function getSize(values: WallpaperType): Promise<WallpaperSizeResult> {
      const validated = WallpaperSchema.safeParse(values)
 
      if (!validated.success) return {
@@ -45,11 +38,7 @@ export async function getSize(
           const bytes = header === null ? null : Number(header)
           return {
                status: "available",
-               bytes: bytes !== null &&
-                    Number.isSafeInteger(bytes) &&
-                    bytes >= 0
-                         ? bytes
-                         : null,
+               bytes: bytes !== null && Number.isSafeInteger(bytes) && bytes >= 0 ? bytes : null,
           }
      } catch (error) {
           console.error("Wallpaper metadata lookup failed:", error)

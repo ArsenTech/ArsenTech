@@ -1,4 +1,4 @@
-import { IBlogPostBase } from "@/lib/types/blog";
+import type { IBlogPostBase } from "@/lib/types/blog";
 import { BlogWidget, BlogWidgetCard } from ".";
 
 interface FeaturedPostsProps{

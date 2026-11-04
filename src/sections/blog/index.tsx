@@ -11,7 +11,7 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/in
 import usePaginatedData from "@/hooks/use-pagination";
 import { getRangeAsText } from "@/lib/helpers/seo";
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
-import { IBlogPostBase } from "@/lib/types/blog";
+import type { IBlogPostBase } from "@/lib/types/blog";
 import { FiltersLoader, FeaturedPostsLoader } from "@/loaders/widgets";
 
 const BlogPosts = dynamic(() => import("@/components/lists/blog-posts"), {

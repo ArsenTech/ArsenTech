@@ -1,5 +1,5 @@
-import { ISkill } from "@/lib/types";
-import { Progress } from "../ui/progress";
+import type { ISkill } from "@/lib/types";
+import { Progress } from "@/components/ui/progress";
 
 interface SkillsListProps{
      skills: ISkill[]

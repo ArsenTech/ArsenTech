@@ -10,9 +10,10 @@ import { WALLPAPER_GROUPS, WALLPAPER_SIZES, DEFAULT_WALLPAPER_SIZE,} from "@/lib
 import { WallpaperSchema, type WallpaperType,} from "@/lib/schemas"
 import { SiDeviantart } from "react-icons/si"
 import Link from "next/link"
-import { getSize, WallpaperSizeResult } from "@/actions/wallpapers"
+import { getSize } from "@/actions/wallpapers"
 import { toast } from "sonner"
 import { absoluteCDN, formatBytes } from "@/lib/helpers"
+import type { WallpaperSizeResult } from "@/lib/types/downloads"
 
 export default function WallpapersSectionContent(){
      const form = useForm<WallpaperType>({

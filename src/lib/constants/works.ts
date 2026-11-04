@@ -1,5 +1,5 @@
 import { Bug, CodeIcon, Gamepad2, Hammer, ImageIcon, Laptop } from "lucide-react"
-import { IWorkItem } from "@/lib/types"
+import type { IWorkItem } from "@/lib/types"
 
 export const WORKS: IWorkItem[] = [
      {Icon: Laptop, title: "Tutorials", description: "Tech Tutorials (Windows, iPhone, Linux, and Android) and Malware Removal Tutorials in One Playlist", url: "https://www.youtube.com/playlist?list=PLsOMVP9OgGeosVdpYLlVuNTa-iiOSvGHS"},
