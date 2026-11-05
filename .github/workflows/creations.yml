@@ -17,5 +17,5 @@ jobs:
         uses: ArsenTech/creations-stats-workflow@v1.0.2
         with:
           github-username: ArsenTech
-          exclusions: ArsenTech,source-codes
+          exclusions: arsentech.github.io,downloads,blog
           commit-message: "[AUTOMATED-CHANGE]: Updated Portfolio stats"
