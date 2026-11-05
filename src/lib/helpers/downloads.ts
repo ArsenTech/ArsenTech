@@ -11,5 +11,5 @@ export function getDownloadUrl(path: string, isRelease = false): string {
      const filePath = path.replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/")
      return isRelease
           ? `https://github.com/ArsenTech/downloads/releases/download/${filePath}`
-          : `https://raw.githubusercontent.com/ArsenTech/downloads/refs/heads/static-files/${filePath}`
+          : `https://arsentech.github.io/downloads/${filePath}`
 }
