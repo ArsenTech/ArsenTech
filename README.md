@@ -110,7 +110,7 @@
 
 <!-- REPOS-START -->
 - [ArsenTech](https://github.com/ArsenTech/ArsenTech) - ⭐ 6 - 👨‍💻 Developer and Tech YouTuber that likes making Coding Projects and Tech Videos. I have a personal website here
-- [clamav-gui](https://github.com/ArsenTech/clamav-gui) - ⭐ 34 - 🛡️ A GUI for ClamAV Antivirus that makes the Antivirus itself look professional and work exactly like ClamAV
+- [clamav-gui](https://github.com/ArsenTech/clamav-gui) - ⭐ 35 - 🛡️ A GUI for ClamAV Antivirus that makes the Antivirus itself look professional and work exactly like ClamAV
 - [creations-stats-workflow](https://github.com/ArsenTech/creations-stats-workflow) - ⭐ 1 - 📘 A Github Action that generates user's portfolio stats (Repositories and Gists). Perfect for profile readme customization!
 - [i18n-translator](https://github.com/ArsenTech/i18n-translator) - ⭐ 1 - 🌍 A Universal Translator that helps you localize and translate some apps into your native language
 - [idea-checklist](https://github.com/ArsenTech/idea-checklist) - ⭐ 1 - ⚡ A checklist app for Tech YouTube Streamers and other people built using React, Tauri, and ShadCN UI
