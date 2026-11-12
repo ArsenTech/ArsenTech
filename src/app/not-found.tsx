@@ -4,6 +4,10 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
      title: "There was an Error 404",
+     icons: {
+          icon: "/warning.png",
+          shortcut: "/warning.png"
+     }
 }
 
 export default function NotFound(){
