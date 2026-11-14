@@ -61,11 +61,11 @@
 ### :tv: Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Windows 8.1 Defender VS The WannaCry Ransomware | Antivirus Test](https://www.youtube.com/watch?v=qwDsMiVvPjQ)
 - [I Just Shred The Windows 8.1 VM! | Advanced Windows Test](https://www.youtube.com/watch?v=TmcxlB9eOZA)
 - [MBRFilter VS Sulfoxide.exe | Advanced Malware Test &lpar;GDI Payload&rpar;](https://www.youtube.com/watch?v=n5vTGMjQHv0)
 - [I Turned Windows 10 Into The Morse Code | Advanced Windows Test](https://www.youtube.com/watch?v=BYQwoGRnm_M)
 - [Windows Defender VS The Petya Ransomware | Antivirus Test](https://www.youtube.com/watch?v=d2jdBrYqc48)
-- [Make Your Fedora Linux Terminal Look Modern &amp; Stylish!](https://www.youtube.com/watch?v=XMMKa1ZwQ0Q)
 <!-- YOUTUBE:END -->
 
 ➡️ [More Videos][yt-arsentech-url]
