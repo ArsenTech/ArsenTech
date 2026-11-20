@@ -11,11 +11,15 @@ on:
 jobs:
   stats:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
       
     steps:
     - uses: actions/checkout@v4
       with:
         ref: stats-output
+        fetch-depth: 1
 
     - name: Generate the languages distribution
       uses: cicirello/user-statistician@v1
@@ -23,6 +27,7 @@ jobs:
         image-file: languages.svg
         colors: dark-dimmed
         hide-keys: general, contributions, repositories
+        commit-and-push: false
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -32,6 +37,7 @@ jobs:
         image-file: stats.svg
         colors: dark-dimmed
         hide-keys: general, languages
+        commit-and-push: false
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -41,6 +47,7 @@ jobs:
         image-file: languages-light.svg
         colors: light
         hide-keys: general, contributions, repositories
+        commit-and-push: false
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -50,5 +57,43 @@ jobs:
         image-file: stats-light.svg
         colors: light
         hide-keys: general, languages
+        commit-and-push: false
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        
+    - name: Replace stats branch history
+      shell: bash
+      run: |
+        set -euo pipefail
+    
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    
+        # Check whether the generated files changed
+        git add -- \
+          languages.svg \
+          stats.svg \
+          languages-light.svg \
+          stats-light.svg
+    
+        if git diff --cached --quiet; then
+          echo "No statistics changed."
+          exit 0
+        fi
+    
+        # Build a clean index containing only the four SVGs
+        export GIT_INDEX_FILE="$(mktemp)"
+        rm -f "$GIT_INDEX_FILE"
+    
+        git add -- \
+          languages.svg \
+          stats.svg \
+          languages-light.svg \
+          stats-light.svg
+    
+        TREE=$(git write-tree)
+        COMMIT=$(echo "Update GitHub statistics from https://github.com/cicirello/user-statistician" | git commit-tree "$TREE")
+    
+        git push --force origin "$COMMIT:refs/heads/stats-output"
+    
+        rm -f "$GIT_INDEX_FILE"
