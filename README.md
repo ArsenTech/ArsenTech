@@ -75,11 +75,11 @@
 ### :book: Latest Blog Posts
 
 <!-- BLOG-POSTS:START -->
+- [I Replaced My Failing HDD with an SSD. Here&#39;s What Happened!](https://arsentech-yt.vercel.app/blog/hdd-ssd-swap)
 - [Make Your Windows 11 Terminal Look Modern &amp; Beautiful!](https://arsentech-yt.vercel.app/blog/win11-terminal-customization)
 - [20 JavaScript One-Liner Functions Every Developer Should Know](https://arsentech-yt.vercel.app/blog/20-javascript-one-liners)
 - [How to Remove The 000.exe Virus](https://arsentech-yt.vercel.app/blog/remove-000-exe)
 - [How to Remove The MEMZ Trojan](https://arsentech-yt.vercel.app/blog/remove-memz)
-- [How to Remove The Petya Ransomware](https://arsentech-yt.vercel.app/blog/remove-petya-ransomware)
 <!-- BLOG-POSTS:END -->
 
 ➡️ [More Posts][blog-url]
